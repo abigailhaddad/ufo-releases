@@ -4,10 +4,13 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
+    "prebuild": "tsx scripts/build-text-index.ts",
     "build": "next build",
+    "predev": "tsx scripts/build-text-index.ts",
     "start": "next start",
     "lint": "eslint",
     "fetch:csv": "tsx scripts/fetch-csv.ts",
+    "extract:text": "tsx --env-file=.env scripts/extract-text.ts",
     "verify:data": "tsx scripts/verify-data.ts"
   },
   "dependencies": {
@@ -30,6 +33,7 @@
     "csv-parse": "^6.2.1",
     "eslint": "^9",
     "eslint-config-next": "16.2.6",
+    "openai": "^6.37.0",
     "playwright": "^1.59.1",
     "playwright-extra": "^4.3.6",
     "puppeteer-extra-plugin-stealth": "^2.11.2",

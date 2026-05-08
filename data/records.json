@@ -17,7 +17,12 @@
     "redaction": "",
     "firstSeenAt": "2026-05-08",
     "lastSeenAt": "2026-05-08",
-    "removedFromSource": false
+    "removedFromSource": false,
+    "textChars": 117251,
+    "extractionPages": 30,
+    "textExtractedAt": "2026-05-08",
+    "extractionModel": "gpt-5.5",
+    "extractionError": null
   },
   {
     "id": 2,
@@ -37,7 +42,12 @@
     "redaction": "",
     "firstSeenAt": "2026-05-08",
     "lastSeenAt": "2026-05-08",
-    "removedFromSource": false
+    "removedFromSource": false,
+    "textChars": 36703,
+    "extractionPages": 30,
+    "textExtractedAt": "2026-05-08",
+    "extractionModel": "gpt-5.4-mini",
+    "extractionError": null
   },
   {
     "id": 3,
@@ -57,7 +67,8 @@
     "redaction": "",
     "firstSeenAt": "2026-05-08",
     "lastSeenAt": "2026-05-08",
-    "removedFromSource": false
+    "removedFromSource": false,
+    "extractionError": "429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors."
   },
   {
     "id": 4,
@@ -77,7 +88,8 @@
     "redaction": "",
     "firstSeenAt": "2026-05-08",
     "lastSeenAt": "2026-05-08",
-    "removedFromSource": false
+    "removedFromSource": false,
+    "extractionError": "terminated"
   },
   {
     "id": 5,
@@ -97,7 +109,8 @@
     "redaction": "",
     "firstSeenAt": "2026-05-08",
     "lastSeenAt": "2026-05-08",
-    "removedFromSource": false
+    "removedFromSource": false,
+    "extractionError": "429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors."
   },
   {
     "id": 6,

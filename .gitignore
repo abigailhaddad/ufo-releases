@@ -31,6 +31,8 @@ yarn-error.log*
 .pnpm-debug.log*
 
 # env files (can opt-in for committing if needed)
+.env
+.env.*
 .env*
 
 # vercel
@@ -44,3 +46,7 @@ next-env.d.ts
 .playwright-mcp/
 screenshot-*.png
 /.claude/
+
+# generated at build time from data/text/
+/public/text/
+/public/text-index.json

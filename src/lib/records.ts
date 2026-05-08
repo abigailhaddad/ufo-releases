@@ -21,6 +21,11 @@ export type UfoRecord = {
   firstSeenAt?: string;
   lastSeenAt?: string;
   removedFromSource?: boolean;
+  textChars?: number;
+  textExtractedAt?: string;
+  extractionPages?: number;
+  extractionModel?: string;
+  extractionError?: string | null;
 };
 
 export const records: UfoRecord[] = (recordsData as UfoRecord[]).map((r) => ({
