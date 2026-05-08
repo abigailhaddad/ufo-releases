@@ -8,9 +8,29 @@ export default function Home() {
   return (
     <main className="mx-auto max-w-5xl px-4 py-10 md:px-6 md:py-14">
       <header className="mb-8 space-y-3">
-        <p className="text-xs font-mono uppercase tracking-widest text-muted-foreground">
-          Unofficial mirror — for browsing convenience only
-        </p>
+        <div className="flex flex-wrap items-center justify-between gap-3">
+          <p className="text-xs font-mono uppercase tracking-widest text-muted-foreground">
+            Unofficial mirror — for browsing convenience only
+          </p>
+          <nav className="flex flex-wrap gap-3 text-xs">
+            <a
+              href="https://github.com/abigailhaddad/ufo-releases"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="underline underline-offset-4 hover:text-foreground"
+            >
+              source on GitHub ↗
+            </a>
+            <a
+              href="https://pub-a5fc1ae0b89944dba0ab60286076ab1e.r2.dev"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="underline underline-offset-4 hover:text-foreground"
+            >
+              file mirror (R2) ↗
+            </a>
+          </nav>
+        </div>
         <h1 className="text-3xl font-semibold tracking-tight md:text-4xl">
           UAP / UFO releases — searchable index
         </h1>
@@ -25,8 +45,16 @@ export default function Home() {
             war.gov/UFO
           </a>
           . This page mirrors their record index — {totalActive.toLocaleString()} records across{" "}
-          {agencies.length} agencies — in a sortable, searchable table. All file links point to
-          the original government-hosted files. Refreshed daily from the source CSV.
+          {agencies.length} agencies — in a sortable, searchable table. File links point to the
+          originals on war.gov; we also keep a <a
+            href="https://pub-a5fc1ae0b89944dba0ab60286076ab1e.r2.dev"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="underline underline-offset-4 hover:text-foreground"
+          >
+            public R2 mirror
+          </a>{" "}
+          of every PDF, image, and video so the archive survives if war.gov rotates them. Refreshed daily from the source CSV.
           {totalRemoved > 0
             ? ` ${totalRemoved.toLocaleString()} additional records that have since been removed from war.gov are kept here for the record (toggle the checkbox to see them).`
             : ""}

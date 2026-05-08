@@ -44,7 +44,7 @@ function extOf(url: string): string {
 }
 
 async function fetchInPageBase64(
-  page: import("playwright-core").Page,
+  page: import("playwright").Page,
   url: string,
 ): Promise<Buffer> {
   const b64 = await page.evaluate(async (u) => {
@@ -62,7 +62,7 @@ async function fetchInPageBase64(
 }
 
 async function fetchViaContextRequest(
-  ctx: import("playwright-core").BrowserContext,
+  ctx: import("playwright").BrowserContext,
   url: string,
 ): Promise<Buffer> {
   const resp = await ctx.request.get(url, {
@@ -78,7 +78,7 @@ async function fetchViaContextRequest(
 }
 
 async function findMp4FromEmbed(
-  page: import("playwright-core").Page,
+  page: import("playwright").Page,
   videoId: string,
 ): Promise<string> {
   const embedUrl = `${DVIDS_BASE}/video/embed/${videoId}`;
