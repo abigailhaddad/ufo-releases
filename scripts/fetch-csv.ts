@@ -69,8 +69,21 @@ function rowToRecord(row: CsvRow) {
   };
 }
 
-function recordKey(r: { title: string; agency: string; type: string }) {
-  return `${r.agency}::${r.type}::${r.title.toLowerCase()}`;
+function recordKey(r: {
+  title: string;
+  agency: string;
+  type: string;
+  fileUrl?: string;
+  dvidsVideoId?: string;
+}) {
+  // Prefer the most stable identifier in the source. The display title can
+  // change (war.gov renamed "Persian Gulf" → "Arabian Gulf" on three records)
+  // while the underlying file URL stays the same.
+  const stable =
+    (r.fileUrl && r.fileUrl.toLowerCase()) ||
+    (r.dvidsVideoId && `dvids:${r.dvidsVideoId}`) ||
+    `title:${r.title.toLowerCase()}`;
+  return `${r.agency}::${r.type}::${stable}`;
 }
 
 async function fetchCsv(): Promise<string> {
