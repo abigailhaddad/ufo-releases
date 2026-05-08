@@ -10,6 +10,7 @@
     "start": "next start",
     "lint": "eslint",
     "fetch:csv": "tsx scripts/fetch-csv.ts",
+    "download:pdfs": "tsx scripts/download-pdfs.ts",
     "extract:text": "tsx --env-file=.env scripts/extract-text.ts",
     "verify:data": "tsx scripts/verify-data.ts"
   },

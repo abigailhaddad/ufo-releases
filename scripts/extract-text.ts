@@ -39,10 +39,13 @@ const PDFTOTEXT_MIN_WORDS_PER_PAGE = parseInt(
   10,
 );
 const SKIP_PDFTOTEXT = process.env.SKIP_PDFTOTEXT === "1";
+const PDFTOTEXT_ONLY = process.env.PDFTOTEXT_ONLY === "1";
 const ONLY_ID = process.env.ONLY_ID ? parseInt(process.env.ONLY_ID, 10) : null;
 const LIMIT = process.env.LIMIT ? parseInt(process.env.LIMIT, 10) : Infinity;
 const FORCE = process.env.FORCE === "1";
 const INCLUDE_IMAGES = process.env.INCLUDE_IMAGES === "1";
+const SKIP_AGENCY = process.env.SKIP_AGENCY ?? "";
+const ONLY_AGENCY = process.env.ONLY_AGENCY ?? "";
 
 type StoredRecord = {
   id: number;
@@ -196,11 +199,21 @@ function tryPdftotext(pdfPath: string): PdfExtraction | null {
 async function extractFromPdf(url: string, recordId: number): Promise<PdfExtraction> {
   const tmpDir = fs.mkdtempSync(path.join(os.tmpdir(), `ufo-${recordId}-`));
   try {
-    const pdfPath = path.join(tmpDir, "doc.pdf");
-    await downloadFile(url, pdfPath);
+    // Prefer pre-downloaded copy if present (data/_pdfs/<id>.pdf), else fetch.
+    const localPdf = path.join(process.cwd(), "data", "_pdfs", `${recordId}.pdf`);
+    let pdfPath: string;
+    if (fs.existsSync(localPdf)) {
+      pdfPath = localPdf;
+    } else {
+      pdfPath = path.join(tmpDir, "doc.pdf");
+      await downloadFile(url, pdfPath);
+    }
 
     const direct = tryPdftotext(pdfPath);
     if (direct) return direct;
+    if (PDFTOTEXT_ONLY) {
+      throw new Error("pdftotext yielded too little; PDFTOTEXT_ONLY=1, skipping vision");
+    }
 
     execFileSync(
       "pdftoppm",
@@ -269,6 +282,8 @@ async function main() {
   for (const r of records) {
     if (targets.length >= LIMIT) break;
     if (ONLY_ID !== null && r.id !== ONLY_ID) continue;
+    if (SKIP_AGENCY && r.agency === SKIP_AGENCY) continue;
+    if (ONLY_AGENCY && r.agency !== ONLY_AGENCY) continue;
     if (r.removedFromSource) continue;
     if (!r.fileUrl) continue;
     const ext = extOf(r.fileUrl);
@@ -280,6 +295,15 @@ async function main() {
       targets.push(r);
     }
   }
+
+  // Prioritize non-FBI so pdftotext-eligible records finish first, giving
+  // immediate user-visible progress while FBI vision runs after.
+  targets.sort((a, b) => {
+    const aFbi = a.agency === "FBI" ? 1 : 0;
+    const bFbi = b.agency === "FBI" ? 1 : 0;
+    if (aFbi !== bFbi) return aFbi - bFbi;
+    return a.id - b.id;
+  });
 
   console.log(
     `Targets: ${targets.length} records · model=${MODEL} · dpi=${RENDER_DPI} · ` +
