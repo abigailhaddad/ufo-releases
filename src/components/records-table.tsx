@@ -68,12 +68,23 @@ export function RecordsTable({ records, agencies, types }: Props) {
 
   useEffect(() => {
     if (!searchFullText || textIndex || textIndexLoading) return;
+    let cancelled = false;
+    // eslint-disable-next-line react-hooks/set-state-in-effect
     setTextIndexLoading(true);
     fetch("/text-index.json")
       .then((r) => (r.ok ? r.json() : Promise.reject(new Error(`HTTP ${r.status}`))))
-      .then((data: TextIndex) => setTextIndex(data))
-      .catch(() => setTextIndex({}))
-      .finally(() => setTextIndexLoading(false));
+      .then((data: TextIndex) => {
+        if (!cancelled) setTextIndex(data);
+      })
+      .catch(() => {
+        if (!cancelled) setTextIndex({});
+      })
+      .finally(() => {
+        if (!cancelled) setTextIndexLoading(false);
+      });
+    return () => {
+      cancelled = true;
+    };
   }, [searchFullText, textIndex, textIndexLoading]);
 
   async function loadRecordText(id: number) {

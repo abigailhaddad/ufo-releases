@@ -227,7 +227,11 @@
     "firstSeenAt": "2026-05-08",
     "lastSeenAt": "2026-05-08",
     "removedFromSource": false,
-    "extractionError": "Connection error."
+    "extractionError": null,
+    "textChars": 1628,
+    "extractionPages": 9,
+    "textExtractedAt": "2026-05-08",
+    "extractionModel": "gpt-5.5"
   },
   {
     "id": 11,
@@ -269,7 +273,11 @@
     "firstSeenAt": "2026-05-08",
     "lastSeenAt": "2026-05-08",
     "removedFromSource": false,
-    "extractionError": "Connection error."
+    "extractionError": null,
+    "textChars": 18379,
+    "extractionPages": 15,
+    "textExtractedAt": "2026-05-08",
+    "extractionModel": "gpt-5.5"
   },
   {
     "id": 13,
