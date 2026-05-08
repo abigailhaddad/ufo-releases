@@ -1,36 +1,46 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# UAP / UFO Release Index
 
-## Getting Started
+Searchable, sortable mirror of the declassified UAP records the U.S. Department of War publishes at [war.gov/UFO](https://www.war.gov/UFO/).
 
-First, run the development server:
+The official site is JS-heavy and inconvenient to browse, so this site reads the same source CSV they ship and renders it as a normal table. **All file links point back to the original government-hosted PDFs/images/videos** — nothing is rehosted (yet — see below).
+
+## How it works
+
+1. **Source.** war.gov/UFO loads its records from `https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-csv.csv`.
+2. **Daily refresh.** A GitHub Action runs `scripts/fetch-csv.ts` every day. The script drives a stealth-patched Chromium (Akamai blocks plain HTTP clients) to grab the CSV, parses it, and merges into `data/records.json`.
+3. **Merge rules:**
+   - Records present in source are upserted (right-side wins).
+   - Records that disappear from source are kept and flagged `removedFromSource: true` so nothing is lost from the public record.
+   - Each record carries `firstSeenAt` and `lastSeenAt` ISO dates.
+4. **Auto-deploy.** When `data/records.json` changes, the Action commits to `main`. Vercel auto-deploys on push.
+
+## Local dev
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+pnpm install
+pnpm exec playwright install chromium   # one-time
+pnpm dev                                # http://localhost:3000
+pnpm fetch:csv                          # refresh data/records.json from war.gov
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Project layout
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```
+data/
+  records.json           # merged dataset rendered by the site
+  uap-csv.csv            # last raw CSV pulled from war.gov (debug aid)
+scripts/
+  fetch-csv.ts           # daily refresh / merge pipeline
+src/
+  app/page.tsx           # main page
+  components/records-table.tsx
+  lib/records.ts         # static-imports records.json + derives filter lists
+.github/workflows/
+  refresh-csv.yml        # daily cron
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Notes
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- Unofficial, third-party mirror with no affiliation to the Department of War.
+- Site is fully static — no runtime fetching from war.gov.
+- A future enhancement would mirror the actual PDF / image / video files to Cloudflare R2 in case the source removes them. Tracked but not built.
