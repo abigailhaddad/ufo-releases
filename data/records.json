@@ -47,7 +47,7 @@
     "extractionPages": 30,
     "textExtractedAt": "2026-05-08",
     "extractionModel": "gpt-5.4-mini",
-    "extractionError": null
+    "extractionError": "terminated"
   },
   {
     "id": 3,
@@ -68,7 +68,7 @@
     "firstSeenAt": "2026-05-08",
     "lastSeenAt": "2026-05-08",
     "removedFromSource": false,
-    "extractionError": "429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors."
+    "extractionError": "terminated"
   },
   {
     "id": 4,
@@ -110,7 +110,7 @@
     "firstSeenAt": "2026-05-08",
     "lastSeenAt": "2026-05-08",
     "removedFromSource": false,
-    "extractionError": "429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors."
+    "extractionError": "Connection error."
   },
   {
     "id": 6,
@@ -130,7 +130,8 @@
     "redaction": "",
     "firstSeenAt": "2026-05-08",
     "lastSeenAt": "2026-05-08",
-    "removedFromSource": false
+    "removedFromSource": false,
+    "extractionError": "terminated"
   },
   {
     "id": 7,
@@ -150,7 +151,8 @@
     "redaction": "",
     "firstSeenAt": "2026-05-08",
     "lastSeenAt": "2026-05-08",
-    "removedFromSource": false
+    "removedFromSource": false,
+    "extractionError": "terminated"
   },
   {
     "id": 8,
@@ -170,7 +172,8 @@
     "redaction": "",
     "firstSeenAt": "2026-05-08",
     "lastSeenAt": "2026-05-08",
-    "removedFromSource": false
+    "removedFromSource": false,
+    "extractionError": "terminated"
   },
   {
     "id": 9,
@@ -190,7 +193,8 @@
     "redaction": "",
     "firstSeenAt": "2026-05-08",
     "lastSeenAt": "2026-05-08",
-    "removedFromSource": false
+    "removedFromSource": false,
+    "extractionError": "terminated"
   },
   {
     "id": 10,
@@ -210,7 +214,8 @@
     "redaction": "",
     "firstSeenAt": "2026-05-08",
     "lastSeenAt": "2026-05-08",
-    "removedFromSource": false
+    "removedFromSource": false,
+    "extractionError": "Connection error."
   },
   {
     "id": 11,
@@ -230,7 +235,8 @@
     "redaction": "",
     "firstSeenAt": "2026-05-08",
     "lastSeenAt": "2026-05-08",
-    "removedFromSource": false
+    "removedFromSource": false,
+    "extractionError": "Connection error."
   },
   {
     "id": 12,
@@ -250,7 +256,8 @@
     "redaction": "",
     "firstSeenAt": "2026-05-08",
     "lastSeenAt": "2026-05-08",
-    "removedFromSource": false
+    "removedFromSource": false,
+    "extractionError": "Connection error."
   },
   {
     "id": 13,
@@ -330,7 +337,8 @@
     "redaction": "",
     "firstSeenAt": "2026-05-08",
     "lastSeenAt": "2026-05-08",
-    "removedFromSource": false
+    "removedFromSource": false,
+    "extractionError": "terminated"
   },
   {
     "id": 17,
@@ -350,7 +358,8 @@
     "redaction": "",
     "firstSeenAt": "2026-05-08",
     "lastSeenAt": "2026-05-08",
-    "removedFromSource": false
+    "removedFromSource": false,
+    "extractionError": "terminated"
   },
   {
     "id": 18,

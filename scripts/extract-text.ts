@@ -35,6 +35,7 @@ const RECORD_CONCURRENCY = parseInt(process.env.RECORD_CONCURRENCY ?? "1", 10);
 const ONLY_ID = process.env.ONLY_ID ? parseInt(process.env.ONLY_ID, 10) : null;
 const LIMIT = process.env.LIMIT ? parseInt(process.env.LIMIT, 10) : Infinity;
 const FORCE = process.env.FORCE === "1";
+const INCLUDE_IMAGES = process.env.INCLUDE_IMAGES === "1";
 
 type StoredRecord = {
   id: number;
@@ -95,22 +96,48 @@ async function downloadFile(url: string, dest: string) {
 async function transcribePage(imagePath: string, prompt: string): Promise<string> {
   const buf = fs.readFileSync(imagePath);
   const b64 = buf.toString("base64");
-  const resp = await client.chat.completions.create({
-    model: MODEL,
-    messages: [
-      {
-        role: "user",
-        content: [
-          { type: "text", text: prompt },
+  const maxAttempts = 5;
+  for (let attempt = 1; attempt <= maxAttempts; attempt++) {
+    try {
+      const resp = await client.chat.completions.create({
+        model: MODEL,
+        messages: [
           {
-            type: "image_url",
-            image_url: { url: `data:image/png;base64,${b64}`, detail: "high" },
+            role: "user",
+            content: [
+              { type: "text", text: prompt },
+              {
+                type: "image_url",
+                image_url: { url: `data:image/png;base64,${b64}`, detail: "high" },
+              },
+            ],
           },
         ],
-      },
-    ],
-  });
-  return resp.choices[0]?.message?.content ?? "";
+      });
+      return resp.choices[0]?.message?.content ?? "";
+    } catch (err) {
+      const e = err as { status?: number; message?: string; code?: string };
+      const msg = (e.message ?? "").toLowerCase();
+      const transient =
+        e.status === 429 ||
+        e.status === 500 ||
+        e.status === 502 ||
+        e.status === 503 ||
+        e.status === 504 ||
+        e.code === "ECONNRESET" ||
+        e.code === "ETIMEDOUT" ||
+        e.code === "EAI_AGAIN" ||
+        msg.includes("connection error") ||
+        msg.includes("terminated") ||
+        msg.includes("socket hang up") ||
+        msg.includes("fetch failed");
+      if (!transient || attempt === maxAttempts) throw err;
+      // Exponential backoff with jitter: 2s, 4s, 8s, 16s, 32s
+      const delay = 1000 * Math.pow(2, attempt) + Math.floor(Math.random() * 500);
+      await new Promise((r) => setTimeout(r, delay));
+    }
+  }
+  throw new Error("transcribePage: exhausted retries");
 }
 
 async function pmap<T, R>(
@@ -204,9 +231,13 @@ async function main() {
     if (r.removedFromSource) continue;
     if (!r.fileUrl) continue;
     const ext = extOf(r.fileUrl);
-    if (ext !== "pdf" && ext !== "png" && ext !== "jpg" && ext !== "jpeg") continue;
-    if (shouldSkip(r, path.join(TEXT_DIR, `${r.id}.txt`))) continue;
-    targets.push(r);
+    if (ext === "pdf") {
+      if (shouldSkip(r, path.join(TEXT_DIR, `${r.id}.txt`))) continue;
+      targets.push(r);
+    } else if ((ext === "png" || ext === "jpg" || ext === "jpeg") && INCLUDE_IMAGES) {
+      if (shouldSkip(r, path.join(TEXT_DIR, `${r.id}.txt`))) continue;
+      targets.push(r);
+    }
   }
 
   console.log(
@@ -225,6 +256,45 @@ async function main() {
     return saving;
   }
 
+  function isTransient(err: unknown): boolean {
+    const e = err as { status?: number; code?: string; message?: string };
+    const msg = (e?.message ?? "").toLowerCase();
+    return (
+      e?.status === 429 ||
+      e?.status === 500 ||
+      e?.status === 502 ||
+      e?.status === 503 ||
+      e?.status === 504 ||
+      e?.code === "ECONNRESET" ||
+      e?.code === "ETIMEDOUT" ||
+      e?.code === "EAI_AGAIN" ||
+      msg.includes("connection error") ||
+      msg.includes("terminated") ||
+      msg.includes("socket hang up") ||
+      msg.includes("fetch failed") ||
+      msg.includes("network")
+    );
+  }
+
+  async function extractWithRetry(r: StoredRecord, isPdf: boolean) {
+    const max = 4;
+    let lastErr: unknown;
+    for (let attempt = 1; attempt <= max; attempt++) {
+      try {
+        return isPdf
+          ? await extractFromPdf(r.fileUrl, r.id)
+          : await extractFromImage(r.fileUrl, r.id);
+      } catch (err) {
+        lastErr = err;
+        if (!isTransient(err) || attempt === max) throw err;
+        const delay = 5000 * attempt + Math.floor(Math.random() * 1000);
+        console.log(`#${r.id} retry ${attempt}/${max - 1} after ${(err as Error).message?.slice(0, 60)} — waiting ${Math.round(delay / 1000)}s`);
+        await new Promise((res) => setTimeout(res, delay));
+      }
+    }
+    throw lastErr;
+  }
+
   await pmap(targets, RECORD_CONCURRENCY, async (r) => {
     const today = new Date().toISOString().slice(0, 10);
     const label = `#${r.id} ${r.title.slice(0, 60)}`;
@@ -232,9 +302,7 @@ async function main() {
     const isPdf = ext === "pdf";
     const t0 = Date.now();
     try {
-      const { text, pages } = isPdf
-        ? await extractFromPdf(r.fileUrl, r.id)
-        : await extractFromImage(r.fileUrl, r.id);
+      const { text, pages } = await extractWithRetry(r, isPdf);
       fs.writeFileSync(path.join(TEXT_DIR, `${r.id}.txt`), text);
       r.textChars = text.length;
       r.extractionPages = pages;
