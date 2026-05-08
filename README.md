@@ -2,7 +2,9 @@
 
 Searchable, sortable mirror of the declassified UAP records the U.S. Department of War publishes at [war.gov/UFO](https://www.war.gov/UFO/).
 
-The official site is JS-heavy and inconvenient to browse, so this site reads the same source CSV they ship and renders it as a normal table. **All file links point back to the original government-hosted PDFs/images/videos** — nothing is rehosted (yet — see below).
+The official site is JS-heavy and inconvenient to browse, so this site reads the same source CSV they ship and renders it as a normal table.
+
+> **Heads up: this site is not mirroring or scraping any of the actual files.** Every "Open" / "Watch" link points directly at the original government-hosted PDF, image, or DVIDS video on `war.gov` / `dvidshub.net`. We only mirror the metadata (titles, descriptions, agencies, dates, file URLs) from the CSV they publish at `war.gov/Portals/1/Interactive/2026/UFO/uap-csv.csv`. If `war.gov` takes a file down, that link will break here too — preserving the files themselves to Cloudflare R2 is a planned follow-up, not yet built.
 
 ## How it works
 
