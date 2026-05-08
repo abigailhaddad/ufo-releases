@@ -143,7 +143,7 @@
     "firstSeenAt": "2026-05-08",
     "lastSeenAt": "2026-05-08",
     "removedFromSource": false,
-    "extractionError": "terminated"
+    "extractionError": "pdftotext yielded too little; PDFTOTEXT_ONLY=1, skipping vision"
   },
   {
     "id": 7,
@@ -164,7 +164,7 @@
     "firstSeenAt": "2026-05-08",
     "lastSeenAt": "2026-05-08",
     "removedFromSource": false,
-    "extractionError": "terminated"
+    "extractionError": "pdftotext yielded too little; PDFTOTEXT_ONLY=1, skipping vision"
   },
   {
     "id": 8,
@@ -185,7 +185,7 @@
     "firstSeenAt": "2026-05-08",
     "lastSeenAt": "2026-05-08",
     "removedFromSource": false,
-    "extractionError": "terminated"
+    "extractionError": "pdftotext yielded too little; PDFTOTEXT_ONLY=1, skipping vision"
   },
   {
     "id": 9,
@@ -206,7 +206,7 @@
     "firstSeenAt": "2026-05-08",
     "lastSeenAt": "2026-05-08",
     "removedFromSource": false,
-    "extractionError": "terminated"
+    "extractionError": "pdftotext yielded too little; PDFTOTEXT_ONLY=1, skipping vision"
   },
   {
     "id": 10,
@@ -252,7 +252,7 @@
     "firstSeenAt": "2026-05-08",
     "lastSeenAt": "2026-05-08",
     "removedFromSource": false,
-    "extractionError": "Connection error."
+    "extractionError": "pdftotext yielded too little; PDFTOTEXT_ONLY=1, skipping vision"
   },
   {
     "id": 12,
@@ -322,7 +322,8 @@
     "redaction": "",
     "firstSeenAt": "2026-05-08",
     "lastSeenAt": "2026-05-08",
-    "removedFromSource": false
+    "removedFromSource": false,
+    "extractionError": "pdftotext yielded too little; PDFTOTEXT_ONLY=1, skipping vision"
   },
   {
     "id": 15,
@@ -342,7 +343,8 @@
     "redaction": "",
     "firstSeenAt": "2026-05-08",
     "lastSeenAt": "2026-05-08",
-    "removedFromSource": false
+    "removedFromSource": false,
+    "extractionError": "pdftotext yielded too little; PDFTOTEXT_ONLY=1, skipping vision"
   },
   {
     "id": 16,
@@ -363,7 +365,7 @@
     "firstSeenAt": "2026-05-08",
     "lastSeenAt": "2026-05-08",
     "removedFromSource": false,
-    "extractionError": "terminated"
+    "extractionError": "pdftotext yielded too little; PDFTOTEXT_ONLY=1, skipping vision"
   },
   {
     "id": 17,
@@ -384,7 +386,7 @@
     "firstSeenAt": "2026-05-08",
     "lastSeenAt": "2026-05-08",
     "removedFromSource": false,
-    "extractionError": "terminated"
+    "extractionError": "pdftotext yielded too little; PDFTOTEXT_ONLY=1, skipping vision"
   },
   {
     "id": 18,
@@ -404,7 +406,8 @@
     "redaction": "",
     "firstSeenAt": "2026-05-08",
     "lastSeenAt": "2026-05-08",
-    "removedFromSource": false
+    "removedFromSource": false,
+    "extractionError": "pdftotext yielded too little; PDFTOTEXT_ONLY=1, skipping vision"
   },
   {
     "id": 19,
@@ -424,7 +427,8 @@
     "redaction": "TRUE",
     "firstSeenAt": "2026-05-08",
     "lastSeenAt": "2026-05-08",
-    "removedFromSource": false
+    "removedFromSource": false,
+    "extractionError": "pdftotext yielded too little; PDFTOTEXT_ONLY=1, skipping vision"
   },
   {
     "id": 20,
@@ -444,7 +448,8 @@
     "redaction": "",
     "firstSeenAt": "2026-05-08",
     "lastSeenAt": "2026-05-08",
-    "removedFromSource": false
+    "removedFromSource": false,
+    "extractionError": "pdftotext yielded too little; PDFTOTEXT_ONLY=1, skipping vision"
   },
   {
     "id": 21,
@@ -484,7 +489,8 @@
     "redaction": "",
     "firstSeenAt": "2026-05-08",
     "lastSeenAt": "2026-05-08",
-    "removedFromSource": false
+    "removedFromSource": false,
+    "extractionError": "pdftotext yielded too little; PDFTOTEXT_ONLY=1, skipping vision"
   },
   {
     "id": 23,
@@ -504,7 +510,8 @@
     "redaction": "",
     "firstSeenAt": "2026-05-08",
     "lastSeenAt": "2026-05-08",
-    "removedFromSource": false
+    "removedFromSource": false,
+    "extractionError": "pdftotext yielded too little; PDFTOTEXT_ONLY=1, skipping vision"
   },
   {
     "id": 24,
@@ -524,7 +531,8 @@
     "redaction": "",
     "firstSeenAt": "2026-05-08",
     "lastSeenAt": "2026-05-08",
-    "removedFromSource": false
+    "removedFromSource": false,
+    "extractionError": "pdftotext yielded too little; PDFTOTEXT_ONLY=1, skipping vision"
   },
   {
     "id": 25,
@@ -544,7 +552,8 @@
     "redaction": "",
     "firstSeenAt": "2026-05-08",
     "lastSeenAt": "2026-05-08",
-    "removedFromSource": false
+    "removedFromSource": false,
+    "extractionError": "pdftotext yielded too little; PDFTOTEXT_ONLY=1, skipping vision"
   },
   {
     "id": 26,
@@ -564,7 +573,8 @@
     "redaction": "",
     "firstSeenAt": "2026-05-08",
     "lastSeenAt": "2026-05-08",
-    "removedFromSource": false
+    "removedFromSource": false,
+    "extractionError": "pdftotext yielded too little; PDFTOTEXT_ONLY=1, skipping vision"
   },
   {
     "id": 27,
@@ -584,7 +594,8 @@
     "redaction": "",
     "firstSeenAt": "2026-05-08",
     "lastSeenAt": "2026-05-08",
-    "removedFromSource": false
+    "removedFromSource": false,
+    "extractionError": "pdftotext yielded too little; PDFTOTEXT_ONLY=1, skipping vision"
   },
   {
     "id": 28,
@@ -604,7 +615,8 @@
     "redaction": "",
     "firstSeenAt": "2026-05-08",
     "lastSeenAt": "2026-05-08",
-    "removedFromSource": false
+    "removedFromSource": false,
+    "extractionError": "pdftotext yielded too little; PDFTOTEXT_ONLY=1, skipping vision"
   },
   {
     "id": 29,
@@ -624,7 +636,8 @@
     "redaction": "",
     "firstSeenAt": "2026-05-08",
     "lastSeenAt": "2026-05-08",
-    "removedFromSource": false
+    "removedFromSource": false,
+    "extractionError": "pdftotext yielded too little; PDFTOTEXT_ONLY=1, skipping vision"
   },
   {
     "id": 30,
@@ -644,7 +657,8 @@
     "redaction": "",
     "firstSeenAt": "2026-05-08",
     "lastSeenAt": "2026-05-08",
-    "removedFromSource": false
+    "removedFromSource": false,
+    "extractionError": "pdftotext yielded too little; PDFTOTEXT_ONLY=1, skipping vision"
   },
   {
     "id": 31,
@@ -664,7 +678,8 @@
     "redaction": "",
     "firstSeenAt": "2026-05-08",
     "lastSeenAt": "2026-05-08",
-    "removedFromSource": false
+    "removedFromSource": false,
+    "extractionError": "pdftotext yielded too little; PDFTOTEXT_ONLY=1, skipping vision"
   },
   {
     "id": 32,
@@ -684,7 +699,8 @@
     "redaction": "TRUE",
     "firstSeenAt": "2026-05-08",
     "lastSeenAt": "2026-05-08",
-    "removedFromSource": false
+    "removedFromSource": false,
+    "extractionError": "pdftotext yielded too little; PDFTOTEXT_ONLY=1, skipping vision"
   },
   {
     "id": 33,
@@ -704,7 +720,8 @@
     "redaction": "",
     "firstSeenAt": "2026-05-08",
     "lastSeenAt": "2026-05-08",
-    "removedFromSource": false
+    "removedFromSource": false,
+    "extractionError": "pdftotext yielded too little; PDFTOTEXT_ONLY=1, skipping vision"
   },
   {
     "id": 34,
@@ -724,7 +741,8 @@
     "redaction": "",
     "firstSeenAt": "2026-05-08",
     "lastSeenAt": "2026-05-08",
-    "removedFromSource": false
+    "removedFromSource": false,
+    "extractionError": "pdftotext yielded too little; PDFTOTEXT_ONLY=1, skipping vision"
   },
   {
     "id": 35,
@@ -769,7 +787,12 @@
     "redaction": "TRUE",
     "firstSeenAt": "2026-05-08",
     "lastSeenAt": "2026-05-08",
-    "removedFromSource": false
+    "removedFromSource": false,
+    "textChars": 9316,
+    "extractionPages": 6,
+    "textExtractedAt": "2026-05-08",
+    "extractionModel": "pdftotext",
+    "extractionError": null
   },
   {
     "id": 37,
@@ -789,7 +812,12 @@
     "redaction": "TRUE",
     "firstSeenAt": "2026-05-08",
     "lastSeenAt": "2026-05-08",
-    "removedFromSource": false
+    "removedFromSource": false,
+    "textChars": 15597,
+    "extractionPages": 9,
+    "textExtractedAt": "2026-05-08",
+    "extractionModel": "pdftotext",
+    "extractionError": null
   },
   {
     "id": 38,
@@ -809,7 +837,12 @@
     "redaction": "TRUE",
     "firstSeenAt": "2026-05-08",
     "lastSeenAt": "2026-05-08",
-    "removedFromSource": false
+    "removedFromSource": false,
+    "textChars": 13676,
+    "extractionPages": 7,
+    "textExtractedAt": "2026-05-08",
+    "extractionModel": "pdftotext",
+    "extractionError": null
   },
   {
     "id": 39,
@@ -829,7 +862,12 @@
     "redaction": "TRUE",
     "firstSeenAt": "2026-05-08",
     "lastSeenAt": "2026-05-08",
-    "removedFromSource": false
+    "removedFromSource": false,
+    "textChars": 9822,
+    "extractionPages": 6,
+    "textExtractedAt": "2026-05-08",
+    "extractionModel": "pdftotext",
+    "extractionError": null
   },
   {
     "id": 40,
@@ -849,7 +887,12 @@
     "redaction": "TRUE",
     "firstSeenAt": "2026-05-08",
     "lastSeenAt": "2026-05-08",
-    "removedFromSource": false
+    "removedFromSource": false,
+    "textChars": 16414,
+    "extractionPages": 10,
+    "textExtractedAt": "2026-05-08",
+    "extractionModel": "pdftotext",
+    "extractionError": null
   },
   {
     "id": 41,
@@ -869,7 +912,12 @@
     "redaction": "TRUE",
     "firstSeenAt": "2026-05-08",
     "lastSeenAt": "2026-05-08",
-    "removedFromSource": false
+    "removedFromSource": false,
+    "textChars": 10159,
+    "extractionPages": 6,
+    "textExtractedAt": "2026-05-08",
+    "extractionModel": "pdftotext",
+    "extractionError": null
   },
   {
     "id": 42,
@@ -889,7 +937,12 @@
     "redaction": "TRUE",
     "firstSeenAt": "2026-05-08",
     "lastSeenAt": "2026-05-08",
-    "removedFromSource": false
+    "removedFromSource": false,
+    "textChars": 16196,
+    "extractionPages": 9,
+    "textExtractedAt": "2026-05-08",
+    "extractionModel": "pdftotext",
+    "extractionError": null
   },
   {
     "id": 43,
@@ -909,7 +962,12 @@
     "redaction": "TRUE",
     "firstSeenAt": "2026-05-08",
     "lastSeenAt": "2026-05-08",
-    "removedFromSource": false
+    "removedFromSource": false,
+    "textChars": 16196,
+    "extractionPages": 9,
+    "textExtractedAt": "2026-05-08",
+    "extractionModel": "pdftotext",
+    "extractionError": null
   },
   {
     "id": 44,
@@ -929,7 +987,12 @@
     "redaction": "TRUE",
     "firstSeenAt": "2026-05-08",
     "lastSeenAt": "2026-05-08",
-    "removedFromSource": false
+    "removedFromSource": false,
+    "textChars": 12718,
+    "extractionPages": 7,
+    "textExtractedAt": "2026-05-08",
+    "extractionModel": "pdftotext",
+    "extractionError": null
   },
   {
     "id": 45,
@@ -949,7 +1012,12 @@
     "redaction": "TRUE",
     "firstSeenAt": "2026-05-08",
     "lastSeenAt": "2026-05-08",
-    "removedFromSource": false
+    "removedFromSource": false,
+    "textChars": 14087,
+    "extractionPages": 8,
+    "textExtractedAt": "2026-05-08",
+    "extractionModel": "pdftotext",
+    "extractionError": null
   },
   {
     "id": 46,
@@ -969,7 +1037,12 @@
     "redaction": "TRUE",
     "firstSeenAt": "2026-05-08",
     "lastSeenAt": "2026-05-08",
-    "removedFromSource": false
+    "removedFromSource": false,
+    "textChars": 11950,
+    "extractionPages": 6,
+    "textExtractedAt": "2026-05-08",
+    "extractionModel": "pdftotext",
+    "extractionError": null
   },
   {
     "id": 47,
@@ -989,7 +1062,12 @@
     "redaction": "TRUE",
     "firstSeenAt": "2026-05-08",
     "lastSeenAt": "2026-05-08",
-    "removedFromSource": false
+    "removedFromSource": false,
+    "textChars": 6838,
+    "extractionPages": 7,
+    "textExtractedAt": "2026-05-08",
+    "extractionModel": "pdftotext",
+    "extractionError": null
   },
   {
     "id": 48,
@@ -1009,7 +1087,12 @@
     "redaction": "TRUE",
     "firstSeenAt": "2026-05-08",
     "lastSeenAt": "2026-05-08",
-    "removedFromSource": false
+    "removedFromSource": false,
+    "textChars": 17700,
+    "extractionPages": 10,
+    "textExtractedAt": "2026-05-08",
+    "extractionModel": "pdftotext",
+    "extractionError": null
   },
   {
     "id": 49,
@@ -1029,7 +1112,12 @@
     "redaction": "TRUE",
     "firstSeenAt": "2026-05-08",
     "lastSeenAt": "2026-05-08",
-    "removedFromSource": false
+    "removedFromSource": false,
+    "textChars": 17700,
+    "extractionPages": 10,
+    "textExtractedAt": "2026-05-08",
+    "extractionModel": "pdftotext",
+    "extractionError": null
   },
   {
     "id": 50,
@@ -1049,7 +1137,12 @@
     "redaction": "TRUE",
     "firstSeenAt": "2026-05-08",
     "lastSeenAt": "2026-05-08",
-    "removedFromSource": false
+    "removedFromSource": false,
+    "textChars": 17700,
+    "extractionPages": 10,
+    "textExtractedAt": "2026-05-08",
+    "extractionModel": "pdftotext",
+    "extractionError": null
   },
   {
     "id": 51,
@@ -1069,7 +1162,12 @@
     "redaction": "TRUE",
     "firstSeenAt": "2026-05-08",
     "lastSeenAt": "2026-05-08",
-    "removedFromSource": false
+    "removedFromSource": false,
+    "textChars": 10536,
+    "extractionPages": 7,
+    "textExtractedAt": "2026-05-08",
+    "extractionModel": "pdftotext",
+    "extractionError": null
   },
   {
     "id": 52,
@@ -1089,7 +1187,12 @@
     "redaction": "TRUE",
     "firstSeenAt": "2026-05-08",
     "lastSeenAt": "2026-05-08",
-    "removedFromSource": false
+    "removedFromSource": false,
+    "textChars": 10684,
+    "extractionPages": 7,
+    "textExtractedAt": "2026-05-08",
+    "extractionModel": "pdftotext",
+    "extractionError": null
   },
   {
     "id": 53,
@@ -1109,7 +1212,12 @@
     "redaction": "TRUE",
     "firstSeenAt": "2026-05-08",
     "lastSeenAt": "2026-05-08",
-    "removedFromSource": false
+    "removedFromSource": false,
+    "textChars": 6502,
+    "extractionPages": 1,
+    "textExtractedAt": "2026-05-08",
+    "extractionModel": "pdftotext",
+    "extractionError": null
   },
   {
     "id": 54,
@@ -1129,7 +1237,8 @@
     "redaction": "TRUE",
     "firstSeenAt": "2026-05-08",
     "lastSeenAt": "2026-05-08",
-    "removedFromSource": false
+    "removedFromSource": false,
+    "extractionError": "pdftotext yielded too little; PDFTOTEXT_ONLY=1, skipping vision"
   },
   {
     "id": 55,
@@ -1149,7 +1258,12 @@
     "redaction": "TRUE",
     "firstSeenAt": "2026-05-08",
     "lastSeenAt": "2026-05-08",
-    "removedFromSource": false
+    "removedFromSource": false,
+    "textChars": 7880,
+    "extractionPages": 1,
+    "textExtractedAt": "2026-05-08",
+    "extractionModel": "pdftotext",
+    "extractionError": null
   },
   {
     "id": 56,
@@ -1169,7 +1283,12 @@
     "redaction": "TRUE",
     "firstSeenAt": "2026-05-08",
     "lastSeenAt": "2026-05-08",
-    "removedFromSource": false
+    "removedFromSource": false,
+    "textChars": 7716,
+    "extractionPages": 1,
+    "textExtractedAt": "2026-05-08",
+    "extractionModel": "pdftotext",
+    "extractionError": null
   },
   {
     "id": 57,
@@ -1189,7 +1308,12 @@
     "redaction": "",
     "firstSeenAt": "2026-05-08",
     "lastSeenAt": "2026-05-08",
-    "removedFromSource": false
+    "removedFromSource": false,
+    "textChars": 603784,
+    "extractionPages": 181,
+    "textExtractedAt": "2026-05-08",
+    "extractionModel": "pdftotext",
+    "extractionError": null
   },
   {
     "id": 58,
@@ -1209,7 +1333,12 @@
     "redaction": "",
     "firstSeenAt": "2026-05-08",
     "lastSeenAt": "2026-05-08",
-    "removedFromSource": false
+    "removedFromSource": false,
+    "textChars": 378814,
+    "extractionPages": 113,
+    "textExtractedAt": "2026-05-08",
+    "extractionModel": "pdftotext",
+    "extractionError": null
   },
   {
     "id": 59,
@@ -1229,7 +1358,8 @@
     "redaction": "TRUE",
     "firstSeenAt": "2026-05-08",
     "lastSeenAt": "2026-05-08",
-    "removedFromSource": false
+    "removedFromSource": false,
+    "extractionError": "pdftotext yielded too little; PDFTOTEXT_ONLY=1, skipping vision"
   },
   {
     "id": 60,
@@ -1249,7 +1379,12 @@
     "redaction": "TRUE",
     "firstSeenAt": "2026-05-08",
     "lastSeenAt": "2026-05-08",
-    "removedFromSource": false
+    "removedFromSource": false,
+    "textChars": 1344,
+    "extractionPages": 2,
+    "textExtractedAt": "2026-05-08",
+    "extractionModel": "pdftotext",
+    "extractionError": null
   },
   {
     "id": 61,
@@ -1269,7 +1404,12 @@
     "redaction": "TRUE",
     "firstSeenAt": "2026-05-08",
     "lastSeenAt": "2026-05-08",
-    "removedFromSource": false
+    "removedFromSource": false,
+    "textChars": 3205,
+    "extractionPages": 6,
+    "textExtractedAt": "2026-05-08",
+    "extractionModel": "pdftotext",
+    "extractionError": null
   },
   {
     "id": 62,
@@ -1289,7 +1429,12 @@
     "redaction": "TRUE",
     "firstSeenAt": "2026-05-08",
     "lastSeenAt": "2026-05-08",
-    "removedFromSource": false
+    "removedFromSource": false,
+    "textChars": 940,
+    "extractionPages": 2,
+    "textExtractedAt": "2026-05-08",
+    "extractionModel": "pdftotext",
+    "extractionError": null
   },
   {
     "id": 63,
@@ -1309,7 +1454,8 @@
     "redaction": "TRUE",
     "firstSeenAt": "2026-05-08",
     "lastSeenAt": "2026-05-08",
-    "removedFromSource": false
+    "removedFromSource": false,
+    "extractionError": "pdftotext yielded too little; PDFTOTEXT_ONLY=1, skipping vision"
   },
   {
     "id": 64,
@@ -1329,7 +1475,12 @@
     "redaction": "TRUE",
     "firstSeenAt": "2026-05-08",
     "lastSeenAt": "2026-05-08",
-    "removedFromSource": false
+    "removedFromSource": false,
+    "textChars": 2445,
+    "extractionPages": 1,
+    "textExtractedAt": "2026-05-08",
+    "extractionModel": "pdftotext",
+    "extractionError": null
   },
   {
     "id": 65,
@@ -1349,7 +1500,12 @@
     "redaction": "TRUE",
     "firstSeenAt": "2026-05-08",
     "lastSeenAt": "2026-05-08",
-    "removedFromSource": false
+    "removedFromSource": false,
+    "textChars": 7787,
+    "extractionPages": 1,
+    "textExtractedAt": "2026-05-08",
+    "extractionModel": "pdftotext",
+    "extractionError": null
   },
   {
     "id": 66,
@@ -1369,7 +1525,12 @@
     "redaction": "TRUE",
     "firstSeenAt": "2026-05-08",
     "lastSeenAt": "2026-05-08",
-    "removedFromSource": false
+    "removedFromSource": false,
+    "textChars": 5831,
+    "extractionPages": 1,
+    "textExtractedAt": "2026-05-08",
+    "extractionModel": "pdftotext",
+    "extractionError": null
   },
   {
     "id": 67,
@@ -1389,7 +1550,12 @@
     "redaction": "TRUE",
     "firstSeenAt": "2026-05-08",
     "lastSeenAt": "2026-05-08",
-    "removedFromSource": false
+    "removedFromSource": false,
+    "textChars": 7381,
+    "extractionPages": 1,
+    "textExtractedAt": "2026-05-08",
+    "extractionModel": "pdftotext",
+    "extractionError": null
   },
   {
     "id": 68,
@@ -1409,7 +1575,8 @@
     "redaction": "TRUE",
     "firstSeenAt": "2026-05-08",
     "lastSeenAt": "2026-05-08",
-    "removedFromSource": false
+    "removedFromSource": false,
+    "extractionError": "pdftotext yielded too little; PDFTOTEXT_ONLY=1, skipping vision"
   },
   {
     "id": 69,
@@ -1469,7 +1636,12 @@
     "redaction": "TRUE",
     "firstSeenAt": "2026-05-08",
     "lastSeenAt": "2026-05-08",
-    "removedFromSource": false
+    "removedFromSource": false,
+    "textChars": 13049,
+    "extractionPages": 9,
+    "textExtractedAt": "2026-05-08",
+    "extractionModel": "pdftotext",
+    "extractionError": null
   },
   {
     "id": 72,
@@ -1489,7 +1661,8 @@
     "redaction": "TRUE",
     "firstSeenAt": "2026-05-08",
     "lastSeenAt": "2026-05-08",
-    "removedFromSource": false
+    "removedFromSource": false,
+    "extractionError": "pdftotext yielded too little; PDFTOTEXT_ONLY=1, skipping vision"
   },
   {
     "id": 73,
@@ -1509,7 +1682,12 @@
     "redaction": "TRUE",
     "firstSeenAt": "2026-05-08",
     "lastSeenAt": "2026-05-08",
-    "removedFromSource": false
+    "removedFromSource": false,
+    "textChars": 11356,
+    "extractionPages": 7,
+    "textExtractedAt": "2026-05-08",
+    "extractionModel": "pdftotext",
+    "extractionError": null
   },
   {
     "id": 74,
@@ -1549,7 +1727,8 @@
     "redaction": "TRUE",
     "firstSeenAt": "2026-05-08",
     "lastSeenAt": "2026-05-08",
-    "removedFromSource": false
+    "removedFromSource": false,
+    "extractionError": "pdftotext yielded too little; PDFTOTEXT_ONLY=1, skipping vision"
   },
   {
     "id": 76,
@@ -1569,7 +1748,12 @@
     "redaction": "TRUE",
     "firstSeenAt": "2026-05-08",
     "lastSeenAt": "2026-05-08",
-    "removedFromSource": false
+    "removedFromSource": false,
+    "textChars": 16573,
+    "extractionPages": 10,
+    "textExtractedAt": "2026-05-08",
+    "extractionModel": "pdftotext",
+    "extractionError": null
   },
   {
     "id": 77,
@@ -1589,7 +1773,12 @@
     "redaction": "TRUE",
     "firstSeenAt": "2026-05-08",
     "lastSeenAt": "2026-05-08",
-    "removedFromSource": false
+    "removedFromSource": false,
+    "textChars": 14124,
+    "extractionPages": 8,
+    "textExtractedAt": "2026-05-08",
+    "extractionModel": "pdftotext",
+    "extractionError": null
   },
   {
     "id": 78,
@@ -1609,7 +1798,8 @@
     "redaction": "TRUE",
     "firstSeenAt": "2026-05-08",
     "lastSeenAt": "2026-05-08",
-    "removedFromSource": false
+    "removedFromSource": false,
+    "extractionError": "pdftotext yielded too little; PDFTOTEXT_ONLY=1, skipping vision"
   },
   {
     "id": 79,
@@ -1629,7 +1819,12 @@
     "redaction": "TRUE",
     "firstSeenAt": "2026-05-08",
     "lastSeenAt": "2026-05-08",
-    "removedFromSource": false
+    "removedFromSource": false,
+    "textChars": 9246,
+    "extractionPages": 6,
+    "textExtractedAt": "2026-05-08",
+    "extractionModel": "pdftotext",
+    "extractionError": null
   },
   {
     "id": 80,
@@ -1649,7 +1844,12 @@
     "redaction": "TRUE",
     "firstSeenAt": "2026-05-08",
     "lastSeenAt": "2026-05-08",
-    "removedFromSource": false
+    "removedFromSource": false,
+    "textChars": 700,
+    "extractionPages": 1,
+    "textExtractedAt": "2026-05-08",
+    "extractionModel": "pdftotext",
+    "extractionError": null
   },
   {
     "id": 81,
@@ -1669,7 +1869,12 @@
     "redaction": "TRUE",
     "firstSeenAt": "2026-05-08",
     "lastSeenAt": "2026-05-08",
-    "removedFromSource": false
+    "removedFromSource": false,
+    "textChars": 15597,
+    "extractionPages": 9,
+    "textExtractedAt": "2026-05-08",
+    "extractionModel": "pdftotext",
+    "extractionError": null
   },
   {
     "id": 82,
@@ -1689,7 +1894,12 @@
     "redaction": "TRUE",
     "firstSeenAt": "2026-05-08",
     "lastSeenAt": "2026-05-08",
-    "removedFromSource": false
+    "removedFromSource": false,
+    "textChars": 13676,
+    "extractionPages": 7,
+    "textExtractedAt": "2026-05-08",
+    "extractionModel": "pdftotext",
+    "extractionError": null
   },
   {
     "id": 83,
@@ -1709,7 +1919,12 @@
     "redaction": "TRUE",
     "firstSeenAt": "2026-05-08",
     "lastSeenAt": "2026-05-08",
-    "removedFromSource": false
+    "removedFromSource": false,
+    "textChars": 9822,
+    "extractionPages": 6,
+    "textExtractedAt": "2026-05-08",
+    "extractionModel": "pdftotext",
+    "extractionError": null
   },
   {
     "id": 84,
@@ -1729,7 +1944,12 @@
     "redaction": "TRUE",
     "firstSeenAt": "2026-05-08",
     "lastSeenAt": "2026-05-08",
-    "removedFromSource": false
+    "removedFromSource": false,
+    "textChars": 16196,
+    "extractionPages": 9,
+    "textExtractedAt": "2026-05-08",
+    "extractionModel": "pdftotext",
+    "extractionError": null
   },
   {
     "id": 85,
@@ -1749,7 +1969,12 @@
     "redaction": "TRUE",
     "firstSeenAt": "2026-05-08",
     "lastSeenAt": "2026-05-08",
-    "removedFromSource": false
+    "removedFromSource": false,
+    "textChars": 16196,
+    "extractionPages": 9,
+    "textExtractedAt": "2026-05-08",
+    "extractionModel": "pdftotext",
+    "extractionError": null
   },
   {
     "id": 86,
@@ -1809,7 +2034,12 @@
     "redaction": "TRUE",
     "firstSeenAt": "2026-05-08",
     "lastSeenAt": "2026-05-08",
-    "removedFromSource": false
+    "removedFromSource": false,
+    "textChars": 17700,
+    "extractionPages": 10,
+    "textExtractedAt": "2026-05-08",
+    "extractionModel": "pdftotext",
+    "extractionError": null
   },
   {
     "id": 89,
@@ -1829,7 +2059,12 @@
     "redaction": "TRUE",
     "firstSeenAt": "2026-05-08",
     "lastSeenAt": "2026-05-08",
-    "removedFromSource": false
+    "removedFromSource": false,
+    "textChars": 17700,
+    "extractionPages": 10,
+    "textExtractedAt": "2026-05-08",
+    "extractionModel": "pdftotext",
+    "extractionError": null
   },
   {
     "id": 90,
@@ -1849,7 +2084,12 @@
     "redaction": "TRUE",
     "firstSeenAt": "2026-05-08",
     "lastSeenAt": "2026-05-08",
-    "removedFromSource": false
+    "removedFromSource": false,
+    "textChars": 17700,
+    "extractionPages": 10,
+    "textExtractedAt": "2026-05-08",
+    "extractionModel": "pdftotext",
+    "extractionError": null
   },
   {
     "id": 91,
@@ -1869,7 +2109,12 @@
     "redaction": "TRUE",
     "firstSeenAt": "2026-05-08",
     "lastSeenAt": "2026-05-08",
-    "removedFromSource": false
+    "removedFromSource": false,
+    "textChars": 10536,
+    "extractionPages": 7,
+    "textExtractedAt": "2026-05-08",
+    "extractionModel": "pdftotext",
+    "extractionError": null
   },
   {
     "id": 92,
@@ -1889,7 +2134,12 @@
     "redaction": "TRUE",
     "firstSeenAt": "2026-05-08",
     "lastSeenAt": "2026-05-08",
-    "removedFromSource": false
+    "removedFromSource": false,
+    "textChars": 10684,
+    "extractionPages": 7,
+    "textExtractedAt": "2026-05-08",
+    "extractionModel": "pdftotext",
+    "extractionError": null
   },
   {
     "id": 93,
@@ -1909,7 +2159,12 @@
     "redaction": "TRUE",
     "firstSeenAt": "2026-05-08",
     "lastSeenAt": "2026-05-08",
-    "removedFromSource": false
+    "removedFromSource": false,
+    "textChars": 6502,
+    "extractionPages": 1,
+    "textExtractedAt": "2026-05-08",
+    "extractionModel": "pdftotext",
+    "extractionError": null
   },
   {
     "id": 94,
@@ -2349,7 +2604,8 @@
     "redaction": "TRUE",
     "firstSeenAt": "2026-05-08",
     "lastSeenAt": "2026-05-08",
-    "removedFromSource": false
+    "removedFromSource": false,
+    "extractionError": "pdftotext yielded too little; PDFTOTEXT_ONLY=1, skipping vision"
   },
   {
     "id": 116,
@@ -2369,7 +2625,8 @@
     "redaction": "TRUE",
     "firstSeenAt": "2026-05-08",
     "lastSeenAt": "2026-05-08",
-    "removedFromSource": false
+    "removedFromSource": false,
+    "extractionError": "pdftotext yielded too little; PDFTOTEXT_ONLY=1, skipping vision"
   },
   {
     "id": 117,
@@ -2389,7 +2646,8 @@
     "redaction": "TRUE",
     "firstSeenAt": "2026-05-08",
     "lastSeenAt": "2026-05-08",
-    "removedFromSource": false
+    "removedFromSource": false,
+    "extractionError": "pdftotext yielded too little; PDFTOTEXT_ONLY=1, skipping vision"
   },
   {
     "id": 118,
@@ -2409,7 +2667,8 @@
     "redaction": "TRUE",
     "firstSeenAt": "2026-05-08",
     "lastSeenAt": "2026-05-08",
-    "removedFromSource": false
+    "removedFromSource": false,
+    "extractionError": "pdftotext yielded too little; PDFTOTEXT_ONLY=1, skipping vision"
   },
   {
     "id": 119,
@@ -2429,7 +2688,8 @@
     "redaction": "TRUE",
     "firstSeenAt": "2026-05-08",
     "lastSeenAt": "2026-05-08",
-    "removedFromSource": false
+    "removedFromSource": false,
+    "extractionError": "pdftotext yielded too little; PDFTOTEXT_ONLY=1, skipping vision"
   },
   {
     "id": 120,
@@ -2449,7 +2709,8 @@
     "redaction": "TRUE",
     "firstSeenAt": "2026-05-08",
     "lastSeenAt": "2026-05-08",
-    "removedFromSource": false
+    "removedFromSource": false,
+    "extractionError": "pdftotext yielded too little; PDFTOTEXT_ONLY=1, skipping vision"
   },
   {
     "id": 121,
@@ -2469,7 +2730,8 @@
     "redaction": "TRUE",
     "firstSeenAt": "2026-05-08",
     "lastSeenAt": "2026-05-08",
-    "removedFromSource": false
+    "removedFromSource": false,
+    "extractionError": "pdftotext yielded too little; PDFTOTEXT_ONLY=1, skipping vision"
   },
   {
     "id": 122,
@@ -2489,7 +2751,8 @@
     "redaction": "TRUE",
     "firstSeenAt": "2026-05-08",
     "lastSeenAt": "2026-05-08",
-    "removedFromSource": false
+    "removedFromSource": false,
+    "extractionError": "pdftotext yielded too little; PDFTOTEXT_ONLY=1, skipping vision"
   },
   {
     "id": 123,
@@ -2509,7 +2772,8 @@
     "redaction": "TRUE",
     "firstSeenAt": "2026-05-08",
     "lastSeenAt": "2026-05-08",
-    "removedFromSource": false
+    "removedFromSource": false,
+    "extractionError": "pdftotext yielded too little; PDFTOTEXT_ONLY=1, skipping vision"
   },
   {
     "id": 124,
@@ -2529,7 +2793,8 @@
     "redaction": "TRUE",
     "firstSeenAt": "2026-05-08",
     "lastSeenAt": "2026-05-08",
-    "removedFromSource": false
+    "removedFromSource": false,
+    "extractionError": "pdftotext yielded too little; PDFTOTEXT_ONLY=1, skipping vision"
   },
   {
     "id": 125,
@@ -2549,7 +2814,8 @@
     "redaction": "TRUE",
     "firstSeenAt": "2026-05-08",
     "lastSeenAt": "2026-05-08",
-    "removedFromSource": false
+    "removedFromSource": false,
+    "extractionError": "pdftotext yielded too little; PDFTOTEXT_ONLY=1, skipping vision"
   },
   {
     "id": 126,
@@ -2569,7 +2835,8 @@
     "redaction": "TRUE",
     "firstSeenAt": "2026-05-08",
     "lastSeenAt": "2026-05-08",
-    "removedFromSource": false
+    "removedFromSource": false,
+    "extractionError": "pdftotext yielded too little; PDFTOTEXT_ONLY=1, skipping vision"
   },
   {
     "id": 127,
@@ -2589,7 +2856,8 @@
     "redaction": "TRUE",
     "firstSeenAt": "2026-05-08",
     "lastSeenAt": "2026-05-08",
-    "removedFromSource": false
+    "removedFromSource": false,
+    "extractionError": "pdftotext yielded too little; PDFTOTEXT_ONLY=1, skipping vision"
   },
   {
     "id": 128,
@@ -2609,7 +2877,8 @@
     "redaction": "TRUE",
     "firstSeenAt": "2026-05-08",
     "lastSeenAt": "2026-05-08",
-    "removedFromSource": false
+    "removedFromSource": false,
+    "extractionError": "pdftotext yielded too little; PDFTOTEXT_ONLY=1, skipping vision"
   },
   {
     "id": 129,
@@ -2629,7 +2898,8 @@
     "redaction": "TRUE",
     "firstSeenAt": "2026-05-08",
     "lastSeenAt": "2026-05-08",
-    "removedFromSource": false
+    "removedFromSource": false,
+    "extractionError": "pdftotext yielded too little; PDFTOTEXT_ONLY=1, skipping vision"
   },
   {
     "id": 130,
@@ -2649,7 +2919,8 @@
     "redaction": "TRUE",
     "firstSeenAt": "2026-05-08",
     "lastSeenAt": "2026-05-08",
-    "removedFromSource": false
+    "removedFromSource": false,
+    "extractionError": "pdftotext yielded too little; PDFTOTEXT_ONLY=1, skipping vision"
   },
   {
     "id": 131,
@@ -2669,7 +2940,8 @@
     "redaction": "TRUE",
     "firstSeenAt": "2026-05-08",
     "lastSeenAt": "2026-05-08",
-    "removedFromSource": false
+    "removedFromSource": false,
+    "extractionError": "pdftotext yielded too little; PDFTOTEXT_ONLY=1, skipping vision"
   },
   {
     "id": 132,
@@ -2689,7 +2961,8 @@
     "redaction": "TRUE",
     "firstSeenAt": "2026-05-08",
     "lastSeenAt": "2026-05-08",
-    "removedFromSource": false
+    "removedFromSource": false,
+    "extractionError": "pdftotext yielded too little; PDFTOTEXT_ONLY=1, skipping vision"
   },
   {
     "id": 133,
@@ -2709,7 +2982,8 @@
     "redaction": "TRUE",
     "firstSeenAt": "2026-05-08",
     "lastSeenAt": "2026-05-08",
-    "removedFromSource": false
+    "removedFromSource": false,
+    "extractionError": "pdftotext yielded too little; PDFTOTEXT_ONLY=1, skipping vision"
   },
   {
     "id": 134,
@@ -2729,7 +3003,8 @@
     "redaction": "TRUE",
     "firstSeenAt": "2026-05-08",
     "lastSeenAt": "2026-05-08",
-    "removedFromSource": false
+    "removedFromSource": false,
+    "extractionError": "pdftotext yielded too little; PDFTOTEXT_ONLY=1, skipping vision"
   },
   {
     "id": 135,
@@ -2749,7 +3024,8 @@
     "redaction": "TRUE",
     "firstSeenAt": "2026-05-08",
     "lastSeenAt": "2026-05-08",
-    "removedFromSource": false
+    "removedFromSource": false,
+    "extractionError": "pdftotext yielded too little; PDFTOTEXT_ONLY=1, skipping vision"
   },
   {
     "id": 136,
@@ -2769,7 +3045,8 @@
     "redaction": "TRUE",
     "firstSeenAt": "2026-05-08",
     "lastSeenAt": "2026-05-08",
-    "removedFromSource": false
+    "removedFromSource": false,
+    "extractionError": "pdftotext yielded too little; PDFTOTEXT_ONLY=1, skipping vision"
   },
   {
     "id": 137,
@@ -2789,7 +3066,8 @@
     "redaction": "TRUE",
     "firstSeenAt": "2026-05-08",
     "lastSeenAt": "2026-05-08",
-    "removedFromSource": false
+    "removedFromSource": false,
+    "extractionError": "pdftotext yielded too little; PDFTOTEXT_ONLY=1, skipping vision"
   },
   {
     "id": 138,
@@ -2809,7 +3087,8 @@
     "redaction": "TRUE",
     "firstSeenAt": "2026-05-08",
     "lastSeenAt": "2026-05-08",
-    "removedFromSource": false
+    "removedFromSource": false,
+    "extractionError": "pdftotext yielded too little; PDFTOTEXT_ONLY=1, skipping vision"
   },
   {
     "id": 139,
@@ -2829,7 +3108,12 @@
     "redaction": "",
     "firstSeenAt": "2026-05-08",
     "lastSeenAt": "2026-05-08",
-    "removedFromSource": false
+    "removedFromSource": false,
+    "textChars": 9284,
+    "extractionPages": 4,
+    "textExtractedAt": "2026-05-08",
+    "extractionModel": "pdftotext",
+    "extractionError": null
   },
   {
     "id": 140,
@@ -2849,7 +3133,12 @@
     "redaction": "",
     "firstSeenAt": "2026-05-08",
     "lastSeenAt": "2026-05-08",
-    "removedFromSource": false
+    "removedFromSource": false,
+    "textChars": 30241,
+    "extractionPages": 16,
+    "textExtractedAt": "2026-05-08",
+    "extractionModel": "pdftotext",
+    "extractionError": null
   },
   {
     "id": 141,
@@ -2869,7 +3158,8 @@
     "redaction": "",
     "firstSeenAt": "2026-05-08",
     "lastSeenAt": "2026-05-08",
-    "removedFromSource": false
+    "removedFromSource": false,
+    "extractionError": "pdftotext yielded too little; PDFTOTEXT_ONLY=1, skipping vision"
   },
   {
     "id": 142,
@@ -2889,7 +3179,12 @@
     "redaction": "",
     "firstSeenAt": "2026-05-08",
     "lastSeenAt": "2026-05-08",
-    "removedFromSource": false
+    "removedFromSource": false,
+    "textChars": 5941,
+    "extractionPages": 3,
+    "textExtractedAt": "2026-05-08",
+    "extractionModel": "pdftotext",
+    "extractionError": null
   },
   {
     "id": 143,
@@ -2909,7 +3204,8 @@
     "redaction": "",
     "firstSeenAt": "2026-05-08",
     "lastSeenAt": "2026-05-08",
-    "removedFromSource": false
+    "removedFromSource": false,
+    "extractionError": "pdftotext yielded too little; PDFTOTEXT_ONLY=1, skipping vision"
   },
   {
     "id": 144,
@@ -2929,7 +3225,8 @@
     "redaction": "",
     "firstSeenAt": "2026-05-08",
     "lastSeenAt": "2026-05-08",
-    "removedFromSource": false
+    "removedFromSource": false,
+    "extractionError": "pdftotext yielded too little; PDFTOTEXT_ONLY=1, skipping vision"
   },
   {
     "id": 145,
@@ -3069,7 +3366,12 @@
     "redaction": "",
     "firstSeenAt": "2026-05-08",
     "lastSeenAt": "2026-05-08",
-    "removedFromSource": false
+    "removedFromSource": false,
+    "textChars": 4744,
+    "extractionPages": 3,
+    "textExtractedAt": "2026-05-08",
+    "extractionModel": "pdftotext",
+    "extractionError": null
   },
   {
     "id": 152,
@@ -3089,7 +3391,12 @@
     "redaction": "",
     "firstSeenAt": "2026-05-08",
     "lastSeenAt": "2026-05-08",
-    "removedFromSource": false
+    "removedFromSource": false,
+    "textChars": 5991,
+    "extractionPages": 3,
+    "textExtractedAt": "2026-05-08",
+    "extractionModel": "pdftotext",
+    "extractionError": null
   },
   {
     "id": 153,
@@ -3109,7 +3416,12 @@
     "redaction": "",
     "firstSeenAt": "2026-05-08",
     "lastSeenAt": "2026-05-08",
-    "removedFromSource": false
+    "removedFromSource": false,
+    "textChars": 12580,
+    "extractionPages": 5,
+    "textExtractedAt": "2026-05-08",
+    "extractionModel": "pdftotext",
+    "extractionError": null
   },
   {
     "id": 154,
@@ -3129,7 +3441,12 @@
     "redaction": "",
     "firstSeenAt": "2026-05-08",
     "lastSeenAt": "2026-05-08",
-    "removedFromSource": false
+    "removedFromSource": false,
+    "textChars": 11359,
+    "extractionPages": 5,
+    "textExtractedAt": "2026-05-08",
+    "extractionModel": "pdftotext",
+    "extractionError": null
   },
   {
     "id": 155,
@@ -3149,7 +3466,12 @@
     "redaction": "",
     "firstSeenAt": "2026-05-08",
     "lastSeenAt": "2026-05-08",
-    "removedFromSource": false
+    "removedFromSource": false,
+    "textChars": 17377,
+    "extractionPages": 7,
+    "textExtractedAt": "2026-05-08",
+    "extractionModel": "pdftotext",
+    "extractionError": null
   },
   {
     "id": 156,
@@ -3169,7 +3491,12 @@
     "redaction": "TRUE",
     "firstSeenAt": "2026-05-08",
     "lastSeenAt": "2026-05-08",
-    "removedFromSource": false
+    "removedFromSource": false,
+    "textChars": 7820,
+    "extractionPages": 3,
+    "textExtractedAt": "2026-05-08",
+    "extractionModel": "pdftotext",
+    "extractionError": null
   },
   {
     "id": 157,
@@ -3189,7 +3516,8 @@
     "redaction": "",
     "firstSeenAt": "2026-05-08",
     "lastSeenAt": "2026-05-08",
-    "removedFromSource": false
+    "removedFromSource": false,
+    "extractionError": "pdftotext yielded too little; PDFTOTEXT_ONLY=1, skipping vision"
   },
   {
     "id": 158,
@@ -3209,7 +3537,8 @@
     "redaction": "TRUE",
     "firstSeenAt": "2026-05-08",
     "lastSeenAt": "2026-05-08",
-    "removedFromSource": false
+    "removedFromSource": false,
+    "extractionError": "pdftotext yielded too little; PDFTOTEXT_ONLY=1, skipping vision"
   },
   {
     "id": 159,
@@ -3229,7 +3558,8 @@
     "redaction": "TRUE",
     "firstSeenAt": "2026-05-08",
     "lastSeenAt": "2026-05-08",
-    "removedFromSource": false
+    "removedFromSource": false,
+    "extractionError": "pdftotext yielded too little; PDFTOTEXT_ONLY=1, skipping vision"
   },
   {
     "id": 160,
@@ -3249,7 +3579,12 @@
     "redaction": "TRUE",
     "firstSeenAt": "2026-05-08",
     "lastSeenAt": "2026-05-08",
-    "removedFromSource": false
+    "removedFromSource": false,
+    "textChars": 1349,
+    "extractionPages": 2,
+    "textExtractedAt": "2026-05-08",
+    "extractionModel": "pdftotext",
+    "extractionError": null
   },
   {
     "id": 161,
@@ -3269,7 +3604,12 @@
     "redaction": "",
     "firstSeenAt": "2026-05-08",
     "lastSeenAt": "2026-05-08",
-    "removedFromSource": false
+    "removedFromSource": false,
+    "textChars": 6784,
+    "extractionPages": 4,
+    "textExtractedAt": "2026-05-08",
+    "extractionModel": "pdftotext",
+    "extractionError": null
   },
   {
     "id": 162,
@@ -3289,7 +3629,8 @@
     "redaction": "TRUE",
     "firstSeenAt": "2026-05-08",
     "lastSeenAt": "2026-05-08",
-    "removedFromSource": false
+    "removedFromSource": false,
+    "extractionError": "pdftotext yielded too little; PDFTOTEXT_ONLY=1, skipping vision"
   },
   {
     "id": 163,
@@ -3309,7 +3650,12 @@
     "redaction": "TRUE",
     "firstSeenAt": "2026-05-08",
     "lastSeenAt": "2026-05-08",
-    "removedFromSource": false
+    "removedFromSource": false,
+    "textChars": 10563,
+    "extractionPages": 7,
+    "textExtractedAt": "2026-05-08",
+    "extractionModel": "pdftotext",
+    "extractionError": null
   },
   {
     "id": 164,
@@ -3329,6 +3675,7 @@
     "redaction": "TRUE",
     "firstSeenAt": "2026-05-08",
     "lastSeenAt": "2026-05-08",
-    "removedFromSource": false
+    "removedFromSource": false,
+    "extractionError": "pdftotext yielded too little; PDFTOTEXT_ONLY=1, skipping vision"
   }
 ]
