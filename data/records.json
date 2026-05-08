@@ -389,7 +389,11 @@
     "firstSeenAt": "2026-05-08",
     "lastSeenAt": "2026-05-08",
     "removedFromSource": false,
-    "extractionError": "pdftotext yielded too little; PDFTOTEXT_ONLY=1, skipping vision"
+    "extractionError": null,
+    "textChars": 63484,
+    "extractionPages": 30,
+    "textExtractedAt": "2026-05-08",
+    "extractionModel": "gemini-2.5-flash"
   },
   {
     "id": 17,
@@ -410,7 +414,11 @@
     "firstSeenAt": "2026-05-08",
     "lastSeenAt": "2026-05-08",
     "removedFromSource": false,
-    "extractionError": "pdftotext yielded too little; PDFTOTEXT_ONLY=1, skipping vision"
+    "extractionError": null,
+    "textChars": 35970,
+    "extractionPages": 28,
+    "textExtractedAt": "2026-05-08",
+    "extractionModel": "gemini-2.5-flash"
   },
   {
     "id": 18,
@@ -431,7 +439,11 @@
     "firstSeenAt": "2026-05-08",
     "lastSeenAt": "2026-05-08",
     "removedFromSource": false,
-    "extractionError": "pdftotext yielded too little; PDFTOTEXT_ONLY=1, skipping vision"
+    "extractionError": null,
+    "textChars": 33917,
+    "extractionPages": 28,
+    "textExtractedAt": "2026-05-08",
+    "extractionModel": "gemini-2.5-flash"
   },
   {
     "id": 19,
