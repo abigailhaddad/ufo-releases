@@ -51,6 +51,7 @@ type StoredRecord = {
   id: number;
   title: string;
   type: string;
+  agency: string;
   fileUrl: string;
   removedFromSource?: boolean;
   lastSeenAt?: string;
