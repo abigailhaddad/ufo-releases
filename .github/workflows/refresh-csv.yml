@@ -37,6 +37,12 @@ jobs:
       - name: Fetch CSV and merge into records.json
         run: pnpm fetch:csv
 
+      - name: Verify data integrity
+        run: pnpm verify:data
+
+      - name: Type-check + build
+        run: pnpm build
+
       - name: Commit if changed
         run: |
           if git diff --quiet -- data/records.json data/uap-csv.csv; then

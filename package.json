@@ -7,7 +7,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
-    "fetch:csv": "tsx scripts/fetch-csv.ts"
+    "fetch:csv": "tsx scripts/fetch-csv.ts",
+    "verify:data": "tsx scripts/verify-data.ts"
   },
   "dependencies": {
     "class-variance-authority": "^0.7.1",
