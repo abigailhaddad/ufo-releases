@@ -719,7 +719,12 @@
     "redaction": "TRUE",
     "firstSeenAt": "2026-05-08",
     "lastSeenAt": "2026-05-08",
-    "removedFromSource": false
+    "removedFromSource": false,
+    "textChars": 9246,
+    "extractionPages": 6,
+    "textExtractedAt": "2026-05-08",
+    "extractionModel": "pdftotext",
+    "extractionError": null
   },
   {
     "id": 36,

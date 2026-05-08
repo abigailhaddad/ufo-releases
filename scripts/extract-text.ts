@@ -32,6 +32,13 @@ const MAX_PAGES = parseInt(process.env.MAX_PAGES ?? "30", 10);
 const RENDER_DPI = parseInt(process.env.RENDER_DPI ?? "200", 10);
 const CONCURRENCY = parseInt(process.env.CONCURRENCY ?? "4", 10);
 const RECORD_CONCURRENCY = parseInt(process.env.RECORD_CONCURRENCY ?? "1", 10);
+// Born-digital PDF detection: if pdftotext returns at least this many words
+// per page, accept its output and skip the vision model entirely.
+const PDFTOTEXT_MIN_WORDS_PER_PAGE = parseInt(
+  process.env.PDFTOTEXT_MIN_WORDS_PER_PAGE ?? "50",
+  10,
+);
+const SKIP_PDFTOTEXT = process.env.SKIP_PDFTOTEXT === "1";
 const ONLY_ID = process.env.ONLY_ID ? parseInt(process.env.ONLY_ID, 10) : null;
 const LIMIT = process.env.LIMIT ? parseInt(process.env.LIMIT, 10) : Infinity;
 const FORCE = process.env.FORCE === "1";
@@ -158,11 +165,43 @@ async function pmap<T, R>(
   return out;
 }
 
-async function extractFromPdf(url: string, recordId: number) {
+type PdfExtraction = { text: string; pages: number; method: string };
+
+function tryPdftotext(pdfPath: string): PdfExtraction | null {
+  if (SKIP_PDFTOTEXT) return null;
+  try {
+    const out = execFileSync("pdftotext", ["-layout", pdfPath, "-"], {
+      encoding: "utf8",
+      maxBuffer: 64 * 1024 * 1024,
+    });
+    const segments = out.split("\f");
+    if (segments.length && segments[segments.length - 1] === "") segments.pop();
+    const numPages = segments.length;
+    if (numPages === 0) return null;
+    const totalWords = segments.reduce(
+      (sum, p) => sum + (p.match(/\b[\p{L}\p{N}']+\b/gu) ?? []).length,
+      0,
+    );
+    const wordsPerPage = totalWords / numPages;
+    if (wordsPerPage < PDFTOTEXT_MIN_WORDS_PER_PAGE) return null;
+    const formatted = segments
+      .map((t, i) => `--- PAGE ${i + 1} ---\n${t.trim()}`)
+      .join("\n\n");
+    return { text: formatted, pages: numPages, method: "pdftotext" };
+  } catch {
+    return null;
+  }
+}
+
+async function extractFromPdf(url: string, recordId: number): Promise<PdfExtraction> {
   const tmpDir = fs.mkdtempSync(path.join(os.tmpdir(), `ufo-${recordId}-`));
   try {
     const pdfPath = path.join(tmpDir, "doc.pdf");
     await downloadFile(url, pdfPath);
+
+    const direct = tryPdftotext(pdfPath);
+    if (direct) return direct;
+
     execFileSync(
       "pdftoppm",
       [
@@ -189,20 +228,20 @@ async function extractFromPdf(url: string, recordId: number) {
     const text = transcripts
       .map((t, i) => `--- PAGE ${i + 1} ---\n${t.trim()}`)
       .join("\n\n");
-    return { text, pages: pages.length };
+    return { text, pages: pages.length, method: MODEL };
   } finally {
     fs.rmSync(tmpDir, { recursive: true, force: true });
   }
 }
 
-async function extractFromImage(url: string, recordId: number) {
+async function extractFromImage(url: string, recordId: number): Promise<PdfExtraction> {
   const tmpDir = fs.mkdtempSync(path.join(os.tmpdir(), `ufo-${recordId}-`));
   try {
     const ext = extOf(url) || "jpg";
     const imgPath = path.join(tmpDir, `img.${ext}`);
     await downloadFile(url, imgPath);
     const text = await transcribePage(imgPath, PROMPT_IMAGE);
-    return { text, pages: 1 };
+    return { text, pages: 1, method: MODEL };
   } finally {
     fs.rmSync(tmpDir, { recursive: true, force: true });
   }
@@ -212,8 +251,10 @@ function shouldSkip(r: StoredRecord, textPath: string): boolean {
   if (FORCE) return false;
   if (!fs.existsSync(textPath)) return false;
   if (!r.textExtractedAt) return false;
-  // Re-extract if we're running a different model than the saved one — quality
-  // upgrade should be reflected in the cache.
+  // pdftotext output is canonical (it's the actual text from the PDF).
+  // Don't re-extract — vision wouldn't improve it.
+  if (r.extractionModel === "pdftotext") return true;
+  // Vision models: re-extract if user requested a different model.
   if (r.extractionModel && r.extractionModel !== MODEL) return false;
   if (!r.lastSeenAt) return true;
   return r.textExtractedAt >= r.lastSeenAt;
@@ -302,16 +343,16 @@ async function main() {
     const isPdf = ext === "pdf";
     const t0 = Date.now();
     try {
-      const { text, pages } = await extractWithRetry(r, isPdf);
+      const { text, pages, method } = await extractWithRetry(r, isPdf);
       fs.writeFileSync(path.join(TEXT_DIR, `${r.id}.txt`), text);
       r.textChars = text.length;
       r.extractionPages = pages;
       r.textExtractedAt = today;
-      r.extractionModel = MODEL;
+      r.extractionModel = method;
       r.extractionError = null;
       processed += 1;
       console.log(
-        `${label} → ${pages}p, ${text.length}ch, ${Math.round((Date.now() - t0) / 1000)}s`,
+        `${label} → ${method} ${pages}p, ${text.length}ch, ${Math.round((Date.now() - t0) / 1000)}s`,
       );
     } catch (err) {
       const msg = (err as Error).message;
