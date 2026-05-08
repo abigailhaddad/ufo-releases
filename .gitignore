@@ -54,3 +54,6 @@ screenshot-*.png
 # pre-downloaded source PDFs (huge, regenerable from war.gov)
 /data/_pdfs/
 /data/_media/
+
+# wrangler local state
+/.wrangler/

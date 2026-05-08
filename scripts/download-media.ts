@@ -143,14 +143,16 @@ async function main() {
       const label = `#${r.id} ${r.type} ${r.title.slice(0, 55).padEnd(57)}`;
       process.stdout.write(`${label} … `);
       try {
-        let url = r.fileUrl;
+        let buf: Buffer;
         if (isVideo) {
-          // Get the public CloudFront mp4 URL from the embed iframe
-          url = await findMp4FromEmbed(page, r.dvidsVideoId);
-          // Re-clear war.gov Akamai cookies on the page (we navigated away).
-          // Actually we don't need that for CloudFront — different host. Just fetch.
+          // Get the public CloudFront mp4 URL from the DVIDS embed iframe,
+          // then download via ctx.request (CORS-free, doesn't go through page).
+          const mp4Url = await findMp4FromEmbed(page, r.dvidsVideoId);
+          buf = await fetchViaContextRequest(ctx, mp4Url);
+        } else {
+          // war.gov-hosted images: use in-page fetch with the Akamai cookies.
+          buf = await fetchInPageBase64(page, r.fileUrl);
         }
-        const buf = await fetchInPageBase64(page, url);
         fs.writeFileSync(dest, buf);
         done += 1;
         console.log(
