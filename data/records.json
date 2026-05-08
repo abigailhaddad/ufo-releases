@@ -343,7 +343,11 @@
     "firstSeenAt": "2026-05-08",
     "lastSeenAt": "2026-05-08",
     "removedFromSource": false,
-    "extractionError": "pdftotext yielded too little; PDFTOTEXT_ONLY=1, skipping vision"
+    "extractionError": null,
+    "textChars": 35777,
+    "extractionPages": 30,
+    "textExtractedAt": "2026-05-08",
+    "extractionModel": "gemini-2.5-flash"
   },
   {
     "id": 15,
@@ -364,7 +368,7 @@
     "firstSeenAt": "2026-05-08",
     "lastSeenAt": "2026-05-08",
     "removedFromSource": false,
-    "extractionError": "pdftotext yielded too little; PDFTOTEXT_ONLY=1, skipping vision"
+    "extractionError": "fetch failed"
   },
   {
     "id": 16,

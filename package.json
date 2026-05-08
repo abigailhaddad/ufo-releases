@@ -11,6 +11,7 @@
     "lint": "eslint",
     "fetch:csv": "tsx scripts/fetch-csv.ts",
     "download:pdfs": "tsx scripts/download-pdfs.ts",
+    "download:media": "tsx scripts/download-media.ts",
     "extract:text": "tsx --env-file=.env scripts/extract-text.ts",
     "extract:gemini": "tsx --env-file=.env scripts/extract-text-gemini.ts",
     "verify:data": "tsx scripts/verify-data.ts"
