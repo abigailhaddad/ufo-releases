@@ -52,6 +52,8 @@ src/
 
 `scripts/download_ufo_files.py` pulls every PDF / image / DVIDS video referenced by the CSV. The site itself does not depend on these — it's only useful if you want a local archive (a future R2 mirror would be built from this).
 
+**NOTE**: This will download 3113.9 MB of files as of 2026-05-08
+
 It drives a visible Chrome window (Akamai blocks headless) via Selenium, then streams each file with the browser's cookies. Output is split by type:
 
 - `data/_pdfs/` — every `.pdf`
