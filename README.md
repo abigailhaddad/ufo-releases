@@ -70,3 +70,21 @@ src/
 - Unofficial, third-party mirror with no affiliation to the Department of War.
 - Site is fully static — no runtime fetching from war.gov.
 - A future enhancement would mirror the actual PDF / image / video files to Cloudflare R2 in case the source removes them. Tracked but not built.
+
+
+## Media/Python alternative:
+
+`scripts/download_ufo_files.py` pulls every PDF / image / DVIDS video referenced by the CSV. The site itself does not depend on these — it's only useful if you want a local archive (a future R2 mirror would be built from this).
+
+It drives a visible Chrome window (Akamai blocks headless) via Selenium, then streams each file with the browser's cookies. Output is split by type:
+
+- `data/_pdfs/` — every `.pdf`
+- `data/_media/` — images, DVIDS `.mp4`, etc.
+
+Existing files are skipped, so re-runs are incremental.
+
+```bash
+pip install -r python-requirements.txt   # one-time: selenium + requests
+# Chrome must be installed; selenium-manager ~should~ fetch the matching chromedriver.
+python scripts/download_ufo_files.py     # run from the repo root
+```
