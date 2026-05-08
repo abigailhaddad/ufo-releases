@@ -43,11 +43,11 @@
     "firstSeenAt": "2026-05-08",
     "lastSeenAt": "2026-05-08",
     "removedFromSource": false,
-    "textChars": 36703,
+    "textChars": 41020,
     "extractionPages": 30,
     "textExtractedAt": "2026-05-08",
-    "extractionModel": "gpt-5.4-mini",
-    "extractionError": "terminated"
+    "extractionModel": "gpt-5.5",
+    "extractionError": null
   },
   {
     "id": 3,
@@ -68,7 +68,11 @@
     "firstSeenAt": "2026-05-08",
     "lastSeenAt": "2026-05-08",
     "removedFromSource": false,
-    "extractionError": "terminated"
+    "extractionError": null,
+    "textChars": 40206,
+    "extractionPages": 30,
+    "textExtractedAt": "2026-05-08",
+    "extractionModel": "gpt-5.5"
   },
   {
     "id": 4,
@@ -89,7 +93,11 @@
     "firstSeenAt": "2026-05-08",
     "lastSeenAt": "2026-05-08",
     "removedFromSource": false,
-    "extractionError": "terminated"
+    "extractionError": null,
+    "textChars": 30274,
+    "extractionPages": 30,
+    "textExtractedAt": "2026-05-08",
+    "extractionModel": "gpt-5.5"
   },
   {
     "id": 5,
@@ -110,7 +118,11 @@
     "firstSeenAt": "2026-05-08",
     "lastSeenAt": "2026-05-08",
     "removedFromSource": false,
-    "extractionError": "Connection error."
+    "extractionError": null,
+    "textChars": 33919,
+    "extractionPages": 30,
+    "textExtractedAt": "2026-05-08",
+    "extractionModel": "gpt-5.5"
   },
   {
     "id": 6,
@@ -277,7 +289,12 @@
     "redaction": "",
     "firstSeenAt": "2026-05-08",
     "lastSeenAt": "2026-05-08",
-    "removedFromSource": false
+    "removedFromSource": false,
+    "textChars": 4554,
+    "extractionPages": 3,
+    "textExtractedAt": "2026-05-08",
+    "extractionModel": "gpt-5.5",
+    "extractionError": null
   },
   {
     "id": 14,
