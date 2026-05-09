@@ -89,6 +89,18 @@ test.describe("UAP records table", () => {
     ).toBeVisible();
   });
 
+  test("/mirror lists every R2 URL grouped by type", async ({ page }) => {
+    await page.goto("/mirror");
+    await expect(page.getByRole("heading", { level: 1 })).toContainText("R2 mirror");
+    await expect(page.getByRole("heading", { level: 2, name: /^PDFs/ })).toBeVisible();
+    await expect(page.getByRole("heading", { level: 2, name: /^Images/ })).toBeVisible();
+    await expect(page.getByRole("heading", { level: 2, name: /^Videos/ })).toBeVisible();
+    const r2Links = page.locator(
+      'a[href^="https://pub-a5fc1ae0b89944dba0ab60286076ab1e.r2.dev/"]',
+    );
+    expect(await r2Links.count()).toBeGreaterThan(150);
+  });
+
   test("external file links open war.gov / dvidshub", async ({ page }) => {
     const links = page.locator('table tbody a[href*="war.gov"], table tbody a[href*="dvidshub"]');
     const count = await links.count();

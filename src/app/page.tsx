@@ -22,12 +22,10 @@ export default function Home() {
               source on GitHub ↗
             </a>
             <a
-              href="https://pub-a5fc1ae0b89944dba0ab60286076ab1e.r2.dev"
-              target="_blank"
-              rel="noopener noreferrer"
+              href="/mirror"
               className="underline underline-offset-4 hover:text-foreground"
             >
-              file mirror (R2) ↗
+              file mirror (R2) →
             </a>
           </nav>
         </div>
@@ -46,12 +44,8 @@ export default function Home() {
           </a>
           . This page mirrors their record index — {totalActive.toLocaleString()} records across{" "}
           {agencies.length} agencies — in a sortable, searchable table. File links point to the
-          originals on war.gov; we also keep a <a
-            href="https://pub-a5fc1ae0b89944dba0ab60286076ab1e.r2.dev"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="underline underline-offset-4 hover:text-foreground"
-          >
+          originals on war.gov; we also keep a{" "}
+          <a href="/mirror" className="underline underline-offset-4 hover:text-foreground">
             public R2 mirror
           </a>{" "}
           of every PDF, image, and video so the archive survives if war.gov rotates them. Refreshed daily from the source CSV.
