@@ -81,11 +81,13 @@ test.describe("UAP records table", () => {
     await expect(page.getByLabel("Include removed")).toHaveCount(0);
   });
 
-  test("clicking a row expands the modal with the AI-transcription banner", async ({ page }) => {
+  test("clicking a row expands the modal with the extraction banner", async ({ page }) => {
     const firstRow = page.locator("table tbody tr").first();
     await firstRow.click();
     await expect(
-      page.getByText(/AI-transcribed text|Extracted text not available/),
+      page.getByText(
+        /AI-transcribed text|Extracted text \(pdftotext\)|Extracted text not available/,
+      ),
     ).toBeVisible();
   });
 
