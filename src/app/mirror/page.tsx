@@ -18,6 +18,8 @@ export default function MirrorIndex() {
     { label: "Videos (DVIDS source)", records: live.filter((r) => r.type === "VID") },
   ];
   const totalText = live.filter((r) => r.extractionModel).length;
+  const pdftotextCount = live.filter((r) => r.extractionModel === "pdftotext").length;
+  const aiCount = totalText - pdftotextCount;
 
   return (
     <main className="mx-auto max-w-5xl px-4 py-10 md:px-6 md:py-14">
@@ -39,7 +41,10 @@ export default function MirrorIndex() {
             war.gov/UFO
           </a>{" "}
           is mirrored to a public Cloudflare R2 bucket so the archive survives if the source rotates them.{" "}
-          {totalText.toLocaleString()} records also have AI-transcribed text.
+          {totalText.toLocaleString()} records also have an extracted-text file —{" "}
+          {pdftotextCount.toLocaleString()} from <code className="rounded bg-muted px-1 text-xs">pdftotext</code>{" "}
+          (born-digital PDFs, exact) and {aiCount.toLocaleString()} from a multimodal model
+          (Gemini 2.5 Flash for most, OpenAI gpt-5.5 for the first batch — these may contain OCR errors).
         </p>
         <p className="text-sm text-muted-foreground">
           Bucket root:{" "}
