@@ -91,6 +91,19 @@ test.describe("UAP records table", () => {
     ).toBeVisible();
   });
 
+  test("Agency facet narrows results when a checkbox is selected", async ({ page }) => {
+    const before = await page.locator("table tbody tr").count();
+    // Open the Agency facet popover
+    await page.locator("summary", { hasText: /^Agency/ }).first().click();
+    // Each option's accessible name is "<value> <count>"
+    await page.getByRole("checkbox", { name: /FBI \d+/ }).check();
+    await expect
+      .poll(() => page.locator("table tbody tr").count(), { timeout: 5_000 })
+      .toBeLessThan(before);
+    // Summary now shows the count
+    await expect(page.locator("summary", { hasText: /Agency \(1\)/ })).toBeVisible();
+  });
+
   test("/mirror lists every R2 URL grouped by type", async ({ page }) => {
     await page.goto("/mirror");
     await expect(page.getByRole("heading", { level: 1 })).toContainText("R2 mirror");
