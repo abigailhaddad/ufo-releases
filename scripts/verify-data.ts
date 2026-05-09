@@ -6,10 +6,12 @@
  *
  * Exits non-zero on any error so the workflow refuses to commit.
  */
+import { execFileSync } from "node:child_process";
 import fs from "node:fs";
 import path from "node:path";
 
 const DATA_PATH = path.join(process.cwd(), "data", "records.json");
+const TEXT_DIR = path.join(process.cwd(), "data", "text");
 
 // Floors: tune as the dataset grows. Right now we have 161 records.
 const MIN_TOTAL_RECORDS = 100;
@@ -25,7 +27,31 @@ type StoredRecord = {
   thumbnailUrl: string;
   dvidsVideoId: string;
   removedFromSource?: boolean;
+  textChars?: number;
+  extractionModel?: string;
+  extractionPages?: number;
+  firstSeenAt?: string;
 };
+
+function loadPrevious(): Map<number, StoredRecord> | null {
+  // Compare against the version on prod (or origin/main if prod missing).
+  // Returns null if we can't get a baseline (first run, no git, etc.).
+  for (const ref of ["origin/prod", "origin/main", "HEAD~1"]) {
+    try {
+      const out = execFileSync("git", ["show", `${ref}:data/records.json`], {
+        encoding: "utf8",
+        stdio: ["ignore", "pipe", "ignore"],
+      });
+      const arr = JSON.parse(out) as StoredRecord[];
+      if (Array.isArray(arr)) {
+        return new Map(arr.map((r) => [r.id, r]));
+      }
+    } catch {
+      // try next ref
+    }
+  }
+  return null;
+}
 
 function isHttpUrl(s: string): boolean {
   if (!s) return true;
@@ -108,7 +134,66 @@ function main() {
     }
   }
 
-  // 3. Report
+  // 3. Text-file presence: every record marked as extracted must have its file
+  for (const r of records) {
+    if (r.extractionModel) {
+      const txtPath = path.join(TEXT_DIR, `${r.id}.txt`);
+      if (!fs.existsSync(txtPath)) {
+        errors.push(
+          `record ${r.id} has extractionModel=${r.extractionModel} but no data/text/${r.id}.txt`,
+        );
+      } else if (typeof r.textChars === "number" && r.textChars > 0) {
+        const actualSize = fs.statSync(txtPath).size;
+        if (actualSize < 10) {
+          errors.push(
+            `record ${r.id} text file is suspiciously empty (${actualSize} bytes) but textChars=${r.textChars}`,
+          );
+        }
+      }
+    }
+  }
+
+  // 4. Reversion check vs the previous snapshot (origin/prod, then origin/main).
+  const previous = loadPrevious();
+  if (previous) {
+    for (const r of records) {
+      const prev = previous.get(r.id);
+      if (!prev) continue;
+      // Records that previously had text shouldn't suddenly have none.
+      if (prev.extractionModel && !r.extractionModel) {
+        errors.push(
+          `record ${r.id} regression: had extractionModel=${prev.extractionModel}, now missing`,
+        );
+      }
+      if (
+        typeof prev.textChars === "number" &&
+        prev.textChars > 200 &&
+        typeof r.textChars === "number" &&
+        r.textChars < prev.textChars / 2
+      ) {
+        warnings.push(
+          `record ${r.id} text shrank ${prev.textChars}→${r.textChars} chars (>50% drop)`,
+        );
+      }
+      // firstSeenAt is supposed to be immutable.
+      if (prev.firstSeenAt && r.firstSeenAt && prev.firstSeenAt !== r.firstSeenAt) {
+        errors.push(
+          `record ${r.id} firstSeenAt changed: ${prev.firstSeenAt} → ${r.firstSeenAt}`,
+        );
+      }
+    }
+    // Total live record count shouldn't crater.
+    const prevLive = Array.from(previous.values()).filter((r) => !r.removedFromSource).length;
+    if (live.length < prevLive * 0.9) {
+      errors.push(
+        `live record count crashed: ${prevLive} → ${live.length} (>10% drop)`,
+      );
+    }
+  } else {
+    console.log("(no previous baseline available — skipping reversion checks)");
+  }
+
+  // 5. Report
   for (const w of warnings) console.warn(`warn: ${w}`);
 
   if (errors.length) {
