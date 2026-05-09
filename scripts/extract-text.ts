@@ -62,11 +62,12 @@ type StoredRecord = {
   extractionError?: string | null;
 };
 
-if (!process.env.OPENAI_API_KEY) {
+if (!PDFTOTEXT_ONLY && !process.env.OPENAI_API_KEY) {
   console.error("OPENAI_API_KEY not set. Put it in .env (gitignored).");
   process.exit(1);
 }
-const client = new OpenAI();
+// Lazy: PDFTOTEXT_ONLY mode never calls the API and may run without a key.
+const client = process.env.OPENAI_API_KEY ? new OpenAI() : (null as unknown as OpenAI);
 
 const PROMPT_PAGE =
   "Transcribe text from this scanned document page. Strict rules:\n" +
