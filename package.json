@@ -15,7 +15,8 @@
     "extract:text": "tsx --env-file=.env scripts/extract-text.ts",
     "extract:gemini": "tsx --env-file=.env scripts/extract-text-gemini.ts",
     "upload:r2": "tsx scripts/upload-to-r2.ts",
-    "verify:data": "tsx scripts/verify-data.ts"
+    "verify:data": "tsx scripts/verify-data.ts",
+    "test:e2e": "playwright test"
   },
   "dependencies": {
     "class-variance-authority": "^0.7.1",
@@ -31,6 +32,7 @@
   },
   "devDependencies": {
     "@google/genai": "^2.0.0",
+    "@playwright/test": "^1.59.1",
     "@tailwindcss/postcss": "^4",
     "@types/node": "^20",
     "@types/react": "^19",

@@ -87,6 +87,19 @@ jobs:
       - name: Type-check + build (catches schema/UI regressions)
         run: pnpm build
 
+      - name: E2E tests (gates prod promote)
+        run: pnpm test:e2e
+        env:
+          CI: "1"
+
+      - name: Upload Playwright report on failure
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: playwright-report
+          path: playwright-report/
+          retention-days: 14
+
       - name: Mirror to R2
         env:
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
