@@ -69,9 +69,14 @@ export default function Home() {
             war.gov/UFO
           </a>
           . Source data is the public CSV at{" "}
-          <code className="rounded bg-muted px-1 py-0.5">
-            /Portals/1/Interactive/2026/UFO/uap-csv.csv
-          </code>
+          <a
+            href="https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-csv.csv"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="font-mono underline underline-offset-4 hover:text-foreground"
+          >
+            war.gov/Portals/1/Interactive/2026/UFO/uap-csv.csv
+          </a>
           .
         </p>
       </footer>
