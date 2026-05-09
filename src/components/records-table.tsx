@@ -1,7 +1,6 @@
 "use client";
 
 import { Fragment, useEffect, useMemo, useState } from "react";
-import { Input } from "@/components/ui/input";
 import { Badge } from "@/components/ui/badge";
 import {
   Table,
@@ -11,13 +10,7 @@ import {
   TableHeader,
   TableRow,
 } from "@/components/ui/table";
-import {
-  Select,
-  SelectContent,
-  SelectItem,
-  SelectTrigger,
-  SelectValue,
-} from "@/components/ui/select";
+import { FacetFilter, type FacetOption } from "@/components/facet-filter";
 import type { UfoRecord } from "@/lib/records";
 
 type Props = {
@@ -26,9 +19,37 @@ type Props = {
   types: string[];
 };
 
-const ALL = "__all__";
 const SNIPPET_BEFORE = 80;
 const SNIPPET_AFTER = 200;
+
+/** Best-effort year extraction from the freeform incidentDate column. */
+function extractYear(s: string): string {
+  if (!s || s.trim() === "" || s === "N/A") return "";
+  // Full 4-digit year 1900-2099
+  const m4 = s.match(/\b(19|20)\d{2}\b/);
+  if (m4) return m4[0];
+  // M/D/YY pattern
+  const m2 = s.match(/\/(\d{2})(?:$|\D)/);
+  if (m2) {
+    const yy = parseInt(m2[1], 10);
+    return yy < 50 ? `20${m2[1]}` : `19${m2[1]}`;
+  }
+  return "";
+}
+
+function buildFacet(
+  values: Iterable<string>,
+  formatter?: (v: string) => string,
+): FacetOption[] {
+  const counts = new Map<string, number>();
+  for (const v of values) {
+    if (!v) continue;
+    counts.set(v, (counts.get(v) ?? 0) + 1);
+  }
+  return Array.from(counts.entries())
+    .sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0]))
+    .map(([v, count]) => ({ value: v, label: formatter ? formatter(v) : v, count }));
+}
 
 function dvidsLink(id: string) {
   return id ? `https://www.dvidshub.net/video/${id}` : "";
@@ -53,13 +74,50 @@ function snippetAt(text: string, q: string): string | null {
   return `${prefix}${text.slice(start, end)}${suffix}`;
 }
 
-export function RecordsTable({ records, agencies, types }: Props) {
+export function RecordsTable({ records, agencies: _agencies, types: _types }: Props) {
   const [chips, setChips] = useState<string[]>([]);
   const [pending, setPending] = useState("");
-  const [agency, setAgency] = useState<string>(ALL);
-  const [type, setType] = useState<string>(ALL);
+  const [agencySel, setAgencySel] = useState<Set<string>>(() => new Set());
+  const [typeSel, setTypeSel] = useState<Set<string>>(() => new Set());
+  const [locationSel, setLocationSel] = useState<Set<string>>(() => new Set());
+  const [yearSel, setYearSel] = useState<Set<string>>(() => new Set());
   const [showRemoved, setShowRemoved] = useState(false);
   const [expanded, setExpanded] = useState<Set<number>>(() => new Set());
+
+  // Facet options derived from full record set (counts ignore current filters
+  // so users can see what's available before drilling in).
+  const liveRecords = useMemo(
+    () => records.filter((r) => !r.removedFromSource),
+    [records],
+  );
+  const agencyFacet = useMemo(
+    () => buildFacet(liveRecords.map((r) => r.agency)),
+    [liveRecords],
+  );
+  const typeFacet = useMemo(
+    () => buildFacet(liveRecords.map((r) => r.type)),
+    [liveRecords],
+  );
+  const locationFacet = useMemo(
+    () =>
+      buildFacet(
+        liveRecords.map((r) =>
+          r.incidentLocation && r.incidentLocation !== "N/A" ? r.incidentLocation : "",
+        ),
+      ),
+    [liveRecords],
+  );
+  const yearFacet = useMemo(
+    () => buildFacet(liveRecords.map((r) => extractYear(r.incidentDate))),
+    [liveRecords],
+  );
+
+  function toggleSetItem(set: Set<string>, value: string): Set<string> {
+    const next = new Set(set);
+    if (next.has(value)) next.delete(value);
+    else next.add(value);
+    return next;
+  }
 
   // Always load the full-text search index in the background (~2 MB). Doesn't
   // block render; chip filters just don't match text bodies until it's ready.
@@ -123,8 +181,13 @@ export function RecordsTable({ records, agencies, types }: Props) {
   const filtered = useMemo(() => {
     return records.filter((r) => {
       if (!showRemoved && r.removedFromSource) return false;
-      if (agency !== ALL && r.agency !== agency) return false;
-      if (type !== ALL && r.type !== type) return false;
+      if (agencySel.size > 0 && !agencySel.has(r.agency)) return false;
+      if (typeSel.size > 0 && !typeSel.has(r.type)) return false;
+      if (locationSel.size > 0 && !locationSel.has(r.incidentLocation)) return false;
+      if (yearSel.size > 0) {
+        const y = extractYear(r.incidentDate);
+        if (!yearSel.has(y)) return false;
+      }
       if (activeTerms.length === 0) return true;
       const metaHay = [
         r.title,
@@ -144,7 +207,7 @@ export function RecordsTable({ records, agencies, types }: Props) {
         (term) => metaHay.includes(term) || (fullText && fullText.includes(term)),
       );
     });
-  }, [records, activeTerms, agency, type, showRemoved, textIndex]);
+  }, [records, activeTerms, agencySel, typeSel, locationSel, yearSel, showRemoved, textIndex]);
 
   function toggle(id: number) {
     setExpanded((prev) => {
@@ -199,32 +262,34 @@ export function RecordsTable({ records, agencies, types }: Props) {
             className="flex-1 min-w-32 bg-transparent outline-none placeholder:text-muted-foreground"
           />
         </div>
-        <Select value={agency} onValueChange={setAgency}>
-          <SelectTrigger className="md:w-48">
-            <SelectValue placeholder="Agency" />
-          </SelectTrigger>
-          <SelectContent>
-            <SelectItem value={ALL}>All agencies</SelectItem>
-            {agencies.map((a) => (
-              <SelectItem key={a} value={a}>
-                {a}
-              </SelectItem>
-            ))}
-          </SelectContent>
-        </Select>
-        <Select value={type} onValueChange={setType}>
-          <SelectTrigger className="md:w-32">
-            <SelectValue placeholder="Type" />
-          </SelectTrigger>
-          <SelectContent>
-            <SelectItem value={ALL}>All types</SelectItem>
-            {types.map((t) => (
-              <SelectItem key={t} value={t}>
-                {t}
-              </SelectItem>
-            ))}
-          </SelectContent>
-        </Select>
+        <FacetFilter
+          label="Agency"
+          options={agencyFacet}
+          selected={agencySel}
+          onToggle={(v) => setAgencySel((s) => toggleSetItem(s, v))}
+          onClear={() => setAgencySel(new Set())}
+        />
+        <FacetFilter
+          label="Type"
+          options={typeFacet}
+          selected={typeSel}
+          onToggle={(v) => setTypeSel((s) => toggleSetItem(s, v))}
+          onClear={() => setTypeSel(new Set())}
+        />
+        <FacetFilter
+          label="Location"
+          options={locationFacet}
+          selected={locationSel}
+          onToggle={(v) => setLocationSel((s) => toggleSetItem(s, v))}
+          onClear={() => setLocationSel(new Set())}
+        />
+        <FacetFilter
+          label="Incident year"
+          options={yearFacet}
+          selected={yearSel}
+          onToggle={(v) => setYearSel((s) => toggleSetItem(s, v))}
+          onClear={() => setYearSel(new Set())}
+        />
         {hasRemovedRecords ? (
           <label className="flex items-center gap-2 text-sm text-muted-foreground">
             <input
@@ -378,6 +443,36 @@ export function RecordsTable({ records, agencies, types }: Props) {
                                 <dt className="font-medium text-foreground">Agency</dt>
                                 <dd>{r.agency || "—"}</dd>
                               </div>
+                              {r.redaction ? (
+                                <div>
+                                  <dt className="font-medium text-foreground">Redacted</dt>
+                                  <dd>{r.redaction}</dd>
+                                </div>
+                              ) : null}
+                              {r.videoTitle && r.videoTitle !== r.title ? (
+                                <div className="col-span-2 md:col-span-4">
+                                  <dt className="font-medium text-foreground">Video title</dt>
+                                  <dd>{highlightTerms(r.videoTitle, activeTerms)}</dd>
+                                </div>
+                              ) : null}
+                              {r.videoPairing ? (
+                                <div>
+                                  <dt className="font-medium text-foreground">Paired video</dt>
+                                  <dd>{r.videoPairing}</dd>
+                                </div>
+                              ) : null}
+                              {r.pdfPairing ? (
+                                <div>
+                                  <dt className="font-medium text-foreground">Paired PDF</dt>
+                                  <dd>{r.pdfPairing}</dd>
+                                </div>
+                              ) : null}
+                              {r.dvidsVideoId ? (
+                                <div>
+                                  <dt className="font-medium text-foreground">DVIDS ID</dt>
+                                  <dd className="font-mono text-xs">{r.dvidsVideoId}</dd>
+                                </div>
+                              ) : null}
                             </dl>
                             <ExtractedText
                               record={r}
