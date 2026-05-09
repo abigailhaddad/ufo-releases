@@ -54,23 +54,20 @@ function snippetAt(text: string, q: string): string | null {
 }
 
 export function RecordsTable({ records, agencies, types }: Props) {
-  const [query, setQuery] = useState("");
+  const [chips, setChips] = useState<string[]>([]);
+  const [pending, setPending] = useState("");
   const [agency, setAgency] = useState<string>(ALL);
   const [type, setType] = useState<string>(ALL);
   const [showRemoved, setShowRemoved] = useState(false);
-  const [searchFullText, setSearchFullText] = useState(false);
   const [expanded, setExpanded] = useState<Set<number>>(() => new Set());
 
-  // Lazy-fetched on-demand
+  // Always load the full-text search index in the background (~2 MB). Doesn't
+  // block render; chip filters just don't match text bodies until it's ready.
   const [textIndex, setTextIndex] = useState<TextIndex | null>(null);
-  const [textIndexLoading, setTextIndexLoading] = useState(false);
   const [recordTexts, setRecordTexts] = useState<Record<number, string>>({});
 
   useEffect(() => {
-    if (!searchFullText || textIndex || textIndexLoading) return;
     let cancelled = false;
-    // eslint-disable-next-line react-hooks/set-state-in-effect
-    setTextIndexLoading(true);
     fetch("/text-index.json")
       .then((r) => (r.ok ? r.json() : Promise.reject(new Error(`HTTP ${r.status}`))))
       .then((data: TextIndex) => {
@@ -78,14 +75,31 @@ export function RecordsTable({ records, agencies, types }: Props) {
       })
       .catch(() => {
         if (!cancelled) setTextIndex({});
-      })
-      .finally(() => {
-        if (!cancelled) setTextIndexLoading(false);
       });
     return () => {
       cancelled = true;
     };
-  }, [searchFullText, textIndex, textIndexLoading]);
+  }, []);
+
+  function addChip(raw: string) {
+    const clean = raw.trim();
+    if (!clean) return;
+    setChips((prev) => (prev.includes(clean) ? prev : [...prev, clean]));
+    setPending("");
+  }
+
+  function removeChip(c: string) {
+    setChips((prev) => prev.filter((x) => x !== c));
+  }
+
+  function onKeyDown(e: React.KeyboardEvent<HTMLInputElement>) {
+    if (e.key === "Enter" || e.key === ",") {
+      e.preventDefault();
+      addChip(pending);
+    } else if (e.key === "Backspace" && pending === "" && chips.length > 0) {
+      removeChip(chips[chips.length - 1]);
+    }
+  }
 
   async function loadRecordText(id: number) {
     if (recordTexts[id] !== undefined) return;
@@ -98,13 +112,20 @@ export function RecordsTable({ records, agencies, types }: Props) {
     }
   }
 
+  // Active terms = saved chips + whatever's currently in the input box, so
+  // results update as you type without forcing Enter.
+  const activeTerms = useMemo(() => {
+    const live = pending.trim().toLowerCase();
+    const saved = chips.map((c) => c.toLowerCase());
+    return live ? [...saved, live] : saved;
+  }, [chips, pending]);
+
   const filtered = useMemo(() => {
-    const q = query.trim().toLowerCase();
     return records.filter((r) => {
       if (!showRemoved && r.removedFromSource) return false;
       if (agency !== ALL && r.agency !== agency) return false;
       if (type !== ALL && r.type !== type) return false;
-      if (!q) return true;
+      if (activeTerms.length === 0) return true;
       const metaHay = [
         r.title,
         r.description,
@@ -117,14 +138,13 @@ export function RecordsTable({ records, agencies, types }: Props) {
         .filter(Boolean)
         .join(" ")
         .toLowerCase();
-      if (metaHay.includes(q)) return true;
-      if (searchFullText && textIndex) {
-        const t = textIndex[String(r.id)];
-        if (t && t.includes(q)) return true;
-      }
-      return false;
+      const fullText = textIndex ? textIndex[String(r.id)] : "";
+      // Every chip must match somewhere — metadata OR full extracted text.
+      return activeTerms.every(
+        (term) => metaHay.includes(term) || (fullText && fullText.includes(term)),
+      );
     });
-  }, [records, query, agency, type, showRemoved, searchFullText, textIndex]);
+  }, [records, activeTerms, agency, type, showRemoved, textIndex]);
 
   function toggle(id: number) {
     setExpanded((prev) => {
@@ -139,17 +159,46 @@ export function RecordsTable({ records, agencies, types }: Props) {
     });
   }
 
-  const q = query.trim().toLowerCase();
+  // First active term used for snippet/highlight (whichever produced the match).
+  const primaryTerm = activeTerms[0] ?? "";
+  const hasRemovedRecords = useMemo(
+    () => records.some((r) => r.removedFromSource),
+    [records],
+  );
 
   return (
     <div className="space-y-4">
-      <div className="flex flex-col gap-3 md:flex-row md:items-center md:flex-wrap">
-        <Input
-          value={query}
-          onChange={(e) => setQuery(e.target.value)}
-          placeholder="Search title, description, location…"
-          className="md:max-w-sm"
-        />
+      <div className="flex flex-col gap-3 md:flex-row md:items-start md:flex-wrap">
+        <div className="flex min-h-9 flex-1 flex-wrap items-center gap-1 rounded-md border border-input bg-transparent px-2 py-1.5 text-sm shadow-xs md:max-w-2xl">
+          {chips.map((c) => (
+            <span
+              key={c}
+              className="inline-flex items-center gap-1 rounded-full bg-secondary px-2 py-0.5 text-xs text-secondary-foreground"
+            >
+              {c}
+              <button
+                type="button"
+                aria-label={`Remove ${c}`}
+                onClick={() => removeChip(c)}
+                className="text-muted-foreground hover:text-foreground"
+              >
+                ×
+              </button>
+            </span>
+          ))}
+          <input
+            value={pending}
+            onChange={(e) => setPending(e.target.value)}
+            onKeyDown={onKeyDown}
+            onBlur={() => addChip(pending)}
+            placeholder={
+              chips.length === 0
+                ? "Search — Enter or comma to add a term…"
+                : "Add another term…"
+            }
+            className="flex-1 min-w-32 bg-transparent outline-none placeholder:text-muted-foreground"
+          />
+        </div>
         <Select value={agency} onValueChange={setAgency}>
           <SelectTrigger className="md:w-48">
             <SelectValue placeholder="Agency" />
@@ -176,33 +225,27 @@ export function RecordsTable({ records, agencies, types }: Props) {
             ))}
           </SelectContent>
         </Select>
-        <label className="flex items-center gap-2 text-sm text-muted-foreground">
-          <input
-            type="checkbox"
-            checked={searchFullText}
-            onChange={(e) => setSearchFullText(e.target.checked)}
-            className="size-4"
-          />
-          Search full PDF text {textIndexLoading ? "(loading…)" : ""}
-        </label>
-        <label className="flex items-center gap-2 text-sm text-muted-foreground">
-          <input
-            type="checkbox"
-            checked={showRemoved}
-            onChange={(e) => setShowRemoved(e.target.checked)}
-            className="size-4"
-          />
-          Include removed
-        </label>
+        {hasRemovedRecords ? (
+          <label className="flex items-center gap-2 text-sm text-muted-foreground">
+            <input
+              type="checkbox"
+              checked={showRemoved}
+              onChange={(e) => setShowRemoved(e.target.checked)}
+              className="size-4"
+            />
+            Include removed
+          </label>
+        ) : null}
       </div>
 
       <div className="flex flex-wrap items-center justify-between gap-2 text-sm text-muted-foreground">
         <span>
           Showing {filtered.length.toLocaleString()} of {records.length.toLocaleString()} records
+          {textIndex === null ? " · loading text index…" : ""}
         </span>
-        {searchFullText ? (
+        {activeTerms.length > 0 ? (
           <span className="rounded border border-amber-200 bg-amber-50 px-2 py-0.5 text-xs text-amber-900">
-            Full-text search uses AI-transcribed PDF text — may include errors. Always verify the original PDF.
+            Searches AI-transcribed PDF text — may include OCR errors. Verify against the original PDF.
           </span>
         ) : null}
       </div>
@@ -224,10 +267,9 @@ export function RecordsTable({ records, agencies, types }: Props) {
               const isVideo = r.type === "VID";
               const primary = isVideo ? dvidsLink(r.dvidsVideoId) : r.fileUrl;
               const isOpen = expanded.has(r.id);
-              const hayText =
-                searchFullText && textIndex ? textIndex[String(r.id)] : undefined;
+              const hayText = textIndex ? textIndex[String(r.id)] : undefined;
               const matchSnippet =
-                searchFullText && q && hayText ? snippetAt(hayText, q) : null;
+                primaryTerm && hayText ? snippetAt(hayText, primaryTerm) : null;
               return (
                 <Fragment key={r.id}>
                   <TableRow
@@ -237,22 +279,26 @@ export function RecordsTable({ records, agencies, types }: Props) {
                     <TableCell>
                       <Badge variant={badgeVariant(r.type)}>{r.type || "—"}</Badge>
                     </TableCell>
-                    <TableCell className="truncate text-sm">{r.agency || "—"}</TableCell>
+                    <TableCell className="truncate text-sm">
+                      {highlightTerms(r.agency || "—", activeTerms)}
+                    </TableCell>
                     <TableCell>
                       <div className="truncate font-medium" title={r.title}>
-                        {r.title || "(untitled)"}
+                        {highlightTerms(r.title || "(untitled)", activeTerms)}
                       </div>
                       {matchSnippet ? (
                         <div className="mt-1 truncate text-xs text-muted-foreground">
-                          <span className="font-mono">{matchSnippet}</span>
+                          <span className="font-mono">
+                            {highlightTerms(matchSnippet, activeTerms)}
+                          </span>
                         </div>
                       ) : null}
                     </TableCell>
                     <TableCell className="truncate text-sm">
-                      {r.incidentDate || "—"}
+                      {highlightTerms(r.incidentDate || "—", activeTerms)}
                     </TableCell>
                     <TableCell className="truncate text-sm">
-                      {r.incidentLocation || "—"}
+                      {highlightTerms(r.incidentLocation || "—", activeTerms)}
                     </TableCell>
                     <TableCell className="text-right">
                       {primary ? (
@@ -286,7 +332,10 @@ export function RecordsTable({ records, agencies, types }: Props) {
                           <div className="min-w-0 flex-1 space-y-3 text-sm">
                             {r.description ? (
                               <p className="whitespace-pre-line text-foreground/90">
-                                {r.description}
+                                <span className="mb-1 block text-xs font-medium uppercase tracking-wide text-muted-foreground">
+                                  Description (from war.gov CSV)
+                                </span>
+                                {highlightTerms(r.description, activeTerms)}
                               </p>
                             ) : (
                               <p className="text-muted-foreground">No description provided.</p>
@@ -312,7 +361,7 @@ export function RecordsTable({ records, agencies, types }: Props) {
                             <ExtractedText
                               record={r}
                               text={recordTexts[r.id]}
-                              query={q}
+                              terms={activeTerms}
                             />
                             {r.removedFromSource ? (
                               <p className="text-xs text-amber-600">
@@ -344,11 +393,11 @@ export function RecordsTable({ records, agencies, types }: Props) {
 function ExtractedText({
   record,
   text,
-  query,
+  terms,
 }: {
   record: UfoRecord;
   text: string | undefined;
-  query: string;
+  terms: string[];
 }) {
   const [showAll, setShowAll] = useState(false);
 
@@ -371,7 +420,8 @@ function ExtractedText({
     );
   }
 
-  const hasQuery = query.length > 0 && text.toLowerCase().includes(query);
+  const lowerText = text.toLowerCase();
+  const hasMatch = terms.some((t) => lowerText.includes(t));
   const truncated = !showAll && text.length > 4000;
   const display = truncated ? text.slice(0, 4000) : text;
 
@@ -400,7 +450,7 @@ function ExtractedText({
         Verify anything important against the original PDF (linked above).
       </p>
       <pre className="max-h-80 overflow-auto rounded border bg-background p-3 text-xs leading-relaxed whitespace-pre-wrap font-mono">
-        {hasQuery ? highlight(display, query) : display}
+        {hasMatch ? highlightTerms(display, terms) : display}
       </pre>
       {truncated ? (
         <button
@@ -418,25 +468,41 @@ function ExtractedText({
   );
 }
 
-function highlight(text: string, query: string) {
+// Highlight every occurrence of any term (case-insensitive) by wrapping in
+// <mark>. Returns the original string if no terms hit (cheap fast-path).
+export function highlightTerms(
+  text: string,
+  terms: string[] | string,
+): React.ReactNode {
+  const list = (Array.isArray(terms) ? terms : [terms])
+    .map((t) => t.trim())
+    .filter(Boolean);
+  if (list.length === 0 || !text) return text;
   const lower = text.toLowerCase();
-  const q = query.toLowerCase();
+  // Find the first matching term at each position; greedy left-to-right.
   const out: React.ReactNode[] = [];
   let i = 0;
   let key = 0;
   while (i < text.length) {
-    const found = lower.indexOf(q, i);
-    if (found < 0) {
+    let earliest: { at: number; len: number } | null = null;
+    for (const t of list) {
+      const lo = t.toLowerCase();
+      const at = lower.indexOf(lo, i);
+      if (at < 0) continue;
+      if (!earliest || at < earliest.at) earliest = { at, len: lo.length };
+    }
+    if (!earliest) {
       out.push(text.slice(i));
       break;
     }
-    if (found > i) out.push(text.slice(i, found));
+    if (earliest.at > i) out.push(text.slice(i, earliest.at));
     out.push(
       <mark key={key++} className="bg-yellow-200 text-foreground">
-        {text.slice(found, found + q.length)}
+        {text.slice(earliest.at, earliest.at + earliest.len)}
       </mark>,
     );
-    i = found + q.length;
+    i = earliest.at + earliest.len;
   }
   return out;
 }
+

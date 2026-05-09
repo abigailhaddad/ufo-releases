@@ -57,3 +57,9 @@ screenshot-*.png
 
 # wrangler local state
 /.wrangler/
+
+# playwright test artifacts
+/test-results/
+/playwright-report/
+/blob-report/
+/playwright/.cache/
