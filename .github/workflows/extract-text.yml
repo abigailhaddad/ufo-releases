@@ -1,8 +1,9 @@
-name: Extract PDF text
+name: Extract + verify + promote
 
-# Runs after refresh-csv finishes successfully OR on manual dispatch.
-# Uses OPENAI_API_KEY (already set as a repo secret) + a multimodal model
-# to transcribe each new PDF/IMG into data/text/<id>.txt and commits.
+# Daily pipeline. Runs after refresh-csv finishes successfully (or on demand).
+# Picks up any new records the CSV refresh added, downloads them, extracts
+# text, verifies integrity, mirrors to R2, then fast-forwards prod from main
+# so the live site updates.
 on:
   workflow_run:
     workflows: ["Refresh UFO records"]
@@ -17,23 +18,30 @@ on:
         description: "Cap records this run (blank = no cap)"
         required: false
         default: ""
+      skip_promote:
+        description: "Skip the prod fast-forward (stay on main only)"
+        required: false
+        default: "false"
 
 permissions:
   contents: write
 
 concurrency:
-  group: extract-text
+  group: extract-pipeline
   cancel-in-progress: false
 
 jobs:
-  extract:
+  pipeline:
     if: ${{ github.event_name == 'workflow_dispatch' || github.event.workflow_run.conclusion == 'success' }}
     runs-on: ubuntu-latest
-    timeout-minutes: 350  # GH max is 360
+    timeout-minutes: 350
     steps:
       - uses: actions/checkout@v4
         with:
           ref: main
+          # Fetch full history so we can fast-forward prod
+          fetch-depth: 0
+          token: ${{ secrets.GITHUB_TOKEN }}
 
       - uses: pnpm/action-setup@v4
         with:
@@ -44,32 +52,70 @@ jobs:
           node-version: 22
           cache: pnpm
 
-      - name: Install pdftoppm
+      - name: Install system deps (poppler for pdftotext + pdftoppm)
         run: sudo apt-get update && sudo apt-get install -y poppler-utils
 
-      - name: Install deps
+      - name: Install Node deps
         run: pnpm install --frozen-lockfile
 
-      - name: Extract text
+      - name: Install Playwright Chromium
+        run: pnpm exec playwright install --with-deps chromium
+
+      - name: Pre-download new PDFs (idempotent)
+        run: pnpm download:pdfs
+
+      - name: Pre-download new images + videos (idempotent)
+        run: pnpm download:media
+
+      - name: Extract via pdftotext where possible (free)
+        run: pnpm extract:text
         env:
-          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          PDFTOTEXT_ONLY: "1"
+
+      - name: Extract remaining scans via Gemini
+        env:
+          GOOGLE_API_KEY: ${{ secrets.GOOGLE_API_KEY }}
           FORCE: ${{ inputs.force == 'true' && '1' || '' }}
           LIMIT: ${{ inputs.limit }}
-          RECORD_CONCURRENCY: "4"
+          RECORD_CONCURRENCY: "2"
           CONCURRENCY: "4"
-        run: pnpm exec tsx scripts/extract-text.ts
+        run: pnpm extract:gemini
 
-      - name: Verify data integrity
+      - name: Verify data integrity (refuses to commit on regression)
         run: pnpm verify:data
 
+      - name: Type-check + build (catches schema/UI regressions)
+        run: pnpm build
+
+      - name: Mirror to R2
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+        run: |
+          if [ -z "$CLOUDFLARE_API_TOKEN" ]; then
+            echo "CLOUDFLARE_API_TOKEN not set — skipping R2 upload"
+            exit 0
+          fi
+          pnpm upload:r2
+
       - name: Commit if changed
+        id: commit
         run: |
           if git diff --quiet -- data/records.json data/text/; then
             echo "No changes."
+            echo "changed=false" >> $GITHUB_OUTPUT
             exit 0
           fi
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add data/records.json data/text/
-          git commit -m "data: extract PDF text ($(date -u +%Y-%m-%d))"
+          git commit -m "data: extract pipeline ($(date -u +%Y-%m-%d))"
           git push
+          echo "changed=true" >> $GITHUB_OUTPUT
+
+      - name: Promote main → prod
+        if: ${{ inputs.skip_promote != 'true' && steps.commit.outputs.changed == 'true' }}
+        run: |
+          # Fast-forward only — fails loudly if prod has diverged from main.
+          git fetch origin prod
+          git push origin main:prod
