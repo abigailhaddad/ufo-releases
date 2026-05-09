@@ -68,7 +68,7 @@ function objectExists(bucket: string, key: string): boolean {
   // wrangler logs to stderr on errors.
   const res = spawnSync(
     "pnpm",
-    ["exec", "wrangler", "r2", "object", "get", `${bucket}/${key}`, "--pipe"],
+    ["exec", "wrangler", "r2", "object", "get", `${bucket}/${key}`, "--pipe", "--remote"],
     { stdio: ["ignore", "ignore", "ignore"] },
   );
   return res.status === 0;
@@ -90,6 +90,8 @@ function uploadOne(bucket: string, u: Upload) {
       u.localPath,
       "--content-type",
       ctype,
+      // Without --remote, wrangler writes to a local SQLite emulator, not R2.
+      "--remote",
     ],
     { stdio: ["ignore", "ignore", "pipe"] },
   );
