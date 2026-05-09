@@ -318,8 +318,8 @@ export function RecordsTable({ records, agencies, types }: Props) {
                   </TableRow>
                   {isOpen ? (
                     <TableRow className="bg-muted/40 hover:bg-muted/40">
-                      <TableCell colSpan={6} className="py-4">
-                        <div className="flex flex-col gap-4 md:flex-row">
+                      <TableCell colSpan={6} className="max-w-0 overflow-hidden whitespace-normal py-4 align-top">
+                        <div className="flex w-full max-w-full flex-col gap-4 overflow-hidden md:flex-row">
                           {r.thumbnailUrl ? (
                             // eslint-disable-next-line @next/next/no-img-element
                             <img
@@ -329,7 +329,7 @@ export function RecordsTable({ records, agencies, types }: Props) {
                               loading="lazy"
                             />
                           ) : null}
-                          <div className="min-w-0 flex-1 space-y-3 text-sm">
+                          <div className="min-w-0 max-w-full flex-1 space-y-3 overflow-hidden text-sm">
                             {r.description ? (
                               <p className="whitespace-pre-line text-foreground/90">
                                 <span className="mb-1 block text-xs font-medium uppercase tracking-wide text-muted-foreground">
@@ -458,7 +458,7 @@ function ExtractedText({
           Verify anything important against the original PDF (linked above).
         </p>
       )}
-      <pre className="max-h-80 overflow-auto rounded border bg-background p-3 text-xs leading-relaxed whitespace-pre-wrap font-mono">
+      <pre className="max-h-80 max-w-full overflow-auto break-words whitespace-pre-wrap rounded border bg-background p-3 font-mono text-xs leading-relaxed">
         {hasMatch ? highlightTerms(display, terms) : display}
       </pre>
       {truncated ? (
