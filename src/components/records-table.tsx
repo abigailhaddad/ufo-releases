@@ -25,30 +25,45 @@ const SNIPPET_AFTER = 200;
 /** Best-effort year extraction from the freeform incidentDate column. */
 function extractYear(s: string): string {
   if (!s || s.trim() === "" || s === "N/A") return "";
-  // Full 4-digit year 1900-2099
+  // Full 4-digit year 1900-2099 wins.
   const m4 = s.match(/\b(19|20)\d{2}\b/);
   if (m4) return m4[0];
-  // M/D/YY pattern
+  // M/D/YY — the corpus has 1940s FBI files alongside 2020s reports, so
+  // values ≤ 30 map to 20xx, anything bigger to 19xx. Re-tune by 2031.
   const m2 = s.match(/\/(\d{2})(?:$|\D)/);
   if (m2) {
     const yy = parseInt(m2[1], 10);
-    return yy < 50 ? `20${m2[1]}` : `19${m2[1]}`;
+    return yy <= 30 ? `20${m2[1]}` : `19${m2[1]}`;
   }
   return "";
 }
 
 function buildFacet(
   values: Iterable<string>,
-  formatter?: (v: string) => string,
+  options?: {
+    formatter?: (v: string) => string;
+    sort?: "count" | "value-desc" | "value-asc";
+  },
 ): FacetOption[] {
   const counts = new Map<string, number>();
   for (const v of values) {
     if (!v) continue;
     counts.set(v, (counts.get(v) ?? 0) + 1);
   }
-  return Array.from(counts.entries())
-    .sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0]))
-    .map(([v, count]) => ({ value: v, label: formatter ? formatter(v) : v, count }));
+  const entries = Array.from(counts.entries());
+  const sort = options?.sort ?? "count";
+  if (sort === "count") {
+    entries.sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0]));
+  } else if (sort === "value-desc") {
+    entries.sort((a, b) => b[0].localeCompare(a[0]));
+  } else {
+    entries.sort((a, b) => a[0].localeCompare(b[0]));
+  }
+  return entries.map(([v, count]) => ({
+    value: v,
+    label: options?.formatter ? options.formatter(v) : v,
+    count,
+  }));
 }
 
 function dvidsLink(id: string) {
@@ -108,7 +123,10 @@ export function RecordsTable({ records, agencies: _agencies, types: _types }: Pr
     [liveRecords],
   );
   const yearFacet = useMemo(
-    () => buildFacet(liveRecords.map((r) => extractYear(r.incidentDate))),
+    () =>
+      buildFacet(liveRecords.map((r) => extractYear(r.incidentDate)), {
+        sort: "value-desc",
+      }),
     [liveRecords],
   );
 
