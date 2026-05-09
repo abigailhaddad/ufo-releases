@@ -242,6 +242,9 @@ export function RecordsTable({ records, agencies, types }: Props) {
         <span>
           Showing {filtered.length.toLocaleString()} of {records.length.toLocaleString()} records
           {textIndex === null ? " · loading text index…" : ""}
+          <span className="ml-2 text-muted-foreground/80">
+            — click any row for details
+          </span>
         </span>
         {activeTerms.length > 0 ? (
           <span className="rounded border border-amber-200 bg-amber-50 px-2 py-0.5 text-xs text-amber-900">
@@ -254,7 +257,8 @@ export function RecordsTable({ records, agencies, types }: Props) {
         <Table className="table-fixed">
           <TableHeader>
             <TableRow>
-              <TableHead className="w-[64px]">Type</TableHead>
+              <TableHead className="w-[28px]"></TableHead>
+              <TableHead className="w-[60px]">Type</TableHead>
               <TableHead className="w-[140px]">Agency</TableHead>
               <TableHead>Title</TableHead>
               <TableHead className="w-[110px]">Incident</TableHead>
@@ -274,16 +278,33 @@ export function RecordsTable({ records, agencies, types }: Props) {
                 <Fragment key={r.id}>
                   <TableRow
                     onClick={() => toggle(r.id)}
-                    className={`cursor-pointer ${r.removedFromSource ? "opacity-60" : ""}`}
+                    aria-expanded={isOpen}
+                    title="Click to expand details"
+                    className={`cursor-pointer hover:bg-muted/60 ${
+                      isOpen ? "bg-muted/40" : ""
+                    } ${r.removedFromSource ? "opacity-60" : ""}`}
                   >
-                    <TableCell>
+                    <TableCell className="pl-3 pr-0">
+                      <span
+                        aria-hidden
+                        className={`inline-block w-3 text-xs text-muted-foreground transition-transform ${
+                          isOpen ? "rotate-90" : ""
+                        }`}
+                      >
+                        ▸
+                      </span>
+                    </TableCell>
+                    <TableCell className="pl-1">
                       <Badge variant={badgeVariant(r.type)}>{r.type || "—"}</Badge>
                     </TableCell>
                     <TableCell className="truncate text-sm">
                       {highlightTerms(r.agency || "—", activeTerms)}
                     </TableCell>
                     <TableCell>
-                      <div className="truncate font-medium" title={r.title}>
+                      <div
+                        className="truncate font-medium underline-offset-4 hover:underline"
+                        title={r.title}
+                      >
                         {highlightTerms(r.title || "(untitled)", activeTerms)}
                       </div>
                       {matchSnippet ? (
@@ -318,7 +339,7 @@ export function RecordsTable({ records, agencies, types }: Props) {
                   </TableRow>
                   {isOpen ? (
                     <TableRow className="bg-muted/40 hover:bg-muted/40">
-                      <TableCell colSpan={6} className="max-w-0 overflow-hidden whitespace-normal py-4 align-top">
+                      <TableCell colSpan={7} className="max-w-0 overflow-hidden whitespace-normal py-4 align-top">
                         <div className="flex w-full max-w-full flex-col gap-4 overflow-hidden md:flex-row">
                           {r.thumbnailUrl ? (
                             // eslint-disable-next-line @next/next/no-img-element
@@ -378,7 +399,7 @@ export function RecordsTable({ records, agencies, types }: Props) {
             })}
             {filtered.length === 0 ? (
               <TableRow>
-                <TableCell colSpan={6} className="py-8 text-center text-sm text-muted-foreground">
+                <TableCell colSpan={7} className="py-8 text-center text-sm text-muted-foreground">
                   No records match your filters.
                 </TableCell>
               </TableRow>
