@@ -28,12 +28,17 @@ function extractYear(s: string): string {
   // Full 4-digit year 1900-2099 wins.
   const m4 = s.match(/\b(19|20)\d{2}\b/);
   if (m4) return m4[0];
-  // M/D/YY — the corpus has 1940s FBI files alongside 2020s reports, so
-  // values ≤ 30 map to 20xx, anything bigger to 19xx. Re-tune by 2031.
-  const m2 = s.match(/\/(\d{2})(?:$|\D)/);
+  // M/D/YY — anchor at end of string so we grab the year, not the day
+  // (e.g. "12/30/47" → "47", not "30").
+  const m2 = s.match(/\/(\d{2})\b(?!.*\/\d)/) ?? s.match(/\/(\d{2})$/);
   if (m2) {
     const yy = parseInt(m2[1], 10);
-    return yy <= 30 ? `20${m2[1]}` : `19${m2[1]}`;
+    const currentYear = new Date().getFullYear();
+    const candidate20 = 2000 + yy;
+    // 20YY would be in the future → it's actually 19YY.
+    return candidate20 > currentYear
+      ? `19${m2[1].padStart(2, "0")}`
+      : `20${m2[1].padStart(2, "0")}`;
   }
   return "";
 }
@@ -125,7 +130,7 @@ export function RecordsTable({ records, agencies: _agencies, types: _types }: Pr
   const yearFacet = useMemo(
     () =>
       buildFacet(liveRecords.map((r) => extractYear(r.incidentDate)), {
-        sort: "value-desc",
+        sort: "value-asc",
       }),
     [liveRecords],
   );
