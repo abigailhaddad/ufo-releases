@@ -1,0 +1,42 @@
+--- PAGE 1 ---
+1.4(a)
+
+--- PAGE 2 ---
+1.4(a)
+
+--- PAGE 3 ---
+1.4(a)
+
+--- PAGE 4 ---
+1.4(a)
+
+--- PAGE 5 ---
+1.4(a)
+
+--- PAGE 6 ---
+1.4(a)
+
+--- PAGE 7 ---
+1.4(a)
+[redacted]
+1.4(a)
+[redacted]
+[redacted]
+[redacted]
+[redacted]
+[redacted]
+[redacted]
+[redacted]
+[redacted]
+[redacted]
+[redacted]
+[redacted]
+
+GENTEXT/UAP
+
+*   UAP Description (e.g., size, shape, color, markings, recognizable features): ([strikethrough: SECRET//REL TO USA, FIN, SWE, FIVE EYES, NATO]) AT 1653Z, 1.4(a) OBS 2X ROUND WHITE HOT UAPS DYNAMIC SOUTH AT APPROX 240NM/HOUR IVO 35SQT3423692957.
+*   Gentext (UAP Event Description): ([strikethrough: SECRET//REL TO USA, FIN, SWE, FIVE EYES, NATO]) AT 1653Z, 1.4(a) OBS 2X UAPS DYNAMIC SOUTH AT APPROX 240NM/HOUR IVO 35SQT3423692957.
+
+1.4(a)
+[redacted]
+[redacted]
