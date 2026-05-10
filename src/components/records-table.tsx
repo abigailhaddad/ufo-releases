@@ -101,6 +101,7 @@ export function RecordsTable({ records, agencies: _agencies, types: _types }: Pr
   const [typeSel, setTypeSel] = useState<Set<string>>(() => new Set());
   const [locationSel, setLocationSel] = useState<Set<string>>(() => new Set());
   const [yearSel, setYearSel] = useState<Set<string>>(() => new Set());
+  const [tagSel, setTagSel] = useState<Set<string>>(() => new Set());
   const [showRemoved, setShowRemoved] = useState(false);
   const [expanded, setExpanded] = useState<Set<number>>(() => new Set());
 
@@ -130,6 +131,15 @@ export function RecordsTable({ records, agencies: _agencies, types: _types }: Pr
   const yearFacet = useMemo(
     () =>
       buildFacet(liveRecords.map((r) => extractYear(r.incidentDate)), {
+        sort: "value-asc",
+      }),
+    [liveRecords],
+  );
+  const tagFacet = useMemo(
+    () =>
+      buildFacet(liveRecords.flatMap((r) => r.tags ?? []), {
+        // Tags look like "shape:saucer" — sort alphabetically so groups
+        // (shape:*, witness:*, etc.) cluster together.
         sort: "value-asc",
       }),
     [liveRecords],
@@ -211,6 +221,13 @@ export function RecordsTable({ records, agencies: _agencies, types: _types }: Pr
         const y = extractYear(r.incidentDate);
         if (!yearSel.has(y)) return false;
       }
+      if (tagSel.size > 0) {
+        const tags = r.tags ?? [];
+        // Record must have at least one of every selected tag (AND across).
+        for (const want of tagSel) {
+          if (!tags.includes(want)) return false;
+        }
+      }
       if (activeTerms.length === 0) return true;
       const metaHay = [
         r.title,
@@ -230,7 +247,7 @@ export function RecordsTable({ records, agencies: _agencies, types: _types }: Pr
         (term) => metaHay.includes(term) || (fullText && fullText.includes(term)),
       );
     });
-  }, [records, activeTerms, agencySel, typeSel, locationSel, yearSel, showRemoved, textIndex]);
+  }, [records, activeTerms, agencySel, typeSel, locationSel, yearSel, tagSel, showRemoved, textIndex]);
 
   function toggle(id: number) {
     setExpanded((prev) => {
@@ -312,6 +329,13 @@ export function RecordsTable({ records, agencies: _agencies, types: _types }: Pr
           selected={yearSel}
           onToggle={(v) => setYearSel((s) => toggleSetItem(s, v))}
           onClear={() => setYearSel(new Set())}
+        />
+        <FacetFilter
+          label="Tags"
+          options={tagFacet}
+          selected={tagSel}
+          onToggle={(v) => setTagSel((s) => toggleSetItem(s, v))}
+          onClear={() => setTagSel(new Set())}
         />
         {hasRemovedRecords ? (
           <label className="flex items-center gap-2 text-sm text-muted-foreground">
@@ -405,6 +429,27 @@ export function RecordsTable({ records, agencies: _agencies, types: _types }: Pr
                           </>
                         ) : null}
                       </div>
+                      {r.tags && r.tags.length > 0 ? (
+                        <div className="mt-1 flex flex-wrap gap-1">
+                          {r.tags.map((t) => (
+                            <button
+                              key={t}
+                              type="button"
+                              onClick={(e) => {
+                                e.stopPropagation();
+                                setTagSel((s) => toggleSetItem(s, t));
+                              }}
+                              className={`rounded-sm border px-1.5 py-0.5 font-mono text-[10px] leading-none ${
+                                tagSel.has(t)
+                                  ? "border-foreground/40 bg-secondary text-secondary-foreground"
+                                  : "border-transparent bg-muted text-muted-foreground hover:border-foreground/20"
+                              }`}
+                            >
+                              {t}
+                            </button>
+                          ))}
+                        </div>
+                      ) : null}
                       {matchSnippet ? (
                         <div className="mt-1 truncate text-xs text-muted-foreground">
                           <span className="font-mono">

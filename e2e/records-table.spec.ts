@@ -82,8 +82,8 @@ test.describe("UAP records table", () => {
   });
 
   test("clicking a row expands the modal with the extraction banner", async ({ page }) => {
-    const firstRow = page.locator("table tbody tr").first();
-    await firstRow.click();
+    // Click the chevron cell (1st col) — avoids hitting tag chips inside the row.
+    await page.locator("table tbody tr:first-child td:first-child").click();
     await expect(
       page.getByText(
         /AI-transcribed text|Extracted text \(pdftotext\)|Extracted text not available/,
@@ -114,6 +114,15 @@ test.describe("UAP records table", () => {
       'a[href^="https://pub-a5fc1ae0b89944dba0ab60286076ab1e.r2.dev/"]',
     );
     expect(await r2Links.count()).toBeGreaterThan(150);
+  });
+
+  test("clicking a tag chip toggles a tags filter", async ({ page }) => {
+    const firstTag = page.locator("table tbody button[class*='font-mono']").first();
+    const tagText = (await firstTag.textContent()) ?? "";
+    await firstTag.click();
+    // Tags facet summary should now show "Tags (1)"
+    await expect(page.locator("summary", { hasText: /Tags \(1\)/ })).toBeVisible();
+    expect(tagText).toMatch(/^[a-z]+:[a-z-]+$/);
   });
 
   test("mobile viewport hides Agency/Incident/Location columns and inlines them under the title", async ({ page }) => {
