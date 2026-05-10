@@ -16,6 +16,7 @@
     "extract:gemini": "tsx --env-file-if-exists=.env scripts/extract-text-gemini.ts",
     "upload:r2": "tsx scripts/upload-to-r2.ts",
     "verify:data": "tsx scripts/verify-data.ts",
+    "tag:records": "tsx scripts/tag-records.ts",
     "test:e2e": "playwright test"
   },
   "dependencies": {

@@ -12,6 +12,7 @@ import {
 } from "@/components/ui/table";
 import { FacetFilter, type FacetOption } from "@/components/facet-filter";
 import type { UfoRecord } from "@/lib/records";
+import { combinedRegex } from "@/lib/tag-rules";
 
 type Props = {
   records: UfoRecord[];
@@ -101,6 +102,7 @@ export function RecordsTable({ records, agencies: _agencies, types: _types }: Pr
   const [typeSel, setTypeSel] = useState<Set<string>>(() => new Set());
   const [locationSel, setLocationSel] = useState<Set<string>>(() => new Set());
   const [yearSel, setYearSel] = useState<Set<string>>(() => new Set());
+  const [tagSel, setTagSel] = useState<Set<string>>(() => new Set());
   const [showRemoved, setShowRemoved] = useState(false);
   const [expanded, setExpanded] = useState<Set<number>>(() => new Set());
 
@@ -130,6 +132,15 @@ export function RecordsTable({ records, agencies: _agencies, types: _types }: Pr
   const yearFacet = useMemo(
     () =>
       buildFacet(liveRecords.map((r) => extractYear(r.incidentDate)), {
+        sort: "value-asc",
+      }),
+    [liveRecords],
+  );
+  const tagFacet = useMemo(
+    () =>
+      buildFacet(liveRecords.flatMap((r) => r.tags ?? []), {
+        // Tags look like "shape:saucer" — sort alphabetically so groups
+        // (shape:*, witness:*, etc.) cluster together.
         sort: "value-asc",
       }),
     [liveRecords],
@@ -211,6 +222,13 @@ export function RecordsTable({ records, agencies: _agencies, types: _types }: Pr
         const y = extractYear(r.incidentDate);
         if (!yearSel.has(y)) return false;
       }
+      if (tagSel.size > 0) {
+        const tags = r.tags ?? [];
+        // Record must have at least one of every selected tag (AND across).
+        for (const want of tagSel) {
+          if (!tags.includes(want)) return false;
+        }
+      }
       if (activeTerms.length === 0) return true;
       const metaHay = [
         r.title,
@@ -230,7 +248,7 @@ export function RecordsTable({ records, agencies: _agencies, types: _types }: Pr
         (term) => metaHay.includes(term) || (fullText && fullText.includes(term)),
       );
     });
-  }, [records, activeTerms, agencySel, typeSel, locationSel, yearSel, showRemoved, textIndex]);
+  }, [records, activeTerms, agencySel, typeSel, locationSel, yearSel, tagSel, showRemoved, textIndex]);
 
   function toggle(id: number) {
     setExpanded((prev) => {
@@ -247,6 +265,9 @@ export function RecordsTable({ records, agencies: _agencies, types: _types }: Pr
 
   // First active term used for snippet/highlight (whichever produced the match).
   const primaryTerm = activeTerms[0] ?? "";
+  // Combined regex for selected tags so we highlight tag matches in metadata
+  // and the extracted text just like chip terms.
+  const tagHighlight = useMemo(() => combinedRegex(tagSel), [tagSel]);
   const hasRemovedRecords = useMemo(
     () => records.some((r) => r.removedFromSource),
     [records],
@@ -313,6 +334,13 @@ export function RecordsTable({ records, agencies: _agencies, types: _types }: Pr
           onToggle={(v) => setYearSel((s) => toggleSetItem(s, v))}
           onClear={() => setYearSel(new Set())}
         />
+        <FacetFilter
+          label="Tags"
+          options={tagFacet}
+          selected={tagSel}
+          onToggle={(v) => setTagSel((s) => toggleSetItem(s, v))}
+          onClear={() => setTagSel(new Set())}
+        />
         {hasRemovedRecords ? (
           <label className="flex items-center gap-2 text-sm text-muted-foreground">
             <input
@@ -347,10 +375,11 @@ export function RecordsTable({ records, agencies: _agencies, types: _types }: Pr
             <TableRow>
               <TableHead className="w-[28px]"></TableHead>
               <TableHead className="w-[60px]">Type</TableHead>
-              <TableHead className="hidden w-[140px] md:table-cell">Agency</TableHead>
+              <TableHead className="hidden w-[120px] md:table-cell">Agency</TableHead>
               <TableHead>Title</TableHead>
+              <TableHead className="w-[160px]">Tags</TableHead>
               <TableHead className="hidden w-[110px] lg:table-cell">Incident</TableHead>
-              <TableHead className="hidden w-[150px] md:table-cell">Location</TableHead>
+              <TableHead className="hidden w-[140px] md:table-cell">Location</TableHead>
               <TableHead className="w-[80px] text-right md:w-[120px]">Action</TableHead>
             </TableRow>
           </TableHeader>
@@ -386,38 +415,49 @@ export function RecordsTable({ records, agencies: _agencies, types: _types }: Pr
                       <Badge variant={badgeVariant(r.type)}>{r.type || "—"}</Badge>
                     </TableCell>
                     <TableCell className="hidden truncate text-sm md:table-cell">
-                      {highlightTerms(r.agency || "—", activeTerms)}
+                      {highlightTerms(r.agency || "—", activeTerms, tagHighlight)}
                     </TableCell>
                     <TableCell>
                       <div
                         className="truncate font-medium underline-offset-4 hover:underline"
                         title={r.title}
                       >
-                        {highlightTerms(r.title || "(untitled)", activeTerms)}
+                        {highlightTerms(r.title || "(untitled)", activeTerms, tagHighlight)}
                       </div>
                       {/* Mobile-only: show agency + location inline since their columns are hidden */}
                       <div className="mt-0.5 truncate text-xs text-muted-foreground md:hidden">
-                        {highlightTerms(r.agency || "—", activeTerms)}
+                        {highlightTerms(r.agency || "—", activeTerms, tagHighlight)}
                         {r.incidentLocation && r.incidentLocation !== "N/A" ? (
                           <>
                             {" · "}
-                            {highlightTerms(r.incidentLocation, activeTerms)}
+                            {highlightTerms(r.incidentLocation, activeTerms, tagHighlight)}
                           </>
                         ) : null}
                       </div>
                       {matchSnippet ? (
                         <div className="mt-1 truncate text-xs text-muted-foreground">
                           <span className="font-mono">
-                            {highlightTerms(matchSnippet, activeTerms)}
+                            {highlightTerms(matchSnippet, activeTerms, tagHighlight)}
                           </span>
                         </div>
                       ) : null}
                     </TableCell>
+                    <TableCell className="align-top">
+                      {r.tags && r.tags.length > 0 ? (
+                        <div className="flex flex-wrap gap-1">
+                          {r.tags.map((t) => (
+                            <TagChip key={t} tag={t} selected={tagSel.has(t)} />
+                          ))}
+                        </div>
+                      ) : (
+                        <span className="text-xs text-muted-foreground">—</span>
+                      )}
+                    </TableCell>
                     <TableCell className="hidden truncate text-sm lg:table-cell">
-                      {highlightTerms(r.incidentDate || "—", activeTerms)}
+                      {highlightTerms(r.incidentDate || "—", activeTerms, tagHighlight)}
                     </TableCell>
                     <TableCell className="hidden truncate text-sm md:table-cell">
-                      {highlightTerms(r.incidentLocation || "—", activeTerms)}
+                      {highlightTerms(r.incidentLocation || "—", activeTerms, tagHighlight)}
                     </TableCell>
                     <TableCell className="text-right">
                       {primary ? (
@@ -437,7 +477,7 @@ export function RecordsTable({ records, agencies: _agencies, types: _types }: Pr
                   </TableRow>
                   {isOpen ? (
                     <TableRow className="bg-muted/40 hover:bg-muted/40">
-                      <TableCell colSpan={7} className="max-w-0 overflow-hidden whitespace-normal py-4 align-top">
+                      <TableCell colSpan={8} className="max-w-0 overflow-hidden whitespace-normal py-4 align-top">
                         <div className="flex w-full max-w-full flex-col gap-4 overflow-hidden md:flex-row">
                           {r.thumbnailUrl ? (
                             // eslint-disable-next-line @next/next/no-img-element
@@ -454,7 +494,7 @@ export function RecordsTable({ records, agencies: _agencies, types: _types }: Pr
                                 <span className="mb-1 block text-xs font-medium uppercase tracking-wide text-muted-foreground">
                                   Description (from war.gov CSV)
                                 </span>
-                                {highlightTerms(r.description, activeTerms)}
+                                {highlightTerms(r.description, activeTerms, tagHighlight)}
                               </p>
                             ) : (
                               <p className="text-muted-foreground">No description provided.</p>
@@ -485,7 +525,7 @@ export function RecordsTable({ records, agencies: _agencies, types: _types }: Pr
                               {r.videoTitle && r.videoTitle !== r.title ? (
                                 <div className="col-span-2 md:col-span-4">
                                   <dt className="font-medium text-foreground">Video title</dt>
-                                  <dd>{highlightTerms(r.videoTitle, activeTerms)}</dd>
+                                  <dd>{highlightTerms(r.videoTitle, activeTerms, tagHighlight)}</dd>
                                 </div>
                               ) : null}
                               {r.videoPairing ? (
@@ -511,6 +551,7 @@ export function RecordsTable({ records, agencies: _agencies, types: _types }: Pr
                               record={r}
                               text={recordTexts[r.id]}
                               terms={activeTerms}
+                              regex={tagHighlight}
                             />
                             {r.removedFromSource ? (
                               <p className="text-xs text-amber-600">
@@ -527,7 +568,7 @@ export function RecordsTable({ records, agencies: _agencies, types: _types }: Pr
             })}
             {filtered.length === 0 ? (
               <TableRow>
-                <TableCell colSpan={7} className="py-8 text-center text-sm text-muted-foreground">
+                <TableCell colSpan={8} className="py-8 text-center text-sm text-muted-foreground">
                   No records match your filters.
                 </TableCell>
               </TableRow>
@@ -543,10 +584,12 @@ function ExtractedText({
   record,
   text,
   terms,
+  regex,
 }: {
   record: UfoRecord;
   text: string | undefined;
   terms: string[];
+  regex: RegExp | null;
 }) {
   const [showAll, setShowAll] = useState(false);
 
@@ -570,7 +613,8 @@ function ExtractedText({
   }
 
   const lowerText = text.toLowerCase();
-  const hasMatch = terms.some((t) => lowerText.includes(t));
+  const hasMatch =
+    terms.some((t) => lowerText.includes(t)) || (regex !== null && regex.test(text));
   const truncated = !showAll && text.length > 4000;
   const display = truncated ? text.slice(0, 4000) : text;
 
@@ -608,7 +652,7 @@ function ExtractedText({
         </p>
       )}
       <pre className="max-h-80 max-w-full overflow-auto break-words whitespace-pre-wrap rounded border bg-background p-3 font-mono text-xs leading-relaxed">
-        {hasMatch ? highlightTerms(display, terms) : display}
+        {hasMatch ? highlightTerms(display, terms, regex) : display}
       </pre>
       {truncated ? (
         <button
@@ -626,18 +670,32 @@ function ExtractedText({
   );
 }
 
-// Highlight every occurrence of any term (case-insensitive) by wrapping in
-// <mark>. Returns the original string if no terms hit (cheap fast-path).
+// Highlight every occurrence of any string term (case-insensitive substring)
+// AND every match of an optional regex by wrapping in <mark>. We compute the
+// earliest match across both string and regex hits at each position.
 export function highlightTerms(
   text: string,
   terms: string[] | string,
+  regex?: RegExp | null,
 ): React.ReactNode {
   const list = (Array.isArray(terms) ? terms : [terms])
     .map((t) => t.trim())
     .filter(Boolean);
-  if (list.length === 0 || !text) return text;
+  if (list.length === 0 && !regex) return text;
+  if (!text) return text;
   const lower = text.toLowerCase();
-  // Find the first matching term at each position; greedy left-to-right.
+
+  // Pre-compute all regex matches so we can find the earliest at each step.
+  const regexMatches: { at: number; len: number }[] = [];
+  if (regex) {
+    const re = new RegExp(regex.source, regex.flags.includes("g") ? regex.flags : regex.flags + "g");
+    for (const m of text.matchAll(re)) {
+      if (m.index !== undefined && m[0].length > 0) {
+        regexMatches.push({ at: m.index, len: m[0].length });
+      }
+    }
+  }
+
   const out: React.ReactNode[] = [];
   let i = 0;
   let key = 0;
@@ -648,6 +706,10 @@ export function highlightTerms(
       const at = lower.indexOf(lo, i);
       if (at < 0) continue;
       if (!earliest || at < earliest.at) earliest = { at, len: lo.length };
+    }
+    for (const m of regexMatches) {
+      if (m.at < i) continue;
+      if (!earliest || m.at < earliest.at) earliest = m;
     }
     if (!earliest) {
       out.push(text.slice(i));
@@ -662,5 +724,20 @@ export function highlightTerms(
     i = earliest.at + earliest.len;
   }
   return out;
+}
+
+function TagChip({ tag, selected }: { tag: string; selected: boolean }) {
+  return (
+    <span
+      title={`Keyword match — use the Tags filter to filter by "${tag}"`}
+      className={`rounded-sm border px-1.5 py-0.5 font-mono text-[10px] leading-none ${
+        selected
+          ? "border-foreground/50 bg-secondary text-secondary-foreground"
+          : "border-muted-foreground/20 bg-muted text-muted-foreground"
+      }`}
+    >
+      {tag}
+    </span>
+  );
 }
 

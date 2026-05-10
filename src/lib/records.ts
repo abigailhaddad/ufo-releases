@@ -26,6 +26,7 @@ export type UfoRecord = {
   extractionPages?: number;
   extractionModel?: string;
   extractionError?: string | null;
+  tags?: string[];
 };
 
 export const records: UfoRecord[] = (recordsData as UfoRecord[]).map((r) => ({
