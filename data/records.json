@@ -24,23 +24,23 @@
     "extractionModel": "gpt-5.5",
     "extractionError": "pdftotext yielded too little; PDFTOTEXT_ONLY=1, skipping vision",
     "tags": [
-      "behavior:hovering",
-      "behavior:maneuvering",
-      "behavior:stationary",
-      "behavior:vanished",
-      "color:fireball",
-      "color:glowing",
-      "program:condon",
-      "program:nicap",
-      "program:project-blue-book",
-      "sensor:radar",
-      "shape:cigar",
-      "shape:orb",
-      "shape:oval",
-      "shape:saucer",
-      "witness:military",
-      "witness:pilot",
-      "witness:police"
+      "Condon",
+      "NICAP",
+      "Project Blue Book",
+      "cigar",
+      "fireball",
+      "glowing",
+      "hovering",
+      "maneuvering",
+      "military",
+      "orb",
+      "oval",
+      "pilot",
+      "police",
+      "radar",
+      "saucer",
+      "stationary",
+      "vanished"
     ]
   },
   {
@@ -68,14 +68,14 @@
     "extractionModel": "gpt-5.5",
     "extractionError": "pdftotext yielded too little; PDFTOTEXT_ONLY=1, skipping vision",
     "tags": [
-      "behavior:formation",
-      "behavior:maneuvering",
-      "behavior:vanished",
-      "color:glowing",
-      "shape:oval",
-      "shape:saucer",
-      "witness:military",
-      "witness:pilot"
+      "formation",
+      "glowing",
+      "maneuvering",
+      "military",
+      "oval",
+      "pilot",
+      "saucer",
+      "vanished"
     ]
   },
   {
@@ -103,16 +103,16 @@
     "textExtractedAt": "2026-05-08",
     "extractionModel": "gpt-5.5",
     "tags": [
-      "behavior:formation",
-      "behavior:vanished",
-      "color:metallic",
-      "sensor:telescope",
-      "shape:cigar",
-      "shape:oval",
-      "shape:saucer",
-      "witness:military",
-      "witness:pilot",
-      "witness:police"
+      "cigar",
+      "formation",
+      "metallic",
+      "military",
+      "oval",
+      "pilot",
+      "police",
+      "saucer",
+      "telescope",
+      "vanished"
     ]
   },
   {
@@ -140,10 +140,10 @@
     "textExtractedAt": "2026-05-08",
     "extractionModel": "gpt-5.5",
     "tags": [
-      "behavior:vanished",
-      "shape:oval",
-      "shape:saucer",
-      "witness:pilot"
+      "oval",
+      "pilot",
+      "saucer",
+      "vanished"
     ]
   },
   {
@@ -171,11 +171,11 @@
     "textExtractedAt": "2026-05-08",
     "extractionModel": "gpt-5.5",
     "tags": [
-      "behavior:formation",
-      "shape:oval",
-      "shape:saucer",
-      "witness:military",
-      "witness:pilot"
+      "formation",
+      "military",
+      "oval",
+      "pilot",
+      "saucer"
     ]
   },
   {
@@ -203,16 +203,16 @@
     "textExtractedAt": "2026-05-08",
     "extractionModel": "gemini-2.5-flash",
     "tags": [
-      "behavior:formation",
-      "behavior:maneuvering",
-      "behavior:vanished",
-      "color:fireball",
-      "color:glowing",
-      "sensor:radar",
-      "shape:saucer",
-      "witness:military",
-      "witness:pilot",
-      "witness:police"
+      "fireball",
+      "formation",
+      "glowing",
+      "maneuvering",
+      "military",
+      "pilot",
+      "police",
+      "radar",
+      "saucer",
+      "vanished"
     ]
   },
   {
@@ -240,10 +240,10 @@
     "textExtractedAt": "2026-05-08",
     "extractionModel": "gemini-2.5-flash",
     "tags": [
-      "shape:orb",
-      "shape:oval",
-      "shape:saucer",
-      "witness:military"
+      "military",
+      "orb",
+      "oval",
+      "saucer"
     ]
   },
   {
@@ -271,11 +271,11 @@
     "textExtractedAt": "2026-05-08",
     "extractionModel": "gemini-2.5-flash",
     "tags": [
-      "behavior:hovering",
-      "behavior:vanished",
-      "sensor:telescope",
-      "shape:saucer",
-      "witness:military"
+      "hovering",
+      "military",
+      "saucer",
+      "telescope",
+      "vanished"
     ]
   },
   {
@@ -303,15 +303,15 @@
     "textExtractedAt": "2026-05-08",
     "extractionModel": "gemini-2.5-flash",
     "tags": [
-      "behavior:formation",
-      "behavior:hovering",
-      "behavior:vanished",
-      "shape:cigar",
-      "shape:cone",
-      "shape:oval",
-      "shape:saucer",
-      "witness:military",
-      "witness:pilot"
+      "cigar",
+      "cone",
+      "formation",
+      "hovering",
+      "military",
+      "oval",
+      "pilot",
+      "saucer",
+      "vanished"
     ]
   },
   {
@@ -339,7 +339,7 @@
     "textExtractedAt": "2026-05-08",
     "extractionModel": "gpt-5.5",
     "tags": [
-      "shape:saucer"
+      "saucer"
     ]
   },
   {
@@ -367,11 +367,11 @@
     "textExtractedAt": "2026-05-08",
     "extractionModel": "gemini-2.5-flash",
     "tags": [
-      "behavior:formation",
-      "behavior:maneuvering",
-      "sensor:radar",
-      "shape:saucer",
-      "witness:military"
+      "formation",
+      "maneuvering",
+      "military",
+      "radar",
+      "saucer"
     ]
   },
   {
@@ -399,9 +399,9 @@
     "textExtractedAt": "2026-05-08",
     "extractionModel": "gpt-5.5",
     "tags": [
-      "shape:cigar",
-      "shape:cone",
-      "shape:saucer"
+      "cigar",
+      "cone",
+      "saucer"
     ]
   },
   {
@@ -429,7 +429,7 @@
     "extractionModel": "gpt-5.5",
     "extractionError": "pdftotext yielded too little; PDFTOTEXT_ONLY=1, skipping vision",
     "tags": [
-      "shape:saucer"
+      "saucer"
     ]
   },
   {
@@ -457,10 +457,10 @@
     "textExtractedAt": "2026-05-08",
     "extractionModel": "gemini-2.5-flash",
     "tags": [
-      "behavior:vanished",
-      "shape:oval",
-      "shape:saucer",
-      "witness:police"
+      "oval",
+      "police",
+      "saucer",
+      "vanished"
     ]
   },
   {
@@ -488,25 +488,25 @@
     "textExtractedAt": "2026-05-08",
     "extractionModel": "gemini-2.5-flash",
     "tags": [
-      "behavior:formation",
-      "behavior:hovering",
-      "behavior:maneuvering",
-      "behavior:stationary",
-      "behavior:vanished",
-      "color:fireball",
-      "color:glowing",
-      "color:metallic",
-      "program:nicap",
-      "program:project-blue-book",
-      "sensor:radar",
-      "sensor:telescope",
-      "shape:cigar",
-      "shape:orb",
-      "shape:oval",
-      "shape:saucer",
-      "witness:military",
-      "witness:pilot",
-      "witness:police"
+      "NICAP",
+      "Project Blue Book",
+      "cigar",
+      "fireball",
+      "formation",
+      "glowing",
+      "hovering",
+      "maneuvering",
+      "metallic",
+      "military",
+      "orb",
+      "oval",
+      "pilot",
+      "police",
+      "radar",
+      "saucer",
+      "stationary",
+      "telescope",
+      "vanished"
     ]
   },
   {
@@ -534,20 +534,20 @@
     "textExtractedAt": "2026-05-08",
     "extractionModel": "gemini-2.5-flash",
     "tags": [
-      "behavior:formation",
-      "behavior:hovering",
-      "behavior:maneuvering",
-      "behavior:stationary",
-      "behavior:vanished",
-      "color:glowing",
-      "sensor:radar",
-      "sensor:telescope",
-      "shape:cigar",
-      "shape:diamond",
-      "shape:saucer",
-      "witness:military",
-      "witness:pilot",
-      "witness:police"
+      "cigar",
+      "diamond",
+      "formation",
+      "glowing",
+      "hovering",
+      "maneuvering",
+      "military",
+      "pilot",
+      "police",
+      "radar",
+      "saucer",
+      "stationary",
+      "telescope",
+      "vanished"
     ]
   },
   {
@@ -575,13 +575,13 @@
     "textExtractedAt": "2026-05-08",
     "extractionModel": "gemini-2.5-flash",
     "tags": [
-      "behavior:formation",
-      "behavior:maneuvering",
-      "color:metallic",
-      "sensor:radar",
-      "shape:oval",
-      "shape:saucer",
-      "witness:military"
+      "formation",
+      "maneuvering",
+      "metallic",
+      "military",
+      "oval",
+      "radar",
+      "saucer"
     ]
   },
   {
@@ -609,12 +609,12 @@
     "textExtractedAt": "2026-05-08",
     "extractionModel": "gemini-2.5-flash",
     "tags": [
-      "behavior:formation",
-      "behavior:maneuvering",
-      "sensor:radar",
-      "shape:saucer",
-      "witness:military",
-      "witness:police"
+      "formation",
+      "maneuvering",
+      "military",
+      "police",
+      "radar",
+      "saucer"
     ]
   },
   {
@@ -642,21 +642,21 @@
     "textExtractedAt": "2026-05-08",
     "extractionModel": "gemini-2.5-flash",
     "tags": [
-      "behavior:accelerating",
-      "behavior:hovering",
-      "behavior:maneuvering",
-      "behavior:stationary",
-      "behavior:vanished",
-      "color:glowing",
-      "color:metallic",
-      "program:condon",
-      "sensor:radar",
-      "shape:cigar",
-      "shape:orb",
-      "shape:oval",
-      "shape:saucer",
-      "witness:military",
-      "witness:pilot"
+      "Condon",
+      "accelerating",
+      "cigar",
+      "glowing",
+      "hovering",
+      "maneuvering",
+      "metallic",
+      "military",
+      "orb",
+      "oval",
+      "pilot",
+      "radar",
+      "saucer",
+      "stationary",
+      "vanished"
     ]
   },
   {
@@ -684,8 +684,8 @@
     "textExtractedAt": "2026-05-08",
     "extractionModel": "gemini-2.5-flash",
     "tags": [
-      "program:gemini",
-      "witness:astronaut"
+      "Gemini",
+      "astronaut"
     ]
   },
   {
@@ -708,8 +708,8 @@
     "lastSeenAt": "2026-05-10",
     "removedFromSource": false,
     "tags": [
-      "program:gemini",
-      "witness:astronaut"
+      "Gemini",
+      "astronaut"
     ]
   },
   {
@@ -737,14 +737,14 @@
     "textExtractedAt": "2026-05-08",
     "extractionModel": "gemini-2.5-flash",
     "tags": [
-      "behavior:formation",
-      "behavior:stationary",
-      "behavior:vanished",
-      "color:glowing",
-      "shape:cigar",
-      "shape:oval",
-      "witness:military",
-      "witness:pilot"
+      "cigar",
+      "formation",
+      "glowing",
+      "military",
+      "oval",
+      "pilot",
+      "stationary",
+      "vanished"
     ]
   },
   {
@@ -772,12 +772,12 @@
     "textExtractedAt": "2026-05-08",
     "extractionModel": "gemini-2.5-flash",
     "tags": [
-      "behavior:accelerating",
-      "behavior:hovering",
-      "sensor:radar",
-      "shape:saucer",
-      "witness:military",
-      "witness:pilot"
+      "accelerating",
+      "hovering",
+      "military",
+      "pilot",
+      "radar",
+      "saucer"
     ]
   },
   {
@@ -805,13 +805,13 @@
     "textExtractedAt": "2026-05-08",
     "extractionModel": "gemini-2.5-flash",
     "tags": [
-      "behavior:hovering",
-      "behavior:stationary",
-      "behavior:vanished",
-      "sensor:radar",
-      "shape:saucer",
-      "witness:military",
-      "witness:pilot"
+      "hovering",
+      "military",
+      "pilot",
+      "radar",
+      "saucer",
+      "stationary",
+      "vanished"
     ]
   },
   {
@@ -839,14 +839,14 @@
     "textExtractedAt": "2026-05-08",
     "extractionModel": "gemini-2.5-flash",
     "tags": [
-      "behavior:formation",
-      "behavior:maneuvering",
-      "behavior:vanished",
-      "sensor:radar",
-      "shape:cigar",
-      "shape:saucer",
-      "witness:military",
-      "witness:pilot"
+      "cigar",
+      "formation",
+      "maneuvering",
+      "military",
+      "pilot",
+      "radar",
+      "saucer",
+      "vanished"
     ]
   },
   {
@@ -874,18 +874,18 @@
     "textExtractedAt": "2026-05-08",
     "extractionModel": "gemini-2.5-flash",
     "tags": [
-      "behavior:formation",
-      "behavior:hovering",
-      "behavior:vanished",
-      "color:fireball",
-      "color:glowing",
-      "color:metallic",
-      "shape:orb",
-      "shape:oval",
-      "shape:saucer",
-      "witness:military",
-      "witness:pilot",
-      "witness:police"
+      "fireball",
+      "formation",
+      "glowing",
+      "hovering",
+      "metallic",
+      "military",
+      "orb",
+      "oval",
+      "pilot",
+      "police",
+      "saucer",
+      "vanished"
     ]
   },
   {
@@ -913,17 +913,17 @@
     "textExtractedAt": "2026-05-09",
     "extractionModel": "gemini-2.5-flash",
     "tags": [
-      "behavior:accelerating",
-      "behavior:formation",
-      "behavior:maneuvering",
-      "behavior:stationary",
-      "behavior:vanished",
-      "color:metallic",
-      "sensor:radar",
-      "shape:cone",
-      "shape:oval",
-      "shape:saucer",
-      "witness:pilot"
+      "accelerating",
+      "cone",
+      "formation",
+      "maneuvering",
+      "metallic",
+      "oval",
+      "pilot",
+      "radar",
+      "saucer",
+      "stationary",
+      "vanished"
     ]
   },
   {
@@ -951,14 +951,14 @@
     "textExtractedAt": "2026-05-09",
     "extractionModel": "gemini-2.5-flash",
     "tags": [
-      "behavior:formation",
-      "behavior:vanished",
-      "color:metallic",
-      "shape:orb",
-      "shape:oval",
-      "shape:saucer",
-      "witness:pilot",
-      "witness:police"
+      "formation",
+      "metallic",
+      "orb",
+      "oval",
+      "pilot",
+      "police",
+      "saucer",
+      "vanished"
     ]
   },
   {
@@ -986,10 +986,10 @@
     "textExtractedAt": "2026-05-09",
     "extractionModel": "gemini-2.5-flash",
     "tags": [
-      "behavior:formation",
-      "sensor:infrared",
-      "sensor:telescope",
-      "shape:saucer"
+      "formation",
+      "infrared",
+      "saucer",
+      "telescope"
     ]
   },
   {
@@ -1017,11 +1017,11 @@
     "textExtractedAt": "2026-05-09",
     "extractionModel": "gemini-2.5-flash",
     "tags": [
-      "behavior:formation",
-      "sensor:infrared",
-      "sensor:telescope",
-      "shape:saucer",
-      "witness:military"
+      "formation",
+      "infrared",
+      "military",
+      "saucer",
+      "telescope"
     ]
   },
   {
@@ -1049,7 +1049,7 @@
     "textExtractedAt": "2026-05-09",
     "extractionModel": "gemini-2.5-flash",
     "tags": [
-      "witness:military"
+      "military"
     ]
   },
   {
@@ -1077,8 +1077,8 @@
     "textExtractedAt": "2026-05-09",
     "extractionModel": "gemini-2.5-flash",
     "tags": [
-      "behavior:stationary",
-      "witness:military"
+      "military",
+      "stationary"
     ]
   },
   {
@@ -1106,10 +1106,10 @@
     "textExtractedAt": "2026-05-09",
     "extractionModel": "gemini-2.5-flash",
     "tags": [
-      "behavior:formation",
-      "sensor:radar",
-      "shape:saucer",
-      "witness:pilot"
+      "formation",
+      "pilot",
+      "radar",
+      "saucer"
     ]
   },
   {
@@ -1137,8 +1137,8 @@
     "textExtractedAt": "2026-05-09",
     "extractionModel": "gemini-2.5-flash",
     "tags": [
-      "shape:saucer",
-      "witness:military"
+      "military",
+      "saucer"
     ]
   },
   {
@@ -1166,9 +1166,9 @@
     "extractionModel": "pdftotext",
     "extractionError": null,
     "tags": [
-      "program:aaro",
-      "sensor:radar",
-      "witness:military"
+      "AARO",
+      "military",
+      "radar"
     ]
   },
   {
@@ -1196,9 +1196,9 @@
     "extractionModel": "pdftotext",
     "extractionError": null,
     "tags": [
-      "program:aaro",
-      "sensor:radar",
-      "witness:military"
+      "AARO",
+      "military",
+      "radar"
     ]
   },
   {
@@ -1226,10 +1226,10 @@
     "extractionModel": "pdftotext",
     "extractionError": null,
     "tags": [
-      "behavior:formation",
-      "program:aaro",
-      "sensor:radar",
-      "witness:military"
+      "AARO",
+      "formation",
+      "military",
+      "radar"
     ]
   },
   {
@@ -1257,9 +1257,9 @@
     "extractionModel": "pdftotext",
     "extractionError": null,
     "tags": [
-      "program:aaro",
-      "sensor:radar",
-      "witness:military"
+      "AARO",
+      "military",
+      "radar"
     ]
   },
   {
@@ -1287,9 +1287,9 @@
     "extractionModel": "pdftotext",
     "extractionError": null,
     "tags": [
-      "program:aaro",
-      "sensor:radar",
-      "witness:military"
+      "AARO",
+      "military",
+      "radar"
     ]
   },
   {
@@ -1317,9 +1317,9 @@
     "extractionModel": "pdftotext",
     "extractionError": null,
     "tags": [
-      "program:aaro",
-      "sensor:radar",
-      "witness:military"
+      "AARO",
+      "military",
+      "radar"
     ]
   },
   {
@@ -1347,12 +1347,12 @@
     "extractionModel": "pdftotext",
     "extractionError": null,
     "tags": [
-      "behavior:formation",
-      "behavior:maneuvering",
-      "behavior:vanished",
-      "program:aaro",
-      "sensor:radar",
-      "witness:military"
+      "AARO",
+      "formation",
+      "maneuvering",
+      "military",
+      "radar",
+      "vanished"
     ]
   },
   {
@@ -1380,10 +1380,10 @@
     "extractionModel": "pdftotext",
     "extractionError": null,
     "tags": [
-      "behavior:maneuvering",
-      "program:aaro",
-      "sensor:radar",
-      "witness:military"
+      "AARO",
+      "maneuvering",
+      "military",
+      "radar"
     ]
   },
   {
@@ -1411,10 +1411,10 @@
     "extractionModel": "pdftotext",
     "extractionError": null,
     "tags": [
-      "behavior:maneuvering",
-      "program:aaro",
-      "sensor:radar",
-      "witness:military"
+      "AARO",
+      "maneuvering",
+      "military",
+      "radar"
     ]
   },
   {
@@ -1442,13 +1442,13 @@
     "extractionModel": "pdftotext",
     "extractionError": null,
     "tags": [
-      "behavior:maneuvering",
-      "program:aaro",
-      "sensor:infrared",
-      "sensor:radar",
-      "sensor:swir",
-      "shape:diamond",
-      "witness:military"
+      "AARO",
+      "SWIR",
+      "diamond",
+      "infrared",
+      "maneuvering",
+      "military",
+      "radar"
     ]
   },
   {
@@ -1476,12 +1476,12 @@
     "extractionModel": "pdftotext",
     "extractionError": null,
     "tags": [
-      "behavior:maneuvering",
-      "color:glowing",
-      "program:aaro",
-      "sensor:radar",
-      "shape:cigar",
-      "witness:military"
+      "AARO",
+      "cigar",
+      "glowing",
+      "maneuvering",
+      "military",
+      "radar"
     ]
   },
   {
@@ -1509,10 +1509,10 @@
     "extractionModel": "pdftotext",
     "extractionError": null,
     "tags": [
-      "behavior:maneuvering",
-      "program:aaro",
-      "sensor:radar",
-      "witness:military"
+      "AARO",
+      "maneuvering",
+      "military",
+      "radar"
     ]
   },
   {
@@ -1540,10 +1540,10 @@
     "extractionModel": "pdftotext",
     "extractionError": null,
     "tags": [
-      "behavior:maneuvering",
-      "program:aaro",
-      "sensor:radar",
-      "witness:military"
+      "AARO",
+      "maneuvering",
+      "military",
+      "radar"
     ]
   },
   {
@@ -1571,10 +1571,10 @@
     "extractionModel": "pdftotext",
     "extractionError": null,
     "tags": [
-      "behavior:maneuvering",
-      "program:aaro",
-      "sensor:radar",
-      "witness:military"
+      "AARO",
+      "maneuvering",
+      "military",
+      "radar"
     ]
   },
   {
@@ -1602,10 +1602,10 @@
     "extractionModel": "pdftotext",
     "extractionError": null,
     "tags": [
-      "behavior:maneuvering",
-      "program:aaro",
-      "sensor:radar",
-      "witness:military"
+      "AARO",
+      "maneuvering",
+      "military",
+      "radar"
     ]
   },
   {
@@ -1633,10 +1633,10 @@
     "extractionModel": "pdftotext",
     "extractionError": null,
     "tags": [
-      "behavior:maneuvering",
-      "program:aaro",
-      "sensor:radar",
-      "witness:military"
+      "AARO",
+      "maneuvering",
+      "military",
+      "radar"
     ]
   },
   {
@@ -1664,10 +1664,10 @@
     "extractionModel": "pdftotext",
     "extractionError": null,
     "tags": [
-      "behavior:maneuvering",
-      "program:aaro",
-      "sensor:radar",
-      "witness:military"
+      "AARO",
+      "maneuvering",
+      "military",
+      "radar"
     ]
   },
   {
@@ -1695,10 +1695,10 @@
     "extractionModel": "pdftotext",
     "extractionError": null,
     "tags": [
-      "behavior:maneuvering",
-      "program:aaro",
-      "sensor:radar",
-      "witness:military"
+      "AARO",
+      "maneuvering",
+      "military",
+      "radar"
     ]
   },
   {
@@ -1726,10 +1726,10 @@
     "extractionModel": "pdftotext",
     "extractionError": null,
     "tags": [
-      "color:metallic",
-      "program:aaro",
-      "sensor:radar",
-      "witness:military"
+      "AARO",
+      "metallic",
+      "military",
+      "radar"
     ]
   },
   {
@@ -1757,8 +1757,8 @@
     "textExtractedAt": "2026-05-09",
     "extractionModel": "gemini-2.5-flash",
     "tags": [
-      "program:aaro",
-      "witness:pilot"
+      "AARO",
+      "pilot"
     ]
   },
   {
@@ -1786,10 +1786,10 @@
     "extractionModel": "pdftotext",
     "extractionError": null,
     "tags": [
-      "color:metallic",
-      "sensor:radar",
-      "witness:military",
-      "witness:pilot"
+      "metallic",
+      "military",
+      "pilot",
+      "radar"
     ]
   },
   {
@@ -1817,10 +1817,10 @@
     "extractionModel": "pdftotext",
     "extractionError": null,
     "tags": [
-      "color:metallic",
-      "sensor:infrared",
-      "sensor:radar",
-      "witness:military"
+      "infrared",
+      "metallic",
+      "military",
+      "radar"
     ]
   },
   {
@@ -1848,16 +1848,16 @@
     "extractionModel": "pdftotext",
     "extractionError": null,
     "tags": [
-      "behavior:accelerating",
-      "behavior:maneuvering",
-      "color:glowing",
-      "sensor:radar",
-      "shape:cone",
-      "shape:diamond",
-      "shape:orb",
-      "shape:oval",
-      "witness:military",
-      "witness:pilot"
+      "accelerating",
+      "cone",
+      "diamond",
+      "glowing",
+      "maneuvering",
+      "military",
+      "orb",
+      "oval",
+      "pilot",
+      "radar"
     ]
   },
   {
@@ -1885,14 +1885,14 @@
     "extractionModel": "pdftotext",
     "extractionError": null,
     "tags": [
-      "behavior:maneuvering",
-      "color:glowing",
-      "sensor:infrared",
-      "sensor:radar",
-      "shape:cigar",
-      "shape:diamond",
-      "witness:military",
-      "witness:pilot"
+      "cigar",
+      "diamond",
+      "glowing",
+      "infrared",
+      "maneuvering",
+      "military",
+      "pilot",
+      "radar"
     ]
   },
   {
@@ -1920,7 +1920,7 @@
     "textExtractedAt": "2026-05-09",
     "extractionModel": "gemini-2.5-flash",
     "tags": [
-      "program:aaro"
+      "AARO"
     ]
   },
   {
@@ -1974,9 +1974,9 @@
     "extractionModel": "pdftotext",
     "extractionError": null,
     "tags": [
-      "behavior:hovering",
-      "behavior:stationary",
-      "shape:triangle"
+      "hovering",
+      "stationary",
+      "triangle"
     ]
   },
   {
@@ -2004,8 +2004,8 @@
     "extractionModel": "pdftotext",
     "extractionError": null,
     "tags": [
-      "shape:orb",
-      "shape:oval"
+      "orb",
+      "oval"
     ]
   },
   {
@@ -2033,9 +2033,9 @@
     "textExtractedAt": "2026-05-09",
     "extractionModel": "gemini-2.5-flash",
     "tags": [
-      "color:metallic",
-      "program:aaro",
-      "shape:triangle"
+      "AARO",
+      "metallic",
+      "triangle"
     ]
   },
   {
@@ -2063,8 +2063,8 @@
     "extractionModel": "pdftotext",
     "extractionError": null,
     "tags": [
-      "program:aaro",
-      "witness:pilot"
+      "AARO",
+      "pilot"
     ]
   },
   {
@@ -2092,10 +2092,10 @@
     "extractionModel": "pdftotext",
     "extractionError": null,
     "tags": [
-      "color:metallic",
-      "sensor:radar",
-      "witness:military",
-      "witness:pilot"
+      "metallic",
+      "military",
+      "pilot",
+      "radar"
     ]
   },
   {
@@ -2123,9 +2123,9 @@
     "extractionModel": "pdftotext",
     "extractionError": null,
     "tags": [
-      "color:metallic",
-      "sensor:radar",
-      "witness:military"
+      "metallic",
+      "military",
+      "radar"
     ]
   },
   {
@@ -2153,10 +2153,10 @@
     "extractionModel": "pdftotext",
     "extractionError": null,
     "tags": [
-      "color:metallic",
-      "program:aaro",
-      "sensor:radar",
-      "witness:military"
+      "AARO",
+      "metallic",
+      "military",
+      "radar"
     ]
   },
   {
@@ -2184,7 +2184,7 @@
     "textExtractedAt": "2026-05-09",
     "extractionModel": "gemini-2.5-flash",
     "tags": [
-      "program:aaro"
+      "AARO"
     ]
   },
   {
@@ -2212,9 +2212,9 @@
     "textExtractedAt": "2026-05-09",
     "extractionModel": "gemini-2.5-flash",
     "tags": [
-      "program:aaro",
-      "sensor:radar",
-      "witness:military"
+      "AARO",
+      "military",
+      "radar"
     ]
   },
   {
@@ -2242,10 +2242,10 @@
     "textExtractedAt": "2026-05-09",
     "extractionModel": "pdftotext",
     "tags": [
-      "behavior:formation",
-      "program:aaro",
-      "sensor:radar",
-      "witness:military"
+      "AARO",
+      "formation",
+      "military",
+      "radar"
     ]
   },
   {
@@ -2273,9 +2273,9 @@
     "extractionModel": "pdftotext",
     "extractionError": null,
     "tags": [
-      "program:aaro",
-      "sensor:radar",
-      "witness:military"
+      "AARO",
+      "military",
+      "radar"
     ]
   },
   {
@@ -2303,9 +2303,9 @@
     "textExtractedAt": "2026-05-09",
     "extractionModel": "gemini-2.5-flash",
     "tags": [
-      "program:aaro",
-      "sensor:radar",
-      "witness:military"
+      "AARO",
+      "military",
+      "radar"
     ]
   },
   {
@@ -2333,9 +2333,9 @@
     "extractionModel": "pdftotext",
     "extractionError": null,
     "tags": [
-      "program:aaro",
-      "sensor:radar",
-      "witness:military"
+      "AARO",
+      "military",
+      "radar"
     ]
   },
   {
@@ -2363,9 +2363,9 @@
     "textExtractedAt": "2026-05-09",
     "extractionModel": "gemini-2.5-flash",
     "tags": [
-      "program:aaro",
-      "sensor:radar",
-      "witness:military"
+      "AARO",
+      "military",
+      "radar"
     ]
   },
   {
@@ -2393,8 +2393,8 @@
     "textExtractedAt": "2026-05-09",
     "extractionModel": "gemini-2.5-flash",
     "tags": [
-      "program:aaro",
-      "sensor:infrared"
+      "AARO",
+      "infrared"
     ]
   },
   {
@@ -2422,9 +2422,9 @@
     "extractionModel": "pdftotext",
     "extractionError": null,
     "tags": [
-      "behavior:maneuvering",
-      "program:aaro",
-      "witness:military"
+      "AARO",
+      "maneuvering",
+      "military"
     ]
   },
   {
@@ -2452,9 +2452,9 @@
     "extractionModel": "pdftotext",
     "extractionError": null,
     "tags": [
-      "behavior:maneuvering",
-      "program:aaro",
-      "witness:military"
+      "AARO",
+      "maneuvering",
+      "military"
     ]
   },
   {
@@ -2482,7 +2482,7 @@
     "textExtractedAt": "2026-05-09",
     "extractionModel": "gemini-2.5-flash",
     "tags": [
-      "program:aaro"
+      "AARO"
     ]
   },
   {
@@ -2510,10 +2510,10 @@
     "extractionModel": "pdftotext",
     "extractionError": null,
     "tags": [
-      "program:aaro",
-      "sensor:infrared",
-      "sensor:radar",
-      "witness:military"
+      "AARO",
+      "infrared",
+      "military",
+      "radar"
     ]
   },
   {
@@ -2541,7 +2541,7 @@
     "extractionModel": "pdftotext",
     "extractionError": null,
     "tags": [
-      "program:aaro"
+      "AARO"
     ]
   },
   {
@@ -2569,11 +2569,11 @@
     "extractionModel": "pdftotext",
     "extractionError": null,
     "tags": [
-      "behavior:formation",
-      "program:aaro",
-      "sensor:infrared",
-      "sensor:radar",
-      "witness:military"
+      "AARO",
+      "formation",
+      "infrared",
+      "military",
+      "radar"
     ]
   },
   {
@@ -2601,10 +2601,10 @@
     "extractionModel": "pdftotext",
     "extractionError": null,
     "tags": [
-      "program:aaro",
-      "sensor:infrared",
-      "sensor:radar",
-      "witness:military"
+      "AARO",
+      "infrared",
+      "military",
+      "radar"
     ]
   },
   {
@@ -2632,10 +2632,10 @@
     "extractionModel": "pdftotext",
     "extractionError": null,
     "tags": [
-      "program:aaro",
-      "sensor:infrared",
-      "sensor:radar",
-      "witness:military"
+      "AARO",
+      "infrared",
+      "military",
+      "radar"
     ]
   },
   {
@@ -2663,11 +2663,11 @@
     "extractionModel": "pdftotext",
     "extractionError": null,
     "tags": [
-      "behavior:maneuvering",
-      "program:aaro",
-      "sensor:infrared",
-      "sensor:radar",
-      "witness:military"
+      "AARO",
+      "infrared",
+      "maneuvering",
+      "military",
+      "radar"
     ]
   },
   {
@@ -2695,11 +2695,11 @@
     "extractionModel": "pdftotext",
     "extractionError": null,
     "tags": [
-      "behavior:maneuvering",
-      "program:aaro",
-      "sensor:infrared",
-      "sensor:radar",
-      "witness:military"
+      "AARO",
+      "infrared",
+      "maneuvering",
+      "military",
+      "radar"
     ]
   },
   {
@@ -2722,10 +2722,10 @@
     "lastSeenAt": "2026-05-10",
     "removedFromSource": false,
     "tags": [
-      "program:aaro",
-      "sensor:infrared",
-      "sensor:swir",
-      "shape:diamond"
+      "AARO",
+      "SWIR",
+      "diamond",
+      "infrared"
     ]
   },
   {
@@ -2748,8 +2748,8 @@
     "lastSeenAt": "2026-05-10",
     "removedFromSource": false,
     "tags": [
-      "program:aaro",
-      "sensor:infrared"
+      "AARO",
+      "infrared"
     ]
   },
   {
@@ -2777,10 +2777,10 @@
     "extractionModel": "pdftotext",
     "extractionError": null,
     "tags": [
-      "behavior:maneuvering",
-      "program:aaro",
-      "sensor:radar",
-      "witness:military"
+      "AARO",
+      "maneuvering",
+      "military",
+      "radar"
     ]
   },
   {
@@ -2808,10 +2808,10 @@
     "extractionModel": "pdftotext",
     "extractionError": null,
     "tags": [
-      "behavior:maneuvering",
-      "program:aaro",
-      "sensor:radar",
-      "witness:military"
+      "AARO",
+      "maneuvering",
+      "military",
+      "radar"
     ]
   },
   {
@@ -2839,10 +2839,10 @@
     "extractionModel": "pdftotext",
     "extractionError": null,
     "tags": [
-      "behavior:maneuvering",
-      "program:aaro",
-      "sensor:radar",
-      "witness:military"
+      "AARO",
+      "maneuvering",
+      "military",
+      "radar"
     ]
   },
   {
@@ -2870,11 +2870,11 @@
     "extractionModel": "pdftotext",
     "extractionError": null,
     "tags": [
-      "behavior:maneuvering",
-      "program:aaro",
-      "sensor:infrared",
-      "sensor:radar",
-      "witness:military"
+      "AARO",
+      "infrared",
+      "maneuvering",
+      "military",
+      "radar"
     ]
   },
   {
@@ -2902,11 +2902,11 @@
     "extractionModel": "pdftotext",
     "extractionError": null,
     "tags": [
-      "behavior:maneuvering",
-      "program:aaro",
-      "sensor:infrared",
-      "sensor:radar",
-      "witness:military"
+      "AARO",
+      "infrared",
+      "maneuvering",
+      "military",
+      "radar"
     ]
   },
   {
@@ -2934,10 +2934,10 @@
     "extractionModel": "pdftotext",
     "extractionError": null,
     "tags": [
-      "color:metallic",
-      "program:aaro",
-      "sensor:infrared",
-      "sensor:radar"
+      "AARO",
+      "infrared",
+      "metallic",
+      "radar"
     ]
   },
   {
@@ -2960,8 +2960,8 @@
     "lastSeenAt": "2026-05-10",
     "removedFromSource": false,
     "tags": [
-      "program:aaro",
-      "sensor:infrared"
+      "AARO",
+      "infrared"
     ]
   },
   {
@@ -2984,8 +2984,8 @@
     "lastSeenAt": "2026-05-10",
     "removedFromSource": false,
     "tags": [
-      "program:aaro",
-      "sensor:infrared"
+      "AARO",
+      "infrared"
     ]
   },
   {
@@ -3008,8 +3008,8 @@
     "lastSeenAt": "2026-05-10",
     "removedFromSource": false,
     "tags": [
-      "program:aaro",
-      "sensor:infrared"
+      "AARO",
+      "infrared"
     ]
   },
   {
@@ -3032,8 +3032,8 @@
     "lastSeenAt": "2026-05-10",
     "removedFromSource": false,
     "tags": [
-      "program:aaro",
-      "sensor:infrared"
+      "AARO",
+      "infrared"
     ]
   },
   {
@@ -3056,8 +3056,8 @@
     "lastSeenAt": "2026-05-10",
     "removedFromSource": false,
     "tags": [
-      "program:aaro",
-      "sensor:infrared"
+      "AARO",
+      "infrared"
     ]
   },
   {
@@ -3080,8 +3080,8 @@
     "lastSeenAt": "2026-05-10",
     "removedFromSource": false,
     "tags": [
-      "program:aaro",
-      "sensor:infrared"
+      "AARO",
+      "infrared"
     ]
   },
   {
@@ -3104,8 +3104,8 @@
     "lastSeenAt": "2026-05-10",
     "removedFromSource": false,
     "tags": [
-      "program:aaro",
-      "sensor:infrared"
+      "AARO",
+      "infrared"
     ]
   },
   {
@@ -3128,8 +3128,8 @@
     "lastSeenAt": "2026-05-10",
     "removedFromSource": false,
     "tags": [
-      "program:aaro",
-      "sensor:infrared"
+      "AARO",
+      "infrared"
     ]
   },
   {
@@ -3152,9 +3152,9 @@
     "lastSeenAt": "2026-05-10",
     "removedFromSource": false,
     "tags": [
-      "program:aaro",
-      "sensor:infrared",
-      "witness:military"
+      "AARO",
+      "infrared",
+      "military"
     ]
   },
   {
@@ -3177,8 +3177,8 @@
     "lastSeenAt": "2026-05-10",
     "removedFromSource": false,
     "tags": [
-      "program:aaro",
-      "sensor:infrared"
+      "AARO",
+      "infrared"
     ]
   },
   {
@@ -3201,8 +3201,8 @@
     "lastSeenAt": "2026-05-10",
     "removedFromSource": false,
     "tags": [
-      "program:aaro",
-      "sensor:infrared"
+      "AARO",
+      "infrared"
     ]
   },
   {
@@ -3225,8 +3225,8 @@
     "lastSeenAt": "2026-05-10",
     "removedFromSource": false,
     "tags": [
-      "program:aaro",
-      "sensor:infrared"
+      "AARO",
+      "infrared"
     ]
   },
   {
@@ -3249,8 +3249,8 @@
     "lastSeenAt": "2026-05-10",
     "removedFromSource": false,
     "tags": [
-      "program:aaro",
-      "sensor:infrared"
+      "AARO",
+      "infrared"
     ]
   },
   {
@@ -3273,7 +3273,7 @@
     "lastSeenAt": "2026-05-10",
     "removedFromSource": false,
     "tags": [
-      "program:aaro"
+      "AARO"
     ]
   },
   {
@@ -3296,7 +3296,7 @@
     "lastSeenAt": "2026-05-10",
     "removedFromSource": false,
     "tags": [
-      "program:aaro"
+      "AARO"
     ]
   },
   {
@@ -3319,7 +3319,7 @@
     "lastSeenAt": "2026-05-10",
     "removedFromSource": false,
     "tags": [
-      "program:aaro"
+      "AARO"
     ]
   },
   {
@@ -3342,7 +3342,7 @@
     "lastSeenAt": "2026-05-10",
     "removedFromSource": false,
     "tags": [
-      "program:aaro"
+      "AARO"
     ]
   },
   {
@@ -3365,7 +3365,7 @@
     "lastSeenAt": "2026-05-10",
     "removedFromSource": false,
     "tags": [
-      "program:aaro"
+      "AARO"
     ]
   },
   {
@@ -3388,7 +3388,7 @@
     "lastSeenAt": "2026-05-10",
     "removedFromSource": false,
     "tags": [
-      "program:aaro"
+      "AARO"
     ]
   },
   {
@@ -3411,7 +3411,7 @@
     "lastSeenAt": "2026-05-10",
     "removedFromSource": false,
     "tags": [
-      "program:aaro"
+      "AARO"
     ]
   },
   {
@@ -3434,7 +3434,7 @@
     "lastSeenAt": "2026-05-10",
     "removedFromSource": false,
     "tags": [
-      "program:aaro"
+      "AARO"
     ]
   },
   {
@@ -3462,8 +3462,8 @@
     "textExtractedAt": "2026-05-09",
     "extractionModel": "gemini-2.5-flash",
     "tags": [
-      "behavior:formation",
-      "program:aaro"
+      "AARO",
+      "formation"
     ]
   },
   {
@@ -3491,7 +3491,7 @@
     "textExtractedAt": "2026-05-09",
     "extractionModel": "gemini-2.5-flash",
     "tags": [
-      "program:aaro"
+      "AARO"
     ]
   },
   {
@@ -3519,7 +3519,7 @@
     "textExtractedAt": "2026-05-09",
     "extractionModel": "gemini-2.5-flash",
     "tags": [
-      "program:aaro"
+      "AARO"
     ]
   },
   {
@@ -3547,7 +3547,7 @@
     "textExtractedAt": "2026-05-09",
     "extractionModel": "gemini-2.5-flash",
     "tags": [
-      "program:aaro"
+      "AARO"
     ]
   },
   {
@@ -3575,7 +3575,7 @@
     "textExtractedAt": "2026-05-09",
     "extractionModel": "gemini-2.5-flash",
     "tags": [
-      "program:aaro"
+      "AARO"
     ]
   },
   {
@@ -3603,7 +3603,7 @@
     "textExtractedAt": "2026-05-09",
     "extractionModel": "gemini-2.5-flash",
     "tags": [
-      "program:aaro"
+      "AARO"
     ]
   },
   {
@@ -3631,7 +3631,7 @@
     "textExtractedAt": "2026-05-09",
     "extractionModel": "gemini-2.5-flash",
     "tags": [
-      "program:aaro"
+      "AARO"
     ]
   },
   {
@@ -3659,7 +3659,7 @@
     "textExtractedAt": "2026-05-09",
     "extractionModel": "gemini-2.5-flash",
     "tags": [
-      "program:aaro"
+      "AARO"
     ]
   },
   {
@@ -3687,7 +3687,7 @@
     "textExtractedAt": "2026-05-09",
     "extractionModel": "gemini-2.5-flash",
     "tags": [
-      "program:aaro"
+      "AARO"
     ]
   },
   {
@@ -3715,7 +3715,7 @@
     "textExtractedAt": "2026-05-09",
     "extractionModel": "gemini-2.5-flash",
     "tags": [
-      "program:aaro"
+      "AARO"
     ]
   },
   {
@@ -3743,7 +3743,7 @@
     "textExtractedAt": "2026-05-09",
     "extractionModel": "gemini-2.5-flash",
     "tags": [
-      "program:aaro"
+      "AARO"
     ]
   },
   {
@@ -3771,8 +3771,8 @@
     "textExtractedAt": "2026-05-09",
     "extractionModel": "gemini-2.5-flash",
     "tags": [
-      "behavior:formation",
-      "program:aaro"
+      "AARO",
+      "formation"
     ]
   },
   {
@@ -3800,7 +3800,7 @@
     "textExtractedAt": "2026-05-09",
     "extractionModel": "gemini-2.5-flash",
     "tags": [
-      "program:aaro"
+      "AARO"
     ]
   },
   {
@@ -3828,7 +3828,7 @@
     "textExtractedAt": "2026-05-09",
     "extractionModel": "gemini-2.5-flash",
     "tags": [
-      "program:aaro"
+      "AARO"
     ]
   },
   {
@@ -3856,7 +3856,7 @@
     "textExtractedAt": "2026-05-09",
     "extractionModel": "gemini-2.5-flash",
     "tags": [
-      "program:aaro"
+      "AARO"
     ]
   },
   {
@@ -3884,7 +3884,7 @@
     "textExtractedAt": "2026-05-09",
     "extractionModel": "gemini-2.5-flash",
     "tags": [
-      "program:aaro"
+      "AARO"
     ]
   },
   {
@@ -3912,7 +3912,7 @@
     "textExtractedAt": "2026-05-09",
     "extractionModel": "gemini-2.5-flash",
     "tags": [
-      "program:aaro"
+      "AARO"
     ]
   },
   {
@@ -3940,8 +3940,8 @@
     "textExtractedAt": "2026-05-09",
     "extractionModel": "gemini-2.5-flash",
     "tags": [
-      "behavior:formation",
-      "program:aaro"
+      "AARO",
+      "formation"
     ]
   },
   {
@@ -3969,7 +3969,7 @@
     "textExtractedAt": "2026-05-09",
     "extractionModel": "gemini-2.5-flash",
     "tags": [
-      "program:aaro"
+      "AARO"
     ]
   },
   {
@@ -3997,8 +3997,8 @@
     "textExtractedAt": "2026-05-09",
     "extractionModel": "gemini-2.5-flash",
     "tags": [
-      "behavior:formation",
-      "program:aaro"
+      "AARO",
+      "formation"
     ]
   },
   {
@@ -4026,7 +4026,7 @@
     "textExtractedAt": "2026-05-09",
     "extractionModel": "gemini-2.5-flash",
     "tags": [
-      "program:aaro"
+      "AARO"
     ]
   },
   {
@@ -4054,7 +4054,7 @@
     "textExtractedAt": "2026-05-09",
     "extractionModel": "gemini-2.5-flash",
     "tags": [
-      "program:aaro"
+      "AARO"
     ]
   },
   {
@@ -4082,7 +4082,7 @@
     "textExtractedAt": "2026-05-09",
     "extractionModel": "gemini-2.5-flash",
     "tags": [
-      "program:aaro"
+      "AARO"
     ]
   },
   {
@@ -4110,7 +4110,7 @@
     "textExtractedAt": "2026-05-09",
     "extractionModel": "gemini-2.5-flash",
     "tags": [
-      "program:aaro"
+      "AARO"
     ]
   },
   {
@@ -4138,11 +4138,11 @@
     "extractionModel": "pdftotext",
     "extractionError": null,
     "tags": [
-      "program:apollo",
-      "sensor:radar",
-      "sensor:telescope",
-      "witness:astronaut",
-      "witness:pilot"
+      "Apollo",
+      "astronaut",
+      "pilot",
+      "radar",
+      "telescope"
     ]
   },
   {
@@ -4170,11 +4170,11 @@
     "extractionModel": "pdftotext",
     "extractionError": null,
     "tags": [
-      "behavior:maneuvering",
-      "program:apollo",
-      "shape:oval",
-      "witness:astronaut",
-      "witness:pilot"
+      "Apollo",
+      "astronaut",
+      "maneuvering",
+      "oval",
+      "pilot"
     ]
   },
   {
@@ -4202,10 +4202,10 @@
     "textExtractedAt": "2026-05-09",
     "extractionModel": "gemini-2.5-flash",
     "tags": [
-      "program:apollo",
-      "shape:cigar",
-      "witness:astronaut",
-      "witness:pilot"
+      "Apollo",
+      "astronaut",
+      "cigar",
+      "pilot"
     ]
   },
   {
@@ -4233,8 +4233,8 @@
     "extractionModel": "pdftotext",
     "extractionError": null,
     "tags": [
-      "program:apollo",
-      "witness:astronaut"
+      "Apollo",
+      "astronaut"
     ]
   },
   {
@@ -4262,10 +4262,10 @@
     "textExtractedAt": "2026-05-09",
     "extractionModel": "gemini-2.5-flash",
     "tags": [
-      "color:fireball",
-      "program:apollo",
-      "witness:astronaut",
-      "witness:pilot"
+      "Apollo",
+      "astronaut",
+      "fireball",
+      "pilot"
     ]
   },
   {
@@ -4293,10 +4293,10 @@
     "textExtractedAt": "2026-05-09",
     "extractionModel": "gemini-2.5-flash",
     "tags": [
-      "behavior:maneuvering",
-      "behavior:vanished",
-      "program:skylab",
-      "witness:pilot"
+      "Skylab",
+      "maneuvering",
+      "pilot",
+      "vanished"
     ]
   },
   {
@@ -4319,7 +4319,7 @@
     "lastSeenAt": "2026-05-10",
     "removedFromSource": false,
     "tags": [
-      "program:apollo"
+      "Apollo"
     ]
   },
   {
@@ -4342,7 +4342,7 @@
     "lastSeenAt": "2026-05-10",
     "removedFromSource": false,
     "tags": [
-      "program:apollo"
+      "Apollo"
     ]
   },
   {
@@ -4365,7 +4365,7 @@
     "lastSeenAt": "2026-05-10",
     "removedFromSource": false,
     "tags": [
-      "program:apollo"
+      "Apollo"
     ]
   },
   {
@@ -4388,7 +4388,7 @@
     "lastSeenAt": "2026-05-10",
     "removedFromSource": false,
     "tags": [
-      "program:apollo"
+      "Apollo"
     ]
   },
   {
@@ -4411,7 +4411,7 @@
     "lastSeenAt": "2026-05-10",
     "removedFromSource": false,
     "tags": [
-      "program:apollo"
+      "Apollo"
     ]
   },
   {
@@ -4434,9 +4434,9 @@
     "lastSeenAt": "2026-05-10",
     "removedFromSource": false,
     "tags": [
-      "behavior:formation",
-      "program:apollo",
-      "shape:triangle"
+      "Apollo",
+      "formation",
+      "triangle"
     ]
   },
   {
@@ -4464,8 +4464,8 @@
     "extractionModel": "pdftotext",
     "extractionError": null,
     "tags": [
-      "sensor:radar",
-      "witness:pilot"
+      "pilot",
+      "radar"
     ]
   },
   {
@@ -4493,9 +4493,9 @@
     "extractionModel": "pdftotext",
     "extractionError": null,
     "tags": [
-      "behavior:maneuvering",
-      "behavior:vanished",
-      "witness:pilot"
+      "maneuvering",
+      "pilot",
+      "vanished"
     ]
   },
   {
@@ -4575,8 +4575,8 @@
     "extractionModel": "pdftotext",
     "extractionError": null,
     "tags": [
-      "witness:military",
-      "witness:pilot"
+      "military",
+      "pilot"
     ]
   },
   {
@@ -4604,14 +4604,14 @@
     "extractionModel": "pdftotext",
     "extractionError": null,
     "tags": [
-      "behavior:formation",
-      "behavior:hovering",
-      "behavior:stationary",
-      "sensor:flir",
-      "sensor:infrared",
-      "shape:orb",
-      "shape:oval",
-      "witness:pilot"
+      "FLIR",
+      "formation",
+      "hovering",
+      "infrared",
+      "orb",
+      "oval",
+      "pilot",
+      "stationary"
     ]
   },
   {
@@ -4639,7 +4639,7 @@
     "textExtractedAt": "2026-05-09",
     "extractionModel": "gemini-2.5-flash",
     "tags": [
-      "color:metallic"
+      "metallic"
     ]
   },
   {
@@ -4667,9 +4667,9 @@
     "textExtractedAt": "2026-05-09",
     "extractionModel": "gemini-2.5-flash",
     "tags": [
-      "behavior:stationary",
-      "behavior:vanished",
-      "color:metallic"
+      "metallic",
+      "stationary",
+      "vanished"
     ]
   },
   {
@@ -4697,11 +4697,11 @@
     "textExtractedAt": "2026-05-09",
     "extractionModel": "gemini-2.5-flash",
     "tags": [
-      "behavior:hovering",
-      "behavior:vanished",
-      "color:metallic",
-      "shape:cigar",
-      "shape:diamond"
+      "cigar",
+      "diamond",
+      "hovering",
+      "metallic",
+      "vanished"
     ]
   },
   {
@@ -4755,13 +4755,13 @@
     "extractionModel": "pdftotext",
     "extractionError": null,
     "tags": [
-      "behavior:formation",
-      "behavior:hovering",
-      "behavior:stationary",
-      "color:glowing",
-      "program:aaro",
-      "shape:orb",
-      "shape:triangle"
+      "AARO",
+      "formation",
+      "glowing",
+      "hovering",
+      "orb",
+      "stationary",
+      "triangle"
     ]
   }
 ]

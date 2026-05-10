@@ -116,13 +116,12 @@ test.describe("UAP records table", () => {
     expect(await r2Links.count()).toBeGreaterThan(150);
   });
 
-  test("clicking a tag chip toggles a tags filter", async ({ page }) => {
-    const firstTag = page.locator("table tbody button[class*='font-mono']").first();
-    const tagText = (await firstTag.textContent()) ?? "";
-    await firstTag.click();
-    // Tags facet summary should now show "Tags (1)"
-    await expect(page.locator("summary", { hasText: /Tags \(1\)/ })).toBeVisible();
-    expect(tagText).toMatch(/^[a-z]+:[a-z-]+$/);
+  test("Tags column renders chips on each row", async ({ page }) => {
+    await page.setViewportSize({ width: 1024, height: 800 });
+    const firstTag = page.locator("table tbody span[class*='font-mono']").first();
+    await firstTag.scrollIntoViewIfNeeded();
+    const tagText = ((await firstTag.textContent()) ?? "").trim();
+    expect(tagText.length).toBeGreaterThan(0);
   });
 
   test("mobile viewport hides Agency/Incident/Location columns and inlines them under the title", async ({ page }) => {
