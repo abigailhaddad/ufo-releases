@@ -347,11 +347,11 @@ export function RecordsTable({ records, agencies: _agencies, types: _types }: Pr
             <TableRow>
               <TableHead className="w-[28px]"></TableHead>
               <TableHead className="w-[60px]">Type</TableHead>
-              <TableHead className="w-[140px]">Agency</TableHead>
+              <TableHead className="hidden w-[140px] md:table-cell">Agency</TableHead>
               <TableHead>Title</TableHead>
-              <TableHead className="w-[110px]">Incident</TableHead>
-              <TableHead className="w-[150px]">Location</TableHead>
-              <TableHead className="w-[120px] text-right">Action</TableHead>
+              <TableHead className="hidden w-[110px] lg:table-cell">Incident</TableHead>
+              <TableHead className="hidden w-[150px] md:table-cell">Location</TableHead>
+              <TableHead className="w-[80px] text-right md:w-[120px]">Action</TableHead>
             </TableRow>
           </TableHeader>
           <TableBody>
@@ -385,7 +385,7 @@ export function RecordsTable({ records, agencies: _agencies, types: _types }: Pr
                     <TableCell className="pl-1">
                       <Badge variant={badgeVariant(r.type)}>{r.type || "—"}</Badge>
                     </TableCell>
-                    <TableCell className="truncate text-sm">
+                    <TableCell className="hidden truncate text-sm md:table-cell">
                       {highlightTerms(r.agency || "—", activeTerms)}
                     </TableCell>
                     <TableCell>
@@ -395,6 +395,16 @@ export function RecordsTable({ records, agencies: _agencies, types: _types }: Pr
                       >
                         {highlightTerms(r.title || "(untitled)", activeTerms)}
                       </div>
+                      {/* Mobile-only: show agency + location inline since their columns are hidden */}
+                      <div className="mt-0.5 truncate text-xs text-muted-foreground md:hidden">
+                        {highlightTerms(r.agency || "—", activeTerms)}
+                        {r.incidentLocation && r.incidentLocation !== "N/A" ? (
+                          <>
+                            {" · "}
+                            {highlightTerms(r.incidentLocation, activeTerms)}
+                          </>
+                        ) : null}
+                      </div>
                       {matchSnippet ? (
                         <div className="mt-1 truncate text-xs text-muted-foreground">
                           <span className="font-mono">
@@ -403,10 +413,10 @@ export function RecordsTable({ records, agencies: _agencies, types: _types }: Pr
                         </div>
                       ) : null}
                     </TableCell>
-                    <TableCell className="truncate text-sm">
+                    <TableCell className="hidden truncate text-sm lg:table-cell">
                       {highlightTerms(r.incidentDate || "—", activeTerms)}
                     </TableCell>
-                    <TableCell className="truncate text-sm">
+                    <TableCell className="hidden truncate text-sm md:table-cell">
                       {highlightTerms(r.incidentLocation || "—", activeTerms)}
                     </TableCell>
                     <TableCell className="text-right">

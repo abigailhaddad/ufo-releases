@@ -45,6 +45,7 @@ next-env.d.ts
 # local artifacts
 .playwright-mcp/
 screenshot-*.png
+mobile-*.png
 /.claude/
 
 # generated at build time from data/text/

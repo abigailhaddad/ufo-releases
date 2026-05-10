@@ -116,6 +116,18 @@ test.describe("UAP records table", () => {
     expect(await r2Links.count()).toBeGreaterThan(150);
   });
 
+  test("mobile viewport hides Agency/Incident/Location columns and inlines them under the title", async ({ page }) => {
+    await page.setViewportSize({ width: 375, height: 800 });
+    // Header columns: only the chevron, Type, Title, Action remain visible
+    await expect(page.getByRole("columnheader", { name: /^Agency$/ })).toBeHidden();
+    await expect(page.getByRole("columnheader", { name: /^Location$/ })).toBeHidden();
+    await expect(page.getByRole("columnheader", { name: /^Incident$/ })).toBeHidden();
+    await expect(page.getByRole("columnheader", { name: /^Title$/ })).toBeVisible();
+    // Rows still render and the Open link still shows
+    expect(await page.locator("table tbody tr").count()).toBeGreaterThan(0);
+    await expect(page.locator('table tbody a[href*="war.gov"]').first()).toBeVisible();
+  });
+
   test("external file links open war.gov / dvidshub", async ({ page }) => {
     const links = page.locator('table tbody a[href*="war.gov"], table tbody a[href*="dvidshub"]');
     const count = await links.count();
