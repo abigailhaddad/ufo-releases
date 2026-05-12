@@ -18,7 +18,14 @@ const chromium = rawChromium;
 chromium.use(StealthPlugin());
 
 const SOURCE_PAGE = "https://www.war.gov/UFO/";
-const CSV_PATH = "/Portals/1/Interactive/2026/UFO/uap-csv.csv";
+// war.gov renamed the CSV from uap-csv.csv → uap-releaseNNN.csv on
+// 2026-05-12. Rather than chase the version suffix, discover the path from
+// the page each run. These fallbacks let us hand-pin a path in CI if the
+// scrape ever fails.
+const CSV_PATH_FALLBACKS = [
+  "/Portals/1/Interactive/2026/UFO/uap-release001.csv",
+  "/Portals/1/Interactive/2026/UFO/uap-csv.csv",
+];
 const DATA_DIR = path.join(process.cwd(), "data");
 const DATA_PATH = path.join(DATA_DIR, "records.json");
 const RAW_CSV_PATH = path.join(DATA_DIR, "uap-csv.csv");
@@ -124,14 +131,34 @@ async function fetchCsv(): Promise<string> {
         timeout: 30_000,
       })
       .catch(() => undefined);
-    // Issue the fetch from inside the page — same fingerprint Akamai already cleared.
-    const text = await page.evaluate(async (csvPath) => {
-      const r = await fetch(csvPath, { credentials: "include", cache: "no-store" });
-      if (!r.ok) throw new Error(`fetch ${csvPath} -> HTTP ${r.status}`);
-      return await r.text();
-    }, CSV_PATH);
-    if (!text || !text.includes(",")) throw new Error("CSV looked empty");
-    return text;
+
+    // Discover the CSV link from the page so version bumps (uap-release001 →
+    // 002 etc.) don't break us. The sandbox/testing CSV on a different host
+    // shows up too — filter to the UFO portals path.
+    const html = await page.content();
+    const discovered = Array.from(html.matchAll(/\/Portals\/[\w./\-?=&%]*?\.csv/gi))
+      .map((m) => m[0])
+      .filter((u) => /\/UFO\//i.test(u));
+    const candidates = [...new Set([...discovered, ...CSV_PATH_FALLBACKS])];
+
+    let lastErr: unknown;
+    for (const csvPath of candidates) {
+      try {
+        const text = await page.evaluate(async (p) => {
+          const r = await fetch(p, { credentials: "include", cache: "no-store" });
+          if (!r.ok) throw new Error(`fetch ${p} -> HTTP ${r.status}`);
+          return await r.text();
+        }, csvPath);
+        if (text && text.includes(",")) {
+          console.log(`Resolved CSV path: ${csvPath}`);
+          return text;
+        }
+        lastErr = new Error(`CSV at ${csvPath} looked empty`);
+      } catch (err) {
+        lastErr = err;
+      }
+    }
+    throw lastErr ?? new Error("no CSV candidate succeeded");
   } finally {
     await browser.close();
   }
