@@ -51,6 +51,7 @@ type StoredRecord = {
   firstSeenAt?: string;
   lastSeenAt?: string;
   removedFromSource?: boolean;
+  contentHash?: string;
 };
 
 function clean(s: string | undefined): string {

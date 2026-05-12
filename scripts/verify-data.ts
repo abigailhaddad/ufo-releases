@@ -31,6 +31,7 @@ type StoredRecord = {
   extractionModel?: string;
   extractionPages?: number;
   firstSeenAt?: string;
+  contentHash?: string;
 };
 
 function loadPrevious(): Map<number, StoredRecord> | null {
@@ -131,6 +132,9 @@ function main() {
       !/^\d+$/.test(r.dvidsVideoId.trim())
     ) {
       warnings.push(`record ${r.id} has non-numeric DVIDS id: ${r.dvidsVideoId}`);
+    }
+    if (r.contentHash && !/^[a-f0-9]{64}$/.test(r.contentHash)) {
+      errors.push(`record ${r.id} has malformed contentHash: ${r.contentHash}`);
     }
   }
 

@@ -41,7 +41,8 @@
       "saucer",
       "stationary",
       "vanished"
-    ]
+    ],
+    "contentHash": "06f96d67fa825b5aefe41bd60e6f3860d71320e2aa436a2bf30240e12c33d0f0"
   },
   {
     "id": 2,
@@ -76,7 +77,8 @@
       "pilot",
       "saucer",
       "vanished"
-    ]
+    ],
+    "contentHash": "e196678aefbf9d1239524925838250d452ac3155789d226d6ebe0158b915070e"
   },
   {
     "id": 3,
@@ -113,7 +115,8 @@
       "saucer",
       "telescope",
       "vanished"
-    ]
+    ],
+    "contentHash": "1a9e21457d266c408a9982485034fed73ebdbede94b3c8322ee024eaa60cfe57"
   },
   {
     "id": 4,
@@ -144,7 +147,8 @@
       "pilot",
       "saucer",
       "vanished"
-    ]
+    ],
+    "contentHash": "1ddb6ef944239c55b86c1089246cd77aadd1d3d391238a1feeab700f7b773d7b"
   },
   {
     "id": 5,
@@ -176,7 +180,8 @@
       "oval",
       "pilot",
       "saucer"
-    ]
+    ],
+    "contentHash": "8bac3aeb023a716259510a74b1264cc38f16b3a012e420e1551a163e4df57573"
   },
   {
     "id": 6,
@@ -213,7 +218,8 @@
       "radar",
       "saucer",
       "vanished"
-    ]
+    ],
+    "contentHash": "3df0935cf48e6847d0a5df77a987f8a446e545cc1dda20cad60f79d966516568"
   },
   {
     "id": 7,
@@ -244,7 +250,8 @@
       "orb",
       "oval",
       "saucer"
-    ]
+    ],
+    "contentHash": "d1cc1285f2af2229df0f6a50dae11e72b943d94e95fb7effb34ba3433c12d82e"
   },
   {
     "id": 8,
@@ -276,7 +283,8 @@
       "saucer",
       "telescope",
       "vanished"
-    ]
+    ],
+    "contentHash": "ca1684b554c662851028c03a8861028e04f1d813e5621ffbb888b8eac87e9fce"
   },
   {
     "id": 9,
@@ -312,7 +320,8 @@
       "pilot",
       "saucer",
       "vanished"
-    ]
+    ],
+    "contentHash": "6446322736ff970386c35f5d305a9d245e632e80f53594ca948718cefd8669a9"
   },
   {
     "id": 10,
@@ -340,7 +349,8 @@
     "extractionModel": "gpt-5.5",
     "tags": [
       "saucer"
-    ]
+    ],
+    "contentHash": "fbb76ffa1aad67e53d98e189b557ee3f893d2374ca28ae93862a79db20908db6"
   },
   {
     "id": 11,
@@ -372,7 +382,8 @@
       "military",
       "radar",
       "saucer"
-    ]
+    ],
+    "contentHash": "879e35dffa0b4a126fc114f6f402a2ca398bd0b6e4718e12f377e7a65e1a3170"
   },
   {
     "id": 12,
@@ -402,7 +413,8 @@
       "cigar",
       "cone",
       "saucer"
-    ]
+    ],
+    "contentHash": "7899c7229a9c410bcc2ca0164c5a229c89c4ec9a31ead8824cdb8f5f501a605b"
   },
   {
     "id": 13,
@@ -430,7 +442,8 @@
     "extractionError": "pdftotext yielded too little; PDFTOTEXT_ONLY=1, skipping vision",
     "tags": [
       "saucer"
-    ]
+    ],
+    "contentHash": "5cb3c74eecbafa0fb9d961ab173a1de54a89cbf430b55bdf144475c341413acf"
   },
   {
     "id": 14,
@@ -461,7 +474,8 @@
       "police",
       "saucer",
       "vanished"
-    ]
+    ],
+    "contentHash": "9a98bf803016c9a2252c03ea960d61d0e35652c88a9098018ebf8f953141c9a8"
   },
   {
     "id": 15,
@@ -507,7 +521,8 @@
       "stationary",
       "telescope",
       "vanished"
-    ]
+    ],
+    "contentHash": "beab1e97edc095b41bac00f3da2909e9fe252a6a3c623f46a83496bf7f4ed13b"
   },
   {
     "id": 16,
@@ -548,7 +563,8 @@
       "stationary",
       "telescope",
       "vanished"
-    ]
+    ],
+    "contentHash": "35995afc0d3986fffe9ca48b82d7712fcc7942e3e13ce554aac845302b5b1862"
   },
   {
     "id": 17,
@@ -582,7 +598,8 @@
       "oval",
       "radar",
       "saucer"
-    ]
+    ],
+    "contentHash": "85d659d6b2208610ac55e6c82cfed0315002f4b6d43963a29fb8e973258bfdd2"
   },
   {
     "id": 18,
@@ -615,7 +632,8 @@
       "police",
       "radar",
       "saucer"
-    ]
+    ],
+    "contentHash": "34d59dc7578ffe7e072a6164c6050f45cff30b634313a87141c0886aa93d15c7"
   },
   {
     "id": 19,
@@ -657,7 +675,8 @@
       "saucer",
       "stationary",
       "vanished"
-    ]
+    ],
+    "contentHash": "2af37a8e08174de45b12ee3acc628736a3a36c5d95edd6c2c17f0bf6ccf1431e"
   },
   {
     "id": 20,
@@ -686,7 +705,8 @@
     "tags": [
       "Gemini",
       "astronaut"
-    ]
+    ],
+    "contentHash": "73cb8f0dc879a38811d9d745c11771263e112ec12a0e6bbabc27b9f781ddb74b"
   },
   {
     "id": 21,
@@ -745,7 +765,8 @@
       "pilot",
       "stationary",
       "vanished"
-    ]
+    ],
+    "contentHash": "cc709f89f3f3de832ee3979817a3c716727dd03c2f4fe26a545f1904b29fd467"
   },
   {
     "id": 23,
@@ -778,7 +799,8 @@
       "pilot",
       "radar",
       "saucer"
-    ]
+    ],
+    "contentHash": "45b2fdb6c919cd8ed9c4406f4d60c7add073669dff5a5497595d4ecf08d72073"
   },
   {
     "id": 24,
@@ -812,7 +834,8 @@
       "saucer",
       "stationary",
       "vanished"
-    ]
+    ],
+    "contentHash": "2cbbb33f9917d45c8b6009ee6ec5b958bc9c7d28b4a0f04edd261e7bf2f3d2f6"
   },
   {
     "id": 25,
@@ -847,7 +870,8 @@
       "radar",
       "saucer",
       "vanished"
-    ]
+    ],
+    "contentHash": "707639e26003ce0c4f317b379626092d56af0f5a73db52cd91d4af184009c515"
   },
   {
     "id": 26,
@@ -886,7 +910,8 @@
       "police",
       "saucer",
       "vanished"
-    ]
+    ],
+    "contentHash": "f4b5cf6a93fe47c09123ce53706e430c814229ed688a49a96244a90b4bcf3e05"
   },
   {
     "id": 27,
@@ -924,7 +949,8 @@
       "saucer",
       "stationary",
       "vanished"
-    ]
+    ],
+    "contentHash": "1d9722f764878359c73135f82b12608f1267eaf90d274c7d5775ab43bc9a289c"
   },
   {
     "id": 28,
@@ -959,7 +985,8 @@
       "police",
       "saucer",
       "vanished"
-    ]
+    ],
+    "contentHash": "13d1805bd1725b38174a328ddf34db564228163768a9082ddd59bca3780fc10e"
   },
   {
     "id": 29,
@@ -990,7 +1017,8 @@
       "infrared",
       "saucer",
       "telescope"
-    ]
+    ],
+    "contentHash": "aba3ec3b8ef0240364308cf046ccbfcd252c5a5d7ef470d696b72c1f41b2502d"
   },
   {
     "id": 30,
@@ -1022,7 +1050,8 @@
       "military",
       "saucer",
       "telescope"
-    ]
+    ],
+    "contentHash": "aba3ec3b8ef0240364308cf046ccbfcd252c5a5d7ef470d696b72c1f41b2502d"
   },
   {
     "id": 31,
@@ -1050,7 +1079,8 @@
     "extractionModel": "gemini-2.5-flash",
     "tags": [
       "military"
-    ]
+    ],
+    "contentHash": "17e13c53b0cc0c3122b4d14d5b74a6cf8fda907179a9f8f8fea506c90c8fe09c"
   },
   {
     "id": 32,
@@ -1079,7 +1109,8 @@
     "tags": [
       "military",
       "stationary"
-    ]
+    ],
+    "contentHash": "d71c2f57a9f173b56220eb6a7f5b867a6d0ed296a0c997cd4997e26fc895f29b"
   },
   {
     "id": 33,
@@ -1110,7 +1141,8 @@
       "pilot",
       "radar",
       "saucer"
-    ]
+    ],
+    "contentHash": "47e9d92b03cd96e2af3510ae7b583ce03c6a89acc21a3cc75c0cae3773c19c35"
   },
   {
     "id": 34,
@@ -1139,7 +1171,8 @@
     "tags": [
       "military",
       "saucer"
-    ]
+    ],
+    "contentHash": "29f187bce011d5e4eaad979e179dfb746d7dbe6a0701ed6cb6b32199080ffd55"
   },
   {
     "id": 35,
@@ -1169,7 +1202,8 @@
       "AARO",
       "military",
       "radar"
-    ]
+    ],
+    "contentHash": "f9deed9063306b0c45a5a0f6b754db6967f7dc3a0ed66097f154be4b0f033399"
   },
   {
     "id": 36,
@@ -1199,7 +1233,8 @@
       "AARO",
       "military",
       "radar"
-    ]
+    ],
+    "contentHash": "00afb60938d05101a62d0af41fdfc6749612fcea806d90d5a1035a9dc874afb5"
   },
   {
     "id": 37,
@@ -1230,7 +1265,8 @@
       "formation",
       "military",
       "radar"
-    ]
+    ],
+    "contentHash": "1822564fbae08f152ad4541c8d067a6ec3b6014c4b4eb8209604e1facb5e1bb3"
   },
   {
     "id": 38,
@@ -1260,7 +1296,8 @@
       "AARO",
       "military",
       "radar"
-    ]
+    ],
+    "contentHash": "b3b3f023d70bcce3178de9fe6a019ea6db5e5145bc7e28a49308442e190ef817"
   },
   {
     "id": 39,
@@ -1290,7 +1327,8 @@
       "AARO",
       "military",
       "radar"
-    ]
+    ],
+    "contentHash": "4752dd830144b21c3055a2fea8b44c551445b41622c27db64fb0fa07c2dcd93d"
   },
   {
     "id": 40,
@@ -1320,7 +1358,8 @@
       "AARO",
       "military",
       "radar"
-    ]
+    ],
+    "contentHash": "46701a48cefa62a834941f073aa47234bcd5358b1ecc53bfa58cfc7cb5aeec41"
   },
   {
     "id": 41,
@@ -1353,7 +1392,8 @@
       "military",
       "radar",
       "vanished"
-    ]
+    ],
+    "contentHash": "71ca8826db94d61583083ef8465a6902564532dcab7d49d0d2db3e86aaf85b2f"
   },
   {
     "id": 42,
@@ -1384,7 +1424,8 @@
       "maneuvering",
       "military",
       "radar"
-    ]
+    ],
+    "contentHash": "ea1cd5296143f378db533066b524c32c1ecfbfd43d74ec6be7d832c20fa271bb"
   },
   {
     "id": 44,
@@ -1418,7 +1459,8 @@
       "maneuvering",
       "military",
       "radar"
-    ]
+    ],
+    "contentHash": "bd5478d2e420f6ff46fb06014e39027e1caa415f55efdc9bd70a849ff6990356"
   },
   {
     "id": 45,
@@ -1451,7 +1493,8 @@
       "maneuvering",
       "military",
       "radar"
-    ]
+    ],
+    "contentHash": "86275421f64583566fcc32b7422c5d991b35dd7d3700e01d3fcf24b279fff243"
   },
   {
     "id": 46,
@@ -1482,7 +1525,8 @@
       "maneuvering",
       "military",
       "radar"
-    ]
+    ],
+    "contentHash": "e12c00b3e2d64e35eef5623499e6eb23b1bc21d304523c75d28d3f474d91d77e"
   },
   {
     "id": 47,
@@ -1513,7 +1557,8 @@
       "maneuvering",
       "military",
       "radar"
-    ]
+    ],
+    "contentHash": "58219b8000454aa27424ead9530bf80420365a587b95d4c770a5dce916783b45"
   },
   {
     "id": 48,
@@ -1544,7 +1589,8 @@
       "maneuvering",
       "military",
       "radar"
-    ]
+    ],
+    "contentHash": "fd4deb1e48fcfa7fd2370b6459877882e6d6fdd0226ecaa881a45fba690172df"
   },
   {
     "id": 51,
@@ -1575,7 +1621,8 @@
       "maneuvering",
       "military",
       "radar"
-    ]
+    ],
+    "contentHash": "7078d96f334dbf396e0e0a141f943009fe2191cd20842e16ee381bcbc2776c43"
   },
   {
     "id": 52,
@@ -1606,7 +1653,8 @@
       "maneuvering",
       "military",
       "radar"
-    ]
+    ],
+    "contentHash": "b4f4f4ce6dc7687a543905990671f999cd6c5a9e579159bfda501bf6d04f4445"
   },
   {
     "id": 53,
@@ -1637,7 +1685,8 @@
       "metallic",
       "military",
       "radar"
-    ]
+    ],
+    "contentHash": "90b353682ba2181149054d0911b7553e58e959438dd4de531a06fc387a332f85"
   },
   {
     "id": 54,
@@ -1666,7 +1715,8 @@
     "tags": [
       "AARO",
       "pilot"
-    ]
+    ],
+    "contentHash": "857deb5a9363aad6e7604c828574d1f44caa0128b3ee0cb5a69204cbcd95d269"
   },
   {
     "id": 55,
@@ -1697,7 +1747,8 @@
       "military",
       "pilot",
       "radar"
-    ]
+    ],
+    "contentHash": "d52431b354af55b1e86cb454e61fd61993af3b023a38f2d9e014a9c9d18d16b4"
   },
   {
     "id": 56,
@@ -1728,7 +1779,8 @@
       "metallic",
       "military",
       "radar"
-    ]
+    ],
+    "contentHash": "c5cfbc8bacca29db64346aaa03846a6e36eab01ac09e1e93d8d50028593cf3f9"
   },
   {
     "id": 57,
@@ -1765,7 +1817,8 @@
       "oval",
       "pilot",
       "radar"
-    ]
+    ],
+    "contentHash": "0dc72877cdf9cc3a1645c3c9d282928922b00e8fd9ffd7b1daf66f46c72b2071"
   },
   {
     "id": 58,
@@ -1800,7 +1853,8 @@
       "military",
       "pilot",
       "radar"
-    ]
+    ],
+    "contentHash": "0dd7855ac3c69e39a9752c53fe6ba3e851d617e28adfcbf07c3ec93907877cf7"
   },
   {
     "id": 59,
@@ -1828,7 +1882,8 @@
     "extractionModel": "gemini-2.5-flash",
     "tags": [
       "AARO"
-    ]
+    ],
+    "contentHash": "af150a6b5139abc632446c9d5999fd5abc4f3c476c6245f173faabb6e2132d10"
   },
   {
     "id": 60,
@@ -1854,7 +1909,8 @@
     "textExtractedAt": "2026-05-08",
     "extractionModel": "pdftotext",
     "extractionError": null,
-    "tags": []
+    "tags": [],
+    "contentHash": "10c11e9bf4d6686159da48e3d9388e7d3afe4ae8b1e79725ec6c63ccc491e537"
   },
   {
     "id": 61,
@@ -1884,7 +1940,8 @@
       "hovering",
       "stationary",
       "triangle"
-    ]
+    ],
+    "contentHash": "f21f4ae91e51810bfa8a6fce6c422f2bbf99c6277871846c642f987954c042f6"
   },
   {
     "id": 62,
@@ -1913,7 +1970,8 @@
     "tags": [
       "orb",
       "oval"
-    ]
+    ],
+    "contentHash": "90570293e61c9b228e557b2e83f6e32821f5cf13879b0c5b83c1b8b58153f510"
   },
   {
     "id": 63,
@@ -1943,7 +2001,8 @@
       "AARO",
       "metallic",
       "triangle"
-    ]
+    ],
+    "contentHash": "03b730443d7be1c67478fc26da8ed664cb48b97acdb817caca3b04fd9b9b82a8"
   },
   {
     "id": 64,
@@ -1972,7 +2031,8 @@
     "tags": [
       "AARO",
       "pilot"
-    ]
+    ],
+    "contentHash": "f5885b95b57a81c08f0595c02950a07c250db050562520c52fb74f2195787166"
   },
   {
     "id": 65,
@@ -2003,7 +2063,8 @@
       "military",
       "pilot",
       "radar"
-    ]
+    ],
+    "contentHash": "9127fb5a81efacf030df4dc6290d02bcdf4c8512cf1809b6eccfe6cf16a77f31"
   },
   {
     "id": 66,
@@ -2033,7 +2094,8 @@
       "metallic",
       "military",
       "radar"
-    ]
+    ],
+    "contentHash": "2565433b0ac938d6123c611be75b30ec6cf99c192e71dbf4ef53c40a6852ca00"
   },
   {
     "id": 67,
@@ -2064,7 +2126,8 @@
       "metallic",
       "military",
       "radar"
-    ]
+    ],
+    "contentHash": "c2bd370cdadc2f17649830713d55731aa22ceb76940fd64ae7ffc86fc0559261"
   },
   {
     "id": 68,
@@ -2092,7 +2155,8 @@
     "extractionModel": "gemini-2.5-flash",
     "tags": [
       "AARO"
-    ]
+    ],
+    "contentHash": "0f898352417d0447b3720c6eda131ac0cbe7e4cf90b8d1ceab60a431fa835457"
   },
   {
     "id": 69,
@@ -2122,7 +2186,8 @@
       "AARO",
       "military",
       "radar"
-    ]
+    ],
+    "contentHash": "39126406547c89dbc81112c5638612858fcfe7e38179dd89e6d725dc6cee13b1"
   },
   {
     "id": 70,
@@ -2153,7 +2218,8 @@
       "formation",
       "military",
       "radar"
-    ]
+    ],
+    "contentHash": "4ce20fc566edf4a3dcb8a8abd7a5dcd91046069f9e35f83912ad757c8c8be1b9"
   },
   {
     "id": 71,
@@ -2183,7 +2249,8 @@
       "AARO",
       "military",
       "radar"
-    ]
+    ],
+    "contentHash": "36708d3c6121b00c55394ac4a648fbcbe5411c8b2c00ea8f42f9ca0e502c6b13"
   },
   {
     "id": 72,
@@ -2213,7 +2280,8 @@
       "AARO",
       "military",
       "radar"
-    ]
+    ],
+    "contentHash": "ad3b37eb9fbd20e6dc75152e486514e58ff8a1edde3d32615887ea0d19727884"
   },
   {
     "id": 73,
@@ -2243,7 +2311,8 @@
       "AARO",
       "military",
       "radar"
-    ]
+    ],
+    "contentHash": "8422fceb10b2eafcab525690cc9aff6827fc78d5ae5e34b44174d9cc78abbb7c"
   },
   {
     "id": 74,
@@ -2273,7 +2342,8 @@
       "AARO",
       "military",
       "radar"
-    ]
+    ],
+    "contentHash": "bfbc281190a14c522d854c0cf2699f82de419e8f8a455949871ccdc9175bf423"
   },
   {
     "id": 75,
@@ -2302,7 +2372,8 @@
     "tags": [
       "AARO",
       "infrared"
-    ]
+    ],
+    "contentHash": "c4cae44b6ac7b4f4916ddff140d47b1e2a6ddc80ed72985877c07401d17fd76a"
   },
   {
     "id": 76,
@@ -2332,7 +2403,8 @@
       "AARO",
       "maneuvering",
       "military"
-    ]
+    ],
+    "contentHash": "30708df4aa8484c668d3c3694560f5b57d5a10b6b3da1cfb826a925d9cc806e1"
   },
   {
     "id": 77,
@@ -2362,7 +2434,8 @@
       "AARO",
       "maneuvering",
       "military"
-    ]
+    ],
+    "contentHash": "672b79390fe6595828c71e1f3df8cb0a2290f0658c36ed724e17ea167233b771"
   },
   {
     "id": 78,
@@ -2390,7 +2463,8 @@
     "extractionModel": "gemini-2.5-flash",
     "tags": [
       "AARO"
-    ]
+    ],
+    "contentHash": "0a8548a845c3b45f90ee512bdfd8eac1af073072228e7e4d24e779d12025886c"
   },
   {
     "id": 79,
@@ -2449,7 +2523,8 @@
     "extractionError": null,
     "tags": [
       "AARO"
-    ]
+    ],
+    "contentHash": "1ff8c16256579734969188915ad0e80062e1d5639bc424c6a207340e892c6dc6"
   },
   {
     "id": 81,
@@ -3277,7 +3352,8 @@
     "tags": [
       "AARO",
       "formation"
-    ]
+    ],
+    "contentHash": "6c47098b047b4cce59129072df1a7eeb5b6602da7ef209fa9dc1299e13622199"
   },
   {
     "id": 116,
@@ -3305,7 +3381,8 @@
     "extractionModel": "gemini-2.5-flash",
     "tags": [
       "AARO"
-    ]
+    ],
+    "contentHash": "1594af0628fa9ae782b86bb3721ae2c1233a0bf0e03e6b45dd82a9badc642aa8"
   },
   {
     "id": 117,
@@ -3333,7 +3410,8 @@
     "extractionModel": "gemini-2.5-flash",
     "tags": [
       "AARO"
-    ]
+    ],
+    "contentHash": "ff3909ff0fa5f99ee6da291d9241b9cd57b24f2889fcead89d8ae37a753d6c1c"
   },
   {
     "id": 118,
@@ -3361,7 +3439,8 @@
     "extractionModel": "gemini-2.5-flash",
     "tags": [
       "AARO"
-    ]
+    ],
+    "contentHash": "c440872bb730cae896ce618a3b9d4c4d57553e1910ad218b41c0be01f8801694"
   },
   {
     "id": 119,
@@ -3389,7 +3468,8 @@
     "extractionModel": "gemini-2.5-flash",
     "tags": [
       "AARO"
-    ]
+    ],
+    "contentHash": "92555935e35bf99584a41d4433d9b53fd5e9eeff02656e86f7f3456c6f798984"
   },
   {
     "id": 120,
@@ -3417,7 +3497,8 @@
     "extractionModel": "gemini-2.5-flash",
     "tags": [
       "AARO"
-    ]
+    ],
+    "contentHash": "54f36aa547dd25b7c099a66b2c5f52c951315906a704d6b215cb1651e7dc92f2"
   },
   {
     "id": 121,
@@ -3445,7 +3526,8 @@
     "extractionModel": "gemini-2.5-flash",
     "tags": [
       "AARO"
-    ]
+    ],
+    "contentHash": "0c6fe7a96a68e8440cd405bb92519fce639079a00ed6b6193863a39fa5a86c14"
   },
   {
     "id": 122,
@@ -3473,7 +3555,8 @@
     "extractionModel": "gemini-2.5-flash",
     "tags": [
       "AARO"
-    ]
+    ],
+    "contentHash": "76bc12588922fca7ef9019f1c809a07e3a159cb1d789013f6acbfcd893935b6a"
   },
   {
     "id": 123,
@@ -3501,7 +3584,8 @@
     "extractionModel": "gemini-2.5-flash",
     "tags": [
       "AARO"
-    ]
+    ],
+    "contentHash": "60418c8bf9ed18d064ebb7a6e378814ca24438614855b4e626d4375855f57e8d"
   },
   {
     "id": 124,
@@ -3529,7 +3613,8 @@
     "extractionModel": "gemini-2.5-flash",
     "tags": [
       "AARO"
-    ]
+    ],
+    "contentHash": "5e8801ee956ccb3aed9c605cd9e1d097b2abfd379d3d6e84d4c09a080aa570fd"
   },
   {
     "id": 125,
@@ -3557,7 +3642,8 @@
     "extractionModel": "gemini-2.5-flash",
     "tags": [
       "AARO"
-    ]
+    ],
+    "contentHash": "29dc410fc55141b34ee1a7bc42f41a1fa388ccba7086a3dba5774aaec27cf8b0"
   },
   {
     "id": 126,
@@ -3586,7 +3672,8 @@
     "tags": [
       "AARO",
       "formation"
-    ]
+    ],
+    "contentHash": "e55d5cab5063153c6f2f27314c47b9e4a7f4938f2cefc6bfecf7eb6264b0a07b"
   },
   {
     "id": 127,
@@ -3614,7 +3701,8 @@
     "extractionModel": "gemini-2.5-flash",
     "tags": [
       "AARO"
-    ]
+    ],
+    "contentHash": "d5f7a811de98462378fb4b61beeeb107bd2aa58d32b0a0d3a7788e1457b3593f"
   },
   {
     "id": 128,
@@ -3642,7 +3730,8 @@
     "extractionModel": "gemini-2.5-flash",
     "tags": [
       "AARO"
-    ]
+    ],
+    "contentHash": "52b81ee21a3bfc5ecce1777d6e91d85aabe8bb905dab1963a793dd4787005214"
   },
   {
     "id": 129,
@@ -3670,7 +3759,8 @@
     "extractionModel": "gemini-2.5-flash",
     "tags": [
       "AARO"
-    ]
+    ],
+    "contentHash": "932c53d8d8031325459c479e54a6c44ea9408faa26344f2a983417ed437d0dc5"
   },
   {
     "id": 130,
@@ -3698,7 +3788,8 @@
     "extractionModel": "gemini-2.5-flash",
     "tags": [
       "AARO"
-    ]
+    ],
+    "contentHash": "ddd839e52ad4d98986a25a760d0040c475d4c43fb7a52cf4c817aa87f51d9271"
   },
   {
     "id": 131,
@@ -3726,7 +3817,8 @@
     "extractionModel": "gemini-2.5-flash",
     "tags": [
       "AARO"
-    ]
+    ],
+    "contentHash": "3dab0652bc49b11624234042e65b3340a1146586ed9521f15731517ce042f8e1"
   },
   {
     "id": 132,
@@ -3755,7 +3847,8 @@
     "tags": [
       "AARO",
       "formation"
-    ]
+    ],
+    "contentHash": "4a23e128950c1c45cf2f9e32c588088155e63e056d96f09ec94ddaa73ff0cccb"
   },
   {
     "id": 133,
@@ -3783,7 +3876,8 @@
     "extractionModel": "gemini-2.5-flash",
     "tags": [
       "AARO"
-    ]
+    ],
+    "contentHash": "d5dd840f008b10fcd88bcab731f07b56fb614aa16048ced9672c9b40a9c9bc69"
   },
   {
     "id": 134,
@@ -3812,7 +3906,8 @@
     "tags": [
       "AARO",
       "formation"
-    ]
+    ],
+    "contentHash": "032b86473fefc250def77d3904c381dad010e34390d58de54fd560054127936c"
   },
   {
     "id": 135,
@@ -3840,7 +3935,8 @@
     "extractionModel": "gemini-2.5-flash",
     "tags": [
       "AARO"
-    ]
+    ],
+    "contentHash": "09444e6501f05a4030120db174a1841e891814464fd7ce6f325178d3c09cdf1a"
   },
   {
     "id": 136,
@@ -3868,7 +3964,8 @@
     "extractionModel": "gemini-2.5-flash",
     "tags": [
       "AARO"
-    ]
+    ],
+    "contentHash": "4f3122c323c6c0b6ef1bb12cefc623d7488b03fe1c5161f4ea4e111b91347684"
   },
   {
     "id": 137,
@@ -3896,7 +3993,8 @@
     "extractionModel": "gemini-2.5-flash",
     "tags": [
       "AARO"
-    ]
+    ],
+    "contentHash": "cae6a62245153fd16acd8c4ff995d19c49fdadf7be152a85c8fe5d714fc3f423"
   },
   {
     "id": 138,
@@ -3924,7 +4022,8 @@
     "extractionModel": "gemini-2.5-flash",
     "tags": [
       "AARO"
-    ]
+    ],
+    "contentHash": "e61a49212bb82cfc9a6e7627a2291c9159bbbb2272fb995e45411a48e44eb0b1"
   },
   {
     "id": 139,
@@ -3956,7 +4055,8 @@
       "pilot",
       "radar",
       "telescope"
-    ]
+    ],
+    "contentHash": "ab911622b7d4203d9d54914f03d1662cf561b7f943afe9d17f9617cfaea06585"
   },
   {
     "id": 140,
@@ -3988,7 +4088,8 @@
       "maneuvering",
       "oval",
       "pilot"
-    ]
+    ],
+    "contentHash": "9d041c8799a0124dc440c05cacd790a43d9e063e399aaa5cd3ee777b14146d03"
   },
   {
     "id": 141,
@@ -4019,7 +4120,8 @@
       "astronaut",
       "cigar",
       "pilot"
-    ]
+    ],
+    "contentHash": "aacc41814dd16583bbeabe068026bf286cd9b0e464ff097c5c7b97b00d308443"
   },
   {
     "id": 142,
@@ -4048,7 +4150,8 @@
     "tags": [
       "Apollo",
       "astronaut"
-    ]
+    ],
+    "contentHash": "5d7db3870de8c01a1c39b7e8a4185dd026fe132f01d1cd5ded60f10866722f7e"
   },
   {
     "id": 143,
@@ -4079,7 +4182,8 @@
       "astronaut",
       "fireball",
       "pilot"
-    ]
+    ],
+    "contentHash": "2c874c40c55505f2348177ddde77c9fd015bf971e6e059c43508a92bc9ee6b30"
   },
   {
     "id": 144,
@@ -4110,7 +4214,8 @@
       "maneuvering",
       "pilot",
       "vanished"
-    ]
+    ],
+    "contentHash": "49e232c72a77f16f7e06593789a36882d614888d882a74d71eabcc7d2ce94fb6"
   },
   {
     "id": 145,
@@ -4279,7 +4384,8 @@
     "tags": [
       "pilot",
       "radar"
-    ]
+    ],
+    "contentHash": "74032ed145b1badbb1049005b4b77ba95351cb573c3cf6578a77ca25f4033220"
   },
   {
     "id": 152,
@@ -4309,7 +4415,8 @@
       "maneuvering",
       "pilot",
       "vanished"
-    ]
+    ],
+    "contentHash": "64847feac6a309a847a39689ed2036e556f35a253189c7b9b33bd9d40b26b239"
   },
   {
     "id": 153,
@@ -4335,7 +4442,8 @@
     "textExtractedAt": "2026-05-08",
     "extractionModel": "pdftotext",
     "extractionError": null,
-    "tags": []
+    "tags": [],
+    "contentHash": "df5874d4b68d17f996da1af0026bf701c627a6e21c244cabf6fd53689369beca"
   },
   {
     "id": 154,
@@ -4361,7 +4469,8 @@
     "textExtractedAt": "2026-05-08",
     "extractionModel": "pdftotext",
     "extractionError": null,
-    "tags": []
+    "tags": [],
+    "contentHash": "a289d6a9d8286514343ac3be8a793f0e1d297b400ccc0a417485cba385fd9230"
   },
   {
     "id": 155,
@@ -4390,7 +4499,8 @@
     "tags": [
       "military",
       "pilot"
-    ]
+    ],
+    "contentHash": "022b27728e86e291e078cac1d4fd5dcf225b2f6700175db9ea8ada19147318d8"
   },
   {
     "id": 156,
@@ -4425,7 +4535,8 @@
       "oval",
       "pilot",
       "stationary"
-    ]
+    ],
+    "contentHash": "63deae172b2bd4923696ed097c0c25d1286f116be1efb313d14c0630ac0a1786"
   },
   {
     "id": 157,
@@ -4453,7 +4564,8 @@
     "extractionModel": "gemini-2.5-flash",
     "tags": [
       "metallic"
-    ]
+    ],
+    "contentHash": "7768268e837325333be0ea00ce5c00f571de3190e0c390f33e098f183cbf19a5"
   },
   {
     "id": 158,
@@ -4483,7 +4595,8 @@
       "metallic",
       "stationary",
       "vanished"
-    ]
+    ],
+    "contentHash": "c38d267441b19350df557d9f3bfbd689fb5ba0619366373a7b9e6f8dce84bb8c"
   },
   {
     "id": 159,
@@ -4515,7 +4628,8 @@
       "hovering",
       "metallic",
       "vanished"
-    ]
+    ],
+    "contentHash": "4f462fefe8f38e6445f652067ff0ba418e6b0d4f38ce73b5c8190e857fe352ed"
   },
   {
     "id": 160,
@@ -4541,7 +4655,8 @@
     "textExtractedAt": "2026-05-08",
     "extractionModel": "pdftotext",
     "extractionError": null,
-    "tags": []
+    "tags": [],
+    "contentHash": "29ed0fb7cbe0be3c23965212bb83c58d3890a0de9253938ee4e9c9bb2349d5fe"
   },
   {
     "id": 161,
@@ -4575,7 +4690,8 @@
       "orb",
       "stationary",
       "triangle"
-    ]
+    ],
+    "contentHash": "6a4e6ee6111eec24d28aa9b4b9d72beafe0be5a480972683fbce82f758e6be35"
   },
   {
     "id": 162,
@@ -4595,7 +4711,8 @@
     "redaction": "",
     "firstSeenAt": "2026-05-12",
     "lastSeenAt": "2026-05-12",
-    "removedFromSource": false
+    "removedFromSource": false,
+    "contentHash": "dd6e0d2d32cec2ab397f2615f0d563b1b5edeeba719b3643b64abce0dee8a552"
   },
   {
     "id": 163,
@@ -4615,6 +4732,7 @@
     "redaction": "TRUE",
     "firstSeenAt": "2026-05-12",
     "lastSeenAt": "2026-05-12",
-    "removedFromSource": false
+    "removedFromSource": false,
+    "contentHash": "3e5b68e982951556825ffa4ac21fd8f950e4055ed4da4d425fa6387a660b398b"
   }
 ]

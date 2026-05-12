@@ -8,6 +8,7 @@
  */
 import { chromium as rawChromium } from "playwright-extra";
 import StealthPlugin from "puppeteer-extra-plugin-stealth";
+import crypto from "node:crypto";
 import fs from "node:fs";
 import path from "node:path";
 
@@ -24,11 +25,40 @@ type StoredRecord = {
   type: string;
   fileUrl: string;
   removedFromSource?: boolean;
+  contentHash?: string;
+  [k: string]: unknown;
 };
+
+function sha256(buf: Buffer): string {
+  return crypto.createHash("sha256").update(buf).digest("hex");
+}
+
+function persist(records: StoredRecord[]): void {
+  fs.writeFileSync(DATA_PATH, JSON.stringify(records, null, 2) + "\n");
+}
 
 async function main() {
   fs.mkdirSync(OUT_DIR, { recursive: true });
   const records: StoredRecord[] = JSON.parse(fs.readFileSync(DATA_PATH, "utf8"));
+  let dirty = false;
+
+  // Backfill: hash any PDF already on disk that lacks a contentHash. This
+  // covers historical records (including archived ones) and lets the dedup
+  // step find rename pairs without re-downloading.
+  let backfilled = 0;
+  for (const r of records) {
+    if (r.contentHash) continue;
+    if (r.type !== "PDF") continue;
+    const local = path.join(OUT_DIR, `${r.id}.pdf`);
+    if (!fs.existsSync(local)) continue;
+    r.contentHash = sha256(fs.readFileSync(local));
+    backfilled += 1;
+    dirty = true;
+  }
+  if (backfilled > 0) {
+    console.log(`Backfilled contentHash for ${backfilled} existing PDF(s).`);
+    persist(records);
+  }
 
   const targets = records.filter(
     (r) =>
@@ -39,7 +69,7 @@ async function main() {
   );
 
   if (targets.length === 0) {
-    console.log("All PDFs already downloaded.");
+    if (!dirty) console.log("All PDFs already downloaded.");
     return;
   }
 
@@ -97,6 +127,8 @@ async function main() {
         }, r.fileUrl);
         const buf = Buffer.from(b64, "base64");
         fs.writeFileSync(dest, buf);
+        r.contentHash = sha256(buf);
+        dirty = true;
         done += 1;
         console.log(
           `${(buf.length / 1024 / 1024).toFixed(1)} MB, ${Math.round((Date.now() - t0) / 1000)}s`,
@@ -107,6 +139,7 @@ async function main() {
       }
     }
     console.log(`\nDone. Downloaded ${done}, failed ${failed}.`);
+    if (dirty) persist(records);
   } finally {
     await browser.close();
   }

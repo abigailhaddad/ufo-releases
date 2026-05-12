@@ -64,6 +64,9 @@ jobs:
       - name: Pre-download new PDFs (idempotent)
         run: pnpm download:pdfs
 
+      - name: Collapse rename-pair dupes (content-hash aware)
+        run: pnpm dedup
+
       - name: Pre-download new images + videos (idempotent)
         run: pnpm download:media
 
