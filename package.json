@@ -10,6 +10,7 @@
     "start": "next start",
     "lint": "eslint",
     "fetch:csv": "tsx scripts/fetch-csv.ts",
+    "dedup": "tsx scripts/dedup-records.ts",
     "download:pdfs": "tsx scripts/download-pdfs.ts",
     "download:media": "tsx scripts/download-media.ts",
     "extract:text": "tsx --env-file-if-exists=.env scripts/extract-text.ts",

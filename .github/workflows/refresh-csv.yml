@@ -37,6 +37,9 @@ jobs:
       - name: Fetch CSV and merge into records.json
         run: pnpm fetch:csv
 
+      - name: Collapse rename-pair dupes
+        run: pnpm dedup
+
       - name: Verify data integrity
         run: pnpm verify:data
 
