@@ -989,7 +989,7 @@
     "contentHash": "13d1805bd1725b38174a328ddf34db564228163768a9082ddd59bca3780fc10e"
   },
   {
-    "id": 29,
+    "id": 30,
     "title": "59_214434_SP 16 [7.18.1963]",
     "type": "PDF",
     "agency": "Department of State",
@@ -1015,39 +1015,6 @@
     "tags": [
       "formation",
       "infrared",
-      "saucer",
-      "telescope"
-    ],
-    "contentHash": "aba3ec3b8ef0240364308cf046ccbfcd252c5a5d7ef470d696b72c1f41b2502d"
-  },
-  {
-    "id": 30,
-    "title": "59_64634_711.5612[7-2852",
-    "type": "PDF",
-    "agency": "Department of State",
-    "releaseDate": "5/8/26",
-    "incidentDate": "7/18/52",
-    "incidentLocation": "N/A",
-    "description": "This two page memorandum, dated July 18, 1952, relates to increased reports of unidentified flying objects (UFOs). Included in the record are possible explanations of increased sightings, such as technological improvements, historical records of UFOs, and U.S. Air Force opinions on UFOs.",
-    "fileUrl": "https://www.war.gov/medialink/ufo/release_1/59_214434_sp_16_7.18.1963.pdf",
-    "thumbnailUrl": "https://www.war.gov/medialink/ufo/release_1/thumbnail/59_214434_sp_16_7.18.1963.jpg",
-    "dvidsVideoId": "",
-    "videoTitle": "",
-    "videoPairing": "",
-    "pdfPairing": "",
-    "redaction": "",
-    "firstSeenAt": "2026-05-08",
-    "lastSeenAt": "2026-05-11",
-    "removedFromSource": true,
-    "extractionError": "pdftotext yielded too little; PDFTOTEXT_ONLY=1, skipping vision",
-    "textChars": 13316,
-    "extractionPages": 6,
-    "textExtractedAt": "2026-05-09",
-    "extractionModel": "gemini-2.5-flash",
-    "tags": [
-      "formation",
-      "infrared",
-      "military",
       "saucer",
       "telescope"
     ],
@@ -4712,7 +4679,12 @@
     "firstSeenAt": "2026-05-12",
     "lastSeenAt": "2026-05-12",
     "removedFromSource": false,
-    "contentHash": "dd6e0d2d32cec2ab397f2615f0d563b1b5edeeba719b3643b64abce0dee8a552"
+    "contentHash": "dd6e0d2d32cec2ab397f2615f0d563b1b5edeeba719b3643b64abce0dee8a552",
+    "extractionError": null,
+    "textChars": 2217,
+    "extractionPages": 2,
+    "textExtractedAt": "2026-05-12",
+    "extractionModel": "gemini-2.5-flash"
   },
   {
     "id": 163,
@@ -4733,6 +4705,11 @@
     "firstSeenAt": "2026-05-12",
     "lastSeenAt": "2026-05-12",
     "removedFromSource": false,
-    "contentHash": "3e5b68e982951556825ffa4ac21fd8f950e4055ed4da4d425fa6387a660b398b"
+    "contentHash": "3e5b68e982951556825ffa4ac21fd8f950e4055ed4da4d425fa6387a660b398b",
+    "textChars": 10159,
+    "extractionPages": 6,
+    "textExtractedAt": "2026-05-12",
+    "extractionModel": "pdftotext",
+    "extractionError": null
   }
 ]
