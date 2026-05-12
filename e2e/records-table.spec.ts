@@ -14,15 +14,17 @@ test.describe("UAP records table", () => {
     await indexResponse;
   });
 
-  test("renders all records on first load", async ({ page }) => {
+  test("renders all live records on first load", async ({ page }) => {
     const summary = page.locator("text=/Showing \\d+ of \\d+ records/");
     await expect(summary).toBeVisible();
     const text = (await summary.textContent()) ?? "";
     const m = text.match(/Showing (\d+) of (\d+) records/);
     expect(m).not.toBeNull();
     const [, shown, total] = m!;
-    expect(Number(shown)).toBe(Number(total));
-    expect(Number(total)).toBeGreaterThanOrEqual(100);
+    // Archived records are hidden by default, so shown ≤ total.
+    expect(Number(shown)).toBeLessThanOrEqual(Number(total));
+    expect(Number(shown)).toBeGreaterThanOrEqual(100);
+    expect(Number(total)).toBeGreaterThanOrEqual(Number(shown));
   });
 
   test("typing a term filters rows live", async ({ page }) => {
@@ -76,9 +78,19 @@ test.describe("UAP records table", () => {
     await expect(page.locator("span", { hasText: /^State×$/ })).toHaveCount(0);
   });
 
-  test('"Include removed" checkbox only renders when there are removed records', async ({ page }) => {
-    // Currently no records removed from source, so the checkbox should be absent.
-    await expect(page.getByLabel("Include removed")).toHaveCount(0);
+  test('"Include removed" checkbox renders iff there are removed records', async ({ page }) => {
+    // Read the "Showing X of Y" summary — when X < Y the checkbox should
+    // be present, otherwise absent.
+    const text =
+      (await page.locator("text=/Showing \\d+ of \\d+ records/").textContent()) ?? "";
+    const m = text.match(/Showing (\d+) of (\d+) records/);
+    const hasArchived = m ? Number(m[1]) < Number(m[2]) : false;
+    const checkbox = page.getByLabel("Include removed");
+    if (hasArchived) {
+      await expect(checkbox).toHaveCount(1);
+    } else {
+      await expect(checkbox).toHaveCount(0);
+    }
   });
 
   test("clicking a row expands the modal with the extraction banner", async ({ page }) => {
