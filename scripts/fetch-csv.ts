@@ -50,6 +50,14 @@ function clean(s: string | undefined): string {
   return (s ?? "").replace(/\s+/g, " ").trim();
 }
 
+// "N/A" is a meaningful display value in Incident Date/Location, but in the
+// URL and DVIDS-id columns it's a missing-data placeholder that breaks the
+// verify-data URL check. Drop it for those fields only.
+function cleanPlaceholder(s: string | undefined): string {
+  const v = clean(s);
+  return /^n\/?a$/i.test(v) ? "" : v;
+}
+
 function rowToRecord(row: CsvRow) {
   return {
     title: clean(row.Title),
@@ -59,9 +67,9 @@ function rowToRecord(row: CsvRow) {
     incidentDate: clean(row["Incident Date"]),
     incidentLocation: clean(row["Incident Location"]),
     description: clean(row["Description Blurb"]),
-    fileUrl: clean(row["PDF | Image Link"]),
-    thumbnailUrl: clean(row["Modal Image"]),
-    dvidsVideoId: clean(row["DVIDS Video ID"]),
+    fileUrl: cleanPlaceholder(row["PDF | Image Link"]),
+    thumbnailUrl: cleanPlaceholder(row["Modal Image"]),
+    dvidsVideoId: cleanPlaceholder(row["DVIDS Video ID"]),
     videoTitle: clean(row["Video Title"]),
     videoPairing: clean(row["Video Pairing"]),
     pdfPairing: clean(row["PDF Pairing"]),
