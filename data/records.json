@@ -4680,7 +4680,7 @@
     "lastSeenAt": "2026-05-13",
     "removedFromSource": false,
     "contentHash": "dd6e0d2d32cec2ab397f2615f0d563b1b5edeeba719b3643b64abce0dee8a552",
-    "extractionError": null,
+    "extractionError": "pdftotext yielded too little; PDFTOTEXT_ONLY=1, skipping vision",
     "textChars": 2217,
     "extractionPages": 2,
     "textExtractedAt": "2026-05-12",
