@@ -18,11 +18,11 @@
     "firstSeenAt": "2026-05-08",
     "lastSeenAt": "2026-05-14",
     "removedFromSource": false,
-    "textChars": 117251,
-    "extractionPages": 30,
-    "textExtractedAt": "2026-05-08",
-    "extractionModel": "gpt-5.5",
-    "extractionError": "pdftotext yielded too little; PDFTOTEXT_ONLY=1, skipping vision",
+    "textChars": 950224,
+    "extractionPages": 184,
+    "textExtractedAt": "2026-05-14",
+    "extractionModel": "pdftotext",
+    "extractionError": null,
     "tags": [
       "Condon",
       "NICAP",
@@ -42,7 +42,7 @@
       "stationary",
       "vanished"
     ],
-    "contentHash": "06f96d67fa825b5aefe41bd60e6f3860d71320e2aa436a2bf30240e12c33d0f0"
+    "contentHash": "b13552c6b558408ef1e28a46158e6a45a62d74c3aac6074f74abb23bcab76fbe"
   },
   {
     "id": 2,
@@ -63,11 +63,11 @@
     "firstSeenAt": "2026-05-08",
     "lastSeenAt": "2026-05-14",
     "removedFromSource": false,
-    "textChars": 41020,
-    "extractionPages": 30,
-    "textExtractedAt": "2026-05-08",
-    "extractionModel": "gpt-5.5",
-    "extractionError": "pdftotext yielded too little; PDFTOTEXT_ONLY=1, skipping vision",
+    "textChars": 471902,
+    "extractionPages": 194,
+    "textExtractedAt": "2026-05-14",
+    "extractionModel": "pdftotext",
+    "extractionError": null,
     "tags": [
       "formation",
       "glowing",
@@ -78,7 +78,7 @@
       "saucer",
       "vanished"
     ],
-    "contentHash": "e196678aefbf9d1239524925838250d452ac3155789d226d6ebe0158b915070e"
+    "contentHash": "b79da2d091ae8e1637f58d91602758feef2341aba3c90addd9c1487cdef58109"
   },
   {
     "id": 3,
@@ -99,11 +99,11 @@
     "firstSeenAt": "2026-05-08",
     "lastSeenAt": "2026-05-14",
     "removedFromSource": false,
-    "extractionError": "pdftotext yielded too little; PDFTOTEXT_ONLY=1, skipping vision",
-    "textChars": 40206,
-    "extractionPages": 30,
-    "textExtractedAt": "2026-05-08",
-    "extractionModel": "gpt-5.5",
+    "extractionError": null,
+    "textChars": 321420,
+    "extractionPages": 190,
+    "textExtractedAt": "2026-05-14",
+    "extractionModel": "pdftotext",
     "tags": [
       "cigar",
       "formation",
@@ -116,7 +116,7 @@
       "telescope",
       "vanished"
     ],
-    "contentHash": "1a9e21457d266c408a9982485034fed73ebdbede94b3c8322ee024eaa60cfe57"
+    "contentHash": "ba72ac1879acea2f3c87f6bf40983f3b5f39f03038e1b59f907d136b0f02eab4"
   },
   {
     "id": 4,
@@ -137,18 +137,18 @@
     "firstSeenAt": "2026-05-08",
     "lastSeenAt": "2026-05-14",
     "removedFromSource": false,
-    "extractionError": "pdftotext yielded too little; PDFTOTEXT_ONLY=1, skipping vision",
-    "textChars": 30274,
-    "extractionPages": 30,
-    "textExtractedAt": "2026-05-08",
-    "extractionModel": "gpt-5.5",
+    "extractionError": null,
+    "textChars": 362891,
+    "extractionPages": 214,
+    "textExtractedAt": "2026-05-14",
+    "extractionModel": "pdftotext",
     "tags": [
       "oval",
       "pilot",
       "saucer",
       "vanished"
     ],
-    "contentHash": "1ddb6ef944239c55b86c1089246cd77aadd1d3d391238a1feeab700f7b773d7b"
+    "contentHash": "c3a722892229c6da31db714aabfbe19ad86b82732258114a596cc076ea69d526"
   },
   {
     "id": 5,
@@ -169,11 +169,11 @@
     "firstSeenAt": "2026-05-08",
     "lastSeenAt": "2026-05-14",
     "removedFromSource": false,
-    "extractionError": "pdftotext yielded too little; PDFTOTEXT_ONLY=1, skipping vision",
-    "textChars": 33919,
-    "extractionPages": 30,
-    "textExtractedAt": "2026-05-08",
-    "extractionModel": "gpt-5.5",
+    "extractionError": null,
+    "textChars": 293620,
+    "extractionPages": 209,
+    "textExtractedAt": "2026-05-14",
+    "extractionModel": "pdftotext",
     "tags": [
       "formation",
       "military",
@@ -181,7 +181,7 @@
       "pilot",
       "saucer"
     ],
-    "contentHash": "8bac3aeb023a716259510a74b1264cc38f16b3a012e420e1551a163e4df57573"
+    "contentHash": "ed97686fb1301e3a12e19d91f833f31da5b97065ef85560fc6d8fce7b7c2265d"
   },
   {
     "id": 6,
@@ -202,11 +202,11 @@
     "firstSeenAt": "2026-05-08",
     "lastSeenAt": "2026-05-14",
     "removedFromSource": false,
-    "extractionError": "pdftotext yielded too little; PDFTOTEXT_ONLY=1, skipping vision",
-    "textChars": 55711,
-    "extractionPages": 30,
-    "textExtractedAt": "2026-05-08",
-    "extractionModel": "gemini-2.5-flash",
+    "extractionError": null,
+    "textChars": 814471,
+    "extractionPages": 271,
+    "textExtractedAt": "2026-05-14",
+    "extractionModel": "pdftotext",
     "tags": [
       "fireball",
       "formation",
@@ -219,7 +219,7 @@
       "saucer",
       "vanished"
     ],
-    "contentHash": "3df0935cf48e6847d0a5df77a987f8a446e545cc1dda20cad60f79d966516568"
+    "contentHash": "7620094802463bc97ea365b0e15438dd236739db15f0edc689aebd83a9f6a938"
   },
   {
     "id": 7,
@@ -240,18 +240,18 @@
     "firstSeenAt": "2026-05-08",
     "lastSeenAt": "2026-05-14",
     "removedFromSource": false,
-    "extractionError": "pdftotext yielded too little; PDFTOTEXT_ONLY=1, skipping vision",
-    "textChars": 40555,
-    "extractionPages": 30,
-    "textExtractedAt": "2026-05-08",
-    "extractionModel": "gemini-2.5-flash",
+    "extractionError": null,
+    "textChars": 363378,
+    "extractionPages": 205,
+    "textExtractedAt": "2026-05-14",
+    "extractionModel": "pdftotext",
     "tags": [
       "military",
       "orb",
       "oval",
       "saucer"
     ],
-    "contentHash": "d1cc1285f2af2229df0f6a50dae11e72b943d94e95fb7effb34ba3433c12d82e"
+    "contentHash": "350806816e58095e0a8f89808fc1af246d6c9a005e63e49e28829b040963a5c2"
   },
   {
     "id": 8,
@@ -272,11 +272,11 @@
     "firstSeenAt": "2026-05-08",
     "lastSeenAt": "2026-05-14",
     "removedFromSource": false,
-    "extractionError": "pdftotext yielded too little; PDFTOTEXT_ONLY=1, skipping vision",
-    "textChars": 38473,
-    "extractionPages": 30,
-    "textExtractedAt": "2026-05-08",
-    "extractionModel": "gemini-2.5-flash",
+    "extractionError": null,
+    "textChars": 511521,
+    "extractionPages": 290,
+    "textExtractedAt": "2026-05-14",
+    "extractionModel": "pdftotext",
     "tags": [
       "hovering",
       "military",
@@ -284,7 +284,7 @@
       "telescope",
       "vanished"
     ],
-    "contentHash": "ca1684b554c662851028c03a8861028e04f1d813e5621ffbb888b8eac87e9fce"
+    "contentHash": "c0a322f3544e3ba6c95257b89b2fd3aec3249c7a5d8f419e3f1826facea40a08"
   },
   {
     "id": 9,
@@ -305,11 +305,11 @@
     "firstSeenAt": "2026-05-08",
     "lastSeenAt": "2026-05-14",
     "removedFromSource": false,
-    "extractionError": "pdftotext yielded too little; PDFTOTEXT_ONLY=1, skipping vision",
-    "textChars": 51623,
-    "extractionPages": 30,
-    "textExtractedAt": "2026-05-08",
-    "extractionModel": "gemini-2.5-flash",
+    "extractionError": null,
+    "textChars": 318772,
+    "extractionPages": 126,
+    "textExtractedAt": "2026-05-14",
+    "extractionModel": "pdftotext",
     "tags": [
       "cigar",
       "cone",
@@ -321,7 +321,7 @@
       "saucer",
       "vanished"
     ],
-    "contentHash": "6446322736ff970386c35f5d305a9d245e632e80f53594ca948718cefd8669a9"
+    "contentHash": "77043137eec2494bbeeb945c2cf8674ce343617e3c4d14ab17a69806c58dae6a"
   },
   {
     "id": 10,
@@ -350,7 +350,7 @@
     "tags": [
       "saucer"
     ],
-    "contentHash": "fbb76ffa1aad67e53d98e189b557ee3f893d2374ca28ae93862a79db20908db6"
+    "contentHash": "0df8c23b9c7710c849ebffc9d17edf3299e3f2876554ac8aa64bc5822e97150c"
   },
   {
     "id": 11,
@@ -371,11 +371,11 @@
     "firstSeenAt": "2026-05-08",
     "lastSeenAt": "2026-05-14",
     "removedFromSource": false,
-    "extractionError": "pdftotext yielded too little; PDFTOTEXT_ONLY=1, skipping vision",
-    "textChars": 24232,
-    "extractionPages": 30,
-    "textExtractedAt": "2026-05-08",
-    "extractionModel": "gemini-2.5-flash",
+    "extractionError": null,
+    "textChars": 202517,
+    "extractionPages": 137,
+    "textExtractedAt": "2026-05-14",
+    "extractionModel": "pdftotext",
     "tags": [
       "formation",
       "maneuvering",
@@ -383,7 +383,7 @@
       "radar",
       "saucer"
     ],
-    "contentHash": "879e35dffa0b4a126fc114f6f402a2ca398bd0b6e4718e12f377e7a65e1a3170"
+    "contentHash": "fafb11efae96654a947177809349c9e10d0149d87c23f5f3af18a57e0b5dfae3"
   },
   {
     "id": 12,
@@ -404,17 +404,17 @@
     "firstSeenAt": "2026-05-08",
     "lastSeenAt": "2026-05-14",
     "removedFromSource": false,
-    "extractionError": "pdftotext yielded too little; PDFTOTEXT_ONLY=1, skipping vision",
-    "textChars": 18379,
+    "extractionError": null,
+    "textChars": 10743,
     "extractionPages": 15,
-    "textExtractedAt": "2026-05-08",
-    "extractionModel": "gpt-5.5",
+    "textExtractedAt": "2026-05-14",
+    "extractionModel": "pdftotext",
     "tags": [
       "cigar",
       "cone",
       "saucer"
     ],
-    "contentHash": "7899c7229a9c410bcc2ca0164c5a229c89c4ec9a31ead8824cdb8f5f501a605b"
+    "contentHash": "a61357a986698132d1704002b5eea63f687be0ef214013941fe670da1a9d3914"
   },
   {
     "id": 13,
@@ -435,15 +435,15 @@
     "firstSeenAt": "2026-05-08",
     "lastSeenAt": "2026-05-14",
     "removedFromSource": false,
-    "textChars": 4554,
+    "textChars": 5071,
     "extractionPages": 3,
-    "textExtractedAt": "2026-05-08",
-    "extractionModel": "gpt-5.5",
-    "extractionError": "pdftotext yielded too little; PDFTOTEXT_ONLY=1, skipping vision",
+    "textExtractedAt": "2026-05-14",
+    "extractionModel": "pdftotext",
+    "extractionError": null,
     "tags": [
       "saucer"
     ],
-    "contentHash": "5cb3c74eecbafa0fb9d961ab173a1de54a89cbf430b55bdf144475c341413acf"
+    "contentHash": "b557b29df1c6f2c5ff8fa51e5cafb9ef9b61672a38ec0522658a1a13efb8bcae"
   },
   {
     "id": 14,
@@ -464,18 +464,18 @@
     "firstSeenAt": "2026-05-08",
     "lastSeenAt": "2026-05-14",
     "removedFromSource": false,
-    "extractionError": "pdftotext yielded too little; PDFTOTEXT_ONLY=1, skipping vision",
-    "textChars": 35777,
-    "extractionPages": 30,
-    "textExtractedAt": "2026-05-08",
-    "extractionModel": "gemini-2.5-flash",
+    "extractionError": null,
+    "textChars": 126498,
+    "extractionPages": 40,
+    "textExtractedAt": "2026-05-14",
+    "extractionModel": "pdftotext",
     "tags": [
       "oval",
       "police",
       "saucer",
       "vanished"
     ],
-    "contentHash": "9a98bf803016c9a2252c03ea960d61d0e35652c88a9098018ebf8f953141c9a8"
+    "contentHash": "88c6b1c82931a1ddcb25c9c8797d8631bb31588f02e7a98717362556335274fc"
   },
   {
     "id": 15,
@@ -496,11 +496,11 @@
     "firstSeenAt": "2026-05-08",
     "lastSeenAt": "2026-05-14",
     "removedFromSource": false,
-    "extractionError": "pdftotext yielded too little; PDFTOTEXT_ONLY=1, skipping vision",
-    "textChars": 159982,
+    "extractionError": null,
+    "textChars": 231047,
     "extractionPages": 18,
-    "textExtractedAt": "2026-05-08",
-    "extractionModel": "gemini-2.5-flash",
+    "textExtractedAt": "2026-05-14",
+    "extractionModel": "pdftotext",
     "tags": [
       "NICAP",
       "Project Blue Book",
@@ -522,7 +522,7 @@
       "telescope",
       "vanished"
     ],
-    "contentHash": "beab1e97edc095b41bac00f3da2909e9fe252a6a3c623f46a83496bf7f4ed13b"
+    "contentHash": "2ca8cede91d8fd7964cda2338decd999a5bbff19a662b35352f0d965a46a3999"
   },
   {
     "id": 16,
@@ -543,11 +543,11 @@
     "firstSeenAt": "2026-05-08",
     "lastSeenAt": "2026-05-14",
     "removedFromSource": false,
-    "extractionError": "pdftotext yielded too little; PDFTOTEXT_ONLY=1, skipping vision",
-    "textChars": 63484,
-    "extractionPages": 30,
-    "textExtractedAt": "2026-05-08",
-    "extractionModel": "gemini-2.5-flash",
+    "extractionError": null,
+    "textChars": 525983,
+    "extractionPages": 124,
+    "textExtractedAt": "2026-05-14",
+    "extractionModel": "pdftotext",
     "tags": [
       "cigar",
       "diamond",
@@ -564,7 +564,7 @@
       "telescope",
       "vanished"
     ],
-    "contentHash": "35995afc0d3986fffe9ca48b82d7712fcc7942e3e13ce554aac845302b5b1862"
+    "contentHash": "ed6e3824974865fe91667f834c2aba6e3f3d503a5913928dfefb62425279d2e4"
   },
   {
     "id": 17,
@@ -585,11 +585,11 @@
     "firstSeenAt": "2026-05-08",
     "lastSeenAt": "2026-05-14",
     "removedFromSource": false,
-    "extractionError": "pdftotext yielded too little; PDFTOTEXT_ONLY=1, skipping vision",
-    "textChars": 35970,
+    "extractionError": null,
+    "textChars": 55901,
     "extractionPages": 28,
-    "textExtractedAt": "2026-05-08",
-    "extractionModel": "gemini-2.5-flash",
+    "textExtractedAt": "2026-05-14",
+    "extractionModel": "pdftotext",
     "tags": [
       "formation",
       "maneuvering",
@@ -599,7 +599,7 @@
       "radar",
       "saucer"
     ],
-    "contentHash": "85d659d6b2208610ac55e6c82cfed0315002f4b6d43963a29fb8e973258bfdd2"
+    "contentHash": "373070ab867b592e5d76cd063f50887a00b7653d2ae4b86a6d988155ecd7c993"
   },
   {
     "id": 18,
@@ -620,11 +620,11 @@
     "firstSeenAt": "2026-05-08",
     "lastSeenAt": "2026-05-14",
     "removedFromSource": false,
-    "extractionError": "pdftotext yielded too little; PDFTOTEXT_ONLY=1, skipping vision",
-    "textChars": 33917,
+    "extractionError": null,
+    "textChars": 50493,
     "extractionPages": 28,
-    "textExtractedAt": "2026-05-08",
-    "extractionModel": "gemini-2.5-flash",
+    "textExtractedAt": "2026-05-14",
+    "extractionModel": "pdftotext",
     "tags": [
       "formation",
       "maneuvering",
@@ -633,7 +633,7 @@
       "radar",
       "saucer"
     ],
-    "contentHash": "34d59dc7578ffe7e072a6164c6050f45cff30b634313a87141c0886aa93d15c7"
+    "contentHash": "5479dd8f1138ef43c8bcf51481fe83df06d1704bdc54244d893c21cf0aad926f"
   },
   {
     "id": 19,
@@ -654,11 +654,11 @@
     "firstSeenAt": "2026-05-08",
     "lastSeenAt": "2026-05-14",
     "removedFromSource": false,
-    "extractionError": "pdftotext yielded too little; PDFTOTEXT_ONLY=1, skipping vision",
-    "textChars": 74740,
-    "extractionPages": 30,
-    "textExtractedAt": "2026-05-08",
-    "extractionModel": "gemini-2.5-flash",
+    "extractionError": null,
+    "textChars": 418949,
+    "extractionPages": 94,
+    "textExtractedAt": "2026-05-14",
+    "extractionModel": "pdftotext",
     "tags": [
       "Condon",
       "accelerating",
@@ -676,7 +676,7 @@
       "stationary",
       "vanished"
     ],
-    "contentHash": "2af37a8e08174de45b12ee3acc628736a3a36c5d95edd6c2c17f0bf6ccf1431e"
+    "contentHash": "b6a51b4cd1c09ff6ab811422d1af98173d1a2ba9193ee426b9b060e4cb9eea30"
   },
   {
     "id": 20,
@@ -697,16 +697,16 @@
     "firstSeenAt": "2026-05-08",
     "lastSeenAt": "2026-05-14",
     "removedFromSource": false,
-    "extractionError": "pdftotext yielded too little; PDFTOTEXT_ONLY=1, skipping vision",
-    "textChars": 5868,
+    "extractionError": null,
+    "textChars": 3118,
     "extractionPages": 4,
-    "textExtractedAt": "2026-05-08",
-    "extractionModel": "gemini-2.5-flash",
+    "textExtractedAt": "2026-05-14",
+    "extractionModel": "pdftotext",
     "tags": [
       "Gemini",
       "astronaut"
     ],
-    "contentHash": "73cb8f0dc879a38811d9d745c11771263e112ec12a0e6bbabc27b9f781ddb74b"
+    "contentHash": "1fe6258aa15843c8b5fba5dfc7da7b1939113201ab6710a183209c942790a6e0"
   },
   {
     "id": 21,
@@ -787,11 +787,11 @@
     "firstSeenAt": "2026-05-08",
     "lastSeenAt": "2026-05-14",
     "removedFromSource": false,
-    "extractionError": "pdftotext yielded too little; PDFTOTEXT_ONLY=1, skipping vision",
-    "textChars": 9111,
+    "extractionError": null,
+    "textChars": 10002,
     "extractionPages": 7,
-    "textExtractedAt": "2026-05-08",
-    "extractionModel": "gemini-2.5-flash",
+    "textExtractedAt": "2026-05-14",
+    "extractionModel": "pdftotext",
     "tags": [
       "accelerating",
       "hovering",
@@ -800,7 +800,7 @@
       "radar",
       "saucer"
     ],
-    "contentHash": "45b2fdb6c919cd8ed9c4406f4d60c7add073669dff5a5497595d4ecf08d72073"
+    "contentHash": "fc5b1c8ab566157080d8137cdbbbf7f2c3d74e7e1fae52d49dcd5c44b06237ba"
   },
   {
     "id": 24,
@@ -835,7 +835,7 @@
       "stationary",
       "vanished"
     ],
-    "contentHash": "2cbbb33f9917d45c8b6009ee6ec5b958bc9c7d28b4a0f04edd261e7bf2f3d2f6"
+    "contentHash": "10e3ba274b83d7733c2f7fac755656cc427930b647f003b7a367b58f520cb078"
   },
   {
     "id": 25,
@@ -856,11 +856,11 @@
     "firstSeenAt": "2026-05-08",
     "lastSeenAt": "2026-05-14",
     "removedFromSource": false,
-    "extractionError": "pdftotext yielded too little; PDFTOTEXT_ONLY=1, skipping vision",
-    "textChars": 33149,
-    "extractionPages": 30,
-    "textExtractedAt": "2026-05-08",
-    "extractionModel": "gemini-2.5-flash",
+    "extractionError": null,
+    "textChars": 142980,
+    "extractionPages": 143,
+    "textExtractedAt": "2026-05-14",
+    "extractionModel": "pdftotext",
     "tags": [
       "cigar",
       "formation",
@@ -871,7 +871,7 @@
       "saucer",
       "vanished"
     ],
-    "contentHash": "707639e26003ce0c4f317b379626092d56af0f5a73db52cd91d4af184009c515"
+    "contentHash": "9d159600731338100b6b9c8565971b68aac644476fd766ade9d6bf126cfd3c7b"
   },
   {
     "id": 26,
@@ -911,7 +911,7 @@
       "saucer",
       "vanished"
     ],
-    "contentHash": "f4b5cf6a93fe47c09123ce53706e430c814229ed688a49a96244a90b4bcf3e05"
+    "contentHash": "23482936d9dbf8dee014f3b0e1e12462731e617894c724aca6bcb688a01e277c"
   },
   {
     "id": 27,
@@ -932,11 +932,11 @@
     "firstSeenAt": "2026-05-08",
     "lastSeenAt": "2026-05-14",
     "removedFromSource": false,
-    "extractionError": "pdftotext yielded too little; PDFTOTEXT_ONLY=1, skipping vision",
-    "textChars": 170541,
-    "extractionPages": 30,
-    "textExtractedAt": "2026-05-09",
-    "extractionModel": "gemini-2.5-flash",
+    "extractionError": null,
+    "textChars": 281254,
+    "extractionPages": 144,
+    "textExtractedAt": "2026-05-14",
+    "extractionModel": "pdftotext",
     "tags": [
       "accelerating",
       "cone",
@@ -950,7 +950,7 @@
       "stationary",
       "vanished"
     ],
-    "contentHash": "1d9722f764878359c73135f82b12608f1267eaf90d274c7d5775ab43bc9a289c"
+    "contentHash": "b24365329f506d92acfae313f0ed3aef2060de17d72bf61b6c91bc035bf7dd95"
   },
   {
     "id": 28,
@@ -986,7 +986,7 @@
       "saucer",
       "vanished"
     ],
-    "contentHash": "13d1805bd1725b38174a328ddf34db564228163768a9082ddd59bca3780fc10e"
+    "contentHash": "c1c48d35943e6522fc285592453136526b6e41fed23b61a0e81ac61b68d8bde6"
   },
   {
     "id": 30,
@@ -1007,18 +1007,18 @@
     "firstSeenAt": "2026-05-08",
     "lastSeenAt": "2026-05-14",
     "removedFromSource": false,
-    "extractionError": "pdftotext yielded too little; PDFTOTEXT_ONLY=1, skipping vision",
-    "textChars": 13437,
+    "extractionError": null,
+    "textChars": 15175,
     "extractionPages": 6,
-    "textExtractedAt": "2026-05-09",
-    "extractionModel": "gemini-2.5-flash",
+    "textExtractedAt": "2026-05-14",
+    "extractionModel": "pdftotext",
     "tags": [
       "formation",
       "infrared",
       "saucer",
       "telescope"
     ],
-    "contentHash": "aba3ec3b8ef0240364308cf046ccbfcd252c5a5d7ef470d696b72c1f41b2502d"
+    "contentHash": "cddcc196385c373ef7fd55fee4c196bfad531860a05777786cf6d90a2fd7dabd"
   },
   {
     "id": 31,
@@ -1039,15 +1039,15 @@
     "firstSeenAt": "2026-05-08",
     "lastSeenAt": "2026-05-14",
     "removedFromSource": false,
-    "extractionError": "pdftotext yielded too little; PDFTOTEXT_ONLY=1, skipping vision",
-    "textChars": 1852,
+    "extractionError": null,
+    "textChars": 2019,
     "extractionPages": 1,
-    "textExtractedAt": "2026-05-09",
-    "extractionModel": "gemini-2.5-flash",
+    "textExtractedAt": "2026-05-14",
+    "extractionModel": "pdftotext",
     "tags": [
       "military"
     ],
-    "contentHash": "17e13c53b0cc0c3122b4d14d5b74a6cf8fda907179a9f8f8fea506c90c8fe09c"
+    "contentHash": "36b00fdf99e456dff9a507db7fd90fadb995db235650966f14b77279095fcc6a"
   },
   {
     "id": 32,
@@ -1068,16 +1068,16 @@
     "firstSeenAt": "2026-05-08",
     "lastSeenAt": "2026-05-14",
     "removedFromSource": false,
-    "extractionError": "pdftotext yielded too little; PDFTOTEXT_ONLY=1, skipping vision",
-    "textChars": 15733,
+    "extractionError": null,
+    "textChars": 28640,
     "extractionPages": 15,
-    "textExtractedAt": "2026-05-09",
-    "extractionModel": "gemini-2.5-flash",
+    "textExtractedAt": "2026-05-14",
+    "extractionModel": "pdftotext",
     "tags": [
       "military",
       "stationary"
     ],
-    "contentHash": "d71c2f57a9f173b56220eb6a7f5b867a6d0ed296a0c997cd4997e26fc895f29b"
+    "contentHash": "3fc7a74876b36b328bca96953fd73049b063cc0b50ad412c7a32900c83539d89"
   },
   {
     "id": 33,
@@ -1098,18 +1098,18 @@
     "firstSeenAt": "2026-05-08",
     "lastSeenAt": "2026-05-14",
     "removedFromSource": false,
-    "extractionError": "pdftotext yielded too little; PDFTOTEXT_ONLY=1, skipping vision",
-    "textChars": 28157,
-    "extractionPages": 30,
-    "textExtractedAt": "2026-05-09",
-    "extractionModel": "gemini-2.5-flash",
+    "extractionError": null,
+    "textChars": 308011,
+    "extractionPages": 185,
+    "textExtractedAt": "2026-05-14",
+    "extractionModel": "pdftotext",
     "tags": [
       "formation",
       "pilot",
       "radar",
       "saucer"
     ],
-    "contentHash": "47e9d92b03cd96e2af3510ae7b583ce03c6a89acc21a3cc75c0cae3773c19c35"
+    "contentHash": "6768eb6e15f7566057b77aad159767ca87e2846493a645e015ad8e06fdb759be"
   },
   {
     "id": 34,
@@ -1130,16 +1130,16 @@
     "firstSeenAt": "2026-05-08",
     "lastSeenAt": "2026-05-14",
     "removedFromSource": false,
-    "extractionError": "pdftotext yielded too little; PDFTOTEXT_ONLY=1, skipping vision",
-    "textChars": 47539,
-    "extractionPages": 30,
-    "textExtractedAt": "2026-05-09",
-    "extractionModel": "gemini-2.5-flash",
+    "extractionError": null,
+    "textChars": 329810,
+    "extractionPages": 217,
+    "textExtractedAt": "2026-05-14",
+    "extractionModel": "pdftotext",
     "tags": [
       "military",
       "saucer"
     ],
-    "contentHash": "29f187bce011d5e4eaad979e179dfb746d7dbe6a0701ed6cb6b32199080ffd55"
+    "contentHash": "ad2fd32949337143a56a9089a193e22f953edb28b1ee07a9ad8c5330bb1b9aa1"
   },
   {
     "id": 35,
@@ -1330,26 +1330,26 @@
   },
   {
     "id": 41,
-    "title": "DOW-UAP-D20, Mission Report, Iraq, 2023",
+    "title": "DOW-UAP-D020, Mission Report, Iraq, 2023",
     "type": "PDF",
     "agency": "Department of War",
     "releaseDate": "5/8/26",
     "incidentDate": "3/31/23",
     "incidentLocation": "Iraq",
     "description": "This document is a Mission Report (MISREP), a standardized reporting form the U.S. Military uses to record the circumstances surrounding its operations. U.S. military services often use MISREPs to report Unidentified Anomalous Phenomena (UAP) to AARO. The GENTEXT, or “general text” section of these reports often contains important qualitative, contextual information, distinguishing it from the more quantitative, or numerical, data found elsewhere in the report. A U.S. military operator reported observing “several bright objects maneuvering quickly” west to east northeast. The operator reported achieving a track on the UAP via an onboard targeting pod for approximately 20 seconds. The report describes that UAP then dimmed and disappeared from the targeting pod. All descriptive and estimative language contained in this report reflects the reporter’s subjective interpretation at the time of the event. Such characterizations should not be interpreted as a conclusive indication of the presence or absence of any intrinsic object features or performance characteristics.",
-    "fileUrl": "https://www.war.gov/medialink/ufo/release_1/dow-uap-d20-mission-report-southern-united-states-2023.pdf",
-    "thumbnailUrl": "https://www.war.gov/medialink/ufo/release_1/thumbnail/dow-uap-d20-mission-report-southern-united-states-2023.jpg",
+    "fileUrl": "https://www.war.gov/medialink/ufo/release_1/dow-uap-d20-mission-report-iraq-2023.pdf",
+    "thumbnailUrl": "https://www.war.gov/medialink/ufo/release_1/thumbnail/dow-uap-d20-mission-report-iraq-2023.jpg",
     "dvidsVideoId": "",
     "videoTitle": "",
     "videoPairing": "",
     "pdfPairing": "",
     "redaction": "TRUE",
     "firstSeenAt": "2026-05-08",
-    "lastSeenAt": "2026-05-11",
-    "removedFromSource": true,
+    "lastSeenAt": "2026-05-14",
+    "removedFromSource": false,
     "textChars": 10159,
     "extractionPages": 6,
-    "textExtractedAt": "2026-05-08",
+    "textExtractedAt": "2026-05-12",
     "extractionModel": "pdftotext",
     "extractionError": null,
     "tags": [
@@ -2491,7 +2491,7 @@
     "tags": [
       "AARO"
     ],
-    "contentHash": "1ff8c16256579734969188915ad0e80062e1d5639bc424c6a207340e892c6dc6"
+    "contentHash": "d6614ddb85556a5ad5476be15798b97f16fc3396e42ceffd993548d1e3201389"
   },
   {
     "id": 81,
@@ -3320,7 +3320,7 @@
       "AARO",
       "formation"
     ],
-    "contentHash": "6c47098b047b4cce59129072df1a7eeb5b6602da7ef209fa9dc1299e13622199"
+    "contentHash": "6a456b9add3f4f6d87e39fa26698261bd86c654fd9d812d3a6cbd869d2b4de85"
   },
   {
     "id": 116,
@@ -3349,7 +3349,7 @@
     "tags": [
       "AARO"
     ],
-    "contentHash": "1594af0628fa9ae782b86bb3721ae2c1233a0bf0e03e6b45dd82a9badc642aa8"
+    "contentHash": "8195bb3076df73633e568307823bd2ff2ab53c50e8a427122e41db0c26e0cf53"
   },
   {
     "id": 117,
@@ -3378,7 +3378,7 @@
     "tags": [
       "AARO"
     ],
-    "contentHash": "ff3909ff0fa5f99ee6da291d9241b9cd57b24f2889fcead89d8ae37a753d6c1c"
+    "contentHash": "aad2a8d88ab6e1dae78467b1b8d4226424ecf19ec3f67eb9e9fc56a0dd38bda9"
   },
   {
     "id": 118,
@@ -3407,7 +3407,7 @@
     "tags": [
       "AARO"
     ],
-    "contentHash": "c440872bb730cae896ce618a3b9d4c4d57553e1910ad218b41c0be01f8801694"
+    "contentHash": "1c4afdbae5c62023ed0c3cdf1272d864d851b5e178a2565ec8b744927c58c7ac"
   },
   {
     "id": 119,
@@ -3436,7 +3436,7 @@
     "tags": [
       "AARO"
     ],
-    "contentHash": "92555935e35bf99584a41d4433d9b53fd5e9eeff02656e86f7f3456c6f798984"
+    "contentHash": "259b451d1355deb3c7f63a640641231859fe482ee7929b243727adf78716b64d"
   },
   {
     "id": 120,
@@ -3465,7 +3465,7 @@
     "tags": [
       "AARO"
     ],
-    "contentHash": "54f36aa547dd25b7c099a66b2c5f52c951315906a704d6b215cb1651e7dc92f2"
+    "contentHash": "31c9299629c77d05de4acd549edfd548841baacc8460fd1fec9c683082f5239d"
   },
   {
     "id": 121,
@@ -3494,7 +3494,7 @@
     "tags": [
       "AARO"
     ],
-    "contentHash": "0c6fe7a96a68e8440cd405bb92519fce639079a00ed6b6193863a39fa5a86c14"
+    "contentHash": "92e6279262cc580978f5fd2bf9a0d1f1eb0e22326e6c2354fec861f174c7d611"
   },
   {
     "id": 122,
@@ -3523,7 +3523,7 @@
     "tags": [
       "AARO"
     ],
-    "contentHash": "76bc12588922fca7ef9019f1c809a07e3a159cb1d789013f6acbfcd893935b6a"
+    "contentHash": "a9abc1e6d69201bd0954a34170c2e70407b377b1791497666c13b580c7ac7a8f"
   },
   {
     "id": 123,
@@ -3552,7 +3552,7 @@
     "tags": [
       "AARO"
     ],
-    "contentHash": "60418c8bf9ed18d064ebb7a6e378814ca24438614855b4e626d4375855f57e8d"
+    "contentHash": "f2d96af041ac6d451eb716109e2fd606d6071e7504f91e429ad6e8d5ae654745"
   },
   {
     "id": 124,
@@ -3581,7 +3581,7 @@
     "tags": [
       "AARO"
     ],
-    "contentHash": "5e8801ee956ccb3aed9c605cd9e1d097b2abfd379d3d6e84d4c09a080aa570fd"
+    "contentHash": "64c4b8d8df93af933cc16efc183c27a4262284d0dffe2ca5f6479a32fa536eb0"
   },
   {
     "id": 125,
@@ -3610,7 +3610,7 @@
     "tags": [
       "AARO"
     ],
-    "contentHash": "29dc410fc55141b34ee1a7bc42f41a1fa388ccba7086a3dba5774aaec27cf8b0"
+    "contentHash": "43fc008a99501f57a114be1246ba3cae6004b734d2609c2f7eb6611b9209e509"
   },
   {
     "id": 126,
@@ -3640,7 +3640,7 @@
       "AARO",
       "formation"
     ],
-    "contentHash": "e55d5cab5063153c6f2f27314c47b9e4a7f4938f2cefc6bfecf7eb6264b0a07b"
+    "contentHash": "861e37148d76359fb10e52eb7c2f17760f60ca0977ef0ad1079c5cda11b19530"
   },
   {
     "id": 127,
@@ -3669,7 +3669,7 @@
     "tags": [
       "AARO"
     ],
-    "contentHash": "d5f7a811de98462378fb4b61beeeb107bd2aa58d32b0a0d3a7788e1457b3593f"
+    "contentHash": "97112a6fe175f0458412961285976b9384b31eceb540fe00abbe1bd28e51ceaa"
   },
   {
     "id": 128,
@@ -3727,7 +3727,7 @@
     "tags": [
       "AARO"
     ],
-    "contentHash": "932c53d8d8031325459c479e54a6c44ea9408faa26344f2a983417ed437d0dc5"
+    "contentHash": "8dd6f06197acb06f90d60387ecb21367c23b4f67c1011641a5be6e43f842a922"
   },
   {
     "id": 130,
@@ -3756,7 +3756,7 @@
     "tags": [
       "AARO"
     ],
-    "contentHash": "ddd839e52ad4d98986a25a760d0040c475d4c43fb7a52cf4c817aa87f51d9271"
+    "contentHash": "921e5ea0a0b4264d6aabfecee036fc924bf11dd9c6212873122c0fa457de194a"
   },
   {
     "id": 131,
@@ -3785,7 +3785,7 @@
     "tags": [
       "AARO"
     ],
-    "contentHash": "3dab0652bc49b11624234042e65b3340a1146586ed9521f15731517ce042f8e1"
+    "contentHash": "8af86cd09af935b39d650d4db78adac5802600abc427f1683cc58cc44cf4bb42"
   },
   {
     "id": 132,
@@ -3815,7 +3815,7 @@
       "AARO",
       "formation"
     ],
-    "contentHash": "4a23e128950c1c45cf2f9e32c588088155e63e056d96f09ec94ddaa73ff0cccb"
+    "contentHash": "8a58dbdbe84dc4f29f131c9c471354ac9a4cac9276bc2503eb09a6b9eb215f09"
   },
   {
     "id": 133,
@@ -3844,7 +3844,7 @@
     "tags": [
       "AARO"
     ],
-    "contentHash": "d5dd840f008b10fcd88bcab731f07b56fb614aa16048ced9672c9b40a9c9bc69"
+    "contentHash": "b9b413c19731ce7d48c503c45cc8d00fd1be08154e0321cbf18b9a3613e31c7d"
   },
   {
     "id": 134,
@@ -3874,7 +3874,7 @@
       "AARO",
       "formation"
     ],
-    "contentHash": "032b86473fefc250def77d3904c381dad010e34390d58de54fd560054127936c"
+    "contentHash": "9048f6d63441caa23ca385c07340399b34a3c70cd9d21da4f79fd73da57aafac"
   },
   {
     "id": 135,
@@ -3903,7 +3903,7 @@
     "tags": [
       "AARO"
     ],
-    "contentHash": "09444e6501f05a4030120db174a1841e891814464fd7ce6f325178d3c09cdf1a"
+    "contentHash": "c70c7334e7b8f38701fc9951e356cc702c194caaeae12f6e5a41c1bf0c2463e9"
   },
   {
     "id": 136,
@@ -3932,7 +3932,7 @@
     "tags": [
       "AARO"
     ],
-    "contentHash": "4f3122c323c6c0b6ef1bb12cefc623d7488b03fe1c5161f4ea4e111b91347684"
+    "contentHash": "829f0a7381883c14261023832fedb51259a06d50eae7ba13ca21b9b9c5b45713"
   },
   {
     "id": 137,
@@ -3961,7 +3961,7 @@
     "tags": [
       "AARO"
     ],
-    "contentHash": "cae6a62245153fd16acd8c4ff995d19c49fdadf7be152a85c8fe5d714fc3f423"
+    "contentHash": "bb60e830904c747b7a2a7f43b655d2c02534894529b74f36447d1a4b8f537701"
   },
   {
     "id": 138,
@@ -3990,7 +3990,7 @@
     "tags": [
       "AARO"
     ],
-    "contentHash": "e61a49212bb82cfc9a6e7627a2291c9159bbbb2272fb995e45411a48e44eb0b1"
+    "contentHash": "86017c6972e7e6e110d86be0667a324d28b8d6c3e37d9fdb8acedddf3fd9dd02"
   },
   {
     "id": 139,
@@ -4023,7 +4023,7 @@
       "radar",
       "telescope"
     ],
-    "contentHash": "ab911622b7d4203d9d54914f03d1662cf561b7f943afe9d17f9617cfaea06585"
+    "contentHash": "74dc1a19ef09d093ceba4a0ab082bf3729cb19218c0c3481d8b71f814740c9b3"
   },
   {
     "id": 140,
@@ -4056,7 +4056,7 @@
       "oval",
       "pilot"
     ],
-    "contentHash": "9d041c8799a0124dc440c05cacd790a43d9e063e399aaa5cd3ee777b14146d03"
+    "contentHash": "18ee158476f1203b0ce45bc1eb9b209c225e30b4181ec0fb98b338b2cc0b7591"
   },
   {
     "id": 141,
@@ -4118,7 +4118,7 @@
       "Apollo",
       "astronaut"
     ],
-    "contentHash": "5d7db3870de8c01a1c39b7e8a4185dd026fe132f01d1cd5ded60f10866722f7e"
+    "contentHash": "23c76f92be6a04417373771a12229c0a6857b9769086989c1b5e459afb5c3e52"
   },
   {
     "id": 143,
@@ -4171,18 +4171,18 @@
     "firstSeenAt": "2026-05-08",
     "lastSeenAt": "2026-05-14",
     "removedFromSource": false,
-    "extractionError": "pdftotext yielded too little; PDFTOTEXT_ONLY=1, skipping vision",
-    "textChars": 12104,
+    "extractionError": null,
+    "textChars": 14673,
     "extractionPages": 11,
-    "textExtractedAt": "2026-05-09",
-    "extractionModel": "gemini-2.5-flash",
+    "textExtractedAt": "2026-05-14",
+    "extractionModel": "pdftotext",
     "tags": [
       "Skylab",
       "maneuvering",
       "pilot",
       "vanished"
     ],
-    "contentHash": "49e232c72a77f16f7e06593789a36882d614888d882a74d71eabcc7d2ce94fb6"
+    "contentHash": "61f7e6594e7ab6959503214c73a2a591dc231a14ba92df8e36d0bb0a0fbd6691"
   },
   {
     "id": 145,
@@ -4352,7 +4352,7 @@
       "pilot",
       "radar"
     ],
-    "contentHash": "74032ed145b1badbb1049005b4b77ba95351cb573c3cf6578a77ca25f4033220"
+    "contentHash": "566894d9cb31e15818e87d54e848a634ddd711aa7fb9ed72402d4a759e3a3bf8"
   },
   {
     "id": 152,
@@ -4383,7 +4383,7 @@
       "pilot",
       "vanished"
     ],
-    "contentHash": "64847feac6a309a847a39689ed2036e556f35a253189c7b9b33bd9d40b26b239"
+    "contentHash": "e1d583556594e3e98f0ceea5598760c9d122283c4582f7d5f6c6c9ad96ad76e3"
   },
   {
     "id": 153,
@@ -4410,7 +4410,7 @@
     "extractionModel": "pdftotext",
     "extractionError": null,
     "tags": [],
-    "contentHash": "df5874d4b68d17f996da1af0026bf701c627a6e21c244cabf6fd53689369beca"
+    "contentHash": "968c266f780e1f69abf1bca70aa0edcb094bc61c38d6743e01de335775af347c"
   },
   {
     "id": 154,
@@ -4437,7 +4437,7 @@
     "extractionModel": "pdftotext",
     "extractionError": null,
     "tags": [],
-    "contentHash": "a289d6a9d8286514343ac3be8a793f0e1d297b400ccc0a417485cba385fd9230"
+    "contentHash": "e1b27f7e274549e540de4cf77f9aae131cedcf3847819edd594a9825c4cad819"
   },
   {
     "id": 155,
@@ -4467,7 +4467,7 @@
       "military",
       "pilot"
     ],
-    "contentHash": "022b27728e86e291e078cac1d4fd5dcf225b2f6700175db9ea8ada19147318d8"
+    "contentHash": "257e2388f838975fcee0b00a381059e903e64018b7aafb7a12e5392437154f5f"
   },
   {
     "id": 156,
@@ -4503,7 +4503,7 @@
       "pilot",
       "stationary"
     ],
-    "contentHash": "63deae172b2bd4923696ed097c0c25d1286f116be1efb313d14c0630ac0a1786"
+    "contentHash": "60c1239f7a6bad9655cb66e7b3a82c7e582762f8b4248bc1b614cca9a82d6e37"
   },
   {
     "id": 157,
@@ -4532,7 +4532,7 @@
     "tags": [
       "metallic"
     ],
-    "contentHash": "7768268e837325333be0ea00ce5c00f571de3190e0c390f33e098f183cbf19a5"
+    "contentHash": "b18179d90564ecae48fbca58e945894633ac9c37f49f5781a9406a389b457663"
   },
   {
     "id": 158,
@@ -4584,11 +4584,11 @@
     "firstSeenAt": "2026-05-08",
     "lastSeenAt": "2026-05-14",
     "removedFromSource": false,
-    "extractionError": "pdftotext yielded too little; PDFTOTEXT_ONLY=1, skipping vision",
-    "textChars": 4883,
+    "extractionError": null,
+    "textChars": 7041,
     "extractionPages": 2,
-    "textExtractedAt": "2026-05-09",
-    "extractionModel": "gemini-2.5-flash",
+    "textExtractedAt": "2026-05-14",
+    "extractionModel": "pdftotext",
     "tags": [
       "cigar",
       "diamond",
@@ -4596,7 +4596,7 @@
       "metallic",
       "vanished"
     ],
-    "contentHash": "4f462fefe8f38e6445f652067ff0ba418e6b0d4f38ce73b5c8190e857fe352ed"
+    "contentHash": "abe02815d6331854374cee46db6b1f948f83d9115d2121ac86f5836fef1b65a0"
   },
   {
     "id": 160,
@@ -4658,7 +4658,7 @@
       "stationary",
       "triangle"
     ],
-    "contentHash": "6a4e6ee6111eec24d28aa9b4b9d72beafe0be5a480972683fbce82f758e6be35"
+    "contentHash": "8565c159b82f50a6e9038987f0b71541aa38f07737a91b08af1a5cf224b6a2f3"
   },
   {
     "id": 162,
@@ -4679,37 +4679,11 @@
     "firstSeenAt": "2026-05-12",
     "lastSeenAt": "2026-05-14",
     "removedFromSource": false,
-    "contentHash": "dd6e0d2d32cec2ab397f2615f0d563b1b5edeeba719b3643b64abce0dee8a552",
-    "extractionError": "pdftotext yielded too little; PDFTOTEXT_ONLY=1, skipping vision",
-    "textChars": 2217,
+    "contentHash": "2539850305227baf0b3bb487cbf41f5834eca2b188dc2d65849fdb06b683bd13",
+    "extractionError": null,
+    "textChars": 2778,
     "extractionPages": 2,
-    "textExtractedAt": "2026-05-12",
-    "extractionModel": "gemini-2.5-flash"
-  },
-  {
-    "id": 163,
-    "title": "DOW-UAP-D020, Mission Report, Iraq, 2023",
-    "type": "PDF",
-    "agency": "Department of War",
-    "releaseDate": "5/8/26",
-    "incidentDate": "3/31/23",
-    "incidentLocation": "Iraq",
-    "description": "This document is a Mission Report (MISREP), a standardized reporting form the U.S. Military uses to record the circumstances surrounding its operations. U.S. military services often use MISREPs to report Unidentified Anomalous Phenomena (UAP) to AARO. The GENTEXT, or “general text” section of these reports often contains important qualitative, contextual information, distinguishing it from the more quantitative, or numerical, data found elsewhere in the report. A U.S. military operator reported observing “several bright objects maneuvering quickly” west to east northeast. The operator reported achieving a track on the UAP via an onboard targeting pod for approximately 20 seconds. The report describes that UAP then dimmed and disappeared from the targeting pod. All descriptive and estimative language contained in this report reflects the reporter’s subjective interpretation at the time of the event. Such characterizations should not be interpreted as a conclusive indication of the presence or absence of any intrinsic object features or performance characteristics.",
-    "fileUrl": "https://www.war.gov/medialink/ufo/release_1/dow-uap-d20-mission-report-iraq-2023.pdf",
-    "thumbnailUrl": "https://www.war.gov/medialink/ufo/release_1/thumbnail/dow-uap-d20-mission-report-iraq-2023.jpg",
-    "dvidsVideoId": "",
-    "videoTitle": "",
-    "videoPairing": "",
-    "pdfPairing": "",
-    "redaction": "TRUE",
-    "firstSeenAt": "2026-05-12",
-    "lastSeenAt": "2026-05-14",
-    "removedFromSource": false,
-    "contentHash": "3e5b68e982951556825ffa4ac21fd8f950e4055ed4da4d425fa6387a660b398b",
-    "textChars": 10159,
-    "extractionPages": 6,
-    "textExtractedAt": "2026-05-12",
-    "extractionModel": "pdftotext",
-    "extractionError": null
+    "textExtractedAt": "2026-05-14",
+    "extractionModel": "pdftotext"
   }
 ]
