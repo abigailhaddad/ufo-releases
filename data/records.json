@@ -4764,7 +4764,13 @@
     "redaction": "",
     "firstSeenAt": "2026-05-22",
     "lastSeenAt": "2026-05-22",
-    "removedFromSource": false
+    "removedFromSource": false,
+    "contentHash": "ec72132902a2f50d2ab032031386710fef1d1ae1face0226a90243f61d9347b4",
+    "textChars": 709598,
+    "extractionPages": 116,
+    "textExtractedAt": "2026-05-22",
+    "extractionModel": "pdftotext",
+    "extractionError": null
   },
   {
     "id": 167,
@@ -4784,7 +4790,13 @@
     "redaction": "TRUE",
     "firstSeenAt": "2026-05-22",
     "lastSeenAt": "2026-05-22",
-    "removedFromSource": false
+    "removedFromSource": false,
+    "contentHash": "d3039ed486d8400be3263c0c438b199abfdb8ac030156baff1536f007349d315",
+    "textChars": 6008,
+    "extractionPages": 3,
+    "textExtractedAt": "2026-05-22",
+    "extractionModel": "pdftotext",
+    "extractionError": null
   },
   {
     "id": 168,
@@ -4804,7 +4816,13 @@
     "redaction": "",
     "firstSeenAt": "2026-05-22",
     "lastSeenAt": "2026-05-22",
-    "removedFromSource": false
+    "removedFromSource": false,
+    "contentHash": "87297ea7ad56473613924b4a11c1c88b42d99515b814c4a4f95d84d60013787e",
+    "textChars": 5190,
+    "extractionPages": 2,
+    "textExtractedAt": "2026-05-22",
+    "extractionModel": "pdftotext",
+    "extractionError": null
   },
   {
     "id": 169,
@@ -4844,7 +4862,13 @@
     "redaction": "TRUE",
     "firstSeenAt": "2026-05-22",
     "lastSeenAt": "2026-05-22",
-    "removedFromSource": false
+    "removedFromSource": false,
+    "contentHash": "4c007724fa7325d211123c153e1ed3eb989635302a6d2cd8757319d7f69358de",
+    "extractionError": null,
+    "textChars": 408,
+    "extractionPages": 2,
+    "textExtractedAt": "2026-05-22",
+    "extractionModel": "gemini-2.5-flash"
   },
   {
     "id": 171,
@@ -4864,7 +4888,13 @@
     "redaction": "TRUE",
     "firstSeenAt": "2026-05-22",
     "lastSeenAt": "2026-05-22",
-    "removedFromSource": false
+    "removedFromSource": false,
+    "contentHash": "324a9795356cc793ede04a2494fa2eb18be10847baa490f605a22572c75f51ec",
+    "textChars": 1993,
+    "extractionPages": 4,
+    "textExtractedAt": "2026-05-22",
+    "extractionModel": "pdftotext",
+    "extractionError": null
   },
   {
     "id": 172,
@@ -4884,7 +4914,13 @@
     "redaction": "TRUE",
     "firstSeenAt": "2026-05-22",
     "lastSeenAt": "2026-05-22",
-    "removedFromSource": false
+    "removedFromSource": false,
+    "contentHash": "89ecb1163e42d3e8a215033b88e87ae3befe82a8dad1db112fae7e760bb756f4",
+    "textChars": 1149,
+    "extractionPages": 1,
+    "textExtractedAt": "2026-05-22",
+    "extractionModel": "pdftotext",
+    "extractionError": null
   },
   {
     "id": 173,
