@@ -6040,7 +6040,13 @@
     "redaction": "",
     "firstSeenAt": "2026-06-12",
     "lastSeenAt": "2026-06-12",
-    "removedFromSource": false
+    "removedFromSource": false,
+    "contentHash": "4332ebe48c3fcb1ef53e9186d90f38142e8465f553388a5d8dff277c87a92b16",
+    "textChars": 5919,
+    "extractionPages": 3,
+    "textExtractedAt": "2026-06-12",
+    "extractionModel": "pdftotext",
+    "extractionError": null
   },
   {
     "id": 229,
@@ -6060,7 +6066,9 @@
     "redaction": "",
     "firstSeenAt": "2026-06-12",
     "lastSeenAt": "2026-06-12",
-    "removedFromSource": false
+    "removedFromSource": false,
+    "contentHash": "b2e4554e261e980c10251e927942300342081109a50b4ef61dc37946deade80f",
+    "extractionError": "{\"error\":{\"code\":403,\"message\":\"Your project has been denied access. Please contact support.\",\"status\":\"PERMISSION_DENIED\"}}"
   },
   {
     "id": 230,
@@ -6080,7 +6088,13 @@
     "redaction": "TRUE",
     "firstSeenAt": "2026-06-12",
     "lastSeenAt": "2026-06-12",
-    "removedFromSource": false
+    "removedFromSource": false,
+    "contentHash": "f73ffa1579ecc8916492166021bac801e421f058779127e8bb4bf1ded02cc3a1",
+    "textChars": 3422,
+    "extractionPages": 2,
+    "textExtractedAt": "2026-06-12",
+    "extractionModel": "pdftotext",
+    "extractionError": null
   },
   {
     "id": 231,
@@ -6100,7 +6114,9 @@
     "redaction": "",
     "firstSeenAt": "2026-06-12",
     "lastSeenAt": "2026-06-12",
-    "removedFromSource": false
+    "removedFromSource": false,
+    "contentHash": "e067ec3753f24fbe26501a3932bce900124efea19ce5f949368f1b74d95fb53d",
+    "extractionError": "{\"error\":{\"code\":403,\"message\":\"Your project has been denied access. Please contact support.\",\"status\":\"PERMISSION_DENIED\"}}"
   },
   {
     "id": 232,
@@ -6120,7 +6136,13 @@
     "redaction": "TRUE",
     "firstSeenAt": "2026-06-12",
     "lastSeenAt": "2026-06-12",
-    "removedFromSource": false
+    "removedFromSource": false,
+    "contentHash": "b5513dea063f469efff564cf92a72e088e325e03211f2fd85fbaee5d6ed7f4c4",
+    "textChars": 6209,
+    "extractionPages": 2,
+    "textExtractedAt": "2026-06-12",
+    "extractionModel": "pdftotext",
+    "extractionError": null
   },
   {
     "id": 233,
@@ -6140,7 +6162,13 @@
     "redaction": "TRUE",
     "firstSeenAt": "2026-06-12",
     "lastSeenAt": "2026-06-12",
-    "removedFromSource": false
+    "removedFromSource": false,
+    "contentHash": "b612cbe81c33546e3cea6f047ada247df054cbb294a84977d4600a0c72ffeb4d",
+    "textChars": 3769,
+    "extractionPages": 2,
+    "textExtractedAt": "2026-06-12",
+    "extractionModel": "pdftotext",
+    "extractionError": null
   },
   {
     "id": 234,
@@ -6160,7 +6188,13 @@
     "redaction": "",
     "firstSeenAt": "2026-06-12",
     "lastSeenAt": "2026-06-12",
-    "removedFromSource": false
+    "removedFromSource": false,
+    "contentHash": "aaf14409fe2a6b8577345394b399e8ccfa36a0571c6205eb6b5da82b53e6876b",
+    "textChars": 6655,
+    "extractionPages": 4,
+    "textExtractedAt": "2026-06-12",
+    "extractionModel": "pdftotext",
+    "extractionError": null
   },
   {
     "id": 235,
@@ -6220,7 +6254,13 @@
     "redaction": "TRUE",
     "firstSeenAt": "2026-06-12",
     "lastSeenAt": "2026-06-12",
-    "removedFromSource": false
+    "removedFromSource": false,
+    "contentHash": "b98b58a326ea413b5fd332ba56e81869bf83e2606a744335882d0115f8d77158",
+    "textChars": 4254,
+    "extractionPages": 4,
+    "textExtractedAt": "2026-06-12",
+    "extractionModel": "pdftotext",
+    "extractionError": null
   },
   {
     "id": 238,
@@ -6240,7 +6280,13 @@
     "redaction": "",
     "firstSeenAt": "2026-06-12",
     "lastSeenAt": "2026-06-12",
-    "removedFromSource": false
+    "removedFromSource": false,
+    "contentHash": "a56e49ed5dd5fbb00b70101762b3eb9bb6148aeb380163ece648d377dfa5e5c7",
+    "textChars": 66342,
+    "extractionPages": 42,
+    "textExtractedAt": "2026-06-12",
+    "extractionModel": "pdftotext",
+    "extractionError": null
   },
   {
     "id": 239,
@@ -6260,7 +6306,13 @@
     "redaction": "",
     "firstSeenAt": "2026-06-12",
     "lastSeenAt": "2026-06-12",
-    "removedFromSource": false
+    "removedFromSource": false,
+    "contentHash": "3a11822b45f559acc6063304bdbf16977a21dc86ca3a7a743c1a60e40f98b8d1",
+    "textChars": 1044098,
+    "extractionPages": 406,
+    "textExtractedAt": "2026-06-12",
+    "extractionModel": "pdftotext",
+    "extractionError": null
   },
   {
     "id": 240,
@@ -6280,7 +6332,13 @@
     "redaction": "",
     "firstSeenAt": "2026-06-12",
     "lastSeenAt": "2026-06-12",
-    "removedFromSource": false
+    "removedFromSource": false,
+    "contentHash": "3e03f61e60ce007256731bcb7119d15829cee3d532b21336c7c06177c19414c8",
+    "textChars": 4791,
+    "extractionPages": 1,
+    "textExtractedAt": "2026-06-12",
+    "extractionModel": "pdftotext",
+    "extractionError": null
   },
   {
     "id": 241,
@@ -6300,7 +6358,13 @@
     "redaction": "",
     "firstSeenAt": "2026-06-12",
     "lastSeenAt": "2026-06-12",
-    "removedFromSource": false
+    "removedFromSource": false,
+    "contentHash": "85e84eb491e2331aebecb0ea021eb64d67795dc4c25197ca293ddfcffc81dee9",
+    "textChars": 4493,
+    "extractionPages": 4,
+    "textExtractedAt": "2026-06-12",
+    "extractionModel": "pdftotext",
+    "extractionError": null
   },
   {
     "id": 242,
@@ -6320,7 +6384,13 @@
     "redaction": "",
     "firstSeenAt": "2026-06-12",
     "lastSeenAt": "2026-06-12",
-    "removedFromSource": false
+    "removedFromSource": false,
+    "contentHash": "eaa9a2e8a96ab61bf2a4e1bac1a68b6a896f2fec16fb2b11a158072d9e9ba58e",
+    "textChars": 7994,
+    "extractionPages": 2,
+    "textExtractedAt": "2026-06-12",
+    "extractionModel": "pdftotext",
+    "extractionError": null
   },
   {
     "id": 243,
@@ -6340,7 +6410,13 @@
     "redaction": "",
     "firstSeenAt": "2026-06-12",
     "lastSeenAt": "2026-06-12",
-    "removedFromSource": false
+    "removedFromSource": false,
+    "contentHash": "855a0d73d1e9c0fc1b8999aee6fd4186f1539c1b7f7f3d60c4ed60ea35dd35f8",
+    "textChars": 3081,
+    "extractionPages": 3,
+    "textExtractedAt": "2026-06-12",
+    "extractionModel": "pdftotext",
+    "extractionError": null
   },
   {
     "id": 244,
@@ -6360,7 +6436,13 @@
     "redaction": "",
     "firstSeenAt": "2026-06-12",
     "lastSeenAt": "2026-06-12",
-    "removedFromSource": false
+    "removedFromSource": false,
+    "contentHash": "3e8ee13c5fa8d61a646144adcf3469b728339c11d6303a1f1b98f1ef1827799e",
+    "textChars": 4920,
+    "extractionPages": 2,
+    "textExtractedAt": "2026-06-12",
+    "extractionModel": "pdftotext",
+    "extractionError": null
   },
   {
     "id": 245,
@@ -6380,7 +6462,9 @@
     "redaction": "",
     "firstSeenAt": "2026-06-12",
     "lastSeenAt": "2026-06-12",
-    "removedFromSource": false
+    "removedFromSource": false,
+    "contentHash": "d2ff89273ce8bf19a5e9962b210e3954d4e0153ac493a5c9d8c2c140af6a5c17",
+    "extractionError": "{\"error\":{\"code\":403,\"message\":\"Your project has been denied access. Please contact support.\",\"status\":\"PERMISSION_DENIED\"}}"
   },
   {
     "id": 246,
@@ -6400,7 +6484,13 @@
     "redaction": "",
     "firstSeenAt": "2026-06-12",
     "lastSeenAt": "2026-06-12",
-    "removedFromSource": false
+    "removedFromSource": false,
+    "contentHash": "3abdbd131944fb847ec6eda8bf7f3f12684812bec71ea27c22ab5c3bb2ed4eb9",
+    "extractionError": null,
+    "textChars": 7889,
+    "extractionPages": 2,
+    "textExtractedAt": "2026-06-12",
+    "extractionModel": "gemini-2.5-flash"
   },
   {
     "id": 247,
@@ -6420,7 +6510,13 @@
     "redaction": "",
     "firstSeenAt": "2026-06-12",
     "lastSeenAt": "2026-06-12",
-    "removedFromSource": false
+    "removedFromSource": false,
+    "contentHash": "b5a4f68efde9027964d44f4b6f1d0c83a57d44a842c3030f2fd8a58e5f115baf",
+    "textChars": 2404,
+    "extractionPages": 3,
+    "textExtractedAt": "2026-06-12",
+    "extractionModel": "pdftotext",
+    "extractionError": null
   },
   {
     "id": 248,
@@ -6440,7 +6536,13 @@
     "redaction": "",
     "firstSeenAt": "2026-06-12",
     "lastSeenAt": "2026-06-12",
-    "removedFromSource": false
+    "removedFromSource": false,
+    "contentHash": "490841ebe7487b3e7386ca5fa22c256b678fafa58aa79fae925bf9fe72771c28",
+    "textChars": 4360,
+    "extractionPages": 2,
+    "textExtractedAt": "2026-06-12",
+    "extractionModel": "pdftotext",
+    "extractionError": null
   },
   {
     "id": 249,
@@ -6460,7 +6562,13 @@
     "redaction": "",
     "firstSeenAt": "2026-06-12",
     "lastSeenAt": "2026-06-12",
-    "removedFromSource": false
+    "removedFromSource": false,
+    "contentHash": "6004fb66d76ccf50c3f0729bd218efcd4485395e8491e88b1bf257fc2ea36733",
+    "textChars": 6009,
+    "extractionPages": 1,
+    "textExtractedAt": "2026-06-12",
+    "extractionModel": "pdftotext",
+    "extractionError": null
   },
   {
     "id": 250,
@@ -6480,7 +6588,13 @@
     "redaction": "",
     "firstSeenAt": "2026-06-12",
     "lastSeenAt": "2026-06-12",
-    "removedFromSource": false
+    "removedFromSource": false,
+    "contentHash": "a1eefc277c9c98450d4d5cf6dde3e191184a38db541b82a767804ab503926a6c",
+    "textChars": 5061,
+    "extractionPages": 2,
+    "textExtractedAt": "2026-06-12",
+    "extractionModel": "pdftotext",
+    "extractionError": null
   },
   {
     "id": 251,
@@ -6500,7 +6614,13 @@
     "redaction": "",
     "firstSeenAt": "2026-06-12",
     "lastSeenAt": "2026-06-12",
-    "removedFromSource": false
+    "removedFromSource": false,
+    "contentHash": "90e05e77fc088c29758c2ddda514c0c12f317e5686ee213d348db2f9da152ee3",
+    "textChars": 7125982,
+    "extractionPages": 312,
+    "textExtractedAt": "2026-06-12",
+    "extractionModel": "pdftotext",
+    "extractionError": null
   },
   {
     "id": 252,
@@ -6520,7 +6640,13 @@
     "redaction": "",
     "firstSeenAt": "2026-06-12",
     "lastSeenAt": "2026-06-12",
-    "removedFromSource": false
+    "removedFromSource": false,
+    "contentHash": "c6c33cf9f578f24210e3d6454139f20279d025f6d25b4bc6bf3cc3d27865e7fe",
+    "textChars": 18242,
+    "extractionPages": 6,
+    "textExtractedAt": "2026-06-12",
+    "extractionModel": "pdftotext",
+    "extractionError": null
   },
   {
     "id": 253,
@@ -6540,7 +6666,13 @@
     "redaction": "",
     "firstSeenAt": "2026-06-12",
     "lastSeenAt": "2026-06-12",
-    "removedFromSource": false
+    "removedFromSource": false,
+    "contentHash": "1f6d1a95647dbd14d34534db4c71654e4b437c61a160df24fc142ef60790b730",
+    "textChars": 7638,
+    "extractionPages": 3,
+    "textExtractedAt": "2026-06-12",
+    "extractionModel": "pdftotext",
+    "extractionError": null
   },
   {
     "id": 254,
@@ -6560,7 +6692,13 @@
     "redaction": "",
     "firstSeenAt": "2026-06-12",
     "lastSeenAt": "2026-06-12",
-    "removedFromSource": false
+    "removedFromSource": false,
+    "contentHash": "a91a8665371816b5463dff7de2f1c4c02ac449ba122d088b2898592c82dba9dc",
+    "textChars": 51828,
+    "extractionPages": 19,
+    "textExtractedAt": "2026-06-12",
+    "extractionModel": "pdftotext",
+    "extractionError": null
   },
   {
     "id": 255,
@@ -6580,7 +6718,13 @@
     "redaction": "",
     "firstSeenAt": "2026-06-12",
     "lastSeenAt": "2026-06-12",
-    "removedFromSource": false
+    "removedFromSource": false,
+    "contentHash": "5eb571dbfd4faa81c2b52266e0e0ea933cde481325f8548aefac5b9b09eb42d1",
+    "textChars": 12907,
+    "extractionPages": 4,
+    "textExtractedAt": "2026-06-12",
+    "extractionModel": "pdftotext",
+    "extractionError": null
   },
   {
     "id": 256,
@@ -6600,7 +6744,13 @@
     "redaction": "",
     "firstSeenAt": "2026-06-12",
     "lastSeenAt": "2026-06-12",
-    "removedFromSource": false
+    "removedFromSource": false,
+    "contentHash": "284e470d213a798271fd7ade00d345cd17d4d5fca154db1e3ca5a04f34cc3bbe",
+    "textChars": 2078,
+    "extractionPages": 1,
+    "textExtractedAt": "2026-06-12",
+    "extractionModel": "pdftotext",
+    "extractionError": null
   },
   {
     "id": 257,
@@ -6620,7 +6770,13 @@
     "redaction": "",
     "firstSeenAt": "2026-06-12",
     "lastSeenAt": "2026-06-12",
-    "removedFromSource": false
+    "removedFromSource": false,
+    "contentHash": "670dbdbe40e70fa5f46485273d8f2c0eef7e604a7487416343ebec8bfc5f30c1",
+    "textChars": 7018,
+    "extractionPages": 2,
+    "textExtractedAt": "2026-06-12",
+    "extractionModel": "pdftotext",
+    "extractionError": null
   },
   {
     "id": 258,
@@ -6640,7 +6796,13 @@
     "redaction": "",
     "firstSeenAt": "2026-06-12",
     "lastSeenAt": "2026-06-12",
-    "removedFromSource": false
+    "removedFromSource": false,
+    "contentHash": "2b011f25bb6fed4870766506b5799374cb3589d747c29e4227bab99ee779665b",
+    "textChars": 14543,
+    "extractionPages": 8,
+    "textExtractedAt": "2026-06-12",
+    "extractionModel": "pdftotext",
+    "extractionError": null
   },
   {
     "id": 259,
@@ -6660,7 +6822,13 @@
     "redaction": "",
     "firstSeenAt": "2026-06-12",
     "lastSeenAt": "2026-06-12",
-    "removedFromSource": false
+    "removedFromSource": false,
+    "contentHash": "3c369f9660a3528455b6140d03dfef6bc94b1cf430b85ce26938e5adf1dd1e9d",
+    "textChars": 6331,
+    "extractionPages": 2,
+    "textExtractedAt": "2026-06-12",
+    "extractionModel": "pdftotext",
+    "extractionError": null
   },
   {
     "id": 260,
@@ -6680,7 +6848,13 @@
     "redaction": "",
     "firstSeenAt": "2026-06-12",
     "lastSeenAt": "2026-06-12",
-    "removedFromSource": false
+    "removedFromSource": false,
+    "contentHash": "d522d9a289caaa7b2c9143bc1e80aa37764066791097824ffeb898b500200e1e",
+    "textChars": 9083,
+    "extractionPages": 3,
+    "textExtractedAt": "2026-06-12",
+    "extractionModel": "pdftotext",
+    "extractionError": null
   },
   {
     "id": 261,
@@ -6700,7 +6874,13 @@
     "redaction": "TRUE",
     "firstSeenAt": "2026-06-12",
     "lastSeenAt": "2026-06-12",
-    "removedFromSource": false
+    "removedFromSource": false,
+    "contentHash": "ad70e6d8f9091d432dd89d9cd803734c0a297f16cb211311feb609fb435ff360",
+    "textChars": 10253,
+    "extractionPages": 5,
+    "textExtractedAt": "2026-06-12",
+    "extractionModel": "pdftotext",
+    "extractionError": null
   },
   {
     "id": 262,
@@ -6720,7 +6900,13 @@
     "redaction": "",
     "firstSeenAt": "2026-06-12",
     "lastSeenAt": "2026-06-12",
-    "removedFromSource": false
+    "removedFromSource": false,
+    "contentHash": "43f3553b900cf8cceab5575edc33e14e6b6e980764ae78f979be664829efb089",
+    "extractionError": null,
+    "textChars": 10636,
+    "extractionPages": 7,
+    "textExtractedAt": "2026-06-12",
+    "extractionModel": "gemini-2.5-flash"
   },
   {
     "id": 263,
@@ -6740,7 +6926,13 @@
     "redaction": "",
     "firstSeenAt": "2026-06-12",
     "lastSeenAt": "2026-06-12",
-    "removedFromSource": false
+    "removedFromSource": false,
+    "contentHash": "f96457d53f3cd65aec3fc539e7138cc42a5ea962654a83c75abbd0f13d54383c",
+    "extractionError": null,
+    "textChars": 3234,
+    "extractionPages": 3,
+    "textExtractedAt": "2026-06-12",
+    "extractionModel": "gemini-2.5-flash"
   },
   {
     "id": 264,
@@ -6760,7 +6952,13 @@
     "redaction": "",
     "firstSeenAt": "2026-06-12",
     "lastSeenAt": "2026-06-12",
-    "removedFromSource": false
+    "removedFromSource": false,
+    "contentHash": "8004ab172820cb1e35c195b32badf6ede8b5cf12d27c474e54c8788bc14815a9",
+    "textChars": 259952,
+    "extractionPages": 253,
+    "textExtractedAt": "2026-06-12",
+    "extractionModel": "pdftotext",
+    "extractionError": null
   },
   {
     "id": 265,
@@ -6780,7 +6978,13 @@
     "redaction": "",
     "firstSeenAt": "2026-06-12",
     "lastSeenAt": "2026-06-12",
-    "removedFromSource": false
+    "removedFromSource": false,
+    "contentHash": "0d53232bd0d23672c053bbdac4241e5693eae4d156b8c709e109de31191da117",
+    "textChars": 304684,
+    "extractionPages": 210,
+    "textExtractedAt": "2026-06-12",
+    "extractionModel": "pdftotext",
+    "extractionError": null
   },
   {
     "id": 266,
@@ -6800,7 +7004,13 @@
     "redaction": "TRUE",
     "firstSeenAt": "2026-06-12",
     "lastSeenAt": "2026-06-12",
-    "removedFromSource": false
+    "removedFromSource": false,
+    "contentHash": "22528109268e1ed19d3a10f35d91b66077b674315c283e3ba6e3714743c41f4f",
+    "textChars": 5143,
+    "extractionPages": 2,
+    "textExtractedAt": "2026-06-12",
+    "extractionModel": "pdftotext",
+    "extractionError": null
   },
   {
     "id": 267,
@@ -6820,7 +7030,13 @@
     "redaction": "TRUE",
     "firstSeenAt": "2026-06-12",
     "lastSeenAt": "2026-06-12",
-    "removedFromSource": false
+    "removedFromSource": false,
+    "contentHash": "24438d15d989c8b1dc90087c6babd258981a3a1bc16d8fd17e0e44d366561da7",
+    "textChars": 4980,
+    "extractionPages": 3,
+    "textExtractedAt": "2026-06-12",
+    "extractionModel": "pdftotext",
+    "extractionError": null
   },
   {
     "id": 268,
@@ -6840,7 +7056,13 @@
     "redaction": "TRUE",
     "firstSeenAt": "2026-06-12",
     "lastSeenAt": "2026-06-12",
-    "removedFromSource": false
+    "removedFromSource": false,
+    "contentHash": "c33b63109ce1e9d53f700c00d05728cb53bd17d863b1e2e81a40486ceb9f978e",
+    "textChars": 5087,
+    "extractionPages": 3,
+    "textExtractedAt": "2026-06-12",
+    "extractionModel": "pdftotext",
+    "extractionError": null
   },
   {
     "id": 269,
@@ -6860,7 +7082,13 @@
     "redaction": "TRUE",
     "firstSeenAt": "2026-06-12",
     "lastSeenAt": "2026-06-12",
-    "removedFromSource": false
+    "removedFromSource": false,
+    "contentHash": "953c2aa10c0e560ea11b131cc64ef6962671649eec743cf3ab0f24698c0fc1b7",
+    "textChars": 4505,
+    "extractionPages": 3,
+    "textExtractedAt": "2026-06-12",
+    "extractionModel": "pdftotext",
+    "extractionError": null
   },
   {
     "id": 270,
@@ -6880,7 +7108,13 @@
     "redaction": "TRUE",
     "firstSeenAt": "2026-06-12",
     "lastSeenAt": "2026-06-12",
-    "removedFromSource": false
+    "removedFromSource": false,
+    "contentHash": "f5cfb310e3064e34c55c4b1a256285da71050915ff3559ea70529b101f248c5c",
+    "textChars": 5232,
+    "extractionPages": 4,
+    "textExtractedAt": "2026-06-12",
+    "extractionModel": "pdftotext",
+    "extractionError": null
   },
   {
     "id": 271,
@@ -6900,7 +7134,13 @@
     "redaction": "TRUE",
     "firstSeenAt": "2026-06-12",
     "lastSeenAt": "2026-06-12",
-    "removedFromSource": false
+    "removedFromSource": false,
+    "contentHash": "abcbc0042ec0f228c81cff200fb59f82f8b8b1374e8c4e5d0e8b2f32160bef8b",
+    "textChars": 4346,
+    "extractionPages": 2,
+    "textExtractedAt": "2026-06-12",
+    "extractionModel": "pdftotext",
+    "extractionError": null
   },
   {
     "id": 272,
@@ -6920,7 +7160,13 @@
     "redaction": "",
     "firstSeenAt": "2026-06-12",
     "lastSeenAt": "2026-06-12",
-    "removedFromSource": false
+    "removedFromSource": false,
+    "contentHash": "04195d918cf49bc4d32b050060f12dbd16bac2cb79b83e2d70b63543a1b68630",
+    "textChars": 171186,
+    "extractionPages": 66,
+    "textExtractedAt": "2026-06-12",
+    "extractionModel": "pdftotext",
+    "extractionError": null
   },
   {
     "id": 273,
@@ -6940,7 +7186,13 @@
     "redaction": "",
     "firstSeenAt": "2026-06-12",
     "lastSeenAt": "2026-06-12",
-    "removedFromSource": false
+    "removedFromSource": false,
+    "contentHash": "50f1e4af35a5c630f283e10be33e17935ee9e61672506571267248ed2f4583ce",
+    "textChars": 153533,
+    "extractionPages": 55,
+    "textExtractedAt": "2026-06-12",
+    "extractionModel": "pdftotext",
+    "extractionError": null
   },
   {
     "id": 274,
@@ -7240,7 +7492,13 @@
     "redaction": "",
     "firstSeenAt": "2026-06-12",
     "lastSeenAt": "2026-06-12",
-    "removedFromSource": false
+    "removedFromSource": false,
+    "contentHash": "35e904ddb6652ca72281ff13cf00f71d9563aab3672e399273335215bebb5184",
+    "textChars": 362029,
+    "extractionPages": 216,
+    "textExtractedAt": "2026-06-12",
+    "extractionModel": "pdftotext",
+    "extractionError": null
   },
   {
     "id": 289,
@@ -7260,7 +7518,13 @@
     "redaction": "",
     "firstSeenAt": "2026-06-12",
     "lastSeenAt": "2026-06-12",
-    "removedFromSource": false
+    "removedFromSource": false,
+    "contentHash": "ca596a44820b275f3e3ba41ddabd9ed8f124b68f8c3207d4c34d8afb1a48a94c",
+    "textChars": 502806,
+    "extractionPages": 340,
+    "textExtractedAt": "2026-06-12",
+    "extractionModel": "pdftotext",
+    "extractionError": null
   },
   {
     "id": 290,
@@ -7280,7 +7544,13 @@
     "redaction": "",
     "firstSeenAt": "2026-06-12",
     "lastSeenAt": "2026-06-12",
-    "removedFromSource": false
+    "removedFromSource": false,
+    "contentHash": "2be20f887d364078d11c7340380c21800348ac84beb5722c5932ef0be3e57c57",
+    "textChars": 419562,
+    "extractionPages": 290,
+    "textExtractedAt": "2026-06-12",
+    "extractionModel": "pdftotext",
+    "extractionError": null
   },
   {
     "id": 291,
@@ -7300,7 +7570,13 @@
     "redaction": "",
     "firstSeenAt": "2026-06-12",
     "lastSeenAt": "2026-06-12",
-    "removedFromSource": false
+    "removedFromSource": false,
+    "contentHash": "5f073d6c4ae822a8213d56fbccef9d14a82e6b75bc318dbe2ccfe9c5945ddeee",
+    "textChars": 393873,
+    "extractionPages": 224,
+    "textExtractedAt": "2026-06-12",
+    "extractionModel": "pdftotext",
+    "extractionError": null
   },
   {
     "id": 292,
@@ -7320,7 +7596,13 @@
     "redaction": "",
     "firstSeenAt": "2026-06-12",
     "lastSeenAt": "2026-06-12",
-    "removedFromSource": false
+    "removedFromSource": false,
+    "contentHash": "fd3b139e6b9ad4e3b697561f1712541e54668617fe8be72f9214124e4325c793",
+    "textChars": 314670,
+    "extractionPages": 223,
+    "textExtractedAt": "2026-06-12",
+    "extractionModel": "pdftotext",
+    "extractionError": null
   },
   {
     "id": 293,
@@ -7340,7 +7622,13 @@
     "redaction": "",
     "firstSeenAt": "2026-06-12",
     "lastSeenAt": "2026-06-12",
-    "removedFromSource": false
+    "removedFromSource": false,
+    "contentHash": "a54a4d12ac77b4f7ef5bbfc6ccd81f06c91168746c7bb176c554d23f6eb859b2",
+    "textChars": 465708,
+    "extractionPages": 325,
+    "textExtractedAt": "2026-06-12",
+    "extractionModel": "pdftotext",
+    "extractionError": null
   },
   {
     "id": 294,
@@ -7360,7 +7648,13 @@
     "redaction": "",
     "firstSeenAt": "2026-06-12",
     "lastSeenAt": "2026-06-12",
-    "removedFromSource": false
+    "removedFromSource": false,
+    "contentHash": "e192e501e6be5c87ead3793856245b07d2749682a211b3bd977d58bb22cd60c7",
+    "textChars": 313454,
+    "extractionPages": 222,
+    "textExtractedAt": "2026-06-12",
+    "extractionModel": "pdftotext",
+    "extractionError": null
   },
   {
     "id": 295,
@@ -7380,7 +7674,13 @@
     "redaction": "",
     "firstSeenAt": "2026-06-12",
     "lastSeenAt": "2026-06-12",
-    "removedFromSource": false
+    "removedFromSource": false,
+    "contentHash": "971d604c8a91acb14a05b818e07f1c6530faf73845dd98f3cdbe0ede6d85c4b8",
+    "textChars": 116867,
+    "extractionPages": 78,
+    "textExtractedAt": "2026-06-12",
+    "extractionModel": "pdftotext",
+    "extractionError": null
   },
   {
     "id": 296,
@@ -7460,6 +7760,12 @@
     "redaction": "TRUE",
     "firstSeenAt": "2026-06-12",
     "lastSeenAt": "2026-06-12",
-    "removedFromSource": false
+    "removedFromSource": false,
+    "contentHash": "3393d62c92d9a5ad76155535caddf39cf9e76f5f19716ebfc851ba2b86b0ae3a",
+    "textChars": 258142,
+    "extractionPages": 86,
+    "textExtractedAt": "2026-06-12",
+    "extractionModel": "pdftotext",
+    "extractionError": null
   }
 ]
