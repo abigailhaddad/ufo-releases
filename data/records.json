@@ -6068,7 +6068,7 @@
     "lastSeenAt": "2026-06-13",
     "removedFromSource": false,
     "contentHash": "b2e4554e261e980c10251e927942300342081109a50b4ef61dc37946deade80f",
-    "extractionError": "{\"error\":{\"code\":403,\"message\":\"Your project has been denied access. Please contact support.\",\"status\":\"PERMISSION_DENIED\"}}"
+    "extractionError": "{\"error\":{\"code\":429,\"message\":\"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-2.5-flash\\nPlease retry in 58.647112898s.\",\"status\":\"RESOURCE_EXHAUSTED\",\"details\":[{\"@type\":\"type.googleapis.com/google.rpc.Help\",\"links\":[{\"description\":\"Learn more about Gemini API quotas\",\"url\":\"https://ai.google.dev/gemini-api/docs/rate-limits\"}]},{\"@type\":\"type.googleapis.com/google.rpc.QuotaFailure\",\"violations\":[{\"quotaMetric\":\"generativelanguage.googleapis.com/generate_content_free_tier_requests\",\"quotaId\":\"GenerateRequestsPerDayPerProjectPerModel-FreeTier\",\"quotaDimensions\":{\"location\":\"global\",\"model\":\"gemini-2.5-flash\"},\"quotaValue\":\"20\"}]},{\"@type\":\"type.googleapis.com/google.rpc.RetryInfo\",\"retryDelay\":\"58s\"}]}}"
   },
   {
     "id": 230,
@@ -6116,7 +6116,11 @@
     "lastSeenAt": "2026-06-13",
     "removedFromSource": false,
     "contentHash": "e067ec3753f24fbe26501a3932bce900124efea19ce5f949368f1b74d95fb53d",
-    "extractionError": "{\"error\":{\"code\":403,\"message\":\"Your project has been denied access. Please contact support.\",\"status\":\"PERMISSION_DENIED\"}}"
+    "extractionError": null,
+    "textChars": 15,
+    "extractionPages": 1,
+    "textExtractedAt": "2026-06-13",
+    "extractionModel": "gemini-2.5-flash"
   },
   {
     "id": 232,
@@ -6464,7 +6468,11 @@
     "lastSeenAt": "2026-06-13",
     "removedFromSource": false,
     "contentHash": "d2ff89273ce8bf19a5e9962b210e3954d4e0153ac493a5c9d8c2c140af6a5c17",
-    "extractionError": "{\"error\":{\"code\":403,\"message\":\"Your project has been denied access. Please contact support.\",\"status\":\"PERMISSION_DENIED\"}}"
+    "extractionError": null,
+    "textChars": 1780,
+    "extractionPages": 1,
+    "textExtractedAt": "2026-06-13",
+    "extractionModel": "gemini-2.5-flash"
   },
   {
     "id": 246,
@@ -6486,7 +6494,7 @@
     "lastSeenAt": "2026-06-13",
     "removedFromSource": false,
     "contentHash": "3abdbd131944fb847ec6eda8bf7f3f12684812bec71ea27c22ab5c3bb2ed4eb9",
-    "extractionError": null,
+    "extractionError": "pdftotext yielded too little; PDFTOTEXT_ONLY=1, skipping vision",
     "textChars": 7889,
     "extractionPages": 2,
     "textExtractedAt": "2026-06-12",
@@ -6902,7 +6910,7 @@
     "lastSeenAt": "2026-06-13",
     "removedFromSource": false,
     "contentHash": "43f3553b900cf8cceab5575edc33e14e6b6e980764ae78f979be664829efb089",
-    "extractionError": null,
+    "extractionError": "pdftotext yielded too little; PDFTOTEXT_ONLY=1, skipping vision",
     "textChars": 10636,
     "extractionPages": 7,
     "textExtractedAt": "2026-06-12",
@@ -6928,7 +6936,7 @@
     "lastSeenAt": "2026-06-13",
     "removedFromSource": false,
     "contentHash": "f96457d53f3cd65aec3fc539e7138cc42a5ea962654a83c75abbd0f13d54383c",
-    "extractionError": null,
+    "extractionError": "pdftotext yielded too little; PDFTOTEXT_ONLY=1, skipping vision",
     "textChars": 3234,
     "extractionPages": 3,
     "textExtractedAt": "2026-06-12",
