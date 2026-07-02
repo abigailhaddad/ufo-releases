@@ -85,6 +85,11 @@ function rowToRecord(row: CsvRow) {
   };
 }
 
+// war.gov assigns each release a stable ID embedded at the start of its title,
+// e.g. "DOW-UAP-PR026, ...". Match an agency code + "-UAP-" + a record number
+// that may carry a letter suffix (PR057a) or none (CIA-UAP-017).
+const RECORD_ID_RE = /[A-Z]{2,5}-UAP-[A-Za-z0-9]+/i;
+
 function recordKey(r: {
   title: string;
   agency: string;
@@ -92,10 +97,16 @@ function recordKey(r: {
   fileUrl?: string;
   dvidsVideoId?: string;
 }) {
-  // Prefer the most stable identifier in the source. The display title can
-  // change (war.gov renamed "Persian Gulf" → "Arabian Gulf" on three records)
-  // while the underlying file URL stays the same.
+  // Prefer the most stable identifier in the source. The embedded record ID is
+  // the most durable: it survives display-title edits (war.gov renamed "Persian
+  // Gulf" → "Arabian Gulf" on several records without touching the ID) AND stays
+  // unique when several records share a single file — e.g. the PR026/PR027
+  // "Unresolved UAP Report" entries both link the same mission-report PDF, so
+  // keying on the URL alone silently collapses them into one. Fall back to the
+  // file URL, then DVIDS id, then the raw title.
+  const idMatch = r.title.match(RECORD_ID_RE);
   const stable =
+    (idMatch && `id:${idMatch[0].toLowerCase()}`) ||
     (r.fileUrl && r.fileUrl.toLowerCase()) ||
     (r.dvidsVideoId && `dvids:${r.dvidsVideoId}`) ||
     `title:${r.title.toLowerCase()}`;
