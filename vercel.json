@@ -1,0 +1,26 @@
+{
+  "redirects": [
+    {
+      "source": "/",
+      "has": [
+        {
+          "type": "host",
+          "value": "ufo-releases.vercel.app"
+        }
+      ],
+      "destination": "https://ufo-releases.abigailhaddad.com/",
+      "permanent": false
+    },
+    {
+      "source": "/:path*",
+      "has": [
+        {
+          "type": "host",
+          "value": "ufo-releases.vercel.app"
+        }
+      ],
+      "destination": "https://ufo-releases.abigailhaddad.com/:path*",
+      "permanent": false
+    }
+  ]
+}
