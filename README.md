@@ -15,7 +15,7 @@ The official site is JS-heavy and inconvenient to browse, so this site reads the
    - Records that disappear from source are kept and flagged `removedFromSource: true`.
    - Each record carries `firstSeenAt` and `lastSeenAt` ISO dates.
    - Match key is `agency::type::fileUrl` so cosmetic title renames (e.g. war.gov rewriting "Persian Gulf" → "Arabian Gulf") don't get treated as a record disappearing + a new one appearing.
-4. **Daily extract pipeline** (also in CI): downloads any new PDFs/media → tries `pdftotext` → falls back to a vision model for scans → verifies integrity → e2e tests → fast-forwards `prod` from `main` if everything passes.
+4. **Daily extract pipeline** (also in CI): downloads any new PDFs/media → tries `pdftotext` → falls back to a vision model for scans → verifies integrity → e2e tests → builds and publishes to Cloudflare Pages if everything passes.
 
 ## Full-text extraction
 
@@ -81,7 +81,7 @@ e2e/
 .github/workflows/
   refresh-csv.yml          # daily cron: pull CSV → merge → commit
   extract-text.yml         # post-refresh: download → pdftotext → Gemini →
-                           #   verify → build → e2e → R2 → ff prod
+                           #   verify → build → e2e → R2 → Pages deploy
   ci.yml                   # lint + verify-data + build + e2e on every push/PR
 ```
 
@@ -89,7 +89,8 @@ e2e/
 
 - Unofficial, third-party mirror with no affiliation to the Department of War.
 - Site is fully static — no runtime fetching from war.gov.
-- Two branches in use: **`main`** for development (preview deploys), **`prod`** for production. The daily pipeline fast-forwards `prod` from `main` only if `verify-data` and the e2e suite pass.
+- The live site is **`main`**, deployed to Cloudflare Pages — by `deploy.yml` on human pushes, and by the pipeline's own deploy step on bot pushes (GitHub does not fire workflows for `GITHUB_TOKEN` commits). `verify-data` and the e2e suite gate the publish.
+- **`prod`** is retained but no longer tracks `main`. It only feeds a Vercel project reduced to a redirect stub, so the legacy `ufo-releases.vercel.app` hostname keeps forwarding to `ufo-releases.abigailhaddad.com` — that is what `vercel.json` is for. Don't delete the branch.
 
 ## Media/Python alternative
 
