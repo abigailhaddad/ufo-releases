@@ -50,6 +50,7 @@ mobile-*.png
 
 # generated at build time from data/text/
 /public/text/
+/public/text-index/
 /public/text-index.json
 
 # pre-downloaded source PDFs (huge, regenerable from war.gov)

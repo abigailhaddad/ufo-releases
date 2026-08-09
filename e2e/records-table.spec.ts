@@ -3,15 +3,17 @@ import { expect, test } from "@playwright/test";
 test.describe("UAP records table", () => {
   test.beforeEach(async ({ page }) => {
     // Set up the index-fetch wait BEFORE navigating so we don't miss the
-    // response. We don't await it here — only tests that exercise full-text
-    // search need to block on it.
-    const indexResponse = page.waitForResponse(
-      (r) => r.url().endsWith("/text-index.json") && r.ok(),
+    // response. The index is a manifest + N shards (see lib/text-index.ts);
+    // the manifest landing means the shard fetches have been kicked off, and
+    // the "loading text index…" suffix disappearing means they've all merged.
+    const manifestResponse = page.waitForResponse(
+      (r) => r.url().endsWith("/text-index/manifest.json") && r.ok(),
       { timeout: 30_000 },
     );
     await page.goto("/");
     await expect(page.getByRole("heading", { level: 1 })).toContainText("UAP / UFO releases");
-    await indexResponse;
+    await manifestResponse;
+    await expect(page.getByText("loading text index")).toHaveCount(0, { timeout: 30_000 });
   });
 
   test("renders all live records on first load", async ({ page }) => {
@@ -36,6 +38,44 @@ test.describe("UAP records table", () => {
     await expect(page.locator("text=/Showing \\d+ of/")).not.toContainText(
       `Showing ${before} of`,
     );
+  });
+
+  test("searches text buried deep in one record's OCR body", async ({ page }) => {
+    // "bombardier" appears exactly once across all 224 transcripts, at
+    // character 791,625 of 807,223 in record 251 (page 296 of the CIA's
+    // Project Blue Book Special Report No. 14), and in no record's metadata.
+    // So a hit here can only have come from the full-text index -- it proves
+    // every shard loaded and merged, not just the first one.
+    await page.locator('input[placeholder*="Search"]').fill("bombardier");
+    const rows = page.locator("table tbody tr");
+    await expect.poll(() => rows.count(), { timeout: 10_000 }).toBe(1);
+    await expect(rows.first()).toContainText("Project Blue Book Special Report No. 14");
+    // The snippet renders the surrounding OCR text with the term highlighted.
+    await expect(rows.first().locator("mark", { hasText: "bombardier" })).toHaveCount(1);
+  });
+
+  test("search index is sharded and no shard is near the host file limit", async ({
+    page,
+  }) => {
+    // Cloudflare Pages hard-rejects any file >= 25 MiB. The index that used to
+    // be one 28 MB file is now a manifest + shards; assert the published bytes
+    // agree with the manifest and stay under the cap.
+    const LIMIT = 25 * 1024 * 1024;
+    const manifest = await page.evaluate(async () => {
+      const r = await fetch("/text-index/manifest.json");
+      return (await r.json()) as {
+        recordCount: number;
+        shards: { file: string; bytes: number }[];
+      };
+    });
+    expect(manifest.shards.length).toBeGreaterThan(0);
+    expect(manifest.recordCount).toBeGreaterThan(100);
+    for (const shard of manifest.shards) {
+      expect(shard.bytes).toBeLessThan(LIMIT);
+      const res = await page.request.get(`/text-index/${shard.file}`);
+      expect(res.ok()).toBe(true);
+      expect((await res.body()).length).toBe(shard.bytes);
+    }
   });
 
   test("Enter promotes the term to a removable chip", async ({ page }) => {

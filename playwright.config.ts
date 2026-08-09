@@ -21,8 +21,10 @@ export default defineConfig({
     },
   ],
   webServer: {
-    // Build once + run `next start` so we test what we ship, not dev-mode HMR.
-    command: `pnpm build && pnpm exec next start -p ${PORT}`,
+    // Build once + serve out/ statically so we test exactly what gets
+    // published. `next start` can't be used here: it refuses to run under
+    // `output: "export"`, which is what the Cloudflare Pages deploy needs.
+    command: `pnpm build && pnpm exec tsx scripts/serve-out.ts ${PORT}`,
     url: BASE_URL,
     reuseExistingServer: !process.env.CI,
     timeout: 180_000,

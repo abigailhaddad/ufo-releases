@@ -32,6 +32,12 @@ jobs:
       - name: Type-check + build
         run: pnpm build
 
+      # `pnpm build` already runs this, but as its own step the failure reads
+      # as "a file is too big for the host" rather than "the build broke".
+      # Cloudflare Pages hard-rejects the whole deploy on any file >= 25 MiB.
+      - name: Check no published file exceeds the host's 25 MiB limit
+        run: pnpm check:size
+
       - name: Install Playwright browsers
         run: pnpm exec playwright install --with-deps chromium
 

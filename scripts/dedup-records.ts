@@ -89,7 +89,7 @@ function fingerprint(r: Rec): string {
 class UnionFind {
   private parent = new Map<number, number>();
   find(x: number): number {
-    let p = this.parent.get(x);
+    const p = this.parent.get(x);
     if (p === undefined) {
       this.parent.set(x, x);
       return x;

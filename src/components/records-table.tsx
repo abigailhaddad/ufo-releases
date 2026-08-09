@@ -13,6 +13,7 @@ import {
 import { FacetFilter, type FacetOption } from "@/components/facet-filter";
 import type { UfoRecord } from "@/lib/records";
 import { combinedRegex } from "@/lib/tag-rules";
+import { loadTextIndex, type TextIndex } from "@/lib/text-index";
 
 type Props = {
   records: UfoRecord[];
@@ -81,8 +82,6 @@ function badgeVariant(type: string): "default" | "secondary" | "outline" {
   if (type === "IMG") return "secondary";
   return "outline";
 }
-
-type TextIndex = Record<string, string>;
 
 function snippetAt(text: string, q: string): string | null {
   if (!q) return null;
@@ -153,19 +152,21 @@ export function RecordsTable({ records, agencies: _agencies, types: _types }: Pr
     return next;
   }
 
-  // Always load the full-text search index in the background (~2 MB). Doesn't
-  // block render; chip filters just don't match text bodies until it's ready.
+  // Always load the full-text search index in the background. It arrives as a
+  // manifest plus N shards (see lib/text-index.ts) so no single file hits the
+  // static host's 25 MiB per-file cap. Doesn't block render; chip filters just
+  // don't match text bodies until it's ready.
   const [textIndex, setTextIndex] = useState<TextIndex | null>(null);
   const [recordTexts, setRecordTexts] = useState<Record<number, string>>({});
 
   useEffect(() => {
     let cancelled = false;
-    fetch("/text-index.json")
-      .then((r) => (r.ok ? r.json() : Promise.reject(new Error(`HTTP ${r.status}`))))
-      .then((data: TextIndex) => {
+    loadTextIndex()
+      .then((data) => {
         if (!cancelled) setTextIndex(data);
       })
       .catch(() => {
+        // Search degrades to metadata-only rather than breaking the table.
         if (!cancelled) setTextIndex({});
       });
     return () => {
@@ -207,8 +208,11 @@ export function RecordsTable({ records, agencies: _agencies, types: _types }: Pr
   // Active terms = saved chips + whatever's currently in the input box, so
   // results update as you type without forcing Enter.
   const activeTerms = useMemo(() => {
-    const live = pending.trim().toLowerCase();
-    const saved = chips.map((c) => c.toLowerCase());
+    // Collapse internal whitespace to match how the search index is normalised
+    // (lib/text-index.ts), so "records  center" and "records center" agree.
+    const norm = (s: string) => s.trim().toLowerCase().replace(/\s+/g, " ");
+    const live = norm(pending);
+    const saved = chips.map(norm).filter(Boolean);
     return live ? [...saved, live] : saved;
   }, [chips, pending]);
 
