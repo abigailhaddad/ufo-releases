@@ -135,3 +135,24 @@ jobs:
           # Fast-forward only — fails loudly if prod has diverged from main.
           git fetch origin prod
           git push origin main:prod
+
+      # Vercel watched the prod branch and built on push, which is what actually
+      # published the data this pipeline produces. Cloudflare Pages is a direct
+      # upload, so publishing has to be an explicit step or the refreshed data
+      # lands in git and never reaches the site.
+      #
+      # Unconditional, not gated on steps.commit.outputs.changed: the upstream
+      # "Refresh UFO records" job may have committed new records even when the
+      # extraction pass adds nothing, and this is the last job in the chain.
+      #
+      # The build must run here rather than uploading a directory — the site is
+      # a Next.js static export, and `prebuild` regenerates the sharded search
+      # index from data/ before next build writes out/.
+      - name: Build the static export
+        run: pnpm build
+
+      - name: Deploy to Cloudflare Pages
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+        run: npx --yes wrangler@4 pages deploy out --project-name=ufo-releases --branch=main --commit-dirty=true
