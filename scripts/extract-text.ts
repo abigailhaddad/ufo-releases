@@ -7,8 +7,9 @@
  * Output: data/text/<id>.txt + records.json updated with textChars,
  * textExtractedAt, extractionModel.
  *
- * Idempotent: skips records whose textExtractedAt is on/after lastSeenAt
- * AND whose .txt file already exists. Force re-extract via FORCE=1.
+ * Idempotent: skips records that already have a .txt file and whose PDF content
+ * hash still matches the one they were extracted from. Force re-extract via
+ * FORCE=1.
  *
  * Env knobs:
  *   OPENAI_API_KEY  required
@@ -55,6 +56,8 @@ type StoredRecord = {
   fileUrl: string;
   removedFromSource?: boolean;
   lastSeenAt?: string;
+  contentHash?: string;
+  extractedFromHash?: string;
   textChars?: number;
   textExtractedAt?: string;
   extractionModel?: string;
@@ -269,10 +272,20 @@ function shouldSkip(r: StoredRecord, textPath: string): boolean {
   // pdftotext output is canonical (it's the actual text from the PDF).
   // Don't re-extract — vision wouldn't improve it.
   if (r.extractionModel === "pdftotext") return true;
+  // PDFTOTEXT_ONLY can't improve on existing vision text — it can only re-run
+  // pdftotext, get too little, and record a bogus extractionError. (This is how
+  // CI runs, so without this guard every scanned record is re-downloaded and
+  // re-shelled daily to fail on purpose.)
+  if (PDFTOTEXT_ONLY && r.extractionModel) return true;
   // Vision models: re-extract if user requested a different model.
   if (r.extractionModel && r.extractionModel !== MODEL) return false;
-  if (!r.lastSeenAt) return true;
-  return r.textExtractedAt >= r.lastSeenAt;
+  // Re-extract only when the underlying file actually changed. This used to
+  // compare textExtractedAt against lastSeenAt, which fetch-csv bumped to today
+  // on every record every run — so a local (non-PDFTOTEXT_ONLY) run re-sent
+  // every vision record to the API to reproduce identical text.
+  if (r.extractedFromHash && r.contentHash) return r.extractedFromHash === r.contentHash;
+  // Legacy rows predating extractedFromHash: text exists, leave it alone.
+  return true;
 }
 
 async function main() {
@@ -375,6 +388,7 @@ async function main() {
       r.extractionPages = pages;
       r.textExtractedAt = today;
       r.extractionModel = method;
+      if (r.contentHash) r.extractedFromHash = r.contentHash;
       r.extractionError = null;
       processed += 1;
       console.log(

@@ -192,6 +192,9 @@ export function dedup(records: Rec[]): { records: Rec[]; merged: number } {
       firstSeenAt: base.firstSeenAt ?? source.firstSeenAt,
       removedFromSource: false,
     };
+    // The survivor is live, so it must not inherit the archived row's
+    // lastSeenAt — that field only exists on records gone from the source.
+    delete merged.lastSeenAt;
     const m = merged as Record<string, unknown>;
     for (const f of ["textChars", "extractionModel", "extractionPages", "contentHash"]) {
       if (m[f] === undefined) {

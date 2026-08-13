@@ -4,7 +4,11 @@
  * Merge rules (per user spec):
  *   - Records present in source are upserted (right-side wins on overlap).
  *   - Records that disappear from source are KEPT and flagged removedFromSource=true.
- *   - First/last-seen dates are tracked per record.
+ *   - firstSeenAt is tracked per record. lastSeenAt is only stored once a record
+ *     LEAVES the source, frozen at the last refresh that still saw it — for live
+ *     records it would just be today's date on every row, which rewrote all ~376
+ *     records daily and made the git history useless. "Live as of" now lives in
+ *     data/refresh-meta.json instead.
  *
  * Akamai blocks plain HTTP clients, so we drive a real Chromium via Playwright.
  */
@@ -29,6 +33,7 @@ const CSV_PATH_FALLBACKS = [
 const DATA_DIR = path.join(process.cwd(), "data");
 const DATA_PATH = path.join(DATA_DIR, "records.json");
 const RAW_CSV_PATH = path.join(DATA_DIR, "uap-csv.csv");
+const META_PATH = path.join(DATA_DIR, "refresh-meta.json");
 
 type CsvRow = Record<string, string>;
 
@@ -198,6 +203,14 @@ async function main() {
     existing = JSON.parse(fs.readFileSync(DATA_PATH, "utf8")) as StoredRecord[];
   }
 
+  // The refresh that last saw everything still live. A record that drops out of
+  // the source this run was last seen then, not today.
+  let prevRefreshedAt = today;
+  if (fs.existsSync(META_PATH)) {
+    const meta = JSON.parse(fs.readFileSync(META_PATH, "utf8")) as { lastRefreshedAt?: string };
+    if (meta.lastRefreshedAt) prevRefreshedAt = meta.lastRefreshedAt;
+  }
+
   const fetchedByKey = new Map(fetched.map((r) => [recordKey(r), r]));
   const merged: StoredRecord[] = [];
   let nextId = existing.reduce((m, r) => Math.max(m, r.id), 0) + 1;
@@ -212,11 +225,12 @@ async function main() {
     handledKeys.add(key);
     const fresh = fetchedByKey.get(key);
     if (fresh) {
+      // Still live: drop any stale lastSeenAt so the row stops changing daily.
+      const { lastSeenAt: _dropped, ...rest } = prev;
       merged.push({
-        ...prev,
+        ...rest,
         ...fresh,
         firstSeenAt: prev.firstSeenAt ?? today,
-        lastSeenAt: today,
         removedFromSource: false,
       });
       updates += 1;
@@ -225,7 +239,8 @@ async function main() {
       merged.push({
         ...prev,
         firstSeenAt: prev.firstSeenAt ?? prev.releaseDate ?? today,
-        lastSeenAt: prev.lastSeenAt ?? today,
+        // Freeze on the live → removed transition; never move it afterwards.
+        lastSeenAt: wasRemoved ? prev.lastSeenAt : (prev.lastSeenAt ?? prevRefreshedAt),
         removedFromSource: true,
       });
       if (!wasRemoved) removals += 1;
@@ -247,6 +262,21 @@ async function main() {
 
   merged.sort((a, b) => a.id - b.id);
   fs.writeFileSync(DATA_PATH, JSON.stringify(merged, null, 2) + "\n");
+
+  // One line moves per day instead of one per record. Any record without
+  // removedFromSource was present in the source as of lastRefreshedAt.
+  fs.writeFileSync(
+    META_PATH,
+    JSON.stringify(
+      {
+        lastRefreshedAt: today,
+        liveRecords: merged.filter((r) => !r.removedFromSource).length,
+        archivedRecords: merged.filter((r) => r.removedFromSource).length,
+      },
+      null,
+      2,
+    ) + "\n",
+  );
 
   console.log("--- Refresh summary ---");
   console.log(`Total records (incl. archived): ${merged.length}`);
