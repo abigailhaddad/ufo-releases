@@ -1665,7 +1665,7 @@
       "pilot",
       "radar"
     ],
-    "contentHash": "d52431b354af55b1e86cb454e61fd61993af3b023a38f2d9e014a9c9d18d16b4"
+    "contentHash": "ca9563779824e306f11393612fe6503f39877c6d5be03e77c875e928ee116b54"
   },
   {
     "id": 56,
@@ -5848,7 +5848,7 @@
     "firstSeenAt": "2026-06-12",
     "removedFromSource": false,
     "contentHash": "b2e4554e261e980c10251e927942300342081109a50b4ef61dc37946deade80f",
-    "extractionError": "{\"error\":{\"code\":429,\"message\":\"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-2.5-flash\\nPlease retry in 12h33m7.409901949s.\",\"status\":\"RESOURCE_EXHAUSTED\",\"details\":[{\"@type\":\"type.googleapis.com/google.rpc.Help\",\"links\":[{\"description\":\"Learn more about Gemini API quotas\",\"url\":\"https://ai.google.dev/gemini-api/docs/rate-limits\"}]},{\"@type\":\"type.googleapis.com/google.rpc.QuotaFailure\",\"violations\":[{\"quotaMetric\":\"generativelanguage.googleapis.com/generate_content_free_tier_requests\",\"quotaId\":\"GenerateRequestsPerDayPerProjectPerModel-FreeTier\",\"quotaDimensions\":{\"location\":\"global\",\"model\":\"gemini-2.5-flash\"},\"quotaValue\":\"20\"}]},{\"@type\":\"type.googleapis.com/google.rpc.RetryInfo\",\"retryDelay\":\"45187s\"}]}}"
+    "extractionError": "{\"error\":{\"code\":429,\"message\":\"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-2.5-flash, description: Generate content requests per day limit exceeded on Free Tier. See https://ai.google.dev/gemini-api/docs/rate-limits.\\nPlease retry in 12h41m24.228763438s.\",\"status\":\"RESOURCE_EXHAUSTED\",\"details\":[{\"@type\":\"type.googleapis.com/google.rpc.Help\",\"links\":[{\"description\":\"Learn more about Gemini API quotas\",\"url\":\"https://ai.google.dev/gemini-api/docs/rate-limits\"}]},{\"@type\":\"type.googleapis.com/google.rpc.QuotaFailure\",\"violations\":[{\"description\":\"Generate content requests per day limit exceeded on Free Tier. See https://ai.google.dev/gemini-api/docs/rate-limits.\",\"quotaMetric\":\"generativelanguage.googleapis.com/generate_content_free_tier_requests\",\"quotaId\":\"GenerateRequestsPerDayPerProjectPerModel-FreeTier\",\"quotaDimensions\":{\"model\":\"gemini-2.5-flash\",\"location\":\"global\"},\"quotaValue\":\"20\"}]},{\"@type\":\"type.googleapis.com/google.rpc.RetryInfo\",\"retryDelay\":\"45684s\"}]}}"
   },
   {
     "id": 230,
@@ -8029,7 +8029,7 @@
     "firstSeenAt": "2026-07-10",
     "removedFromSource": false,
     "contentHash": "9c7629703ed55608b29000e490ac91be260e6088587f9048d7412593233878f9",
-    "extractionError": "{\"error\":{\"code\":429,\"message\":\"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-2.5-flash\\nPlease retry in 12h36m6.507121724s.\",\"status\":\"RESOURCE_EXHAUSTED\",\"details\":[{\"@type\":\"type.googleapis.com/google.rpc.Help\",\"links\":[{\"description\":\"Learn more about Gemini API quotas\",\"url\":\"https://ai.google.dev/gemini-api/docs/rate-limits\"}]},{\"@type\":\"type.googleapis.com/google.rpc.QuotaFailure\",\"violations\":[{\"quotaMetric\":\"generativelanguage.googleapis.com/generate_content_free_tier_requests\",\"quotaId\":\"GenerateRequestsPerDayPerProjectPerModel-FreeTier\",\"quotaDimensions\":{\"location\":\"global\",\"model\":\"gemini-2.5-flash\"},\"quotaValue\":\"20\"}]},{\"@type\":\"type.googleapis.com/google.rpc.RetryInfo\",\"retryDelay\":\"45366s\"}]}}"
+    "extractionError": "{\"error\":{\"code\":429,\"message\":\"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-2.5-flash, description: Generate content requests per day limit exceeded on Free Tier. See https://ai.google.dev/gemini-api/docs/rate-limits.\\nPlease retry in 12h45m47.016534825s.\",\"status\":\"RESOURCE_EXHAUSTED\",\"details\":[{\"@type\":\"type.googleapis.com/google.rpc.Help\",\"links\":[{\"description\":\"Learn more about Gemini API quotas\",\"url\":\"https://ai.google.dev/gemini-api/docs/rate-limits\"}]},{\"@type\":\"type.googleapis.com/google.rpc.QuotaFailure\",\"violations\":[{\"description\":\"Generate content requests per day limit exceeded on Free Tier. See https://ai.google.dev/gemini-api/docs/rate-limits.\",\"quotaMetric\":\"generativelanguage.googleapis.com/generate_content_free_tier_requests\",\"quotaId\":\"GenerateRequestsPerDayPerProjectPerModel-FreeTier\",\"quotaDimensions\":{\"location\":\"global\",\"model\":\"gemini-2.5-flash\"},\"quotaValue\":\"20\"}]},{\"@type\":\"type.googleapis.com/google.rpc.RetryInfo\",\"retryDelay\":\"45947s\"}]}}"
   },
   {
     "id": 324,
@@ -8050,7 +8050,7 @@
     "firstSeenAt": "2026-07-10",
     "removedFromSource": false,
     "contentHash": "2c64dc1cd88ac9717cad81ecee9518af9310bebf5fc51596b85737374e2bf4cf",
-    "extractionError": "{\"error\":{\"code\":429,\"message\":\"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-2.5-flash\\nPlease retry in 12h31m47.284080406s.\",\"status\":\"RESOURCE_EXHAUSTED\",\"details\":[{\"@type\":\"type.googleapis.com/google.rpc.Help\",\"links\":[{\"description\":\"Learn more about Gemini API quotas\",\"url\":\"https://ai.google.dev/gemini-api/docs/rate-limits\"}]},{\"@type\":\"type.googleapis.com/google.rpc.QuotaFailure\",\"violations\":[{\"quotaMetric\":\"generativelanguage.googleapis.com/generate_content_free_tier_requests\",\"quotaId\":\"GenerateRequestsPerDayPerProjectPerModel-FreeTier\",\"quotaDimensions\":{\"location\":\"global\",\"model\":\"gemini-2.5-flash\"},\"quotaValue\":\"20\"}]},{\"@type\":\"type.googleapis.com/google.rpc.RetryInfo\",\"retryDelay\":\"45107s\"}]}}"
+    "extractionError": "fetch failed"
   },
   {
     "id": 325,
@@ -8501,7 +8501,7 @@
     "firstSeenAt": "2026-08-07",
     "removedFromSource": false,
     "contentHash": "207f31090a4f187a365c552d45b1e0f3eb2aa47541dd9a8b0d1f7b5769c5d0ab",
-    "extractionError": "{\"error\":{\"code\":429,\"message\":\"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-2.5-flash\\nPlease retry in 12h31m45.287256747s.\",\"status\":\"RESOURCE_EXHAUSTED\",\"details\":[{\"@type\":\"type.googleapis.com/google.rpc.Help\",\"links\":[{\"description\":\"Learn more about Gemini API quotas\",\"url\":\"https://ai.google.dev/gemini-api/docs/rate-limits\"}]},{\"@type\":\"type.googleapis.com/google.rpc.QuotaFailure\",\"violations\":[{\"quotaMetric\":\"generativelanguage.googleapis.com/generate_content_free_tier_requests\",\"quotaId\":\"GenerateRequestsPerDayPerProjectPerModel-FreeTier\",\"quotaDimensions\":{\"location\":\"global\",\"model\":\"gemini-2.5-flash\"},\"quotaValue\":\"20\"}]},{\"@type\":\"type.googleapis.com/google.rpc.RetryInfo\",\"retryDelay\":\"45105s\"}]}}"
+    "extractionError": "{\"error\":{\"code\":429,\"message\":\"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-2.5-flash, description: Generate content requests per day limit exceeded on Free Tier. See https://ai.google.dev/gemini-api/docs/rate-limits.\\nPlease retry in 12h40m18.545115363s.\",\"status\":\"RESOURCE_EXHAUSTED\",\"details\":[{\"@type\":\"type.googleapis.com/google.rpc.Help\",\"links\":[{\"description\":\"Learn more about Gemini API quotas\",\"url\":\"https://ai.google.dev/gemini-api/docs/rate-limits\"}]},{\"@type\":\"type.googleapis.com/google.rpc.QuotaFailure\",\"violations\":[{\"description\":\"Generate content requests per day limit exceeded on Free Tier. See https://ai.google.dev/gemini-api/docs/rate-limits.\",\"quotaMetric\":\"generativelanguage.googleapis.com/generate_content_free_tier_requests\",\"quotaId\":\"GenerateRequestsPerDayPerProjectPerModel-FreeTier\",\"quotaDimensions\":{\"location\":\"global\",\"model\":\"gemini-2.5-flash\"},\"quotaValue\":\"20\"}]},{\"@type\":\"type.googleapis.com/google.rpc.RetryInfo\",\"retryDelay\":\"45618s\"}]}}"
   },
   {
     "id": 348,
@@ -8560,7 +8560,7 @@
     "firstSeenAt": "2026-08-07",
     "removedFromSource": false,
     "contentHash": "53e69e5d6dbe46fc435574c3f0246fcdfbbd537928a8a6c46c3f35752f68133e",
-    "extractionError": "{\"error\":{\"code\":429,\"message\":\"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-2.5-flash\\nPlease retry in 12h30m35.675690889s.\",\"status\":\"RESOURCE_EXHAUSTED\",\"details\":[{\"@type\":\"type.googleapis.com/google.rpc.Help\",\"links\":[{\"description\":\"Learn more about Gemini API quotas\",\"url\":\"https://ai.google.dev/gemini-api/docs/rate-limits\"}]},{\"@type\":\"type.googleapis.com/google.rpc.QuotaFailure\",\"violations\":[{\"quotaMetric\":\"generativelanguage.googleapis.com/generate_content_free_tier_requests\",\"quotaId\":\"GenerateRequestsPerDayPerProjectPerModel-FreeTier\",\"quotaDimensions\":{\"model\":\"gemini-2.5-flash\",\"location\":\"global\"},\"quotaValue\":\"20\"}]},{\"@type\":\"type.googleapis.com/google.rpc.RetryInfo\",\"retryDelay\":\"45035s\"}]}}"
+    "extractionError": "{\"error\":{\"code\":429,\"message\":\"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-2.5-flash, description: Generate content requests per day limit exceeded on Free Tier. See https://ai.google.dev/gemini-api/docs/rate-limits.\\nPlease retry in 12h40m18.381001213s.\",\"status\":\"RESOURCE_EXHAUSTED\",\"details\":[{\"@type\":\"type.googleapis.com/google.rpc.Help\",\"links\":[{\"description\":\"Learn more about Gemini API quotas\",\"url\":\"https://ai.google.dev/gemini-api/docs/rate-limits\"}]},{\"@type\":\"type.googleapis.com/google.rpc.QuotaFailure\",\"violations\":[{\"description\":\"Generate content requests per day limit exceeded on Free Tier. See https://ai.google.dev/gemini-api/docs/rate-limits.\",\"quotaMetric\":\"generativelanguage.googleapis.com/generate_content_free_tier_requests\",\"quotaId\":\"GenerateRequestsPerDayPerProjectPerModel-FreeTier\",\"quotaDimensions\":{\"location\":\"global\",\"model\":\"gemini-2.5-flash\"},\"quotaValue\":\"20\"}]},{\"@type\":\"type.googleapis.com/google.rpc.RetryInfo\",\"retryDelay\":\"45618s\"}]}}"
   },
   {
     "id": 351,
@@ -8581,7 +8581,7 @@
     "firstSeenAt": "2026-08-07",
     "removedFromSource": false,
     "contentHash": "491d158803934b9c4e5de46ee51388cd9eff8a8aba2cf17dfcc9d957a8952ebd",
-    "extractionError": "{\"error\":{\"code\":429,\"message\":\"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-2.5-flash\\nPlease retry in 12h30m23.695771622s.\",\"status\":\"RESOURCE_EXHAUSTED\",\"details\":[{\"@type\":\"type.googleapis.com/google.rpc.Help\",\"links\":[{\"description\":\"Learn more about Gemini API quotas\",\"url\":\"https://ai.google.dev/gemini-api/docs/rate-limits\"}]},{\"@type\":\"type.googleapis.com/google.rpc.QuotaFailure\",\"violations\":[{\"quotaMetric\":\"generativelanguage.googleapis.com/generate_content_free_tier_requests\",\"quotaId\":\"GenerateRequestsPerDayPerProjectPerModel-FreeTier\",\"quotaDimensions\":{\"location\":\"global\",\"model\":\"gemini-2.5-flash\"},\"quotaValue\":\"20\"}]},{\"@type\":\"type.googleapis.com/google.rpc.RetryInfo\",\"retryDelay\":\"45023s\"}]}}"
+    "extractionError": "fetch failed"
   },
   {
     "id": 352,
@@ -8602,7 +8602,7 @@
     "firstSeenAt": "2026-08-07",
     "removedFromSource": false,
     "contentHash": "7416fff9cc1cb0e19e5d1f5b6efc2b031ea986403a049e3d6fa38d7965fa79e9",
-    "extractionError": "{\"error\":{\"code\":429,\"message\":\"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-2.5-flash\\nPlease retry in 12h29m13.475130733s.\",\"status\":\"RESOURCE_EXHAUSTED\",\"details\":[{\"@type\":\"type.googleapis.com/google.rpc.Help\",\"links\":[{\"description\":\"Learn more about Gemini API quotas\",\"url\":\"https://ai.google.dev/gemini-api/docs/rate-limits\"}]},{\"@type\":\"type.googleapis.com/google.rpc.QuotaFailure\",\"violations\":[{\"quotaMetric\":\"generativelanguage.googleapis.com/generate_content_free_tier_requests\",\"quotaId\":\"GenerateRequestsPerDayPerProjectPerModel-FreeTier\",\"quotaDimensions\":{\"location\":\"global\",\"model\":\"gemini-2.5-flash\"},\"quotaValue\":\"20\"}]},{\"@type\":\"type.googleapis.com/google.rpc.RetryInfo\",\"retryDelay\":\"44953s\"}]}}"
+    "extractionError": "{\"error\":{\"code\":429,\"message\":\"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-2.5-flash, description: Generate content requests per day limit exceeded on Free Tier. See https://ai.google.dev/gemini-api/docs/rate-limits.\\nPlease retry in 12h38m33.719967083s.\",\"status\":\"RESOURCE_EXHAUSTED\",\"details\":[{\"@type\":\"type.googleapis.com/google.rpc.Help\",\"links\":[{\"description\":\"Learn more about Gemini API quotas\",\"url\":\"https://ai.google.dev/gemini-api/docs/rate-limits\"}]},{\"@type\":\"type.googleapis.com/google.rpc.QuotaFailure\",\"violations\":[{\"description\":\"Generate content requests per day limit exceeded on Free Tier. See https://ai.google.dev/gemini-api/docs/rate-limits.\",\"quotaMetric\":\"generativelanguage.googleapis.com/generate_content_free_tier_requests\",\"quotaId\":\"GenerateRequestsPerDayPerProjectPerModel-FreeTier\",\"quotaDimensions\":{\"location\":\"global\",\"model\":\"gemini-2.5-flash\"},\"quotaValue\":\"20\"}]},{\"@type\":\"type.googleapis.com/google.rpc.RetryInfo\",\"retryDelay\":\"45513s\"}]}}"
   },
   {
     "id": 353,
@@ -9584,7 +9584,7 @@
     "firstSeenAt": "2026-09-18",
     "removedFromSource": false,
     "contentHash": "950cc1f3d5a9b4f74c1342784a846a2cd2d2dae95f825b89839ac229292e6fa1",
-    "extractionError": "{\"error\":{\"code\":429,\"message\":\"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-2.5-flash\\nPlease retry in 12h29m11.678224898s.\",\"status\":\"RESOURCE_EXHAUSTED\",\"details\":[{\"@type\":\"type.googleapis.com/google.rpc.Help\",\"links\":[{\"description\":\"Learn more about Gemini API quotas\",\"url\":\"https://ai.google.dev/gemini-api/docs/rate-limits\"}]},{\"@type\":\"type.googleapis.com/google.rpc.QuotaFailure\",\"violations\":[{\"quotaMetric\":\"generativelanguage.googleapis.com/generate_content_free_tier_requests\",\"quotaId\":\"GenerateRequestsPerDayPerProjectPerModel-FreeTier\",\"quotaDimensions\":{\"location\":\"global\",\"model\":\"gemini-2.5-flash\"},\"quotaValue\":\"20\"}]},{\"@type\":\"type.googleapis.com/google.rpc.RetryInfo\",\"retryDelay\":\"44951s\"}]}}"
+    "extractionError": "{\"error\":{\"code\":429,\"message\":\"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-2.5-flash, description: Generate content requests per day limit exceeded on Free Tier. See https://ai.google.dev/gemini-api/docs/rate-limits.\\nPlease retry in 12h38m33.64097148s.\",\"status\":\"RESOURCE_EXHAUSTED\",\"details\":[{\"@type\":\"type.googleapis.com/google.rpc.Help\",\"links\":[{\"description\":\"Learn more about Gemini API quotas\",\"url\":\"https://ai.google.dev/gemini-api/docs/rate-limits\"}]},{\"@type\":\"type.googleapis.com/google.rpc.QuotaFailure\",\"violations\":[{\"description\":\"Generate content requests per day limit exceeded on Free Tier. See https://ai.google.dev/gemini-api/docs/rate-limits.\",\"quotaMetric\":\"generativelanguage.googleapis.com/generate_content_free_tier_requests\",\"quotaId\":\"GenerateRequestsPerDayPerProjectPerModel-FreeTier\",\"quotaDimensions\":{\"location\":\"global\",\"model\":\"gemini-2.5-flash\"},\"quotaValue\":\"20\"}]},{\"@type\":\"type.googleapis.com/google.rpc.RetryInfo\",\"retryDelay\":\"45513s\"}]}}"
   },
   {
     "id": 397,
@@ -10801,7 +10801,7 @@
     "firstSeenAt": "2026-09-18",
     "removedFromSource": false,
     "contentHash": "b79812908c2835d7ee838a9713885fda67f610233d4eb030d637ff99f5b7f0e5",
-    "extractionError": "{\"error\":{\"code\":429,\"message\":\"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-2.5-flash\\nPlease retry in 12h28m9.013430105s.\",\"status\":\"RESOURCE_EXHAUSTED\",\"details\":[{\"@type\":\"type.googleapis.com/google.rpc.Help\",\"links\":[{\"description\":\"Learn more about Gemini API quotas\",\"url\":\"https://ai.google.dev/gemini-api/docs/rate-limits\"}]},{\"@type\":\"type.googleapis.com/google.rpc.QuotaFailure\",\"violations\":[{\"quotaMetric\":\"generativelanguage.googleapis.com/generate_content_free_tier_requests\",\"quotaId\":\"GenerateRequestsPerDayPerProjectPerModel-FreeTier\",\"quotaDimensions\":{\"location\":\"global\",\"model\":\"gemini-2.5-flash\"},\"quotaValue\":\"20\"}]},{\"@type\":\"type.googleapis.com/google.rpc.RetryInfo\",\"retryDelay\":\"44889s\"}]}}"
+    "extractionError": "{\"error\":{\"code\":429,\"message\":\"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-2.5-flash, description: Generate content requests per day limit exceeded on Free Tier. See https://ai.google.dev/gemini-api/docs/rate-limits.\\nPlease retry in 12h37m26.910911893s.\",\"status\":\"RESOURCE_EXHAUSTED\",\"details\":[{\"@type\":\"type.googleapis.com/google.rpc.Help\",\"links\":[{\"description\":\"Learn more about Gemini API quotas\",\"url\":\"https://ai.google.dev/gemini-api/docs/rate-limits\"}]},{\"@type\":\"type.googleapis.com/google.rpc.QuotaFailure\",\"violations\":[{\"description\":\"Generate content requests per day limit exceeded on Free Tier. See https://ai.google.dev/gemini-api/docs/rate-limits.\",\"quotaMetric\":\"generativelanguage.googleapis.com/generate_content_free_tier_requests\",\"quotaId\":\"GenerateRequestsPerDayPerProjectPerModel-FreeTier\",\"quotaDimensions\":{\"model\":\"gemini-2.5-flash\",\"location\":\"global\"},\"quotaValue\":\"20\"}]},{\"@type\":\"type.googleapis.com/google.rpc.RetryInfo\",\"retryDelay\":\"45446s\"}]}}"
   },
   {
     "id": 444,
@@ -10822,7 +10822,7 @@
     "firstSeenAt": "2026-09-18",
     "removedFromSource": false,
     "contentHash": "e1eb779d07e32f2ee6e8cc4b17a56f52bd373136a742130d7fae3443adca3853",
-    "extractionError": "{\"error\":{\"code\":429,\"message\":\"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-2.5-flash\\nPlease retry in 12h28m7.308712401s.\",\"status\":\"RESOURCE_EXHAUSTED\",\"details\":[{\"@type\":\"type.googleapis.com/google.rpc.Help\",\"links\":[{\"description\":\"Learn more about Gemini API quotas\",\"url\":\"https://ai.google.dev/gemini-api/docs/rate-limits\"}]},{\"@type\":\"type.googleapis.com/google.rpc.QuotaFailure\",\"violations\":[{\"quotaMetric\":\"generativelanguage.googleapis.com/generate_content_free_tier_requests\",\"quotaId\":\"GenerateRequestsPerDayPerProjectPerModel-FreeTier\",\"quotaDimensions\":{\"location\":\"global\",\"model\":\"gemini-2.5-flash\"},\"quotaValue\":\"20\"}]},{\"@type\":\"type.googleapis.com/google.rpc.RetryInfo\",\"retryDelay\":\"44887s\"}]}}"
+    "extractionError": "{\"error\":{\"code\":429,\"message\":\"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-2.5-flash, description: Generate content requests per day limit exceeded on Free Tier. See https://ai.google.dev/gemini-api/docs/rate-limits.\\nPlease retry in 12h37m26.782854945s.\",\"status\":\"RESOURCE_EXHAUSTED\",\"details\":[{\"@type\":\"type.googleapis.com/google.rpc.Help\",\"links\":[{\"description\":\"Learn more about Gemini API quotas\",\"url\":\"https://ai.google.dev/gemini-api/docs/rate-limits\"}]},{\"@type\":\"type.googleapis.com/google.rpc.QuotaFailure\",\"violations\":[{\"description\":\"Generate content requests per day limit exceeded on Free Tier. See https://ai.google.dev/gemini-api/docs/rate-limits.\",\"quotaMetric\":\"generativelanguage.googleapis.com/generate_content_free_tier_requests\",\"quotaId\":\"GenerateRequestsPerDayPerProjectPerModel-FreeTier\",\"quotaDimensions\":{\"location\":\"global\",\"model\":\"gemini-2.5-flash\"},\"quotaValue\":\"20\"}]},{\"@type\":\"type.googleapis.com/google.rpc.RetryInfo\",\"retryDelay\":\"45446s\"}]}}"
   },
   {
     "id": 445,
@@ -11174,7 +11174,14 @@
     "redaction": "",
     "firstSeenAt": "2026-10-23",
     "lastSeenAt": "2026-10-23",
-    "removedFromSource": false
+    "removedFromSource": false,
+    "contentHash": "c7b784b889f0b4597445a8a134ca5ce11c4a142cae74ae15c45e3e4042bbc9fc",
+    "textChars": 18336,
+    "extractionPages": 5,
+    "textExtractedAt": "2026-10-23",
+    "extractionModel": "pdftotext",
+    "extractedFromHash": "c7b784b889f0b4597445a8a134ca5ce11c4a142cae74ae15c45e3e4042bbc9fc",
+    "extractionError": null
   },
   {
     "id": 462,
@@ -11194,7 +11201,14 @@
     "redaction": "TRUE",
     "firstSeenAt": "2026-10-23",
     "lastSeenAt": "2026-10-23",
-    "removedFromSource": false
+    "removedFromSource": false,
+    "contentHash": "dbf49c096d63a44c4514179cd8305177dd725978072d598bc50228f1b6b97dd1",
+    "textChars": 145879,
+    "extractionPages": 60,
+    "textExtractedAt": "2026-10-23",
+    "extractionModel": "pdftotext",
+    "extractedFromHash": "dbf49c096d63a44c4514179cd8305177dd725978072d598bc50228f1b6b97dd1",
+    "extractionError": null
   },
   {
     "id": 463,
@@ -11214,7 +11228,14 @@
     "redaction": "TRUE",
     "firstSeenAt": "2026-10-23",
     "lastSeenAt": "2026-10-23",
-    "removedFromSource": false
+    "removedFromSource": false,
+    "contentHash": "9c093e0985018e197b6c92c43d9c7a83455d4a2e7bc2365cc641774d32e48c31",
+    "textChars": 10633,
+    "extractionPages": 3,
+    "textExtractedAt": "2026-10-23",
+    "extractionModel": "pdftotext",
+    "extractedFromHash": "9c093e0985018e197b6c92c43d9c7a83455d4a2e7bc2365cc641774d32e48c31",
+    "extractionError": null
   },
   {
     "id": 464,
@@ -11234,7 +11255,14 @@
     "redaction": "",
     "firstSeenAt": "2026-10-23",
     "lastSeenAt": "2026-10-23",
-    "removedFromSource": false
+    "removedFromSource": false,
+    "contentHash": "dde62683bf5957c1c79890d352600c1c56518b6f0092f15b1b7fe56fbd143321",
+    "textChars": 13309,
+    "extractionPages": 4,
+    "textExtractedAt": "2026-10-23",
+    "extractionModel": "pdftotext",
+    "extractedFromHash": "dde62683bf5957c1c79890d352600c1c56518b6f0092f15b1b7fe56fbd143321",
+    "extractionError": null
   },
   {
     "id": 465,
@@ -11254,7 +11282,14 @@
     "redaction": "",
     "firstSeenAt": "2026-10-23",
     "lastSeenAt": "2026-10-23",
-    "removedFromSource": false
+    "removedFromSource": false,
+    "contentHash": "30163aa0db350a0216a9662573af4ccf8fe1c130cac3f01b0ed8769c8d71186e",
+    "textChars": 9333,
+    "extractionPages": 5,
+    "textExtractedAt": "2026-10-23",
+    "extractionModel": "pdftotext",
+    "extractedFromHash": "30163aa0db350a0216a9662573af4ccf8fe1c130cac3f01b0ed8769c8d71186e",
+    "extractionError": null
   },
   {
     "id": 466,
@@ -11274,7 +11309,14 @@
     "redaction": "",
     "firstSeenAt": "2026-10-23",
     "lastSeenAt": "2026-10-23",
-    "removedFromSource": false
+    "removedFromSource": false,
+    "contentHash": "51d174e00df3ac5b62c86bed61b7a22b487a39f777f081093ed1db83b614473f",
+    "textChars": 4724,
+    "extractionPages": 2,
+    "textExtractedAt": "2026-10-23",
+    "extractionModel": "pdftotext",
+    "extractedFromHash": "51d174e00df3ac5b62c86bed61b7a22b487a39f777f081093ed1db83b614473f",
+    "extractionError": null
   },
   {
     "id": 467,
@@ -11294,7 +11336,14 @@
     "redaction": "",
     "firstSeenAt": "2026-10-23",
     "lastSeenAt": "2026-10-23",
-    "removedFromSource": false
+    "removedFromSource": false,
+    "contentHash": "ef776d6b24b64d878ff3c3d2637e87121bfc1dcc152092ab81fc0f3391be6515",
+    "textChars": 1874,
+    "extractionPages": 3,
+    "textExtractedAt": "2026-10-23",
+    "extractionModel": "pdftotext",
+    "extractedFromHash": "ef776d6b24b64d878ff3c3d2637e87121bfc1dcc152092ab81fc0f3391be6515",
+    "extractionError": null
   },
   {
     "id": 468,
@@ -11314,7 +11363,9 @@
     "redaction": "TRUE",
     "firstSeenAt": "2026-10-23",
     "lastSeenAt": "2026-10-23",
-    "removedFromSource": false
+    "removedFromSource": false,
+    "contentHash": "0c7430d1f1da11cecbcf476c4cdaf16c8ed5bceb4fce6e56b51ed93b4d386298",
+    "extractionError": "{\"error\":{\"code\":429,\"message\":\"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-2.5-flash, description: Generate content requests per day limit exceeded on Free Tier. See https://ai.google.dev/gemini-api/docs/rate-limits.\\nPlease retry in 12h34m47.006623494s.\",\"status\":\"RESOURCE_EXHAUSTED\",\"details\":[{\"@type\":\"type.googleapis.com/google.rpc.Help\",\"links\":[{\"description\":\"Learn more about Gemini API quotas\",\"url\":\"https://ai.google.dev/gemini-api/docs/rate-limits\"}]},{\"@type\":\"type.googleapis.com/google.rpc.QuotaFailure\",\"violations\":[{\"description\":\"Generate content requests per day limit exceeded on Free Tier. See https://ai.google.dev/gemini-api/docs/rate-limits.\",\"quotaMetric\":\"generativelanguage.googleapis.com/generate_content_free_tier_requests\",\"quotaId\":\"GenerateRequestsPerDayPerProjectPerModel-FreeTier\",\"quotaDimensions\":{\"location\":\"global\",\"model\":\"gemini-2.5-flash\"},\"quotaValue\":\"20\"}]},{\"@type\":\"type.googleapis.com/google.rpc.RetryInfo\",\"retryDelay\":\"45287s\"}]}}"
   },
   {
     "id": 469,
@@ -11334,7 +11385,14 @@
     "redaction": "",
     "firstSeenAt": "2026-10-23",
     "lastSeenAt": "2026-10-23",
-    "removedFromSource": false
+    "removedFromSource": false,
+    "contentHash": "7ae61c0cb7793b05f4a51ff36a2c93f1b0e5d3d6c80abcdc8883138f549ecaf3",
+    "textChars": 17050,
+    "extractionPages": 5,
+    "textExtractedAt": "2026-10-23",
+    "extractionModel": "pdftotext",
+    "extractedFromHash": "7ae61c0cb7793b05f4a51ff36a2c93f1b0e5d3d6c80abcdc8883138f549ecaf3",
+    "extractionError": null
   },
   {
     "id": 470,
@@ -11354,7 +11412,14 @@
     "redaction": "",
     "firstSeenAt": "2026-10-23",
     "lastSeenAt": "2026-10-23",
-    "removedFromSource": false
+    "removedFromSource": false,
+    "contentHash": "7bc569a26129217a43e068fee909baaaae4f7e88a0dc2509b08bafc9688bcd0f",
+    "textChars": 20643,
+    "extractionPages": 5,
+    "textExtractedAt": "2026-10-23",
+    "extractionModel": "pdftotext",
+    "extractedFromHash": "7bc569a26129217a43e068fee909baaaae4f7e88a0dc2509b08bafc9688bcd0f",
+    "extractionError": null
   },
   {
     "id": 471,
@@ -11374,7 +11439,14 @@
     "redaction": "",
     "firstSeenAt": "2026-10-23",
     "lastSeenAt": "2026-10-23",
-    "removedFromSource": false
+    "removedFromSource": false,
+    "contentHash": "b6cf5228f8978e6bf2482aec642c6bf0e30729b255fce5bd9646c159d28f89f5",
+    "textChars": 4321,
+    "extractionPages": 4,
+    "textExtractedAt": "2026-10-23",
+    "extractionModel": "pdftotext",
+    "extractedFromHash": "b6cf5228f8978e6bf2482aec642c6bf0e30729b255fce5bd9646c159d28f89f5",
+    "extractionError": null
   },
   {
     "id": 472,
@@ -11394,7 +11466,14 @@
     "redaction": "",
     "firstSeenAt": "2026-10-23",
     "lastSeenAt": "2026-10-23",
-    "removedFromSource": false
+    "removedFromSource": false,
+    "contentHash": "b41c3592aaf9e333394cedc72af497496524856126360400f54e385836f482b0",
+    "textChars": 8091,
+    "extractionPages": 2,
+    "textExtractedAt": "2026-10-23",
+    "extractionModel": "pdftotext",
+    "extractedFromHash": "b41c3592aaf9e333394cedc72af497496524856126360400f54e385836f482b0",
+    "extractionError": null
   },
   {
     "id": 473,
@@ -11414,7 +11493,14 @@
     "redaction": "",
     "firstSeenAt": "2026-10-23",
     "lastSeenAt": "2026-10-23",
-    "removedFromSource": false
+    "removedFromSource": false,
+    "contentHash": "788be6ef914b583a94b183ef2cc5e87a31400d7e68217e123045117f79641c52",
+    "textChars": 12954,
+    "extractionPages": 3,
+    "textExtractedAt": "2026-10-23",
+    "extractionModel": "pdftotext",
+    "extractedFromHash": "788be6ef914b583a94b183ef2cc5e87a31400d7e68217e123045117f79641c52",
+    "extractionError": null
   },
   {
     "id": 474,
@@ -11434,7 +11520,14 @@
     "redaction": "",
     "firstSeenAt": "2026-10-23",
     "lastSeenAt": "2026-10-23",
-    "removedFromSource": false
+    "removedFromSource": false,
+    "contentHash": "361fda5c1e66a49141e1dedd1e20d4362b2d91a603e38bb2efc8877b2a74f1b1",
+    "textChars": 15729,
+    "extractionPages": 4,
+    "textExtractedAt": "2026-10-23",
+    "extractionModel": "pdftotext",
+    "extractedFromHash": "361fda5c1e66a49141e1dedd1e20d4362b2d91a603e38bb2efc8877b2a74f1b1",
+    "extractionError": null
   },
   {
     "id": 475,
@@ -11454,7 +11547,14 @@
     "redaction": "",
     "firstSeenAt": "2026-10-23",
     "lastSeenAt": "2026-10-23",
-    "removedFromSource": false
+    "removedFromSource": false,
+    "contentHash": "57a508ffada8103a2a00c5525d8ed56866e550636d05fb667aeb138d9e1eab7e",
+    "textChars": 13584,
+    "extractionPages": 4,
+    "textExtractedAt": "2026-10-23",
+    "extractionModel": "pdftotext",
+    "extractedFromHash": "57a508ffada8103a2a00c5525d8ed56866e550636d05fb667aeb138d9e1eab7e",
+    "extractionError": null
   },
   {
     "id": 476,
@@ -11474,7 +11574,14 @@
     "redaction": "",
     "firstSeenAt": "2026-10-23",
     "lastSeenAt": "2026-10-23",
-    "removedFromSource": false
+    "removedFromSource": false,
+    "contentHash": "cacc091d94b893c88a59f3bcc8c828bf83f21ec995fe2bddfce1a52b204a7534",
+    "textChars": 12306,
+    "extractionPages": 3,
+    "textExtractedAt": "2026-10-23",
+    "extractionModel": "pdftotext",
+    "extractedFromHash": "cacc091d94b893c88a59f3bcc8c828bf83f21ec995fe2bddfce1a52b204a7534",
+    "extractionError": null
   },
   {
     "id": 477,
@@ -11494,7 +11601,14 @@
     "redaction": "",
     "firstSeenAt": "2026-10-23",
     "lastSeenAt": "2026-10-23",
-    "removedFromSource": false
+    "removedFromSource": false,
+    "contentHash": "54875a9017040b50fe42e4869e5d6ceefd4e78d88edd5a70c7aa5c75066d6fdf",
+    "textChars": 8592,
+    "extractionPages": 6,
+    "textExtractedAt": "2026-10-23",
+    "extractionModel": "pdftotext",
+    "extractedFromHash": "54875a9017040b50fe42e4869e5d6ceefd4e78d88edd5a70c7aa5c75066d6fdf",
+    "extractionError": null
   },
   {
     "id": 478,
@@ -11514,7 +11628,14 @@
     "redaction": "TRUE",
     "firstSeenAt": "2026-10-23",
     "lastSeenAt": "2026-10-23",
-    "removedFromSource": false
+    "removedFromSource": false,
+    "contentHash": "c7263ab15946e6b5407db19dc4e2abda7e11a670adb83c722a2f78d4c6650675",
+    "textChars": 74560,
+    "extractionPages": 26,
+    "textExtractedAt": "2026-10-23",
+    "extractionModel": "pdftotext",
+    "extractedFromHash": "c7263ab15946e6b5407db19dc4e2abda7e11a670adb83c722a2f78d4c6650675",
+    "extractionError": null
   },
   {
     "id": 479,
@@ -11534,7 +11655,14 @@
     "redaction": "TRUE",
     "firstSeenAt": "2026-10-23",
     "lastSeenAt": "2026-10-23",
-    "removedFromSource": false
+    "removedFromSource": false,
+    "contentHash": "695cd30d0925365d06e065210d2b94e2684839e8d1ea9a0c0a8773d160aadab5",
+    "textChars": 112699,
+    "extractionPages": 42,
+    "textExtractedAt": "2026-10-23",
+    "extractionModel": "pdftotext",
+    "extractedFromHash": "695cd30d0925365d06e065210d2b94e2684839e8d1ea9a0c0a8773d160aadab5",
+    "extractionError": null
   },
   {
     "id": 480,
@@ -11554,7 +11682,14 @@
     "redaction": "TRUE",
     "firstSeenAt": "2026-10-23",
     "lastSeenAt": "2026-10-23",
-    "removedFromSource": false
+    "removedFromSource": false,
+    "contentHash": "f72a51b4199db2d1758ac9796a4c1b669ba6013a7fae10a609150eaf0293eefd",
+    "textChars": 105139,
+    "extractionPages": 49,
+    "textExtractedAt": "2026-10-23",
+    "extractionModel": "pdftotext",
+    "extractedFromHash": "f72a51b4199db2d1758ac9796a4c1b669ba6013a7fae10a609150eaf0293eefd",
+    "extractionError": null
   },
   {
     "id": 481,
@@ -11574,7 +11709,14 @@
     "redaction": "TRUE",
     "firstSeenAt": "2026-10-23",
     "lastSeenAt": "2026-10-23",
-    "removedFromSource": false
+    "removedFromSource": false,
+    "contentHash": "dc159ac90f0cc0f2e990bac1253840d78584c08bc8fbcf96c777cf30dfcae5f8",
+    "textChars": 79837,
+    "extractionPages": 42,
+    "textExtractedAt": "2026-10-23",
+    "extractionModel": "pdftotext",
+    "extractedFromHash": "dc159ac90f0cc0f2e990bac1253840d78584c08bc8fbcf96c777cf30dfcae5f8",
+    "extractionError": null
   },
   {
     "id": 482,
@@ -11594,7 +11736,14 @@
     "redaction": "TRUE",
     "firstSeenAt": "2026-10-23",
     "lastSeenAt": "2026-10-23",
-    "removedFromSource": false
+    "removedFromSource": false,
+    "contentHash": "9e6d09b5b5559a11119f8e69634ccaeb02b62d079a3f294686dded2da8b56523",
+    "textChars": 98735,
+    "extractionPages": 50,
+    "textExtractedAt": "2026-10-23",
+    "extractionModel": "pdftotext",
+    "extractedFromHash": "9e6d09b5b5559a11119f8e69634ccaeb02b62d079a3f294686dded2da8b56523",
+    "extractionError": null
   },
   {
     "id": 483,
@@ -11614,7 +11763,14 @@
     "redaction": "TRUE",
     "firstSeenAt": "2026-10-23",
     "lastSeenAt": "2026-10-23",
-    "removedFromSource": false
+    "removedFromSource": false,
+    "contentHash": "f3a602858ee185380d6d5c985fa1bd8e89350336d8871842029eeacbdd683f20",
+    "textChars": 259997,
+    "extractionPages": 134,
+    "textExtractedAt": "2026-10-23",
+    "extractionModel": "pdftotext",
+    "extractedFromHash": "f3a602858ee185380d6d5c985fa1bd8e89350336d8871842029eeacbdd683f20",
+    "extractionError": null
   },
   {
     "id": 484,
@@ -11634,7 +11790,14 @@
     "redaction": "TRUE",
     "firstSeenAt": "2026-10-23",
     "lastSeenAt": "2026-10-23",
-    "removedFromSource": false
+    "removedFromSource": false,
+    "contentHash": "2b895fa7bf2d714e09964595f0977f622002f442c7f5365dbaad579343d9dcfb",
+    "textChars": 231956,
+    "extractionPages": 155,
+    "textExtractedAt": "2026-10-23",
+    "extractionModel": "pdftotext",
+    "extractedFromHash": "2b895fa7bf2d714e09964595f0977f622002f442c7f5365dbaad579343d9dcfb",
+    "extractionError": null
   },
   {
     "id": 485,
@@ -11654,7 +11817,14 @@
     "redaction": "TRUE",
     "firstSeenAt": "2026-10-23",
     "lastSeenAt": "2026-10-23",
-    "removedFromSource": false
+    "removedFromSource": false,
+    "contentHash": "ac7ee03104afa6db5f2a247c35896f21b4a496cdcdd5b1c8604e4a58e8eeaacb",
+    "textChars": 219502,
+    "extractionPages": 141,
+    "textExtractedAt": "2026-10-23",
+    "extractionModel": "pdftotext",
+    "extractedFromHash": "ac7ee03104afa6db5f2a247c35896f21b4a496cdcdd5b1c8604e4a58e8eeaacb",
+    "extractionError": null
   },
   {
     "id": 486,
@@ -11674,7 +11844,14 @@
     "redaction": "",
     "firstSeenAt": "2026-10-23",
     "lastSeenAt": "2026-10-23",
-    "removedFromSource": false
+    "removedFromSource": false,
+    "contentHash": "4d999697347279bdc4738d2e5b2d56d8730eb1afed798d2a6ca3d6bf0ff9fc40",
+    "textChars": 1464263,
+    "extractionPages": 298,
+    "textExtractedAt": "2026-10-23",
+    "extractionModel": "pdftotext",
+    "extractedFromHash": "4d999697347279bdc4738d2e5b2d56d8730eb1afed798d2a6ca3d6bf0ff9fc40",
+    "extractionError": null
   },
   {
     "id": 487,
@@ -11694,7 +11871,14 @@
     "redaction": "",
     "firstSeenAt": "2026-10-23",
     "lastSeenAt": "2026-10-23",
-    "removedFromSource": false
+    "removedFromSource": false,
+    "contentHash": "11e232f70bf9544372420107c603bf86cd3ad5d58d09bd6e5e56d6479c068d45",
+    "textChars": 1772,
+    "extractionPages": 1,
+    "textExtractedAt": "2026-10-23",
+    "extractionModel": "pdftotext",
+    "extractedFromHash": "11e232f70bf9544372420107c603bf86cd3ad5d58d09bd6e5e56d6479c068d45",
+    "extractionError": null
   },
   {
     "id": 488,
@@ -11714,6 +11898,13 @@
     "redaction": "",
     "firstSeenAt": "2026-10-23",
     "lastSeenAt": "2026-10-23",
-    "removedFromSource": false
+    "removedFromSource": false,
+    "contentHash": "f34e073230ac81d460efcd7f45f04d0b21a81d61cd8e8a9a9b7a89088da88819",
+    "textChars": 84774,
+    "extractionPages": 72,
+    "textExtractedAt": "2026-10-23",
+    "extractionModel": "pdftotext",
+    "extractedFromHash": "f34e073230ac81d460efcd7f45f04d0b21a81d61cd8e8a9a9b7a89088da88819",
+    "extractionError": null
   }
 ]

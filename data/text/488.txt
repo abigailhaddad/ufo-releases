@@ -1,0 +1,2436 @@
+--- PAGE 1 ---
+LBJ LIBRARY DOCUMENT WITHDRAWAL SHEET                                                                                   Page 1
+
+
+Doc# DocType                  Doc Info                                                      Classification Pages     Date        Restriction
+
+04          ffleffle          'o\1elsh to F1 itscl 1, et.al.                                      e          1      11/15/63            A
+                               ~ ~1'~14
+
+06          draft             Near duplicate of #7 & 9                                            C          2      11/15/63            A
+
+
+
+
+07         draft              Near duplicate of #6 & 9                                            C          2      11/15/63            A
+
+
+
+
+OS          s:Q8R10           NASC Meeti"g...                                                     POI                11/21/63           A
+                              open Ci/)~ 14
+09          draft             "Guidelines for lnteragency Handling ... "                          C          2      11/15/63            A
+                              [Near duplicate of #6 & 7]
+
+
+
+10          draft             "Guidelines for lnteragency Handling ... "                          C          3       [11/63]            A
+
+
+
+~           ffl8ffl0          ~M,SC MeeliA!;J .. .                                                POI        1       11{6{63            A
+                                                                                                                                        i¾
+
+
+                               open (;\ /15/ly
+Hi          R18R19            WelsR le MeC011e                                                   -C          1       5/31/63            A
+                              open qi iLifJ l4
+202!!       ,pt               "Guidcli"es fer li,te~ege11cy Ha, ,dlhig~ "                         e          2        [j9§J]            A
+                                orrn 'l't I, e p.u           ~( '2                       I\ t
+i1          memo              c. Johnson to Pa,, ott                                              C                  12(10,<62          •A
+                              [Duplicate of #25]
+                              open q I 'C7tJ l4
+
+Collection Title National Security File, Files of Charles E. Johnson
+Folder Title              "Space Vehicle Fragments - Responsibilities and Procedures"
+
+ Box Number                  018
+
+Restriction Codes                                                                                                  1/13/2009      aJ
+(A) Closed by Executive Order 13292 governing acc... to national security Information.
+(B) Closed by statute or by the agency which originated the document                                                             ~
+(C) Closed In accordance with restrictions contained In the donor's deed of gift.
+
+--- PAGE 2 ---
+..
+LBJ LIBRARY DOCUMENT WITHDRAWAL SHEET                                                                              Page2
+
+
+Doc# DocType                    Doc Info                                               Classification Pages     Date       Restriction
+
+:.23         ff18ff18           Te ~MS&s, MA SC                                              C          1       12/7/62                A
+                                 open C1JJL3//14
+25           FROFR8             Dttplieete of #21                                           d;                  12710!62               A
+                                OJ)ef) q/lc;JIY
+.36~         draft              "Attacl:IFJient Ii!!...                                     '-6         2        [10tS2)               A
+                                 0~ q/J'7114
+
+
+
+
+Collection Title National Security File, Files of Charles E. Johnson
+Folder Title     "Space Vehicle Fragments - Responsibilities and Procedures"
+
+ Box Number                   018
+
+Restriction Codes                                                                                             1/13/2009
+(A) Closed by Executive Order 13292 governing accns to national ncurlty lnfonnatlon.
+(B) Closed by statute or by the agency which originated the document                                                        Initials
+(C) Closed In accordance with restrictions contained In the donor's deed of gift.
+
+--- PAGE 3 ---
+NASA HEADQUARTERS ROUTING SLIP
+                                                                ACTION
+       CODE               NAME (if necessary)
+                                                                APPROVAL
+                                                                CONCURRENCE
+ 1.                 Charles Johnson                             FILE
+                                                                INFORMATION
+ 2.                 National Security                           INVESTIGATE AND ADVISE
+                                                                NOTE AND FORWARD
+ 3.                 Council                                     NOTE AND RETURN
+                                                                PER REQUEST
+ 4.
+                                                                RECOMMENDATION
+                                                                SEE ME
+ 5.
+                                                                SIGNATURE
+                                                                REPLY FOR SIGNATURE OF:
+ 6.
+
+ 7.
+
+ REMARKS:
+
+
+
+
+         Underlined sections have been added since
+         the last draf't.
+
+
+
+
+                    s
+          CODE·         NAME:
+ FROM:         AI          William F. Hausman                      DATE:   5/26/64
+NASA Form 26 (Rev . July 19~9)                  U. S. GOVERNMENT PRINTING OFFICE : 1959 o,-513021
+
+--- PAGE 4 ---
+I
+J
+
+                                                                                          ·-
+                                                                        CQNlU~IAI.,
+
+    AF
+
+
+
+
+                                                                        :PAvt..   •
+    MANNED SPACECRAFT CENTER -- ATTN:              DR . GILRUTH AND . J-lJANcty
+                                                                                    Bf\AT
+    MARSHALL SPACE FLIGHT CENTER -- ATTN:               DR . VON BRAUN         l\l"D>\SL AnE~
+
+    NASA JOHN F • .KENNEDY SPACE CENTER -- ATTN:               D . DEB ~s .
+                                                             . JOHN l: II: G
+
+    UNTIL FURTHER NOTICE , THE FOLLO~aNG IS THE RESPONSE TO
+
+    QUE.   , s ON POSSIBLE EARTH Ii•1PACTS OF FRAG..~ ~s F m.
+
+    Of' ::.:"·tI :~G SA- 6 BOOSTE •   NO QUERIES     VE BEEN RECEIVED
+
+
+
+
+    PREDICTION . . NO INFORMATION IS BEi rG VOLU-TEERED.
+
+    THIS RAS BEEN COORDINATED BY OUR INTERNATION.7\L PROGRAMS
+
+    OFFICE WITH THE STATE DEPARTME.t."rr . . ALL ADDITIONAL
+
+    RESPONSE OVER AND ABOVE THE FOLLOWING WILL. BE ONLY BY
+
+    THE ADMINISTRATOR , THE DEPUTY ADtUNISTRATOR OR THE
+
+    ASSOCIATE ~"vlINISTRATOR .         QUERIES REQUIRING SUCH
+
+    ADDITIONAL RESPONSES SHOULD BE REFERRED TO THEM.
+
+           •A .   Oij SIZE OF FRAGMENTS :     ACTUAL SIZE AND
+
+    NUMBER OF FRAGMEN'l'S CANNOT BE PREDICTED.
+                                                       DEC      IFIED
+                                                        . 13292, ~ C. 3.              1         3
+                                              • 8Y.~ W41ifrw RA,Da-...--=----
+
+                    ,..
+                                  CONFIDENTIAL                           ceMPIDBNWJ;AJ'..
+
+--- PAGE 5 ---
+NASA
+
+I   •
+        AF                                              X
+
+
+
+
+               ·•s.      ON LOCATIOM OF Ii ·1'£1'1           SINCE T!US VEHICLE
+
+
+
+    •.I A SI NGLE I MPACT POiclT .
+
+
+
+        VERY CAREFULLY STUDIED.                T   ~   l? SDIBI
+
+
+
+
+        PROPER'n'       zs QUIT , • , •OTE .       Al.~ Discuss1m'.t oF suca 1J>1
+
+        IMPROBABLE INCIDENT WOULD BE HEAVILY COl"JECTURAL.
+               ,a D.     Af'TEli A R.El?ORTED IMP AC'l':       UNDER ~0·
+
+     CIRCUMSTANCES DO.ES THIS AGENcY (GOV~RND- NT) CONJECTURE
+     ON 'Ii-IE ORIGIN OF AN OBJECT .                   RA • ER . IT DESIR.ES TO
+
+     OBTAIN•            ~W,YZE , AND ATTEMPT TO ESTJ\..BLISH THE· °'-1UGIN
+
+     OF SUCH AN OBJECT.
+
+               " E ,.    AFTER .I T I S RNOtiN THAT A FRAGM.~           IS TO BE
+
+     DELIVERED ,:io US•            i1HE 92JEC'r WILL BE SOBJEC'l'EI> TO
+
+
+
+
+                                                                                    2   3
+
+
+                                    CONFIDENTIAL
+
+--- PAGE 6 ---
+t
+         r
+                     4
+                           .. ' . "
+
+        I           . ,.
+                                          I   •   •-
+                                      ~
+
+
+
+
+    A
+             ~
+              ..
+             NASA
+    I
+I
+    l   .,
+             AF                                        X
+        '
+        I
+
+
+
+
+             .STUDY AND PROMPT PUBLIC 1..N!: U&CEMEN        WILL BE MADE t'JHE.N
+
+             ANALYSIS BAS BEEN COMPLET~D."
+
+
+
+             JULIAN SCHEER
+             ASSIST~~ AI:MINISTRATOR
+                   FOR PUBLlC AFFAIRS
+
+
+
+
+              cc:
+             AD/Dr. Dryden
+             AI/Mr . Frutkin
+             AA/Mi:. Williamson
+             M/Dr. Muell.e r
+             MAO/Mr. Abernethy
+             AFP/Mr. Lloyd
+              M-N/Mr . Alibrando
+             A/Mr . Webb     •
+             M/Dr. Seamans
+
+
+
+
+                                                                                           3            3
+             Julian Scheer, Asst. Administra- (                             ..
+             tor for Public A f ~ '- _ l J r               12,l ~
+                                                                        ~
+                                                                                 COlfE IDElff !tkll -
+                                          _ri;ONFmtNTIA[     ----~----~---~
+
+--- PAGE 7 ---
+
+
+--- PAGE 8 ---
+
+
+--- PAGE 9 ---
+c.
+
+--- PAGE 10 ---
+U. S. GoYunment Prmting Otf c1; . 1963 o/9668
+
+
+ FROM                                                          DATE OF DOCUMENT                      DATE RECEIVED            NO:
+
+       illi F.                          1~                                                                                          AI-15
+                            CHECK WHETHER                                                            ACTION COPY TO
+           He&./Code ll     □ ACTION
+                               COPY
+                                        □ INFO,
+                                          COPY
+-TO
+  ------------------------1
+                        Johnso
+                                                               INFORMATION
+                      11                                       COPY TO ~
+
+
+- - - - - - - - - - - - - - - - - " " " T " " - - - - - - - 1 CLASSIFIED
+                                                                                      DESTROYED ( DATE AND NO.)       I   NUMBER OF COPIES
+CLASSIFICATION             SUSPENSE DATE POST OFFICE           MATERIAL~
+                                         REGISTRY NO.
+                                                                 REFERRED TO          REC'D. BY       DATE    REFERRED TO       REC'D BY     DATE
+              cret
+ DESCRIPTION    ( MUST BE UNCLASSIFIED)                         C&T
+                 to        ries
+
+ENCLOSURES
+
+
+
+
+                           ,      amens,
+                  I        :te
+        Johnson,
+           rutk:l.n.,
+                                 BY
+                                            □ NO REPLY
+                                                NECESSARY
+
+                                                        NASA MAIL CONTROL                                                              FORM NASA 416A
+                                                                                                                                           (JUNE 1959)
+
+--- PAGE 11 ---
+( PLACE       NASA            CONTROL                   FORMS               HERE)
+
+
+
+
+      This sheet and NASA Control Forms must be attached to Secret
+      material while in the custody of NASA Headquarters.
+
+
+
+
+    The attachment contains information affecting the National Defense of the
+    United States within the meaning of the espionage laws,· Title 18, U.S.C.,
+    Secs. 793 and 794, the transmission or revelation of which in any manner
+    to an unauthorized person is prohibited by law.
+
+--- PAGE 12 ---
+i.
+                                             GH.Vd':-'     j         t   ,::., ,r oar
+         .. ' ... .             L,. - .J                  r n~cd n t 1 ~automatica
+                                                                                 • 11~
+
+
+
+                                                                                                                      ---
+                                                                          J
+                                             DownQ           ...
+                                                                ~ • no               .1.,                             3b
+                                              1 11 t crv a 1 .., ,
+              RESPONSE 'ID QUERY              declassif i d                             ...•A pril 8, 1964,
+
+              RE:   Queries on Fragment Return from NASA Spacecraft or Space Vehicles
+
+               A much abbreviated guideline for RrQ, has been provided by Mr. Scheer
+          to various NASA officials who might be queried on this subject. The
+          following more extensive responses are provided as background information
+          to be used by the Administrator, Deputy Administrator, or Associate
+          Administrator of NASA, in their judgment, in event of queries on the •
+          return of space vehicle fragments to the earth. It is suggested that
+          the minimum inf_o rmation be used to satisfy a given query.
+              (A)   FOR USE PRIOR TO AND AFTER A PARTICUIAR IAUNCH BUT BEFORE ANY KNOWN
+                    IMPACT OF RETURNING FRAGMENTS:
+                    l.   Do fragments from   (satellite X) pose a threat to life or
+                         property?
+                         The probability that fragments from (satellite X) may cause
+                         damage or injury is remote. The probability of injury from
+                         natural meteorites is far greater.
+                    2.   a.   What is the probability of impact?
+                         There are many factors (e.g., time in orbit, atmospheric
+                         conditions, how the vehicle breaks up, dispersal pattern, etc.)
+                         involved and the calculations are extremely complex. We have
+                         assured ourselves, however, that the hazard is far less than
+                         many hazards encountered in everyday living.
+
+
+
+
+                    3. Has NASA taken steps to lessen the fragment problem?
+                         Yes. NASA is actively engaged in minimizing it. For example,
+                         on the SA-5 satellite, NASA used 13,000 lbs. of harmless sand
+                         as ballast and roughed up the nosecone so that it would burn
+                         on reentry. On the GT-1 spacecraft, NASA bored large holes in
+                         the heat shield to assist burning during reentry. In addition
+                         to specific steps such as these, studies are underway to assist
+                         NASA in further coping with the overall reentry problem.
+
+                                                               ANY INFORMATION IN THIS DOCUMENT USED
+                                                               IN RESPONSE 'ID QUERIES IS AUTOMATICALLY
+
+
+         DE
+                                              GROUP ;ECI.ASSIFIED, · -
+                                              Dovmgra,~ed a t 12 year '-----
+                                              intorvals; not automatically
+                                                                                            :   d;
+                                                                                                ..~
+                                                                                                ~
+                                                                                                    . 0 ,_
+                                                                                                      Jl1
+                                                                                                             ~ 1/,
+                                                                                                                 1,..f1.
+                                                                                                              !: .-
+       E.O.
+8-y~
+                                              declassified                                      r    -u
+
+--- PAGE 13 ---
+1.l;f • -
+                                                                               •   •    I   '
+
+
+
+...
+                                                 2
+
+
+
+
+      5.    I f any fragments come down, where are they most likely to impactt
+
+            The small number of' fragments surviving f'rom any satellite will
+            be dispersed over an area of thousands of' square miles, most
+            of' which are likely to be oceans, seas, or other water surface.
+      6. Can the fragment problem be further decreased by exploding the
+            orbiting element?
+            Explosion or destruct of' the orbiting element could produce
+            more fragments and,· hence, increase the possibility of' fragment
+            impact.
+      7.    If one were to be hit by a fragment, would it be lethal?
+
+             In the remote possibility that one were to be struck by a
+           . :fragment, it might, depending upon area of' body struck, be
+             l         ~iiel~~ t,J;f:J~~~lmo~t r.!l~ai!f.~~~:&rlfflt-i)~~
+                                                                                       ~        is
+           ;p~~~~~
+                 - - ~~:1:~~~
+                            - ~~~~~~!>!~~~~l~~~~~~e~o~t..-.from
+                        -                                                              h the
+                             .         .             .   • ,.         rage . ,number of
+           me . eor tes:'.ro ver· 2. 2 lbs. which impact.. on ,,the· ·e arth-eve-ry year
+                                  5628.-!· •T-his· is ·znany; many;- time~ · grea:-e-er than
+                                   of' ~ra~en~sJ_ ~9.~ ~·- ~:SPectea," i:.om (satellite
+           ~ - -~,.....,,,r :      • ~~ ~e -:-'18.l?e no suostantiated rep·o rts of' :Lnjuey'
+           f                 ~ · e impacts.
+
+
+      e. Meteorites are natural phenomena. Do you consider NASA
+           justified in increasing the possibilities of a lethal impact,
+           no matter how improbable?
+           Many human activities carry with them a demonstrable probability •
+            of casualty--flying, automobile driving, golfing ; during an
+            electrical. storm. But we do not stop driving, f ~ or golf­
+           ing.
+
+
+
+
+                            GROUP 3
+                            Downgr ade d a t 12 year
+                            intorv~l~ ; n? t aut omat icallY
+                            dec l a s sif io'd
+
+--- PAGE 14 ---
+.•   .                                           ... t 12:--=-=-::nyear-
+                             GD·~•i:~~.~-~-e·- ----d
+                                                                                    . .... ... . .... ,
+
+                                                                                            • ••
+                                                                                                _
+
+
+
+
+                                                                                                          .. . .
+                              )\.,.' 4• ~ -- ... , ~... --.4~   ,   0   ..,J   '-
+
+
+
+                              i~ t erv : ls ; not automat i cally
+                c   ~        . ..·.. ,... ,3 ~- ~.Gd
+            ~        .
+      9. Will this sort of thing be a continuing hazard?
+         In some degree, yes. In time, it should become possib1~ to
+         develop some solutions such as ensured return over water, but
+         these will take a great deal of research and development as
+         veil as signif'icant payload margin. It is a matter of constant
+         attention.
+     lO. How do reentry ;problems with GT-1 compare 'With those of other
+          rockets?
+         Very roughly, about the same as 'With Atl.as reentries, f'ran
+         which there have been no casualties.
+
+--- PAGE 15 ---
+EXECUTIVE OFFICE OF THE PRESIDENT
+                 NATIONAL                  AERONAUTICS        and   SPACE   COUNCIL
+                                                 WASHINGTON
+
+
+
+         EXECUTIVE SECRETARY                          November 15, 1963
+
+
+
+          MEMORANDUM TO:
+
+                                  Dr. Arnold Fritsch           (AEC)
+                                  Mr. Albert D. Wheelan        (CIA)
+                                  Dr. Albert C. Hall           (DOD)
+                                  Mr. Arnold Frutkin           (NASA) /
+                                  Mr. Charles Johnson          (NSC)   v
+                                  Dr. Nicholas Golovin         (OST)
+                                  Mr. Robert Packard           (State)
+
+
+          Subject:       Fragments
+
+          The meeting on November 6 was informative. At the close of
+          that session, I promised to weigh various suggestions and come
+          up with a draft paper for joint consideration. Such a paper is
+          attached. I would doubt that everyone's interests are completely
+          satisfied with this language, but it is hoped that it comprises a
+          reasonable basis for agreement. In any event, I would appreciate
+          your evaluating it and preparing yourselves to indicate what por­
+          tions are satisfactory and what portions need improvement.
+
+         A meeting to discuss this language and related issues is scheduled
+         for November 21, 10 o'clock, in Room 213 Executive Office Build­
+         ing. Please adt-i se my offi ce i n aavance wlro"'will attend for your
+         respective agencies.
+
+                                                 -
+                                                     E. C. Welsh
+
+
+         Classified attachment (2 cys)
+
+
+
+
+                                                                            Upon removal of attach•
+            D~>                                                             ments this document
+~uthontY N \.'J -0 2913. O) t) .o o\ / (                                    becomes unclassified.
+
+!i,   ~ NARA, Date l:.) I ; l.f
+
+--- PAGE 16 ---
+----
+  '5"
+
+--- PAGE 17 ---
+Mr. Huntington Sheldon
+
+
+
+
+              Sheldon
+
+
+
+                                  DECLASSJ..1-'Hi~-'
+                         'uathom-,N).,:J . o~oft o1g.oo\{3
+                         ~l·~        NARA. Date ,;l\-1~
+
+--- PAGE 18 ---
+C:ONFIL1ENTIA L
+
+                                                          Draft of Nov~ 6, ~96Z
+                                                          Revised l)y: i;,c)D 3/ 1/63
+
+                                              [ ] - material deleted
+                                              U?derlining - m-.terial ~dded
+
+
+                          GUIDELINES
+       FOR INTERACiENCY HANDLING OF SPACE VEHICLE Fa.AGM!.;NTS
+
+
+     l. The National Aeronautics and Space Administration (NASA) J•
+designated as the agency responsible for receiving. : [ analyzing] ~4
+identifying . [ any] fragments, or suspecied fragments of space veht~l••
+of all types, including the contents thereof, which fall upon the ~errJ~ory
+of the United States or whicb otherwise come into iis posseaeion, ~~opt
+that the Department of Defense (DOD) ia. sol•ly responsible for receivinlJ
+and identifying fragments from vehicles la~ched by the DOD.
+
+    [ 2. NASA will turn over to the Deparpnent of Defense (DOD) ae
+expeditiously as possible fragments wblcb •re r,adily identifiable as coming
+from space vehicles launched by the DOD.]
+
+    2. In the event NASA should cqme lntQ possession of space fragments
+under the sole and exclusive res onsibili of'the DOD, NASA will deliver
+such fragments as expeditiously
+                        -     I
+                                as possib
+                                    .
+                                          e. to tbe DOD.
+
+     3. To insure prompt analye1is for inteµigonce purposes, NASA and other
+U. S. Government agencies wiU [ give]. deliver io the DOD [ and· other
+responsible agencies acce·s s] as expeditoualy as possible and on a priority
+basis fragments (including whole vebiclea) ~hie~ are readily ide~tif~ble ~
+suspect as coming from [ space] vehicles ~unched from foreig~ couptriea.
+Such foreign fragme~t• which come initially into possession of the DOD • •••.,
+will be retained by DOD for analysis. Such analysis of forei n fra· rnents
+will be completed expeditiously, and thereafter ,uch fragments· will •.,-emain]
+be placed in the custody of NASA, pendins final -.rrangementa for their return
+to the launching country oi- for other approprj.ate disposition.
+
+     4. All other fragments wi)J. be retained by ;NASA pending agree~ent as
+to disposition.                 •
+
+    5. NASA may continue to u,e the Smithson.Jan Institution for. coµ~c~o~
+and analysis of fragments by contrac~ arr~g,men~s, and may ~•o make
+appropriate arrange~ents for assis~c• with private agencies.        •
+
+
+
+                                 S ONFtPENYp\!?
+
+--- PAGE 19 ---
+.
+,l
+
+
+
+                                   _!:ONFIDENTIP L ,
+
+          6. The DOD will notify NASA when deorbits are expected and when
+     collection teams have been alerted to obtain the deorbiting fragments.
+     Also, DOD will inform NASA of the results of such collection efforts
+     whether successful or not.
+
+          7. The Atomic Energy Commission (AEC) will participate in the
+     analysis of fragments of space vehicles which have utilized or transported,
+     or are suspected of having utilized or transported, radioactive materials
+     or special nuclear materials, and will exercise responsibility for special
+     nuclear materials, in accordance with its statutory responsibility. In
+     addition, the AEC will continue to make available to NASA and the DOD
+     its special scientific capabilities.
+
+          8. The Department of State will provide policy guidance with respect
+     to the final disposition of fragments from vehicles launched by foreign
+     countries, or made available to the United States by foreign countries.
+     The Department of State will provide assistance in the acquisition of
+     fragments that fall on foreign territory.
+
+         9. NASA will serve as the focal point for the coordination and release
+     of public information on fragments except for release of public information
+     on fragments resulting from space vehicles launched by the DOD, which will
+     be the responsibility of DCD.
+
+
+
+
+                                CONFIDE:NTIA:'L
+
+--- PAGE 20 ---
+/
+
+
+
+
+          DECLASSLfflV--'
+'unbontn n ;1, 030 p. o, i . oo ' / "5'
+~l'- F -  NARA. D,tt~f ,J.H\.(
+
+--- PAGE 21 ---
+13
+
+
+                                                       DRAFT
+                                                   November 6, 1962
+
+
+
+                      PUBLIC STATEMENT
+               ON HANDLING OF SPACE VEHICLE FRAG.r.lIENTS
+
+
+
+         The National Aeronautics and Space Administration is
+
+designated as the Governm.ent agency responsible for receiving
+
+[ analyzing] , and identifying [ any] fragments or suspected fr2.gments
+
+of space vehicles of all types, including the contents thereof, which
+
+fall upon the territory of the United States or which otherwise come
+
+into its possession.
+
+         Fragments identified as coming from vehicles launched by
+
+foreign countries will be retained by NASA pending final arrangen1ents
+
+for their return to the launching country or for other appropriate
+
+disposition.
+
+         In performing these functions, NASA will coordinate fully
+
+with other Government agencies.
+
+
+
+
+Delete bracketed words to conform to DOD revisions of paper
+dated IVlarch 1, 1963.
+
+--- PAGE 22 ---
+1)-:.L-, Us l 13 fv k
+~f ~l             -~
+ f-r-~~
+                        ?
+1~~~7·
+
+--- PAGE 23 ---
+EXECUTIVE OFFICE OF THE PRESIDENT
+       NATIONAL         AERONAUTICS            and   SPACE   COUNCIL
+                                  WASHINGTON
+
+
+
+EXECUTIVE SECRETARY                     October 24, 1963
+
+
+ MEMORANDUM TO:
+
+Honorable Dean Rusk                     Honorable John A. McCone
+Secretary of State                      Director, CIA
+
+ Honorable Roswell L. Gilpatric         Honorable Jerome B. Wiesner
+ Deputy Secretary of Defense            Director, OST
+
+ Honorable James E. Webb              / Honorable McGeorge Bundy
+ Administrator, NASA                    Special Assistant to the President
+
+
+Subject:      Responsibility and Procedure re Space Vehicle Fragments
+
+Subject matter has in the past been discussed with representatives
+of interested agencies. Draft language was circulated and agreement
+was initially obtained. Subsequently, some variations in preferred
+languagetleveloped.
+
+In response to inquiry from Chairman Miller of the House Science
+and Astronautics Committee regarding legislation introduced on this
+subject, the Administrator of NASA responded that he did not believe
+such legislation was needed at this time, as the question of responsi­
+bility for receiving, analyzing, and identifying fragments and suspected
+fragments was being considered within the Executive Branch . This
+consideration was presumably a reference to the meetings and drafts
+developed under our auspices.
+
+There has been more than sufficient time elapsed since this matter was
+first examined for the interested agencies to agree upon a responsible
+position. Consequently, I am calling a meeting to examine this subject
+on November 6 at 10 o'clock in Room 213 of the Executive Office Build­
+ing. It would be appreciated if you would identify representation for
+your agency at such a session. When you have done so, it would be
+appreciated if my office were notified as to the person or persons who
+expect to attend.
+
+
+
+
+                                          E. C. Welsh
+
+
+                                                                             IL   I
+
+--- PAGE 24 ---
+lo
+
+                       EXECUTIVE OFFICE OF THE PRESIDENT
+       NATIONAL          AERONAUTICS            and   SPACE     COUNCIL
+                                   WASHINGTON
+
+
+
+EXECUTIVE SECRE TARY
+                                           October 24 , 196 3
+
+
+   MEMORANDUM TO:
+
+   Honorabl Dean Rusk                      Honorabl John A, McCon
+   Seer ta.ry of State                     Dir c tor, CIA
+
+   Honorabl Ro well L . Gilpatric          Honorabl J rome B. Wi sn r
+   Deputy Secretary •O f D fens            Dir e c:tor, OST
+
+   Honorabl James E. rfebb                 Honorable McGeor      Bundy
+   Administrator, NASA                     Sp eial Ae i tant to the President
+
+
+   Subj ct:      Re pon ibility and Proc ·dur         re Space Vehicle Fragments
+
+   Subject matter ha.s in the past b en di cussed with r · pre ntatives
+   of int rested agencie s . Draft language was circulated and agr ement
+   was initially obtaine d . Subsequently, s ome variations in preferred
+   langua. e developed .
+
+   In respon       to inqu· ry from Chairman Miller of the Hou     Science
+   and Astronauti cs C mmitt e regardi ng legislation introduc d on thi
+   subject, the Admini strator of NASA respond d th t h did not b 1i v
+   such legislation was needed at thi s tim , as th ques tion o:£ responsi•
+   bilit y for r e ceiving, analyzing. and id ntilyi ng fragments and uspected
+   fragments was b ing consider d withi n the Executiv Branch. Thi
+   c on 1deration was pr sumably a Jteference to the· me ting and drafts
+   dev •loped und r our auspic s .
+
+   Ther h     been mor than sufficient tim elap ed sine thi matter as
+   fir t examin d for the int r st d agenei s to agree upon a :r sponsibl
+   posi tion. Con qu ntly, I m callin a me ting to x mine this ubject
+   on Nov mber 6 at 10 o'clock in Room 2 13 of th Ex cutiv Offic Build­
+   ing. It would b a.ppr ci t d if you would identify repr sentation for
+   your agency at such a ses ion. When you have on , so, it would be
+
+   expect to att end.            ,                              !1
+   appreciated i f my offic w re notifie d as t o the p rson or per ons who
+
+
+                                     ~ K ::
+                                                E. C. W lsh
+
+--- PAGE 25 ---
+IN REPl Y REFER TO:
+
+
+
+    .
+
+        .•.
+               .:r . F,c,. m ·,;e..,
+               Executive Secret
+               Ne~1~na1 Aeronautics
+                 Spec~ Co~c1l    .
+              Ws.; ·i:1og ,~n 25, D .. ·:.c. · /./'
+
+                                       .· ·:.:1
+                                       -;.-~: '.-/:::~.
+                                        I   I   1   •
+
+
+
+                               .·:_•
+
+               F:-1::-vtn~ ·a disc-.a~i c t ~ laat.                         , .      , ,.   evej
+               -::-9..!': ~ ~ h.e.nd.ling ot !ragme!lta .a a4 g:rea.t'ly aimplitie1 Ot;..r ccz-
+               :!k-n •.:. s, 6.l :.~ t.igh 1t '1'8.S aot ;>oHible'' to ·• lllld.na~ thelr. ·a:1. :'-e 7-·-.
+               ~;: _.:. :-v: ~ : ~:a:11e n ti a=e ma-ie:     • • ::·- -~-                                 •'· •
+                                                           -          .
+                           l . ~ ~~ ~ ~tj.e ction to. ~ --- e n.g                . •vo           ::.!~''
+                                 .~ ~aggralih one, line two;_· vi_th the . clear -~e:astc..1~:-.i.g
+                                 • :ia: !:-agment 1!en~.. 1fic at.ion •Y •1n· r-a : t ~q-..i:e
+                            :a~; ratory s.nelyBia.        ~~-:;j{\);/i j~?{~\t){ j>
+                      2.    In pe:-&gra¥h three, the. word.a-- ~ and otMr: tlS gcvernment ! .. ··
+                            agenc1~e" an1 "Su.ch foreign 'rrap.enta .vh!ch come          ....
+                            1n!t1a:ly into pcsaesaion·          ot
+                                                           DOD· vill be -retained oy
+                            ~D for anal.ysia." ahould ·be _4eleted aiac~ they e.re
+                            i!lcon-1&tent -w1 t,h tlat atateaeat__in ~ i ) h c n-e that.
+                            '' (NASA) 115 designated u tbe qenc7 reaponai1.1le !~~
+                            !"'eceiving an-: 1den~1tying trap.ent•f' -iii th the ~-.:~; •..- :~
+                            c'! ! ~ n:.a !':ca OOD vehiclea :. ,.           ••. .. •. ··---;·· .,
+                                                                                    .,,,
+
+
+
+                      3.    Paragraph t1ve bu been del•~- ai11ce it ~rt.aina
+                            e7Cl'.181ve.ly to internal NASA •tter1.  •
+
+--- PAGE 26 ---
+MEM011.AN.DUM n>&
+
+                   a..rule,....A.M.c..
+                   ~         ., c •..a 1,s,nn1, •
+                   Chtf       ............
+
+
+
+Thu oface wu eeke1l ••~ ttm. ... le c••••• .._ _
+of a pl&Wc l&nr r•e,.... aD1l aa .._al (eJaedtlecl) dove wt to 8s
+re•poa•iWlid•• Md• wtJAM po ■•••- ..__... . . ••Jed
+rnaner. T• Mau..._ my me,..,,, tan .. U. Ow ral Carlew,
+      Ne,..,,,._
+clallld        JI. lf6J. ,...w.l . . . Ila• I 11 . . . Ml,_.
+a..-...., ..   peJN& .. tllUtlme.
+
+0a .wu-. 1, a ~           +,..,._.     1, t1CT2: , .. , .. CTab Al, w11a 11u
+Wtop-leftl r w . . H . . . . . . . . _ wu fll'Mid... _. . . ..., . .,-naaul
+it iu.. . - Na coer-fl nt'9cl wl21 te ._ tete1H1•• 11 >meete,.
+
+ltl8•. . . . . . . . . . . . . , . . . -ruA--. . , ,, ,, . . . . llllnl
+,.,...7 _.. II•• 11 at tr rra •• . . . M le• llf Ga nil Ca 11,~
+11 Ca _fll .. 11 l • I . atll. .....           Zit a lllealc&,- JI
+ma••· II• Cll•ll111IM1Pllme . . . . . . d••... _.Ilea WM
+•••Y _,...,...,. If . . 11.W •a h a lao• ••h • zlr • tllla metter•
+
+
+
+                                         .. c:. ....
+
+
+
+EaclN-Ue (u Tu A) Dalene J>rd fll
+    Marcia l/6J "Ga-►• f o r ~
+    Rn dJhla el S,ace Yehle.. r.._ 1 5 "(Qe ■ 18CDcl C             Ch tfsal)
+
+                                                                DECLASSJ.FIW--'
+                                                    ,uthontY N tj   .o?»oR-~,~. oo\ /b
+                                -                   R~.~   --     NARA. Datf''7i-J \-\Y
+
+--- PAGE 27 ---
+-GGNFlDENTIAL
+
+
+            GUIDELINES FOR INTE RAGENCY HANDLING
+                OF SPACE VEHICLE FRAGMENTS
+
+
+     lo   The National Aeronautics and Space Administration
+(NASA) is designated as the agency responsible for receiving and
+identifying fragments, or suspected fragments of space vehicles of
+all types, including the contents thereof, '-irhich fall upon the terri­
+tory of the United States or which otherwise cc:ne into its possession,
+except that the Department of Defense (DoD) is solely responsible for
+receiving and identifying fragments from vehicles launched by the
+DoD•
+
+    2.   In the event NASA should come into possession of space
+fragments under the sole and exclusive responsibility of the DoD,
+NASA will deliver such fragments as expeditiously as possible to the
+DoD.
+
+     3.   To insure prompt analysis for intelligence purposes, NASA
+and other u.s. Government agencies will deliver to the DoD as expe­
+ditiously as possible and on a priority basis fragments (including whole
+vehicles) which are readily identifiable or suspect as coming from
+vehicles launched from foreign countries. Such foreign fragments
+which come initially into possession of the DoD will be retained by DoD
+for analysis. Such analysis of foreign fragments will be completed
+expeditiously, and thereafter such fragments will be placed in the cus­
+tody of NASA, pending final arrangements for their return to the launch­
+ing country or for other appropriate disposition.
+
+   4.   All other fragments will be retained by NASA pending agree-
+ment as to disposition.
+
+    s.    NASA may continue to use the Smithsonian Institution for
+collection and analysis of fragments by contractual arrangements, and
+may also make appropriate arrangements for assistance with private
+agencies.
+
+     6.   The DoD will notify NASA when deorbits are expected and
+when collection teams have been alerted to obtain the deorbiting frag­
+ments. Also, DoD will inform NASA of the results of such collection
+efforts whether successful or not.
+
+
+
+                           -OONFIDENTL\L
+
+--- PAGE 28 ---
+r CONFIDEN rlAL
+
+                                 .. z -
+     7.    The Atomic Energy Commission (AEC) will participate
+in the analysis of fragments of space vehicles which have utilized
+or transported, or are suspected of having utilized or transported,
+radioactive materials or special nuclear materials, and will exer ...
+cise responsibility for special nuclear materials, in accordance with
+its statutory responsibility. In addition, the AEC will continue to
+make available to NASA and the DoD its special scientific capabilities.
+
+    s.    The Department of State will provide policy guidance with
+respect to the final disposition of fragments from vehicles launched
+by foreign countries, or made available to the United States by foreign
+countries. The Department of State will provide assistance in the
+acquisition of fragments that fall on foreign territory.
+
+    9.    NASA will serve as the focal point for the coordination and
+release of public information on fragments except for release of pub..
+lie information on fragments resulting from space vehicles launched
+by the DoD, which will be the responsibility of DoD.
+
+--- PAGE 29 ---
+NATIONAL   AERONAUTICS         and   SPACE   COUNCIL
+
+
+                                                       ----
+                                                       2t)
+
+
+
+
+                             March 4 , 1963
+
+  To:   Charles Johnson
+
+
+  This is the paper to which I re -
+  £erred on the phoneo
+
+                ..........
+
+
+                             E. C. Welsh
+
+--- PAGE 30 ---
+2act
+                             eeNFl&ENTJm.
+
+
+                GUIDELINES FOR INTERAGENCY HANDLING
+                    OF SPACE VElL.CLE FRAGMENTS
+
+
+
+              1.    The National Aeronautics and Space Administration
+     (~NASA) is design&ted aa the agency responaible for receiving and
+                                                                                         ' 1
+    -i~entifying £raiment,, or 1uapected fragment• of space vehicles.
+     of all types, including the contents thereof. which fall upon the
+     territory of the United States or which otherwise come into its
+     p9ssession, except that the Department of Defense (DoD) is solely
+     responsible for receiving and identifying fragments from vehicles
+     launched by the DoD.
+
+           Z.    In the event NASA ahould come into possession of
+    spac.e fragment• under the sole and exclusive respensibility of the
+    DoD, NASA will deliver such fragments as expeditiously aa possible
+    to the DoD.
+
+            3.    To in1ure prompt analysis for intelligence purposes,
+    NASA and other u. S. Government a1encie• will deliver to the DoD
+    as expeditioualy as possible and on a priority basis fragments
+    (including whole vehicles) which are readily identifiable or suspect
+    as coming from vehicles launched from foreip countries. Such
+    foreign frapnent1 which come initially into poa1e1aion of the DoD
+    will be retained by DoD for analyais. Such analysis of foreign
+    fragments will be completed expeditioully. and thereafter such
+    ~ragmcnts will be placed in the cuatody of NASA. pending final
+    arrangementa for their return to the launchins country or for
+    other appropriate di1polition.
+
+•         4. •  All oth~r fragmmita will be retained by NASA pending
+    a1reement aa to clispoaition.
+
+            5.    NASA may contlnm to uae the Smlthaom.&D Inatitm!on
+    for collection and analyli• of frapnenta by contractual arrangements,
+    and may al10 make appropriate arrangement• for a1sbtance with
+    private agenci•••
+                                                  0
+
+
+
+
+                               GQPIRBENfL~t                 ..
+                                                                 ... ...... . .
+
+--- PAGE 31 ---
+.,
+
+
+
+
+             6.    The DoD will n•::,tify NASA when d6orbits are
+     exp~cted and when collectior_ :cams have been alerted to obtain
+     the deorbiting fragi:nents. Also, DoD will inform NASA of the
+     results of such collection efiorta whether successful or not.
+
+               7.   The Atomic Energy Commission (AEC) will
+     participate in the analysis of fragments of space vehicles which
+     have utilized or tranaported, or a.re suspected of having utilized
+     or tran;,,ported, radioactive materials or special nuclear material•,
+     ar..d will exercise responsibility for special nuclear materials, in
+     accordance with its statutory respons i bility. In additior., the AEC
+     will continue to make available to NASA and the DoD its special
+     scientific capabilitiea.
+
+             8.    The Department of State will provide policy guidance
+     with respect to the·final. disposition of fragments from vehicles
+     la'1llched by foreign count·r ies, or made available to the United States
+     by foreign countries. The Department of State will provide asai~ta.nce
+     in the acquisition of fragments that fall on foreign territory.
+
+             9.    NASA will serve as the focal point for the coordination
+     and release of public information on fragment• except for release
+     of public information on.fragment• resulting from apace vehicle•
+     launched by the DoD, which will be 'the reaponaibility of DoD•
+
+
+
+
+                  ..
+                   . -.
+                                        2
+                                  00,iFIBEriTiA~~
+
+--- PAGE 32 ---
+December 1
+
+
+
+
+MEMORANDUM FOR: Mr. Thomas Parrott
+
+Tom--
+
+      You should know about the attached documents and the
+small hassel between DOD and CIA concerning the procedural
+guidelines paper. As I under tand it, the departmental repre­
+sentatives that worked with Ed Welsh had secured departmental
+clearances on the procedure but later on the Agency clearance
+somehow got unstuck.
+
+       At this point there is no White House intervention that is
+either desirable or needed but, on the other hand, there is no
+guarantee that this could not become a White House issue on
+strictly jurisdictional grounds. As far as I am concerned it is a
+>-"tempest in a tea cup~ that would have been avoided ~entirely
+if the Space Council would have brought the Agency into the ad hoc
+committee from the beginning.
+
+      Please return the papers when you have seen them.
+
+
+
+
+Attachment:
+
+     1.     Dec. 7, 1962 Memo to NAS~ fr CIA
+     2.     Draft 11/6/62 Guidelines for Inter­
+           agency Handling of Space Vehicle
+          FPagments.
+
+
+
+                              .-00N .E IDEN 1'IAL
+
+                                              . DJICLASSJnJ,,
+                                        \uthomy Nk:S •P•«> B- o,<(.oo\f(
+                                                    NARA. Date .;H-Jll
+
+--- PAGE 33 ---
+-
+              z_Z
+
+
+
+
+~   -
+   ~~~
+~ . 1~ ~
+~~   c..etl
+
+
+     ~I
+
+--- PAGE 34 ---
+CENTRAL INTELLIGENCE AGENCY
+                  WASHINGTON 25 , D. C .
+
+
+    OFFICE OF DEPUTY DIRECTOR OF CENTRAL INTELLIGENCE
+
+
+                                         7       DEC1962
+
+
+
+
+J
+
+
+
+
+                              {SigneO:       r    al   ..   l=I.T'
+
+
+
+
+                      ;/
+                                                                       ,...,
+                                                                      ~-
+                                                                       C"">
+
+
+                                                                               zm
+                                                                               •
+                                                                                   ::0
+                                                                                 ('j
+
+
+                             DECL\SSIFIJp'f>
+                                                                     <O
+
+                                                                      "'
+                                                                     .._,,  .
+                                                                            .
+                                                                            n<
+                                                                              fT1
+                                                                                  -
+                                                                               (/')(TJ
+
+
+                                                                     ::t::.
+                 ,uthotttf
+                                                                     0-,
+                                                                        ..
+                 R"
+                                                                     "'
+
+--- PAGE 35 ---
+,,
+
+                      EXECUTIVE OFFICE OF THE PRESIDENT
+       NATIONAL         AERONAUTICS            and      SPACE   COUNCIL
+                                  WASHINGTON
+
+
+
+EXECUTIVE SECRETARY
+                                                     November 6, 1962
+
+
+
+
+    Mr. Johnson:
+
+    Herewith are the draft papers as revised and agreed to at
+    today's meeting 0 Copies have been sent to interested agency
+    heads for formal concurrence•
+                                     ....
+                                                 ....
+                                        E. C. Welsh
+    2 Enclosures • Fragments
+       L, (Unclassified)
+       2o ( Confidential ... 2 pages)
+
+--- PAGE 36 ---
+-
+                                                                DRAFT
+                                                               il /6/62
+
+                              P UBLIC STATEivi ENT
+               ON HANDLING OF SPACE VEHICLE F .:~AGui ENTS
+
+
+
+The National Aeronautics and Space Administration is designated
+as the Government agency responsible for receiving, analyzing, and
+identifying any fragments or suspected fragments of space vehicles
+of all types, including the contents thereof, which fall upon the terri­
+tory of the United States or which otherwise come into its possession.
+
+Fragments identified as coming from vehicles launched by foreign
+countries will be retained by NASA pending final arrangements for
+their return to the launching country or for other appropriate dis­
+position.
+
+In performing these functions, NASA will coor dinate iully wi~\;>. oth.~r
+Government agencies.
+
+--- PAGE 37 ---
+I
+
+                           GOP.lFID E HTI.AL
+
+                                                            DRAFT
+                                                               11/6/62
+
+                                GUIDELINES
+         FOR INTERAGENCY HANDLING OF SPACE VEHICLE FRAGMENTS
+
+
+     I. The National Aeronautics and Space Administration (NASA) is
+designated as the agency responsible for receiving, analyzing, and identify­
+ing any fragments, or suspected fragments of space vehicles of all types,
+including the contents thereof, which fall upon the territory of the United
+States or which otherwise come into its possession.
+
+     z. NASA will turn over to the Department of Defense (DOD) as expedi...
+tiously as possible fragments which are readily identifiable as coming from
+space vehicles launched by the DOD.
+
+     3. To insure prompt analysis for intelligence purposes, NASA will
+give the DOD and other responsible agencies access, as expeditiously as
+possible, to fragments which are readily identifiable as coming from space
+vehicles launched from foreign countries. Such analysis will be completed
+expeditiously and thereafter such fragments will remain in the custody of
+NASA, pending final arrangements for their return to the launching country
+or for other appropriate disposition.
+
+     4o, All other fragments will be retained by NASA pending agreement
+as to disposition.
+
+    s. NASA may continue to use the Smithsonian Institution for collection
+and analysis of fragments by contractual arrangements, and may also make
+appropriate arrangements for assistance with private agencies.
+
+     6. The DOD will notify NASA when deorbits are expected and when
+collection teams have been alerted to obtain the deorbiting fragments. Also,
+DOD will inform NASA of the results of such collection efforts whether suc­
+cessful or not.
+
+     7. The Atomic Energy Commission (AEC) will participate in the analysis
+of fragments of space vehicles which have utilized or transported, or are
+suspected of having utilized or transported, radioactive materials or special
+nuclear materials, and will exercise responsibility for special nuclear
+materials, in accordance with its statutory responsibility. In addition, the
+AEC will continue to make available to NASA and the DOD its special scientific
+capabilities.
+
+                            CONFIDEP.lTI..AL
+                                                                 DEC       D
+                                                         By~       1       •__,__ _
+
+--- PAGE 38 ---
+CONFIDENTIAL
+
+                                      - 2 -
+
+
+       8. The State Department will provide policy guidance with respect
+to the disposition of fragments from vehicles launched by foreign countries,
+or made available to the United States by foreign countries.
+
+      9. NASA will serve as the focal point for the coordination and release
+of public information on fragments.
+
+
+
+
+                            r.o~IFIDEN'PIAL
+                           ~   ------------
+
+--- PAGE 39 ---
+CLASSIFIED DOCUMENT RECEIPT
+ TO (Name an   a   re.rs>                                                                  DATE OF TRANSFER       GSA REGISTER NO.
+                                                                                                                  <TOP Sl~CRET o,,/y)
+  Mr. Charle E. John•
+  National Security Council                                                                 11/6/62
+  R.oom #368 EOB Wubtn
+ FROM <Name aftd address>                                                                  CLASSIFICATION
+
+  E. C. Welah                                                                                                                 ~
+  National Aeronautics and Spac Council                                                          --CONF!DEN l'.....U.-
+  W abi'l'Udon D                                       General Services Administration
+ TITLPOR 1oe:ift1F~AMN      NCLASS[PJED Dercriptio,z s11ch (IJ File No., Sr1bject, etc.)   NUMBER OF ENCLOSURES   NUM
+
+
+
+  Fr gment                                                                                          Two
+
+                   DENTIFIED MATTER WAS PERSONALLY RECEIVED BY ME:
+
+
+
+                                                                                                   <Date>                   <Thne>
+
+                                                                                                                           GSA FORM 1237
+THIS COPY TO BE RETAINED BY ADDRESSEE                                                                                       MARCH 1060
+
+--- PAGE 40 ---
+r.
+
+To   -
+
+
+
+
+                                                                     l
+
+
+
+                                                    ·o   th    1
+                                                               l.0
+
+
+
+
+         r   u        r   en y u        v       n
+
+
+
+
+                            C                . Jo n on
+
+
+
+
+                                   TI
+
+                                             DE.CL\SSI.FIS~>
+                                ~amoatf NlcJ· o'3£)R,.o\ j .. oo\ /$.
+                                ftl· -K---     NAIA. Date 1~e1 \-J"
+
+--- PAGE 41 ---
+Z6
+
+
+
+
+                                                               DRAFT
+                                                               il/ 6/62
+
+                              PUBLIC STATEivi ENT
+               ON HANDLING OF SPACE VEHICLE F h.AGMENTS
+
+
+
+The National Aeronautics and Space Administration is designated
+as the Government agency responsible for receiving, analyzing, and
+identifying any fragments or suspected fragments of space vehicles
+of all types, including the contents thereof, which fall upon the terri­
+tory of the United States or which otherwise come into its possession.
+
+Fragments identified as coming from vehicles launched by foreign
+countries will be retained by NASA pending final arrangements for
+their return to the launching country or for other appropriate dis­
+position.
+
+In performing these functions, NASA will coordinate fully ,,.r.i~ll oth~r
+Government agencies.
+
+--- PAGE 42 ---
+f
+                                                                   I             Z7
+
+                          -CON FIDi: N TI ..A... .I:.,
+
+                                                             DRAFT
+                                                             11/6/62
+
+                                 GUIDELINES
+         FOR INTERAGENCY HANDLING OF SPACE VEHICLE FRAGMENTS
+
+
+     1. The National Aeronautics and Space Administration (NASA) is
+designated as the agency responsible for receiving, analyzing, and identify­
+ing any fragments, or suspected fragments of space vehicles of all type s 1
+including the contents thereof, which fall upon the territory of the United
+States or which otherwise come into its possession.
+
+     2o NASA will turn over to the Department of Defense (DOD) as expedi­
+tiously as possible fragments which are readily identifiable as coming from
+space vehicles launched by the DOD.
+
+     3. To insure prompt analysis for intelligence purposes, NASA will
+give the DOD and other responsible agencies access, as expeditiously as
+possible, to fragments which are readily identifiable as coming from space
+vehicles launched from foreign countries. Such analysis will be completed
+expeditiously and thereafter such fragments will remain in the custody of
+NASA, pending final arrangements for their return to the launching country
+or for other appropriate disposition.
+
+     4o All other fragments will be retained by NASA pending agreement
+as to disposition.
+
+    s. NASA may continue to use the Smithsonian Institution for collection
+and analysis of fragments by contractual arrangements, and may also make
+appropriate arrangements for assistance with private agencies.
+
+     6. The DOD will notify NASA when deorbits are expected and when
+collection teams have been alerted to obtain the deorbiting fragments.. Also,
+DOD will inform NASA of the results of such collection efforts whether suc­
+cessful or not.
+
+     7. The Atomic Energy Commission (AEC) will participate in the analysis
+of fragments of space vehicles which have utilized or transported, or are
+suspected of having utilized or transported, radioactive materials or special
+nuclear materials, and will exercise responsibility for•special nuclear
+materials, in accordance with its statutory responsibility. In addition, the
+AEC will continue to make available to NASA and the DOD its special scientific
+capabilities.
+
+                           .-CO~lFIDENTIAL
+
+--- PAGE 43 ---
+£0-:NFIDEM'i'IAL
+
+                                         - 2 -
+
+
+       8. The State Department will provide policy guidance with respect
+to the disposition of fragments from vehicles launched by foreign countries,
+or made available to the United States by foreign countries.
+
+      9.   NASA will serve as the focal point for the coordination and release
+of public information on fragments.
+
+
+
+
+                           •0 6 N F I D S P¢ ':F I A L ---
+
+--- PAGE 44 ---
+jf     •      ?   /~~ - r
+                  --/
+l t~Jt~,--~,
+      ~~,:;. -., _. _ , .7: wo~
+1     N-~t-
+     I}; IT
+                     7      'ft~S,4-,
+                  -/4 " t. i -r,.c.__
+                        I        I..,
+
+
+I
+
+--- PAGE 45 ---
+NATIONAL AEB.ONAUTICS AND SPACE COUNCU..
+
+            Iateraaeac, M••tbla oa Space Velllct. Fraan1ente
+              Tuad&y. November 6, 1962 • 10:30 a. m.
+                        :Reem213E.0.8
+
+
+
+
+CHAIR.MAN:
+
+
+A.EC:                 Dr. Anael4 Frltaclt.
+
+
+
+
+.JUSTICE:             Mr. It.Nert S&loedaia
+
+
+NASA:
+
+
+NSC:
+
+
+OST:                  Mr. ~•ae Sltohlikoff
+
+
+MASC:                 D.r. Curlee S. Saelcloa ll
+                        r.    claard Hlracb
+                      Mr. R..    • Hal•
+
+ STATE:                 M•. Robert Packard
+                        Mr. IAenard. M.eeker
+
+--- PAGE 46 ---
+DRAFT
+                                                                                              -
+                                    '""CONPID:SHTIAL                 November 1, 1962
+
+
+                                      GUIDELINES
+
+                FOR IN'TERAGENCY HANDLING OF SPACE VEHICLE FRAGMENTS
+
+
+
+      1.    The National Aeronautics and Space Administration (NASA) is designated
+
+      as the agency responsible for receiving, analyzing, and identifying any
+
+      fragments, or suspected fragments of space vehicles of all types, including
+
+      the contents thereof, which fall upon the territory of the United States or
+
+      which otherwise come into its possession.
+
+
+      z.   NASA will turn over to the Department of Defense (DOD) as expeditiously
+
+      as possible fragments which are readily identifiable as coming from space
+
+      vehicles launched by the DOD• .
+
+
+      3. To insure prompt analysis for intelligence purposes, NASA will give the
+        N ,11.v,.. ~ L i . ~ . ....
+      DOD access, al expeditiusly as possible, to fragments which are readily
+           I\
+      identifiable as coming from space vehicles launched from foreign countries.      (      lit,
+         tr..~                                   ~Ji..,.,.,.,,, wiil~-
+
+*
+1, <L [ Upon                            \4~
+             completion~ such analysis, ~Jll!i,~1rj wh fragments(iv§I to
+                                                            I              ~         \M.-,.
+
+
+        NAS~~ul!lleliy they ~ remain pending final arrangements for      }
+
+      their return to the launching country or for other appropriate disposition.
+
+
+           All other fragments will be retained by NASA pending agreement as to
+
+      disposition.
+
+
+
+                                     GONFWFNTI.AL
+
+--- PAGE 47 ---
+'   .
+                                                            -2-
+                                                    --=--------
+                                                       CO~lFmEN 1'LAD-
+
+        s. NASA may continue to use the Smithsonian Institution for collection
+        and analysis of fragments by contractual arrangements, and may also
+
+        make appropriate arrange~ents for assistance with private agencies.
+
+
+        6.   The DOD will notify NASA when deorbits are expected and when collection
+
+        teams have been alerted to obtain the deorbiting fragments.                   Also, DOD will
+
+        inform NASA of the results of such collection efforts whether successful
+
+        or not.
+
+
+        7•   The Atomic Energy Commission (AEC) will participate in the an~ysis
+
+        of fragments of space vehicles which have utilized or transported, or are
+
+        suspected of having utilized or transported, radioactive materials or
+
+        special nuclear materials, and will exercise responsibility for special
+
+        nuclear materials, in accordance with its statutory responsibility.                   In
+
+        addition, the AEC will continue to make available to NASA and the DOD its
+
+        special scientific capabilities.
+
+
+        a. l}pns     lllf~   e· s       ~ .&.       b • A waai; aiep the State Department will provide
+                                          .
+        policy guidance a::M1•1l ~th respect to
+                                                                  ~1i"r
+                                                                   -1 dis osition of fragments from
+                                                1
+
+        vehicles lawiched bv...foreign countries~ ,,.._ w--../4
+                                    ~
+                                                                                        It;   /I   hfJ
+        9. NASA will serve as the focal point for the release of public information
+
+        o n ~ fragments.
+
+
+
+                                                       CONi'WENTIAL"'
+
+--- PAGE 48 ---
+- CONFIDENTJA t ~
+ I    •
+
+
+             NATIONAL AERONAUTICS AND SPACE COUNCIL
+
+
+
+
+                                       ov mber          ,   9 2
+
+
+                    TO:
+
+                                          (
+                                          (
+                                                   >/
+                                          (
+                                          (         )
+                                          (
+                      •                   (       T)
+                      •                       J   tic )
+
+     ubject:
+
+
+
+i:   ent .
+
+
+
+
+                                                   ov       b r 6, ·n
+
+
+
+
+                                    •  •
+                                   Executive Secretary
+
+--- PAGE 49 ---
+DRAFT
+                                                            November 1, l 96Z
+
+
+
+                           PUBLIC STATEMENT
+
+          ON HANDLING OF SPACE VEHICLE FRAGMENTS
+
+
+
+
+      The National Aeronautics and Space Administration is designated
+
+as the Government agency responsible for receiving, analyzing, and
+
+identifying any fragments or suspected fragments of space vehicles of
+
+all types, including the contents thereof, which fall upon the territory
+
+of the United States or which otherwise come into its possession.
+
+      Fragments identified as coming from vehicles launched by foreign
+
+countries will be retained by NASA pending final arrangements for their
+
+return to the launching country or for other appropriate disposition.
+
+     In performing these functions, NASA will coordinate fully with
+
+other Government agencies.
+
+--- PAGE 50 ---
+DRAFT
+                                                                                 -
+                                                                                 33
+
+                                COMEl.Di:NTIAL                November 1, 1962
+
+
+                                GUIDELINES
+
+      FOR INTERAGENCY HANDLING OF SP ACE VEHICLE FRAGMENTS
+
+
+
+1.   The National Aeronautics and Space Administration (NASA) is designated
+
+as the agency responsible for receiving, analyzing, and identifying any
+
+fragments, or suspected fragments of space vehicles of all types, including
+
+the contents thereof, which fall upon the territory of the United States or
+
+which otherwise come into its possession.
+
+
+z. NASA will turn over to the Department of Defense (DOD) as expeditiously
+as possible fragments which are readily identifiable as coming from space
+
+vehicles launched by the DOD.
+
+
+3.   To insure prompt analysis for intelligence purposes, NASA will give the
+
+DOD access, as expeditiously as possible, to fragments which are readily
+
+identifiable as coming from space vehicles launched from foreign countries.
+
+Upon completion of such analysis, the DOD will turn such fragments over to
+
+NASA. in whose custody they will remain pending final arrangements for
+
+their return to the launching country or for other appropriate disposition.
+
+
+4.   All other fragments will be retained by NASA pending agreement as to
+
+disposition.
+
+
+
+                                CON~T!_!L
+
+--- PAGE 51 ---
+- ·2 -
+                              c:-e0NFIDEN il1ili
+
+s. NASA may continue to use the Smithsonian Institution for collection
+and analysis of fragments by contractual arrangements, and may also
+
+make appropriate arrangements for assistance with private agencies.
+
+
+6.   The DOD will notify NASA when deorbits are expected and when collection
+
+teams have been alerted to obtain the deorbiting fragments.   Also, DOD will
+
+inform NASA of the results of such collection efforts whether successful
+
+or not.
+
+
+7.   The Atomic Energy Commission (AEC) will participate in the analysis
+
+of fragments of space vehicles which have utilized or transported, or are
+
+suspected of having utilized or transported, radioactive materials or
+
+special nuclear materials, and will exercise responsibility for special
+
+nuclear materials, in accordance with its statutory responsibility.   In
+
+addition, the AEC will continue to make available to NASA and the DOD its
+
+special scientific capabilities.
+
+
+s. Upon completion of technical analysis, the State Department will provide
+policy guidance to NASA with respect to the disposition of fragments from
+
+vehicles launched by foreign countries.
+
+
+9. NASA will serve as the focal point for the release of public information
+
+on such fragments.
+
+
+
+                              -CONFIDENTIAL ""'
+
+--- PAGE 52 ---
+3'1
+
+                      EXECUTIVE OFFICE OF THE PRESIDENT
+       NATIONAL         AERONAUTICS            and   SPACE   COUNCIL
+                                  WASHINGTON
+
+
+EXECUTIVE SECRETARY
+
+
+
+
+                                           October 24, 1962
+
+
+
+         MEMORANDUM TO
+
+                               Mr. Charles E. Johnson
+                               National Security Council
+                               Washington, D. C.
+
+         Thank you. for your memorandum of October 23, as well
+         as for the re - structuring of the guidelines paper - both
+         on the subject of handling of space vehicle fragments.
+
+         As soon as I receive comments from the other agencies,
+         I will get in touch with you.
+
+
+
+
+                                          E. C. Welsh
+
+--- PAGE 53 ---
+Cc -     r. Carl
+       NS C F iles
+
+--- PAGE 54 ---
+10     L   CU   TY A Tl N   0       NDU         NO.
+
+T                                            A   o       ut c
+
+
+
+
+ UB           CT:                                                ce V   ·c
+
+
+T                                                        ur
+I.                                                       tr        i           d
+
+     t                           r       ,
+                                                                                   I'
+
+
+
+                t                                               r i r    t
+
+                            th
+
+2.
+                                         y
+ p
+
+3.                                                   C
+
+
+
+
+4.                                                       A                   met
+
+--- PAGE 55 ---
+L                              -Z-
+
+5.      T e Department f                       ef nae wil not y , A.$                                 rbit
+    r                             wh n c 1 ction te               h v         be            rte to           t in
+
+th       orbiti             fr     ment .        DOD w 1 l o .i nform N                    A of th re ulta
+of      ch c        ectio eff rts                hethe     ucc:es u1 or not.                     y ucb bject
+obt n                              r turn d initi           to NA                  ub e          nt          Un
+
+wil                               nee     it     xi tin      telli ence co lectio                     rocedure .
+
+6.      In ccord             ce with ·t at tutory r 1                                      the    tornic       nergy
+Corn                                   r cip te in th       n                                     of. sp c
+V                   ich hav                          tr                                                      f h vin
+              or t an ported, r                     ctiv                                         • t ki
+pan         i ity   0       th r         ioactiv materi             t ema :vee.
+
+
+7.                                ntinu to u e th           mithe oni              In t tuti          or co ection
+                             fr     me t by contr ctu 1 rr                         eme t,             d may lo
+                                               emente lor                                   .ri-v te     gencies.
+
+8.      Up          mpleti n f t cbnie l                                              te              rt ent        1
+pr      d      olicy uidance to                                  O.A1'\lllll""t   O the     et rn f V a· l
+
+fr g ent to the .c unt y                                     fr gment w r                   recover d or to
+the country :reapon i                              unc                                      ie    .
+
+
+                    W             rv       the foe
+ti n on euc             r        me te.
+
+--- PAGE 56 ---
+NATIONAL   AERONAUTICS and   SPACE   COUNCIL
+
+                                               36
+
+
+               October 22, 1962
+
+
+
+
+   To:     Mr. Charles Johnson
+           National Security Council
+
+
+   Attached is a set of papers which
+   have been distributed to the
+   individuals indicated. I thought
+   it might be helpful for you to have
+   an advance look at this language
+   while it is being re-examined by
+   the respective interested agencies.
+   Let me know if you have any ideas
+   regarding it.      ~
+                      ..... QL.;-
+                      E. C. Welsh
+    Attachment: ECW memo-10/22/62
+
+--- PAGE 57 ---
+(AE C)
+
+
+
+
+-OONFIDENTf ~ I
+
+--- PAGE 58 ---
+OFFICf At USF. ONly   -
+                       '36b
+
+
+
+
+OFF IA U ONL
+
+--- PAGE 59 ---
+DEC~..­
+~uthontY M~ -o"\DR.. o ,g.o()../ to
+th,...._._._   NARA. Datt   ' \.. . 1l.(
+
+--- PAGE 60 ---
+N\Mnraamtt
+~   ;,j~ t 11~ _
+
+
+
+
+               •
+
+
+
+
+~
+
+--- PAGE 61 ---
+CLASSIFIED DOCUMENT RECEIPT
+ TO <Name an   a   re.rs)                                                                        DATE OF TRANSFER
+
+         ~r. Charle• Johnaon
+         National Security Council                                                                10/Z2/6Z
+         Room #368, E. O. B. • Waehington ZS, D. C.
+ FROM <Name ""d address>                                                                         CLASSIFICATION
+
+
+         E. C. Welah
+         National Aeronautic• and Space Council                                                     GeafiMatiel
+                                                          General Services Administration
+ TITLE                                         Drscri/ltion s11ch as File No., S11hjert, etc.)   NUMBER OF ENCLOSURES   NUMBER OF COPIES
+
+
+
+         Fragments                                                                                    (2)                   (1)
+
+ THE ABOVE-IDENTIFIED MATTER WAS PERSONALLY RECEIVED BY ME:
+
+
+
+ SI
+
+
+                                                                                                                              GSA FORM 1237
+THIS COPY TO BE        RETAINED BY ADDRESSEE                                                                                   MARCH 1960
+
+--- PAGE 62 ---
+October 17, 1962
+
+
+                        TELECON
+
+SUBJECT: Recovery of satellite fragments
+
+
+         Called R. W. Hale, Space Council, and informed him that
+I would be unable to attend the meeting this afternoon in yiew of a
+conflict in commitments. Suggested that my presence. was not
+needed in view of my concurrence and support of the designation
+of NASA to have responsibility for the program. Suggested the
+development of an NSAM based on the draft statement attached in
+order to get the program under way, even though Justice and State
+might still have some legal and substantive questions. Hale was
+pleaS'ed to hear my views, and said they agreed with those that
+Welsh and he hold. He will inform Welsh of our conversation, and
+will fill me in after the meeting.
+
+
+
+
+                                                  s E. Johnson
+
+
+
+
+Attachment
+
+    Draft statement for consideration at
+    meeting on 10/ 17/ 62, 2:30 p. m.,
+    in Rm. 218, E. 0. B.
+
+--- PAGE 63 ---
+NA TI O NA L   A E R O NA U TI C S   and   S PA C E   C O UN CI L    0~
+                                                                    .,.,--,-
+
+
+                                 10/12/62
+     Mr. Johnson:
+
+     In accordance with telephone
+     conversation with your secre­
+     tary this morning.
+
+
+
+                             R. W. Hale
+
+--- PAGE 64 ---
+,
+,
+
+
+
+                  Draft Statement for Consideration at Meeting on October 17, 196 2
+                                  2:30 p. m. -- Room 2 18 E. 0. B.
+
+
+                       The National Aeronautics and Space Administration has
+
+         been designated as the Government agency responsible for obtaining,
+
+         analyzing, and identifying any fragments or suspected fragments from
+
+         space vehicles of all types which fall upon the territory of the United
+
+         States or which are turned over to the United States by foreign coun­
+
+         tries.     The only exception to this responsibility is that fragments
+
+        • ••which are readily identifiable as coming from space vehicles launched
+
+         by the Department of Defense will be turned over to the DOD as
+
+         expeditiously as possible.     NASA will be responsible for the disposition
+
+         of all fragments which do not come from DOD vehicles.        Fragments
+
+         identified as coming from vehicles launched by foreign countries will
+
+         be retained by NASA pending final arrangements for their return to the
+
+         launching country.
+
+                      In performing these functions, NASA will coordinate fully
+
+         with other interested government and private agencies.
+
+--- PAGE 65 ---
+10/12/62
+                               3:45 p.m.
+                                                3
+Mr. Johnson:
+
+       (1) This is part of the correspondence
+which will form the background for next Wed­
+nesday's 2:30 meeting.
+
+        (2) Another draft paper, I was told,
+is being sent to you for consideration at the
+meeting.
+
+                              Mabel
+
+--- PAGE 66 ---
+1 -
+
+NA T I O N A . L   A E R O NA U T I C S   and   S PA C E   C O UN C I L
+
+
+
+
+       Mabel:
+                                                                          ---
+                                                                          3
+
+
+
+              A memo. similar to the
+       attached was sent to Mr. Bundy.
+
+
+                                          M.         uill
+
+--- PAGE 67 ---
+.,....... ,_.
+             ,. w .......
+             llr:lmal MMINIIIIIIIIIMI~
+
+
+
+.........................................
+... ,·········   -  ,,....... ~ -,...., ... -........
+....w• •• cs Ml•• .. , dA _,,. ...-a ...,._..llillltlea la n ....
+
+
+      ....................... ~•···~
+,........_.,_.,•• ...,cl•• -10 fall• 1f.L •nllwr w
+
+.................
+II 11M UJllwlM .._ ........
+
+                            ......... ..
+........,,.........................
+•••• C.:Mll le . . 111••1811
+                                                 ...11ia_
+
+                                          .....fl' . .
+                                                             dca _.
+
+
+
+
+               . . ., ..,........ ...
+,....a •• lll1alotl. _._•• It a
+                                            ~
+                                              14 • 11111
+                                                              ·"·
+                                                                    •••   . \
+
+
+
+
+.......................-
+.,. . . . . ,111 .... 411711      n••
+. . . . . . . . . . . . . .e11,-. .............
+
+I •••' .,.,11111 , . _ . . ,ts1-, . . . Cc.le 111 • ......._ 11119
+
+
+............ - .........
+..._. • • . . . wll4 •i1•■ r111 , . _ 11 . . ,• . _ . ~ •
+t ■ rlvtf aJ:a . . . . . . '9 II 8a::   1111. . . . . J•f ■ DI a f - a
+
+
+
+
+                                                   LC. WI#
+
+
+
+
+            COf
+
+--- PAGE 68 ---
+L.(O
+                      EXECUTIVE OFFICE OF THE PRESIDENT
+       NATIONAL         AERONAUTICS            and   SPACE   COUNCIL
+                                  WASHINGTON
+
+
+
+EXECUTIVE SECRETARY
+
+
+                                               October 2, 1962
+
+    MEMORANDUM FOR
+
+               . Honorable McGeorge Bundy
+                 Special Assistant to the President
+                  for National Security Affairs
+
+    Subject:   Responsibility and Procedure Re Space Vehicle Fragments.
+
+
+    It has been suggested that there is need for a decision as to what
+    government agencies should have what responsibilities in regard
+    to obtaining, analyzing, and identifying fragments or suspected
+    fragments from space vehicles which fall on U.S. territory or
+    which otherwise come into U.S. possession.
+
+    It has likewise been suggested that the National Aeronautics and
+    Space Council is the appropriate agency to work out a coordinated
+    position on this matter. There are legal as well as operational
+    problems involved, and hence it would be helpful if this combina­
+    tion of issues were kept in mind in identifying a person or persons
+    from your agency to participate in a meeting on this matter.
+
+    To the extent that agreements or recommendations have already
+    been made on this problem, information re gar ding them would
+    contribute to such deliberations.
+
+    I would appreciate your having my office (Code 113 - Extension 2203)
+    advised as to who would represent your agency. Such individual or
+    individuals will then be contacted for the purpose of determining an
+    appropriate time for a meeting.
+
+
+
+
+                                                 E. C. Welsh
+
+--- PAGE 69 ---
+'-II
+                                                            DRAFT
+                                                            November 1, 196Z
+
+
+
+                           PUBLIC STATEMENT
+
+          ON HANDLING OF SPACE VEHICLE FRAGMENTS
+
+
+
+
+      The National Aeronautics and Space Administration is designated
+
+as the Government agency responsible for receiving, analyzing, and
+
+identifying any fragments or suspected fragments of space vehicles of
+
+all types, including the contents thereof, which fall upon the territory
+
+of the United States or which otherwise come into its possession.
+
+      Fragments identified as coming from vehicles launched by foreign
+
+countries will be retained by NASA pending final arrangements for their
+
+return to the launching country or for other appropriate disposition.
+
+     In performing these functions, NASA will coordinate fully with
+
+other Government agencies.
+
+--- PAGE 70 ---
+.   . ...
+                                                            DRAFT
+                                                                                L( a.
+
+
+                                                            November 1, l 96Z
+
+
+
+                                PUBLIC STATEMENT
+
+          ON HANDLING OF SPACE VEHICLE FRAGMENTS
+
+
+
+
+      The National Aeronautics and Space Administration is designated
+
+as the Government agency responsible for receiving, analyzing, and
+
+identifying any fragments or suspected fragments of space vehicles of
+
+all types, including the contents thereof, which fall upon the territory
+
+of the United States or which otherwise come into its possession.
+
+      Fragments identified as coming from vehicles launched by foreign
+
+countries will be retained by NASA pending final arrangements for their
+
+return to the launching country or for other appropriate disposition.
+
+     In performing these functions, NASA will coordinate fully with
+
+other Government agencies.
+
+--- PAGE 71 ---
+q~
+
+
+                                                                            /
+
+
+
+
+     Draft Statement for Consideration at Meeting on October 17, 1962
+                     2:30 p. m. -- Room 218 E. O. B.
+
+
+            The National Aeronautics and Space Administration has
+
+been designated as the Government agency responsible for obtaining,
+
+analyzing, and identifying any fragments or suspected fragments from
+
+space vehicles of all types which fall upon the territory of the United
+
+States or which are turned over to the United States by foreign coun­
+
+tries.   The only exception to this responsibility is that fragments
+
+which are readily identifiable as coming from space vehicles launched
+
+by the Department 0£ Defense will be turned over to the DOD as
+
+expeditiously as possible.   NASA will be responsible for the disposition
+
+of all fragments which do not come from DOD vehicles.      Fragments
+
+identified as coming from vehicles launched by foreign countries will
+
+be retained by NASA pending final arrangements for their return to the
+
+launching country.
+
+           In performing these functions, NASA will coordinate fully
+
+with other interested government and private agencies.
+
+--- PAGE 72 ---
+----
+                                                                            L(3
+
+
+
+
+     Draft Statement for Consideration at ?vleeting on October 17, 1962
+                     2:30 p. m. -- Room 218 E. O. B.
+
+
+            The National Aeronautics and Space Administration has
+
+been designated as the Government agency responsible for obtaining,
+
+analyzing, and identifying any fragments or suspected fragments from
+
+space vehicles of all types which fall upon the territory of the United
+
+States or which are turned over to the United States by foreign coun­
+
+tries.   The only exception to this responsibility is that fragments
+
+which are readily identifiable as coming from space vehicles launched
+
+by the Department of Defense will be turned over to the DOD as
+
+expeditiously as possible.   NASA will be responsible for the disposition
+
+of all fragments which do not come from DOD vehicles.      Fragments
+
+identified as comlng frotn vehicles launched by foreign countries will
+
+be retained by NASA pending final arrangements for their return to the
+
+launching country.
+
+           In performing these functions, NASA will coordinate fully
+
+with other interested government and private agencies.
