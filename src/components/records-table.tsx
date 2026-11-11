@@ -381,7 +381,7 @@ export function RecordsTable({ records, agencies: _agencies, types: _types }: Pr
               <TableHead className="w-[60px]">Type</TableHead>
               <TableHead className="hidden w-[120px] md:table-cell">Agency</TableHead>
               <TableHead>Title</TableHead>
-              <TableHead className="w-[160px]">Tags</TableHead>
+              <TableHead className="hidden w-[160px] md:table-cell">Tags</TableHead>
               <TableHead className="hidden w-[110px] lg:table-cell">Incident</TableHead>
               <TableHead className="hidden w-[140px] md:table-cell">Location</TableHead>
               <TableHead className="w-[80px] text-right md:w-[120px]">Action</TableHead>
@@ -438,6 +438,14 @@ export function RecordsTable({ records, agencies: _agencies, types: _types }: Pr
                           </>
                         ) : null}
                       </div>
+                      {/* Mobile-only: the Tags column is hidden on a phone, so show the same tags under the title */}
+                      {r.tags && r.tags.length > 0 ? (
+                        <div className="mt-1 flex flex-wrap gap-1 md:hidden">
+                          {r.tags.map((t) => (
+                            <TagChip key={t} tag={t} selected={tagSel.has(t)} />
+                          ))}
+                        </div>
+                      ) : null}
                       {matchSnippet ? (
                         <div className="mt-1 truncate text-xs text-muted-foreground">
                           <span className="font-mono">
@@ -446,7 +454,7 @@ export function RecordsTable({ records, agencies: _agencies, types: _types }: Pr
                         </div>
                       ) : null}
                     </TableCell>
-                    <TableCell className="align-top">
+                    <TableCell className="hidden align-top md:table-cell">
                       {r.tags && r.tags.length > 0 ? (
                         <div className="flex flex-wrap gap-1">
                           {r.tags.map((t) => (
@@ -734,7 +742,7 @@ function TagChip({ tag, selected }: { tag: string; selected: boolean }) {
   return (
     <span
       title={`Keyword match — use the Tags filter to filter by "${tag}"`}
-      className={`rounded-sm border px-1.5 py-0.5 font-mono text-[10px] leading-none ${
+      className={`rounded-sm border px-1.5 py-0.5 font-mono text-xs leading-none ${
         selected
           ? "border-foreground/50 bg-secondary text-secondary-foreground"
           : "border-muted-foreground/20 bg-muted text-muted-foreground"

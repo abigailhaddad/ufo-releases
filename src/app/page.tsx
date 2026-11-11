@@ -1,5 +1,6 @@
 import { RecordsTable } from "@/components/records-table";
 import { agencies, records, types } from "@/lib/records";
+import refreshMeta from "../../data/refresh-meta.json";
 
 export default function Home() {
   const totalActive = records.filter((r) => !r.removedFromSource).length;
@@ -48,7 +49,7 @@ export default function Home() {
           <a href="/mirror" className="underline underline-offset-4 hover:text-foreground">
             public R2 mirror
           </a>{" "}
-          of every PDF, image, and video so the archive survives if war.gov rotates them. Refreshed daily from the source CSV.
+          of every PDF, image, and video so the archive survives if war.gov rotates them. Refreshed daily from the source CSV; last refreshed {refreshMeta.lastRefreshedAt}.
           {totalRemoved > 0
             ? ` ${totalRemoved.toLocaleString()} additional records that have since been removed from war.gov are kept here for the record (toggle the checkbox to see them).`
             : ""}
