@@ -170,10 +170,24 @@ test.describe("UAP records table", () => {
 
   test("Tags column renders chips on each row", async ({ page }) => {
     await page.setViewportSize({ width: 1024, height: 800 });
-    const firstTag = page.locator("table tbody span[class*='font-mono']").first();
+    // Each row also carries a phone-only copy of its tags under the title, hidden at this width.
+    await expect(page.getByRole("columnheader", { name: /^Tags$/ })).toBeVisible();
+    const firstTag = page.locator("table tbody span[class*='font-mono']:visible").first();
     await firstTag.scrollIntoViewIfNeeded();
     const tagText = ((await firstTag.textContent()) ?? "").trim();
     expect(tagText.length).toBeGreaterThan(0);
+  });
+
+  test("phone width hides the Tags column and shows each row's tags under its title", async ({ page }) => {
+    await page.setViewportSize({ width: 1024, height: 800 });
+    const rowWithTags = page.locator("table tbody tr").filter({ has: page.locator("span[class*='font-mono']") }).first();
+    const wide = await rowWithTags.locator("span[class*='font-mono']:visible").allTextContents();
+    expect(wide.length).toBeGreaterThan(0);
+    await page.setViewportSize({ width: 375, height: 800 });
+    await expect(page.getByRole("columnheader", { name: /^Tags$/ })).toBeHidden();
+    const narrow = await rowWithTags.locator("span[class*='font-mono']:visible").allTextContents();
+    // The same tags, in the same order, so nothing is lost when the column goes away.
+    expect(narrow).toEqual(wide);
   });
 
   test("mobile viewport hides Agency/Incident/Location columns and inlines them under the title", async ({ page }) => {
