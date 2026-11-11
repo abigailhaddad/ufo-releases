@@ -16,6 +16,12 @@ export const metadata: Metadata = {
   title: "UAP / UFO Release Index — unofficial mirror",
   description:
     "Searchable, sortable index of declassified UAP records published by the U.S. Department of War at war.gov/UFO.",
+  openGraph: {
+    type: "website",
+    title: "UAP / UFO Release Index — unofficial mirror",
+    description:
+      "Searchable, sortable index of declassified UAP records published by the U.S. Department of War at war.gov/UFO.",
+  },
 };
 
 export default function RootLayout({

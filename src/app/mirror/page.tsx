@@ -22,7 +22,7 @@ export default function MirrorIndex() {
   const aiCount = totalText - pdftotextCount;
 
   return (
-    <main className="mx-auto max-w-5xl px-4 py-10 md:px-6 md:py-14">
+    <main className="mx-auto w-full max-w-5xl px-4 py-10 md:px-6 md:py-14">
       <header className="mb-8 space-y-3">
         <p className="text-xs font-mono uppercase tracking-widest text-muted-foreground">
           Public file mirror
@@ -48,7 +48,7 @@ export default function MirrorIndex() {
         </p>
         <p className="text-sm text-muted-foreground">
           Bucket root:{" "}
-          <code className="rounded bg-muted px-1 py-0.5 text-xs">{R2_BASE}</code>{" "}
+          <code className="break-all rounded bg-muted px-1 py-0.5 text-xs">{R2_BASE}</code>{" "}
           (R2 doesn&apos;t serve directory listings — use the per-file links below).{" "}
           <Link href="/" className="underline underline-offset-4 hover:text-foreground">
             ← back to the searchable index
@@ -64,7 +64,7 @@ export default function MirrorIndex() {
               ({g.records.length})
             </span>
           </h2>
-          <div className="overflow-hidden rounded-md border">
+          <div className="overflow-x-auto rounded-md border">
             <table className="w-full text-sm">
               <thead className="bg-muted/50 text-left text-xs uppercase tracking-wide text-muted-foreground">
                 <tr>
