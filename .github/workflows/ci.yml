@@ -7,7 +7,10 @@ on:
 
 jobs:
   verify:
-    runs-on: ubuntu-latest
+    # Pinned: ubuntu-latest moved to 26.04 and Playwright 1.59 can't install
+    # Chromium there ("Playwright does not support chromium on ubuntu26.04-x64").
+    # Same pin as refresh-csv.yml and the extract pipeline.
+    runs-on: ubuntu-24.04
     steps:
       - uses: actions/checkout@v4
 
