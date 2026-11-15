@@ -1,13 +1,23 @@
 name: Extract + verify + publish
 
-# Daily pipeline. Runs after refresh-csv finishes successfully (or on demand).
-# Picks up any new records the CSV refresh added, downloads them, extracts
-# text, verifies integrity, mirrors to R2, then builds and publishes the static
-# export to Cloudflare Pages so the live site updates.
+# Runs after refresh-csv finishes successfully, but only when that refresh
+# actually changed data/records.json — see the `gate` job. Picks up any new
+# records the CSV refresh added, downloads them, extracts text, verifies
+# integrity, mirrors to R2, then builds and publishes the static export to
+# Cloudflare Pages so the live site updates.
+#
+# Skipping is safe for publishing: deploy.yml rebuilds and deploys on every
+# push to main, so a refresh that commits still reaches the live site.
 on:
   workflow_run:
     workflows: ["Refresh UFO records"]
     types: [completed]
+  # Safety net. The gate below skips this pipeline on days the refresh found no
+  # new records, which means a record stuck on a retryable failure (Gemini 429,
+  # say) would otherwise wait for the next new record to get another attempt.
+  # Once a week it runs regardless so that backlog always drains.
+  schedule:
+    - cron: "30 15 * * 0"
   workflow_dispatch:
     inputs:
       force:
@@ -27,9 +37,51 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
-  pipeline:
-    if: ${{ github.event_name == 'workflow_dispatch' || github.event.workflow_run.conclusion == 'success' }}
+  # The expensive pipeline below costs over an hour of runner time (Gemini
+  # extraction + the R2 mirror), and it used to run every single day purely
+  # because the refresh workflow completed — not because there was anything new
+  # to extract. This decides whether that work has a reason to happen.
+  gate:
+    if: ${{ github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success' }}
     runs-on: ubuntu-latest
+    outputs:
+      run: ${{ steps.decide.outputs.run }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+
+      - id: decide
+        env:
+          # Where main sat when the refresh started. Its data commit, if it made
+          # one, lands after this — so diffing it against main isolates exactly
+          # what that refresh changed.
+          BEFORE: ${{ github.event.workflow_run.head_sha }}
+        run: |
+          if [ "${{ github.event_name }}" != "workflow_run" ]; then
+            echo "Manual or scheduled run — not gating."
+            echo "run=true" >> $GITHUB_OUTPUT
+            exit 0
+          fi
+          if ! git cat-file -e "$BEFORE^{commit}" 2>/dev/null; then
+            echo "Cannot resolve $BEFORE — running rather than silently skipping."
+            echo "run=true" >> $GITHUB_OUTPUT
+            exit 0
+          fi
+          if git diff --quiet "$BEFORE" HEAD -- data/records.json; then
+            echo "records.json unchanged since $BEFORE — nothing to extract."
+            echo "run=false" >> $GITHUB_OUTPUT
+          else
+            echo "records.json changed since $BEFORE:"
+            git diff --stat "$BEFORE" HEAD -- data/records.json
+            echo "run=true" >> $GITHUB_OUTPUT
+          fi
+
+  pipeline:
+    needs: gate
+    if: ${{ needs.gate.outputs.run == 'true' }}
+    runs-on: ubuntu-24.04
     timeout-minutes: 350
     steps:
       - uses: actions/checkout@v4
