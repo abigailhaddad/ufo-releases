@@ -27,9 +27,12 @@ const SOURCE_PAGE = "https://www.war.gov/UFO/";
 // the page each run. These fallbacks let us hand-pin a path in CI if the
 // scrape ever fails.
 const CSV_PATH_FALLBACKS = [
+  "/Portals/1/Interactive/2026/UFO/uap-data.csv",
   "/Portals/1/Interactive/2026/UFO/uap-release001.csv",
   "/Portals/1/Interactive/2026/UFO/uap-csv.csv",
 ];
+// Columns that identify the records CSV (vs. the slideshow CSV on the same page).
+const RECORD_COLUMNS = ["Title", "Type", "Agency", "Release Date", "PDF | Image Link"];
 const DATA_DIR = path.join(process.cwd(), "data");
 const DATA_PATH = path.join(DATA_DIR, "records.json");
 const RAW_CSV_PATH = path.join(DATA_DIR, "uap-csv.csv");
@@ -166,11 +169,16 @@ async function fetchCsv(): Promise<string> {
           if (!r.ok) throw new Error(`fetch ${p} -> HTTP ${r.status}`);
           return await r.text();
         }, csvPath);
-        if (text && text.includes(",")) {
+        // The UFO page also links other CSVs (on 2026-11-17 a homepage
+        // slideshow-ufo.csv appeared before the records file, parsed to 0
+        // records and tripped the safety check). Accept only a file whose
+        // header row has the records columns.
+        const header = (text || "").split(/\r?\n/, 1)[0];
+        if (RECORD_COLUMNS.every((c) => header.includes(c))) {
           console.log(`Resolved CSV path: ${csvPath}`);
           return text;
         }
-        lastErr = new Error(`CSV at ${csvPath} looked empty`);
+        lastErr = new Error(`CSV at ${csvPath} is not the records file (header: ${header.slice(0, 80)})`);
       } catch (err) {
         lastErr = err;
       }
