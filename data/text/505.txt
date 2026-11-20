@@ -1,0 +1,396 @@
+--- PAGE 1 ---
+UNCLASSIFIED
+
+
+
+
+                                                  INFO MEMO
+
+            U-429-09/DWO                                                                 30 October 2009
+
+            FOR: DIRECTOR, DEFENSE INTELLIGENCE AGENCY
+
+            FROM: l1843(a)(3)                          I for Analysis, Defense Intelligence Agency
+
+            SUBJECT: (U) Review of Advanced Aerospace Contract Deliverables
+
+            (U) This info memo responds to your request for the Defense Warning Office
+            (DWO) to review the quality and value of the first-year technical reports delivered
+            under the Advanced Aerospace Weapon System Applications contract with
+            Bigelow Aerospace Advanced Space Studies (BAASS), LLC. As a reminder, you
+            made th.is request to DWO-3 personnel during a 15 May 2009 meeting with you
+            after your meeting with Senator Harry Reid. The goal of the contract is to identify
+            key technologies and physics concepts that would support revolutionary aerospace
+            vehicle research and development. Contracted studies were designed to provide a
+            prioritized list of technologies/concepts that then would drive detailed, focused
+            searches into foreign aerospace research and development. Each research report
+            (in the areas of lift, propulsion, control, power generation, spatial/temporal
+            translation, materials, structural configuration, signature reduction, human
+            interface, human effects, and armament) was written by world-class technical
+            experts in industry and/or academia.
+
+             (U) The table in Enclosure 1 lists the 26 extensive technical reports delivered to
+             DIA in FY 2009. The report titles highlighted in red and green are the ones that
+             were reviewed. Eight reviews were performed by other authors listed in the table;
+             five were performed by outside reviewers, including three research staff members
+             at Sandia National Laboratories. The DWO program manager, AAP Person 1
+�P Pe.��gr:iJ •••     !has reviewed all of the papers and concurs with the reviews. As t e
+             excerpts indicate, all of the reviews were positive, some exceptionally so. Even
+             within the limitation of being able to conduct only unclassified research in the fu-st
+             contract year, the quality hoped for in the reports was achieved. DWO intends to
+             publish them in coming weeks as Defense Intelligence Studies. Some or all of
+             these studies may be of interest to Defense Department agencies, national
+             laboratories, and/or defense industries focused on blue-force capability
+             development, and DWO-3 will ensure that they receive copies.
+
+
+
+                                                 UNCLASSIFIED
+
+--- PAGE 2 ---
+UNCLASSIFIED
+
+(U) Based on draft budget guidance, Congress apparently will fund the contract's
+option year one at $12 million. In FY 2010, DWO will use the 26 FY 2009
+technical reports in having BAASS evaluate potential adversary exploitation
+worldwide, select studies amenable to classified experimental verification by
+BAASS, and have BAASS conduct new classified and unclassified studies with
+select academic and industry partners. Deliverables are expected in late summer
+2010.
+
+2 enclosures as stated
+                                                 .     . IAAP Person 1
+(U) Prepared by:IAAP Person 1        pefense Warnmg Office_a           _
+                                                           _____
+
+
+
+
+                                       2
+                                  UNCLASSIFIED
+
+--- PAGE 3 ---
+UNCLASSIFIED
+
+                           (U) FY 2009 Technical Reports
+
+
+                          Title                         Author           Affiliation
+UNCLASSIFIED
+
+Inertial Electrostatic Confinement Fusion             MP Person 70    U Illinois
+Pulse-Power-Based Weaponry                            MP Person 6     Northrup
+Space-Time Modifications for Spaceflight Applications MP Person 57    Earth Tech
+Novel MEMS-Based Biosensors                           MP Person 65    Arizona St U
+Theory and Experiments of Invisibility CloakinJ:?;    MP Person 68    U St. Andrews
+Wormholes in Space Time                               MP Person 58    Earth Tech
+Gravity Wave Communication                            MP Person 77    Gravwave
+Superconductors in Gravity Research                   MP Person 75
+Antigravity for Aerospace Applications                MP Person 58    EarthTech
+Field Effects on Biological Tissues                   MP Person 81    Wayne State
+Positron Aerospace Propulsion                         MP Person 69    Positronics
+Vacuum Energy Applications                            MP Person 58    Earth Tech
+Improved Statistical Approach to Drake Equation       MP Person 80    Acad Astra
+Maverick vs. Corporate Research Cultures              MP Person 75
+Bioscnsors and BioMEMS                                MP Person 65    Arizona St U
+Metamaterials for Aerospace Applications              MP Person 78    U Texas
+Warp Drives                                           MP Person 7 4
+Controlling Devices Without Limb-Operated Interfaces MP Person 73     Wayne State
+Materials for Advanced Aerospace Platforms            MP Person 66    Ohio State U
+Metal!ic Glasses                                      MP Person 63    Johns Hopkins U
+Programmable Matter                                   MP Person 90    Prog Matter
+Metallic Spintronics                                  MP Person 71    U Texas
+High-Energy Laser Weapons                             MP Person 79    Priv Consultant
+Quantum Entanglement Communications                   MP Person 76    Washington
+Space Access: Where Been, Where Go                    MP Person 67    Hypertech
+Advanced Nuclear Propulsion for Deep Space            MP Person 72    Nevada
+
+Red - Independent review.
+Green - Sandia National Laboratories review.
+
+
+
+
+                                          3
+                                 UNCLASSIFIED
+
+--- PAGE 4 ---
+UNCLASSIFIED
+
+
+
+                                          (U) Excerpts From Reviews
+
+            (U) All of the following review information and comments are UNCLASSIFIED.
+
+            Antigravity for Aerospace Applications in 2050
+            AAP Person 58
+           I                      I
+            EarthTech International, Inc.
+AAP Person
+58         ,_____,,.__.I has provided an excellent overview of conventional approaches to
+            gravity manipulation within the confines of Newtonian, relativistic and quantum
+            physics. With his typical lucid style, he takes the time to add useful explanatory
+            notes which are especially enlightening for those for whom Relativity is not their
+           first Language. In addition, his extensive technical appendix concerning such
+            exotica as squeezed vacuum states, zero-point.fiuctuations and negative energy is
+            of great benefit.
+                            _ AAP     er
+                             I... _ P son 75_        ___,I Consulting Services
+                                    _ _ _ _   _______
+            Technological Approaches to Controlling External Devices in the Absence of
+            Limb Operated Interfaces
+           IAAP Person 73             I
+            Wayne State University School of Medicine
+
+              The paper by AAP Person 73        looks at the present and.future prospects.for the
+              human thoug t contra of ro otics and machines by way of high technology neural
+              interfaces. The ultimate aim o_fsuch research is to allow an individual to control
+              the function of a prosthetic or robot as an extension of his own body and mind or
+              to exercise thought-based control over a mechanized environment. Wefind from
+ P Per, �?.�.   -
+�             j            �urrent review that the state of the art is still quite far away from
+              achieving such control but strong efforts are being made on a number of
+              approaches.
+                                AP Person 65
+                            r
+
+
+            On The Role of Su erconductors in Gravity Research
+           AAP Person 75
+                       Consulting Services
+
+            Because of the author's involvement and activity in the field, it seems natural that
+            he chose to write on this subject, and he is able to demonstrate not only a solid
+                                                         4
+                                                UNCLASSIFIED
+
+--- PAGE 5 ---
+UNCLASSIFIED
+
+          understanding of the research area, but is also able to provide his personal
+          accounts of meetings with the prominent researchers. In addition, he describes his
+          own experimental results, or lack thereof Because of his own personal attachment
+          to the field, I found the report to be somewhat captivating, as I felt a strong sense
+          o,f being close to the research and hearing from the 'horse's mouth,' so to speak.
+ P Person Despite hisinvolvement;I                lf;oint of view seems to be that of an impartial
+�
+          observer and he does not appear to take sides, or seem to be trying to promote or
+           'sell' the research field. He does an excellent job of relaying a candid and
+          informative survey o.f what, to me, seems to be a tantalizing yet controversial field
+          of study.
+
+                               AAP P r on74
+                                         _ _ _ ____________
+                            - ... I_ _ _es
+                                                           lconsulting, LLC
+
+            Metallic Glasses: Status and Prospects for Aerospace Applications
+           !AAP Person 63
+                                          I
+            John Hopkins University
+
+            This is an excellent and highly readable Survey report that defines Metallic
+            glasses, the advantages and disadvantages to other composite materials, and how
+            their mechanical properties are both alike and different from those of pure metals.
+            These properties include strength, stiffness, and toughness. The author makes a
+            case that the processing capability meets and sometimes exceeds those of
+            thermoplastic polymers, and traditional metals. Glass hybrid composites are found
+            to excel in almost all cases to current materials in widespread use.
+
+                              AAP Person 129                         The Society for Experimental
+                              Mechanics AAP Person 129
+                              a.....,.---,.-..--�:-=:-:::---�::---------,
+
+
+
+            Theory and Experiments of Invisibility Cloaking
+           IAAP Person 68
+                                      I
+            University of St. Andrews
+                                    r on 68
+            The report bvlAAP Pes           I describes the background and recent advances in the
+            field of invisibility cloaking. This field recently emerged as one o.f the most
+            exciting applications of metamaterials - arti cially structured media possessing
+            unusual refractive properties. AAP Person68           is a pioneer in this .field, having
+            published one of the first theoretical papers describing the possibility of cloaking.
+            This topic still evokes misunderstandings and confusion. That is not surprising:
+            the concept of invisibility (although not its technical im lementation) has been
+            preoccupying people for centuries if not millennia. AAP Person 68         report does an
+            excellent job of clearing some of this confusion an provi mg c ear definitions of
+            what constitutes true cloaking/invisibility. It also honestly discusses technological
+            challenges to making a practical invisibility cloak.
+                                                                 5
+                                                      UNCLASSIFIED
+
+--- PAGE 6 ---
+UNCLASSIFIED
+
+                -IAAP Person 78
+                 .... -.....,...-------------l University of Texas at
+                   Austin
+
+ Positron Aerospace Propulsion
+!AAP Person69           I
+ Positronics Research, LLC
+
+This status paper is very exciting and provides new important information about
+the present status and prospects for positron energy production and storage,
+especially for space applications. It is recommended reading for both researchers
+in the area and aerospace scientists. In addition, others interested in national
+policy for both future energy and future space exploration should consider this
+status paper to gain further insight into positron energy and propulsion.
+                _ ._AAPe Peeresoen1  e 0e        niversity of Illinois
+                    I _                     __,U
+                                               I
+                        _e _e _e _e _e _e___
+  Metamaterials for Aerospace Applications: Energy Harvesting, Sub­
+  Wavelength Imaging, Optical-Device Miniaturization, and Non-Reciprocal
+  Optical Devices
+AAP Person 78
+I
+  University of Texas at Austin
+
+
+optical properties. The report by AAP Person 78
+Metamaterials are "materials be ond materials" with unusual electromagnetic or
+                                                   describes several possibilities
+
+examples, he often uses his own experiments. AAP Person 78 is one of the research
+how such materials can be used for advanced aeros ace a lications. As
+
+leaders in the field of metamaterials and has built up a highly credible reputation
+in this area. Although the research area of metamaterials is still rather new and
+mostly confined to proof-of-principle academic research at present, it will
+undoubtedly revolutionize photonics and lead to commercial applications that are
+interesting for the aerospace industry.
+
+                     _e Person68
+                -._AAP                     __,1University of St Andrews
+                   I
+                        _e _e _e _e _e _e__
+  Biosensors and BioMEMS: A Survey of the Present Field
+AAP Person65
+I                      I
+  Arizona State University
+
+This paper reaches toward and achieves a laudable goal: making BioMEMS
+understandable and relevant. The author's contribution is important, because the
+number of current programs and projects in the US Government that are either
+touting the importance of, or making responses to research requests in 2009
+                                                  6
+                                       UNCLASSIFIED
+
+--- PAGE 7 ---
+UNCLASSIFIED
+
+              numbers in the thousands. As many recent US Academy of Sciences and other
+              scholarly studies have shown.few persons in the decision-making areas of the
+             government have sufficient background in BioMEMS from which to make
+              intelligent decisions. As key customers of this study, the sponsors are well-served
+�P Per�?.� . .withl            !survey. Throughout the Survey, the author often introduces
+              ancillary technologies that will enable furth er BioMEMS development, solve
+              problems, or lead to alternative technologies. The survey is made more useful to
+              the reader and the sponsor because of this.
+                            - AAP Person                   81
+                              I ............. _ .,.. _ ........
+                             ....                             ................
+                                                                               ........
+                                                                                        ................ ........_.IWayne State University School of
+                               Medicine
+
+             Metallic Spintronics
+            IAAP Person 71    I
+             University of Texas at Austin
+
+             IAAP Person 71 ! paper is concerned with an emerging technology known as
+              spintronics ("spin-based electronics"). In this technology information is carried
+
+�
+ P Person   ;�����;�h:r:s�;:�;r������:         �
+                                                f electrons, rather than by �;��h
+                                                                            n1       ��7v:��� of
+              Texas at Austin, has at Least a dozen publications in the field of study in top-tier
+             journals, and has won NSF grants to pursue the topic. As a result one must regard
+              him as an expert in the subject and take his opinions seriously. In addition, the
+            /!.Ef!!,r cites 97 references, which is quite a lot for a 10,000 word paper. Clearly,
+  P P���?,Q.L:._Jis giving an overview of the entire field rather than just supplying an
+�
+              incremental addition to it.
+
+                           - IAA    P Pers0n9o                                  �avenbrick, LLC
+                            ............_ _ _ _ _ _ ........................__.
+              Materials for Advanced Aerospace Platforms
+           I AAP Person 66
+                                    I
+              Ohio State University
+
+          • � .. ..The. position .....   takes at thefirst instant is that previous design
+AAP Per�.
+      • ?
+                                �
+66
+                 methodologies iave argely failed, because of a Lack of appreciation of material
+                 property life cycles, which are clearly now known to be very different. If one is to
+                 examine, for example, in an attempt to reverse engineer materials and components
+                 possibly of interest, one might want to approach the "reverse" paradigm from first
+                 principles of materials in contexts of observed perforrn   ance.
+                                                                              .e          -!atthe              !           ·                            AAP Person
+                                                                                                                                                       '66''""'
+                 beginning of the study subtly suggests that observed performance . . . or even
+                 claimed petformance . . . may be a better starting point.
+
+
+
+                                                                                  7
+                                                                 UNCLASSIFIED
+
+--- PAGE 8 ---
+UNCLASSIFIED
+
+ The author elegantly describes how this "commonly encountered inconsistency
+ between technical innovation and commercial progresse" has become [in the West]
+ a current deterrent to the development and the deploymenl (adoption) of "literally
+ all classes . . . ofpolymers, metals, and ceramics. "
+               - IAAP Person 81  I Wayne State University School of
+                 ..._____________,
+                 Medicine
+
+ Metallic Glasses: tatus and Prospects for Aerospace Applications
+AAP Person 63
+John Hopkins University
+
+ Ifound it to be a clear and even-handed evaluation of the pros and cons of bulk
+ metallic glasses (BMG) and composites employing them. The author clearly points
+ out possible advantages in processing while he equally clearly points out the
+ difficulties associated with inherent unstable shear bandformation and
+ consequent lack of general ductility.
+
+                �AAPaPersona13o____....1Sandia National Laboratories
+                 ..._______a
+  Theory and Experiments of Invisibility Cloaking
+!AAP Person 68
+                        I
+  University of St. Andrews
+
+ Overall, this is a nice qualitative description ofthe rapidly moving .field of
+ invisibility and cloaking and can serve as a good starting point for someone
+ interested in diving into the details of this new technology.
+               - IAAP Person 131  l s andia National Laboratories
+                 ..._____  _______.
+
+ State-of-the-Art&Eve 1ution of High Energy Laser Weapons
+IAAP Person 79         Je
+  Independent Consultant
+
+ The technical discussions and history review are generally correct to the extent
+ they address the topics and this paper is a good general introduction for those
+ unfamiliar with high energy lasers.
+
+               - IAAP Person 132
+                 ..._______  ___
+                                   __.I Sandia National Laboratories
+
+
+                                              8
+                                    UNCLASSIFIED

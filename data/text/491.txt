@@ -1,0 +1,47 @@
+--- PAGE 1 ---
+Unresolved Radar Detection, United States, 2023                                                                        Event Summary
+                                                                   -
+              Apparent supersonic kinematics* reported during an 84-second radar track
+
+
+
+                                                                                                               •   In 2023, a civil air-surveillance
+                                                                                                                                       -             radar system recorded
+                                                                                                   •
+                                •
+                                                          .           .                                            eight detections over 84 seconds at an estimated
+                                             .r                                                                    altitude of 55,000–70,000
+                                                                                                                                         –        feet.
+                                                  •                                                            •   The summed point-to-point
+                                                                                                                                      - -     distance between the eight
+                                                                              ••               •       •           detections is approximately 38.5 miles.
+                                                                                                               •   If associated with a single object, 38.5 miles over 84
+     ~
+         I
+         •                                                                                                         seconds yields a minimum mean horizontal ground--
+                                                                  •                                                speed estimate of 1,650 mph; approximately Mach 2.5
+                                                              I
+                                                      .                                                            at the reported altitude.*
+..                                                                                                             •   Successive point-to-point
+                                                                                                                                   - -       segments show an apparent
+                                                                                                                   39°counter-clockwise
+                                                                                                                              -           change in bearing* after
+     \
+                                                                                                                   approximately 48 seconds.
+                                                                                                       T+84s
+                                                                                                               •   The 12-second
+                                                                                                                          -        radar sweep interval is not sufficient to
+                                                                  T+0s                                             independently establish that all eight reported
+                                                                                                                   detections originated from the same object or represent
+                                                                                                                   a continuous track.
+             10 mi.
+
+
+
+Green and red points: Commercial air traffic                          Red line connects detections in sequence using the
+                                                                                                                                 *Apparent speed and bearing are bounded
+Blue-shaded
+    -        areas: Weather data                                      shortest straight-line
+                                                                                       -     distance to show displacement
+                                                                                                                                 estimates derived from discontinuous detections.
+Highlighted area: Reported detections                                 over time; not a reconstructed trajectory.
